@@ -1,0 +1,13 @@
+#movie{
+    width: 100%;
+    min-height: 100vh;
+    min-width: 100vh;
+    transition: all .3s ease;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
