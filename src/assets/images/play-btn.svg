@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="120" viewBox="0 0 120 120">
+  <defs>
+    <clipPath id="a">
+      <rect x="-1600" width="1440" height="400" style="fill: none"/>
+    </clipPath>
+  </defs>
+  <title>play-btn</title>
+  <g style="clip-path: url(#a)">
+    <image width="2500" height="1667" transform="translate(-1655 -421) scale(0.78)" xlink:href="play-btn1.png"/>
+  </g>
+  <path d="M60,1a59,59,0,1,0,59,59A59,59,0,0,0,60,1ZM39.65,92.17V27.83L95.38,60Z" style="fill: #fff;opacity: 0.4"/>
+</svg>

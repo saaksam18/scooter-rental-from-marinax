@@ -1,13 +1,339 @@
-#movie{
+@import '../../assets/scss/components/variables';
+
+ul{
+    li{
+        list-style-type: none;
+    }
+}
+a:hover{
+    text-decoration: none;
+}
+.banner{
     width: 100%;
-    min-height: 100vh;
-    min-width: 100vh;
-    transition: all .3s ease;
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    padding: 2vh 2vw 0 20vw;
+    @media screen and (max-width: $tablet){
+        padding: 70px 0 0;
+    }
+    &__movie{
+        width: 100%;
+        min-height: 100vh;
+        min-width: 100vh;
+        transition: all .3s ease;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+    }
+    &__logo{
+        width: 100%;
+        text-align: right;
+        @media screen and (max-width: $tablet) {
+            position: absolute;
+            height: 100vh;
+            top: 70px;
+            left: 0;
+        }
+        img{
+            width: 48%;
+            @media screen and (max-width: $tablet) {
+                transform: rotate(90deg);
+                position: absolute;
+                width: 75vh;
+                top: 25vh;
+                right: -23vh;
+                opacity: .3;
+            }
+        }
+    }
+    &__text{
+        width: 60%;
+        margin: 20vh 0 0;
+        color: #fff;
+        @media screen and (max-width: $tablet) { 
+            width: 90%;
+            margin: 30vh 5% auto;
+        }
+        h2{
+            font-size: 2.2rem;
+            font-weight: 500;
+            margin-bottom: 1em;
+        }
+        p{
+            font-size: 1.6rem;
+            font-weight: 500;
+            margin-bottom: 0;
+        }
+    }
+}
+.content{
+    width: 85vw;
+    margin: 0 0 0 15vw;
+    @media screen and (max-width: $pc) { 
+        width: calc(100% - 220px);
+        margin: 0 0 0 220px;
+    }
+    @media screen and (max-width: $tablet) {
+        width: 100vw;
+        margin: 0;
+    }
+    .section-padding{
+        padding: 4vw 7vw;
+    }
+    .section-title{
+        font-size: 2.7rem;
+        text-align: center;
+        font-family: 'Roboto Condensed',sans-serif;
+        font-weight: 600;
+        span{
+            display: block;
+            font-size: 1.5rem;
+            font-weight: 500;
+            &::before{
+                content: '';
+                width: 3em;
+                height: 3px;
+                display: block;
+                margin: .7em auto .5em;
+            }
+        }
+    }
+    .news{
+        &__title{
+            color: $blue;
+            span{
+                color: $gray001;
+                &::before{
+                    background: $blue;
+                }
+            }
+        }
+        &__list{
+            border-top: 1px solid $blue;
+            padding-top: 4vh;
+            padding-left: 0px;
+            margin-top: 5vh;
+            a{
+                color: $gray;
+                display: flex;
+                align-items: center;
+                position: relative;
+                padding: .5em 0 .5em 5%;
+                font-size: 1.4rem;
+                letter-spacing: .05em;
+                line-height: 1.6em;
+                height: 4em;
+                &:hover{
+                    background: rgba(0,0,0,.08);
+                    opacity: 1;
+                    transition: all .3s ease;
+                    .category{
+                        border: 1px solid $white;
+                        background: $gray003;
+                        line-height: 2.4em;
+                        transition: all .3s ease;
+                    }
+                }
+            }
+            .new{
+                padding: 4px 5px;
+                background: $blue;
+                font-size: 1.2rem;
+                font-family: 'Roboto Condensed',sans-serif;
+                color: $white;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                line-height: 1em;
+            }
+            .date{
+                width: 10%;
+                min-width: 6em;
+                padding: 0 .5em;
+                font-size: 1.4rem;
+            }
+            .category{
+                width: 16em;
+                font-size: 1.1rem;
+                background: $gray002;
+                padding: 0 .5em;
+                margin: 0 2%;
+                text-align: center;
+                line-height: 2em;
+                border: 1px solid $white;
+            }
+            p{
+                width: 68%;
+                line-height: 1.6em;
+            }
+        }
+    }
+    .event{
+        &__list{
+            display: flex;
+            width: 100%;
+            padding-left: 0px;
+            border: 1px solid $blue;
+            a{
+                color: $gray;
+                height: 16vw;
+                background: $white;
+                flex-direction: column;
+                position: relative;
+                padding-top: 3.2vw;
+            }
+        }
+        &__title{
+            background: $blue;
+            flex-direction: column;
+            h3{
+                color: $white;
+                span{
+                    &::before{
+                        background: $white;
+                    }
+                }
+            }
+        }
+        &__new{
+            display: block;
+            width: 40%;
+            color: $white;
+            background: $blue;
+            text-align: center;
+            font-size: 1.2rem;
+            font-family: 'Roboto Condensed',sans-serif;
+            position: absolute;
+            padding: 4px 5px;
+            top: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            line-height: 1em;
+        }
+        &__date{
+            .year{
+                font-size: 1rem;
+                font-weight: 600;
+            }
+            .day{
+                font-size: 1.7rem;
+                font-weight: 600;
+            }
+            .day2{
+                font-size: 1.1rem;
+                font-weight: 600;
+                &::before{
+                    content: '(';
+                }
+                &::after{
+                    content: ')';
+                }
+            }
+        }
+        &__cat{
+            width: 15em;
+            border: 1px solid $white;
+            font-size: 1.1rem;
+            padding: 0 .5em;
+            letter-spacing: 0;
+            background: $gray002;
+            margin: 1vw auto;
+            line-height: 2em;
+        }
+        p{
+            font-size: 1.4rem;
+            line-height: 1.6em;
+            padding: 0 22px;
+        }
+        &__end{
+            a{
+                pointer-events: none;
+                background: rgba(0,0,0,.2);
+                color: $gray005;
+            }
+            .event__cat{
+                opacity: .4;
+            }
+        }
+    }
+    .company{
+        &__title{
+            color: $white;
+            span{
+                &::before{
+                    background: $white;
+                }
+            }
+        }
+        &__link{
+            display: flex;
+            justify-content: space-between;
+            margin: 5vh 0 0;
+            li{
+                width: 28%;
+                background: $white;
+                a{
+                    background: url('../../assets/images/top-list-img03.jpg') no-repeat center center;
+                    background-size: cover;
+                    width: 100%;
+                    height: 14vw;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 1.8rem;
+                    font-weight: 500;
+                    text-shadow: 0 0 8px rgba(0,0,0,.4);
+                    color: $white;
+                    flex-direction: column;
+                    padding-top: 15%;
+                    position: relative;
+                    span{
+                        font-size: 1.3rem;
+                        display: block;
+                        color: $blue;
+                        background-color: $white;
+                        padding: 0 4px;
+                        margin-top: 8px;
+                    }
+                }
+            }
+        }
+    }
+    .movie{
+        a{
+            width: 100%;
+            height: 22vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: url('https://www.taxan.co.jp/jp/images/top/top-movie-img.jpg') no-repeat center center;
+            background-size: cover;
+            position: relative;
+            &::before{
+                content: '加賀電子プロモーションMOVIE';
+                width: 100%;
+                text-align: center;
+                margin-bottom: 1em;
+                display: block;
+                color: $white;
+                font-size: 2.5rem;
+                font-weight: 500;
+            }
+            &::after{
+                content: '';
+                width: 20px;
+                height: 20px;
+                background: url('../../assets/images/play-btn.svg') no-repeat center center;
+                background-size: contain;
+                display: block;
+            }
+        }
+    }
 }
