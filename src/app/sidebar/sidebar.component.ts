@@ -11,20 +11,27 @@ export class SidebarComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    const $menu = $(".menu_icon");
-		$(document).mouseup(e => {
-			if (!$menu.is(e.target)
-			&& $menu.has(e.target).length === 0)
-			{
-				$menu.removeClass('active');
-				// $("#content_menu").addClass("d-md-none");
-			}
-		});
-		
 
+		// menu responsive
 		$(".menu_icon").click(function(){
 			$(this).toggleClass("active");
-			$("#content_menu").removeClass("d-md-none");
+			$("#content_menu").toggleClass('show');
+		});
+		$(".sidebar__menu ul li").click(function(){
+			$(this).children(".sub_menu").slideToggle();
+		});
+
+		// change font-size
+		$(".text_size .size_s").on("click", function(){
+			$(this).addClass('active');
+			$(".text_size .size_m").removeClass('active');
+			$('html').css('font-size','62.5%');
+		});
+
+		$(".text_size .size_m").on("click", function(){
+			$(this).addClass('active');
+			$(".text_size .size_s").removeClass('active');
+			$('html').css('font-size','72%');
 		});
   }
 
