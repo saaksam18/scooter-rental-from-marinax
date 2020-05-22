@@ -11,7 +11,7 @@ export class AppComponent implements OnInit{
 
   ngOnInit() {
 		setTimeout(()=>{
-			document.getElementById("loading-page").style.display = 'none';
+			document.getElementById("loading-page").classList.add("d-none");
 			this.isPageLoad = true;
 		},2500)
 	}

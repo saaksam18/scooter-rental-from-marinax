@@ -17,6 +17,9 @@ body {
 #loading-page{
     height: 100vh;
     background-color: $blue;
+    img{
+        width: 60%;
+    }
 }
 .wrapper{
     width: 100%;
