@@ -16,13 +16,10 @@
 </div>
 <div class="content">
     <div class="w-100 news section-padding bg-lightblue" data-aos="fade-up">
-        <h3 class="section-title news__title">
-            NEWS RELEASE
-            <span>ニュースリリース</span>
-        </h3>
+        <h3 class="section-title news__title">NEWS RELEASE<span>ニュースリリース</span></h3>
         <ul class="news__list">
             <li>
-                <a href="https://www.taxan.co.jp/news-information/wp-content/uploads/2020/05/【最終版】DMLニュースリリース（Splashtop高速リモートデスクトップ・ソフトウェア販売開始）20200520.pdf" target="_blank">
+                <a routerLink="https://www.taxan.co.jp/news-information/wp-content/uploads/2020/05/【最終版】DMLニュースリリース（Splashtop高速リモートデスクトップ・ソフトウェア販売開始）20200520.pdf" target="_blank">
                     <span class="new">New</span>
                     <span class="date">2020.05.20</span>
                     <span class="category">デジタル·メディア·ラボ</span>
@@ -30,7 +27,7 @@
                 </a>
             </li>
             <li>
-                <a href="https://www.taxan.co.jp/news-information/wp-content/uploads/2020/05/【最終版】DMLニュースリリース（Splashtop高速リモートデスクトップ・ソフトウェア販売開始）20200520.pdf" target="_blank">
+                <a routerLink="https://www.taxan.co.jp/news-information/wp-content/uploads/2020/05/【最終版】DMLニュースリリース（Splashtop高速リモートデスクトップ・ソフトウェア販売開始）20200520.pdf" target="_blank">
                     <span class="new">New</span>
                     <span class="date">2020.05.20</span>
                     <span class="category">デジタル·メディア·ラボ</span>
@@ -38,7 +35,7 @@
                 </a>
             </li>
             <li>
-                <a href="https://www.taxan.co.jp/news-information/wp-content/uploads/2020/05/【最終版】DMLニュースリリース（Splashtop高速リモートデスクトップ・ソフトウェア販売開始）20200520.pdf" target="_blank">
+                <a routerLink="https://www.taxan.co.jp/news-information/wp-content/uploads/2020/05/【最終版】DMLニュースリリース（Splashtop高速リモートデスクトップ・ソフトウェア販売開始）20200520.pdf" target="_blank">
                     <span class="new">New</span>
                     <span class="date">2020.05.20</span>
                     <span class="category">デジタル·メディア·ラボ</span>
@@ -46,69 +43,71 @@
                 </a>
             </li>
         </ul>
-        <a href="../news-information/news" class="btn-more">MORE</a>
+        <a routerLink="../news-information/news" class="btn-more">MORE</a>
     </div>
     <!-- Event -->
     <div class="w-100 event section-padding bg-gray004" data-aos="fade-up">
-        <ul class="row no-gutters event__list">
-            <li class="col-md-3 d-flex justify-content-center align-items-center event__title">
-                <h3 class="text-center section-title">EVENT<span>展示会・セミナー情報</span></h3>
-            </li>
-            <li class="col-md-3">
-                <a class="w-100 d-block justify-content-center" href="https://www.taxan.co.jp/news-information/event_news/news_cat05/89">
-                    <span class="event__new">New</span>
-                    <div class="text-center event__date">
-                        <span class="year">2020</span>
-                        <span class="day">4/8</span>
-                        <span class="day2">水</span>〜
-                        <span class="day">4/10</span>
-                        <span class="day2">金</span>
-                    </div>
-                    <span class="text-center d-block event__cat">富士通エレクトロニクス</span>
-                    <p class="mb-0">「機械要素技術展」出展中止のお知らせ</p>
-                </a>
-            </li>
-            <li class="col-md-3 event__end">
-                <a class="w-100 d-block justify-content-center" href="https://www.taxan.co.jp/news-information/event_news/news_cat02/93">
-                    <div class="text-center event__date">
-                        <span class="year">2020</span>
-                        <span class="day">2/18</span>
-                        <span class="day2">火</span>〜
-                        <span class="day">3/13</span>
-                        <span class="day2">金</span>
-                    </div>
-                    <span class="text-center d-block event__cat">加賀テック</span>
-                    <p class="mb-0">「TECHNO-FRONTIER 2020　熱対策技術展」出展中止のお知らせ</p>
-                </a>
-            </li>
-            <li class="col-md-3 event__end">
-                <a class="w-100 d-block justify-content-center" href="https://www.taxan.co.jp/news-information/event_news/news_cat14/94">
-                    <div class="text-center event__date">
-                        <span class="year">2020</span>
-                        <span class="day">2/7</span>
-                        <span class="day2">金</span>〜
-                        <span class="day">2/8</span>
-                        <span class="day2">土</span>
-                    </div>
-                    <span class="text-center d-block event__cat">加賀アミューズメント</span>
-                    <p class="mb-0">「ジャパンアミューズメントエキスポ2020」に出展します。</p>
-                </a>
-            </li>
-        </ul>
-        <a href="../news-information/event_news" class="btn-more">MORE</a>
+        <div class="event__list">
+            <ul class="row no-gutters">
+                <li class="col-md-3 d-flex justify-content-center align-items-center event__title">
+                    <h3 class="text-center section-title">EVENT<span>展示会・セミナー情報</span></h3>
+                </li>
+                <li class="col-md-3">
+                    <a class="w-100 d-block justify-content-center" routerLink="https://www.taxan.co.jp/news-information/event_news/news_cat05/89">
+                        <span class="event__new">New</span>
+                        <div class="text-center event__date">
+                            <span class="year">2020</span>
+                            <span class="day-number">4/8</span>
+                            <span class="day-text">水</span>〜
+                            <span class="day-number">4/10</span>
+                            <span class="day-text">金</span>
+                        </div>
+                        <span class="text-center d-block event__cat">富士通エレクトロニクス</span>
+                        <p class="mb-0">「機械要素技術展」出展中止のお知らせ</p>
+                    </a>
+                </li>
+                <li class="col-md-3 event__end">
+                    <a class="w-100 d-block justify-content-center" routerLink="https://www.taxan.co.jp/news-information/event_news/news_cat02/93">
+                        <div class="text-center event__date">
+                            <span class="year">2020</span>
+                            <span class="day-number">2/18</span>
+                            <span class="day-text">火</span>〜
+                            <span class="day-number">3/13</span>
+                            <span class="day-text">金</span>
+                        </div>
+                        <span class="text-center d-block event__cat">加賀テック</span>
+                        <p class="mb-0">「TECHNO-FRONTIER 2020　熱対策技術展」出展中止のお知らせ</p>
+                    </a>
+                </li>
+                <li class="col-md-3 event__end">
+                    <a class="w-100 d-block justify-content-center" routerLink="https://www.taxan.co.jp/news-information/event_news/news_cat14/94">
+                        <div class="text-center event__date">
+                            <span class="year">2020</span>
+                            <span class="day-number">2/7</span>
+                            <span class="day-text">金</span>〜
+                            <span class="day-number">2/8</span>
+                            <span class="day-text">土</span>
+                        </div>
+                        <span class="text-center d-block event__cat">加賀アミューズメント</span>
+                        <p class="mb-0">「ジャパンアミューズメントエキスポ2020」に出展します。</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <a routerLink="../news-information/event_news" class="btn-more">MORE</a>
     </div>
     <!-- company section -->
     <div class="w-100 company section-padding bg-black" data-aos="fade-up">
         <h3 class="section-title company__title">COMPANY<span>企業情報</span></h3>
         <ul class="company__link">
-            <li><a href="company/about.html">加賀電子とは<span>KAGA STORY</span></a></li>
-            <li><a href="company/founder.html">創業者が語る<br>ストーリー</a></li>
-            <li><a href="company/vision.html">企業理念</a></li>
+            <li><a routerLink="company/about.html">加賀電子とは<span>KAGA STORY</span></a></li>
+            <li><a routerLink="company/founder.html">創業者が語る<br>ストーリー</a></li>
+            <li><a routerLink="company/vision.html">企業理念</a></li>
         </ul>
     </div>
     <!-- Movie section -->
     <div class="w-100 movie" data-aos="fade-up">
-        <a href="https://youtu.be/q0fWR3UgU28" target="_blank">
+        <a routerLink="https://youtu.be/q0fWR3UgU28" target="_blank">
             <div class="movie__title">加賀電子プロモーションMOVIE</div>
             <img data-aos="zoom-in" class="movie__display" src="../../assets/images/play-btn.svg" alt="">
         </a>
@@ -116,107 +115,112 @@
     <!-- business section -->
     <div class="w-100 section-padding business" data-aos="fade-up">
         <h3 class="business__title section-title">OUR BUSINESS<span>事業紹介</span></h3>
-        <div class="row no-gutters business__link">
-            <div class="col-md-6">
-                <a href="business/solution.html">
-                    <p class="w-100 position-absolute text-center">加賀電子の<br>ワンストップビジネス</p>
-                    <img class="position-relative" src="../../assets/images/top-bnr-img01.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-md-6">
-                <div class="row no-gutters">
-                    <div class="col-md-6">
-                        <a href="business/semiconductor.html">
-                            <p class="w-100 position-absolute text-center">電子部品・<br>半導体ビジネス</p>
-                            <img class="position-relative" src="../../assets/images/top-bnr-img02.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="col-md-6">
-                        <a href="business/ems.html">
-                            <p class="w-100 position-absolute text-center">EMSビジネス</p>
-                            <img class="position-relative" src="../../assets/images/top-bnr-img03.jpg" alt="">
-                        </a>
-                    </div>
+        <div class="business__link">
+            <div class="row no-gutters">
+                <div class="col-md-6">
+                    <a routerLink="business/solution.html">
+                        <p class="w-100 position-absolute text-center">加賀電子の<br>ワンストップビジネス</p>
+                        <img class="position-relative" src="../../assets/images/top-bnr-img01.jpg" alt="">
+                    </a>
                 </div>
-                <div class="row no-gutters">
-                    <div class="col-md-6">
-                        <a href="business/information_product.html">
-                            <p class="w-100 position-absolute text-center">情報機器ビジネス</p>
-                            <img class="position-relative" src="../../assets/images/top-bnr-img04.jpg" alt="">
-                        </a>
+                <div class="col-md-6">
+                    <div class="row no-gutters">
+                        <div class="col-md-6">
+                            <a routerLink="business/semiconductor.html">
+                                <p class="w-100 position-absolute text-center">電子部品・<br>半導体ビジネス</p>
+                                <img class="position-relative" src="../../assets/images/top-bnr-img02.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a routerLink="business/ems.html">
+                                <p class="w-100 position-absolute text-center">EMSビジネス</p>
+                                <img class="position-relative" src="../../assets/images/top-bnr-img03.jpg" alt="">
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-md-6">
-                        <a href="business/newbusiness.html">
-                            <p class="w-100 position-absolute text-center">ニュービジネス</p>
-                            <img class="position-relative" src="../../assets/images/top-bnr-img05.jpg" alt="">
-                        </a>
+                    <div class="row no-gutters">
+                        <div class="col-md-6">
+                            <a routerLink="business/information_product.html">
+                                <p class="w-100 position-absolute text-center">情報機器ビジネス</p>
+                                <img class="position-relative" src="../../assets/images/top-bnr-img04.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a routerLink="business/newbusiness.html">
+                                <p class="w-100 position-absolute text-center">ニュービジネス</p>
+                                <img class="position-relative" src="../../assets/images/top-bnr-img05.jpg" alt="">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- footer section -->
     <div class="footer" data-aos="fade-up">
-        <div class="row category">
-            <div class="col-md-4">
-                <ul class="category__list">
-                    <li class="category__title"><a href="./company/index.html">会社情報</a></li>
-                    <li><a href="./company/vision.html">企業理念</a></li>
-                    <li><a href="./company/founder.html">創業者が語るストーリー　創業者紹介</a></li>
-                    <li><a href="./company/president.html">社長メッセージ</a></li>
-                    <li><a href="./company/outline.html">会社概要</a></li>
-                    <li><a href="./company/history.html">加賀電子 50 年の歴史　会社沿革</a></li>
-                    <li><a href="./company/base.html">加賀電子のグローバリゼーション<br>営業所情報</a></li>
-                    <li><a href="./company/about.html">加賀電子とは</a></li>
-                    <li><a href="./company/group/index.html">グループ会社情報</a></li>
-                </ul>
-                <ul class="category__list">
-                    <li class="category__title"><a href="./csr/index.html">サステナビリティ</a></li>
-                    <li><a href="./csr/policy.html">CSR 基本方針・行動規範</a></li>
-                    <li><a href="./csr/governance.html">コーポレート・ガバナンス</a></li>
-                    <li><a href="./csr/systems.html">内部統制システム</a></li>
-                    <li><a href="./csr/conservation.html">環境保全への取り組み</a></li>
-                    <li><a href="./csr/society.html">社会貢献活動</a></li>
-                    <li><a href="./csr/sdgs.html">SDGs</a></li>
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <ul class="category__list">
-                    <li class="category__title"><a href="./business/index.html">事業紹介</a></li>
-                    <li><a href="./business/solution.html">加賀電子の課題解決力</a></li>
-                    <li><a href="./business/business-fields.html">事業分野一覧</a></li>
-                    <li><a href="./business/semiconductor.html">電子部品・半導体ビジネス</a></li>
-                    <li><a href="./business/ems.html">EMS ビジネス</a></li>
-                    <li><a href="./business/information_product.html">情報機器ビジネス</a></li>
-                    <li><a href="./business/newbusiness.html">ニュービジネス</a></li>
-                </ul>
-                <ul class="category__list">
-                    <li class="category__title"><a href="./recruit/index.html">採用情報</a></li>
-                    <li><a href="https://www.taxan.co.jp/jp/recruit/graduate/" target="_blank">新卒採用情報</a></li>
-                    <li><a href="./recruit/career.html">中途採用情報</a></li>
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <ul class="category__list">
-                    <li class="category__title"><a href="https://www.taxan.co.jp/jp/ir/" target="_blank">IR（投資家情報）</a></li>
-                    <li><a href="https://www.taxan.co.jp/jp/ir/" target="_blank">IR（投資家情報）</a></li>
-                    <li><a href="./ir/" target="_blank">決算・適時開示情報</a></li>
-                    <li><a href="./ir/" target="_blank">IR新着情報</a></li>
-                    <li><a href="./ir/management/" target="_blank">経営方針</a></li>
-                    <li><a href="./ir/cg/" target="_blank">コーポレート・ガバナンス</a></li>
-                    <li><a href="./ir/event/" target="_blank">IRイベント</a></li>
-                    <li><a href="./ir/finance/" target="_blank">業績・財務情報</a></li>
-                    <li><a href="./ir/ir_library/" target="_blank">IR資料室</a></li>
-                    <li><a href="./ir/stock_bond/" target="_blank">株式・社債情報</a></li>
-                    <li><a href="./ir/faq/" target="_blank">よくあるご質問</a></li>
-                    <li><a href="./ir/shareholders/shareholders_01.html" target="_blank">個人投資家の皆様へ</a></li>
-                    <li><a href="./ir/calendar.html" target="_blank">IRカレンダー</a></li>
-                    <li><a href="./ir/irsitemap/" target="_blank">IRサイトマップ</a></li>
-                    <li><a href="./ir/ircontact/" target="_blank">IRお問い合わせ</a></li>
-                    <li><a href="./ir/disclaimer/" target="_blank">免責事項</a></li>
-                    <li><a href="./ir/quote/" target="_blank">株価情報</a></li>
-                    <li><a href="http://www.pronexus.co.jp/koukoku/8154/8154.html" target="_blank">電子公告</a></li>
-                    <li><a href="./ir/aboutsite/" target="_blank">IRサイトの使い方</a></li>
-                </ul>
+        <div class="category">
+            <div class="row">
+                <div class="col-md-4">
+                    <ul class="category__list">
+                        <li class="category__title"><a routerLink="./company/index.html">会社情報</a></li>
+                        <li><a routerLink="./company/vision.html">企業理念</a></li>
+                        <li><a routerLink="./company/founder.html">創業者が語るストーリー　創業者紹介</a></li>
+                        <li><a routerLink="./company/president.html">社長メッセージ</a></li>
+                        <li><a routerLink="./company/outline.html">会社概要</a></li>
+                        <li><a routerLink="./company/history.html">加賀電子 50 年の歴史　会社沿革</a></li>
+                        <li><a routerLink="./company/base.html">加賀電子のグローバリゼーション<br>営業所情報</a></li>
+                        <li><a routerLink="./company/about.html">加賀電子とは</a></li>
+                        <li><a routerLink="./company/group/index.html">グループ会社情報</a></li>
+                    </ul>
+                    <ul class="category__list">
+                        <li class="category__title"><a routerLink="./csr/index.html">サステナビリティ</a></li>
+                        <li><a routerLink="./csr/policy.html">CSR 基本方針・行動規範</a></li>
+                        <li><a routerLink="./csr/governance.html">コーポレート・ガバナンス</a></li>
+                        <li><a routerLink="./csr/systems.html">内部統制システム</a></li>
+                        <li><a routerLink="./csr/conservation.html">環境保全への取り組み</a></li>
+                        <li><a routerLink="./csr/society.html">社会貢献活動</a></li>
+                        <li><a routerLink="./csr/sdgs.html">SDGs</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="category__list">
+                        <li class="category__title"><a routerLink="./business/index.html">事業紹介</a></li>
+                        <li><a routerLink="./business/solution.html">加賀電子の課題解決力</a></li>
+                        <li><a routerLink="./business/business-fields.html">事業分野一覧</a></li>
+                        <li><a routerLink="./business/semiconductor.html">電子部品・半導体ビジネス</a></li>
+                        <li><a routerLink="./business/ems.html">EMS ビジネス</a></li>
+                        <li><a routerLink="./business/information_product.html">情報機器ビジネス</a></li>
+                        <li><a routerLink="./business/newbusiness.html">ニュービジネス</a></li>
+                    </ul>
+                    <ul class="category__list">
+                        <li class="category__title"><a routerLink="./recruit/index.html">採用情報</a></li>
+                        <li><a routerLink="https://www.taxan.co.jp/jp/recruit/graduate/" target="_blank">新卒採用情報</a></li>
+                        <li><a routerLink="./recruit/career.html">中途採用情報</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="category__list">
+                        <li class="category__title"><a routerLink="https://www.taxan.co.jp/jp/ir/" target="_blank">IR（投資家情報）</a></li>
+                        <li><a routerLink="https://www.taxan.co.jp/jp/ir/" target="_blank">IR（投資家情報）</a></li>
+                        <li><a routerLink="./ir/" target="_blank">決算・適時開示情報</a></li>
+                        <li><a routerLink="./ir/" target="_blank">IR新着情報</a></li>
+                        <li><a routerLink="./ir/management/" target="_blank">経営方針</a></li>
+                        <li><a routerLink="./ir/cg/" target="_blank">コーポレート・ガバナンス</a></li>
+                        <li><a routerLink="./ir/event/" target="_blank">IRイベント</a></li>
+                        <li><a routerLink="./ir/finance/" target="_blank">業績・財務情報</a></li>
+                        <li><a routerLink="./ir/ir_library/" target="_blank">IR資料室</a></li>
+                        <li><a routerLink="./ir/stock_bond/" target="_blank">株式・社債情報</a></li>
+                        <li><a routerLink="./ir/faq/" target="_blank">よくあるご質問</a></li>
+                        <li><a routerLink="./ir/shareholders/shareholders_01.html" target="_blank">個人投資家の皆様へ</a></li>
+                        <li><a routerLink="./ir/calendar.html" target="_blank">IRカレンダー</a></li>
+                        <li><a routerLink="./ir/irsitemap/" target="_blank">IRサイトマップ</a></li>
+                        <li><a routerLink="./ir/ircontact/" target="_blank">IRお問い合わせ</a></li>
+                        <li><a routerLink="./ir/disclaimer/" target="_blank">免責事項</a></li>
+                        <li><a routerLink="./ir/quote/" target="_blank">株価情報</a></li>
+                        <li><a routerLink="http://www.pronexus.co.jp/koukoku/8154/8154.html" target="_blank">電子公告</a></li>
+                        <li><a routerLink="./ir/aboutsite/" target="_blank">IRサイトの使い方</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="w-100 text-center footer__info">
@@ -224,10 +228,10 @@
             <div class="w-100 info">〒101-8629　東京都千代田区神田松永町20番地 TEL：03-5657-0111／FAX：03-3254-7131</div>
         </div>
         <div class="d-flex justify-content-center footer__menu">
-            <a href="./contact/">お問い合わせ</a>
-            <a href="./information/sitemap.html">サイトマップ</a>
-            <a href="./information/policy.html">プライバシーポリシー</a>
-            <a href="./information/about-site.html">当サイトについて</a>
+            <a routerLink="./contact/">お問い合わせ</a>
+            <a routerLink="./information/sitemap.html">サイトマップ</a>
+            <a routerLink="./information/policy.html">プライバシーポリシー</a>
+            <a routerLink="./information/about-site.html">当サイトについて</a>
         </div>
         <div class="text-center footer__copyright">© KAGA ELECTRONICS CO.,LTD</div>
     </div>
