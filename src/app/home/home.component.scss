@@ -10,7 +10,6 @@ ul{
 a:hover{
     text-decoration: none;
 }
-
 img{
     max-width: 100%;
 }
@@ -363,6 +362,21 @@ img{
                     transform: translateY(-50%);
                 }
             }
+        }
+    }
+    .pickup-slide{
+        img{
+            max-width: 100%;
+            height: 12vw;
+        }
+        p{
+            width: 100%;
+            background: rgba(255,255,255,.7);
+            text-align: center;
+            font-size: 1.3rem;
+            letter-spacing: 0;
+            font-weight: 500;
+            padding: .5em 0;
         }
     }
     .footer{
