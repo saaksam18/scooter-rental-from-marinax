@@ -8,24 +8,32 @@ import $ from 'jquery';
 })
 export class SidebarComponent implements OnInit {
 
-  constructor() { }
+  	constructor() { }
 
-  ngOnInit() {
-    const $menu = $(".menu_icon");
-		$(document).mouseup(e => {
-			if (!$menu.is(e.target)
-			&& $menu.has(e.target).length === 0)
-			{
-				$menu.removeClass('active');
-				// $("#content_menu").addClass("d-md-none");
-			}
-		});
-		
+  	ngOnInit() {
 
-		$(".menu_icon").click(function(){
+		// menu responsive
+		$(".menu-icon").click(function(){
 			$(this).toggleClass("active");
-			$("#content_menu").removeClass("d-md-none");
+			$("#content-menu").toggleClass('show');
 		});
-  }
+		$(".sidebar__menu ul li").click(function(){
+			$(this).children().toggleClass('is-active');
+			$(this).children(".sub-menu").slideToggle();
+		});
+
+		// change font-size
+		$(".text_size .text-size__s").on("click", function(){
+			$(this).addClass('active');
+			$(".text_size .text-size__m").removeClass('active');
+			$('html').css('font-size','62.5%');
+		});
+
+		$(".text_size .text-size__m").on("click", function(){
+			$(this).addClass('active');
+			$(".text_size .text-size__s").removeClass('active');
+			$('html').css('font-size','72%');
+		});
+  	}
 
 }
