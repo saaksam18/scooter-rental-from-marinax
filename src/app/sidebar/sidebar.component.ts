@@ -23,15 +23,15 @@ export class SidebarComponent implements OnInit {
 		});
 
 		// change font-size
-		$(".text_size .text-size__s").on("click", function(){
+		$(".text-size .text-size__s").on("click", function(){
 			$(this).addClass('active');
-			$(".text_size .text-size__m").removeClass('active');
+			$(".text-size .text-size__m").removeClass('active');
 			$('html').css('font-size','62.5%');
 		});
 
-		$(".text_size .text-size__m").on("click", function(){
+		$(".text-size .text-size__m").on("click", function(){
 			$(this).addClass('active');
-			$(".text_size .text-size__s").removeClass('active');
+			$(".text-size .text-size__s").removeClass('active');
 			$('html').css('font-size','72%');
 		});
   	}

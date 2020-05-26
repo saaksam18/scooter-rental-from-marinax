@@ -1,0 +1,73 @@
+@keyframes trigger-brfore {
+    0% {
+        transform:translateY(11px) rotate(45deg)
+    }
+    50% {
+        transform:translateY(11px) rotate(0)
+    }
+    100% {
+        transform:translateY(0) rotate(0)
+    }
+}
+
+@keyframes active-trigger-before {
+    0% {
+        transform:translateY(0) rotate(0)
+    }
+    50% {
+        transform:translateY(12px) rotate(0)
+    }
+    100% {
+        transform:translateY(12px) rotate(45deg)
+    }
+}
+
+@keyframes trigger-after {
+    0% {
+        transform:translateY(-11px) rotate(-45deg)
+    }
+    50% {
+        transform:translateY(-11px) rotate(0)
+    }
+    100% {
+        transform:translateY(0) rotate(0)
+    }
+}
+
+@keyframes active-trigger-after {
+    0% {
+        transform:translateY(0) rotate(0)
+    }
+    50% {
+        transform:translateY(-12px) rotate(0)
+    }
+    100% {
+        transform:translateY(-12px) rotate(-45deg)
+    }
+}
+
+@keyframes sub-menu-left-hover {
+    0% {
+        left: 0;
+        width: 0
+    }
+    70% {
+        left: 0;
+        width: 100%
+    }
+    100% { 
+        left: 0;
+        width: 100%
+    }
+}
+
+@keyframes menu-slide-left {
+    0% { 
+        opacity:0;
+        transform:translateX(-1em)
+    }
+    100% {
+        opacity:1;
+        transform:translateX(0)
+    }
+}
