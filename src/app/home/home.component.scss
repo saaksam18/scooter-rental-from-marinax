@@ -19,7 +19,7 @@ img{
     margin: 0;
     position: relative;
     padding: 2vh 2vw 0 20vw;
-    @media screen and (max-width: $tablet){
+    @media screen and (max-width: $smart-phone){
         padding: 70px 0 0;
     }
     &__movie{
@@ -38,7 +38,7 @@ img{
     &__logo{
         width: 100%;
         text-align: right;
-        @media screen and (max-width: $tablet) {
+        @media screen and (max-width: $smart-phone) {
             position: absolute;
             height: 100vh;
             top: 70px;
@@ -46,7 +46,7 @@ img{
         }
         img{
             width: 48%;
-            @media screen and (max-width: $tablet) {
+            @media screen and (max-width: $smart-phone) {
                 transform: rotate(90deg);
                 position: absolute;
                 width: 75vh;
@@ -60,7 +60,7 @@ img{
         width: 60%;
         margin: 20vh 0 0;
         color: $white;
-        @media screen and (max-width: $tablet) { 
+        @media screen and (max-width: $smart-phone) { 
             width: 90%;
             margin: 30vh 5% auto;
         }
@@ -83,7 +83,7 @@ img{
         width: calc(100% - 220px);
         margin: 0 0 0 220px;
     }
-    @media screen and (max-width: $tablet) {
+    @media screen and (max-width: $smart-phone) {
         width: 100vw;
         margin: 0;
     }
@@ -133,6 +133,14 @@ img{
                 letter-spacing: .05em;
                 line-height: 1.6em;
                 height: 4em;
+                @media screen and (max-width: $smart-phone) {
+                    height: auto;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    align-items: baseline;
+                    padding: 0;
+                    margin-bottom: 20px;
+                }
                 &:hover{
                     background: rgba(0,0,0,.08);
                     opacity: 1;
@@ -156,12 +164,20 @@ img{
                 left: 0;
                 transform: translateY(-50%);
                 line-height: 1em;
+                @media screen and (max-width: $smart-phone){
+                    top: auto;
+                    transform: none;
+                }
             }
             .date{
                 width: 10%;
                 min-width: 6em;
                 padding: 0 .5em;
                 font-size: 1.4rem;
+                @media screen and (max-width: $smart-phone){
+                    width: auto;
+                    margin-left: 35px;
+                }
             }
             .category{
                 width: 16em;
@@ -172,10 +188,16 @@ img{
                 text-align: center;
                 line-height: 2em;
                 border: 1px solid $white;
+                @media screen and (max-width: $smart-phone){
+                    width: auto;      
+                }
             }
             p{
                 width: 68%;
                 line-height: 1.6em;
+                @media screen and (max-width: $smart-phone){
+                    width: 100%;      
+                }
             }
         }
     }
@@ -185,6 +207,14 @@ img{
             width: 100%;
             padding-left: 0px;
             border: 1px solid $blue;
+            li:last-child{
+                a{
+                    @media screen and (max-width: $tablet){
+                        border-bottom: none;
+                        padding-top: 10px;
+                    }
+                }
+            }
             a{
                 color: $gray;
                 height: 16vw;
@@ -192,11 +222,19 @@ img{
                 flex-direction: column;
                 position: relative;
                 padding-top: 3.2vw;
+                @media screen and (max-width: $tablet){
+                    height: auto;
+                    padding: 30px 0 10px;
+                    border-bottom: 1px solid $black;
+                }
             }
         }
         &__title{
             background: $blue;
             flex-direction: column;
+            @media screen and (max-width: $tablet){
+                padding: 10px;
+            }
             h3{
                 color: $white;
                 span{
@@ -280,9 +318,17 @@ img{
             display: flex;
             justify-content: space-between;
             margin: 5vh 0 0;
+            @media screen and (max-width: $smart-phone){
+                flex-wrap: wrap;
+                margin: 20px 0 0;
+            }
             li{
                 width: 28%;
                 background: $white;
+                @media screen and (max-width: $smart-phone){
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
                 a{
                     width: 100%;
                     height: 14vw;
@@ -298,6 +344,10 @@ img{
                     flex-direction: column;
                     padding-top: 15%;
                     position: relative;
+                    @media screen and (max-width: $smart-phone){                    
+                        height: 14rem;
+                        padding-top: 0;
+                    }
                     span{
                         font-size: 1.3rem;
                         display: block;
@@ -321,6 +371,9 @@ img{
             background: url('https://www.taxan.co.jp/jp/images/top/top-movie-img.jpg') no-repeat center center;
             background-size: cover;
             position: relative;
+            @media screen and (max-width: $smart-phone){
+                height: 20rem;
+            }
         }
         &__title{
             text-align: center;
@@ -332,6 +385,10 @@ img{
             width: 90px;
             height: 90px;
             margin-top: 1em;
+            @media screen and (max-width: $smart-phone){
+                width: 55px;
+                height: 55px;
+            }
         }
     }
     .business{
@@ -345,10 +402,22 @@ img{
             }
         }
         &__link{
-            height: 630px;
             margin: 6vh 0 4vh;
+            @media screen and (max-width: $smart-phone){
+                height: auto;
+            }
             a{
                 display: block;
+                @media screen and (max-width: $smart-phone){
+                    height: 15rem;
+                    display: flex;
+                    align-items: center;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
                 &:hover{
                     transition: all .2s ease-in-out;
                     opacity: .7;
@@ -360,6 +429,10 @@ img{
                     z-index: 1;
                     margin: 50% auto 0;
                     transform: translateY(-50%);
+                    @media screen and (max-width: $smart-phone){
+                        margin: 0;
+                        transform: none;
+                    }
                 }
             }
         }
@@ -384,9 +457,12 @@ img{
                 width: 100%;
                 height: 12vw;
                 position: relative;
+                @media screen and (max-width: $smart-phone){
+                    height: 12rem;
+                }
             }
             p{
-                width: 486px;
+                width: 7.15%;
                 text-align: center;
                 font-size: 1.3rem;
                 letter-spacing: 0;
@@ -430,6 +506,9 @@ img{
             &__list{
                 margin-bottom: 20px;
                 min-height: 20em;
+                @media screen and (max-width: $smart-phone){
+                    min-height: auto;
+                }
                 li{
                     font-size: 1.4rem;
                     line-height: 1.4;
