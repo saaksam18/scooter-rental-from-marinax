@@ -67,12 +67,10 @@
         </div>
 
         <div class="sidebar__footer">
-
             <ul class="text-size">
                 <li class="active text-size__s" data-font="62.5">A</li>
                 <li class="text-size__m" data-font="72">A</li>
             </ul>
-
             <ul class="text-translate">
                 <li class="active">JP</li>
                 <li>EN</li>
@@ -82,7 +80,8 @@
             <div class="form-search">
                 <form class="navbar-form" role="search">
                     <div class="input-group flex-nowrap">
-                        <input autocomplete="off" type="text" class="gsc-input" name="search" title="検索" id="gsc-i-id1">
+                        <input autocomplete="off" type="text" class="search-input" name="search" title="検索">
+                        <span class="clear-text d-none" aria-hidden="true">×</span>
                         <div class="input-group-btn">
                             <button class="btn btn-default" type="submit">
                                 <svg width="13" height="13" viewBox="0 0 13 13">
@@ -94,7 +93,7 @@
                     </div>
                 </form>
             </div>
-
+            
             <div class="contact">
                 <a routerLink="">お問い合わせ</a>
             </div>
