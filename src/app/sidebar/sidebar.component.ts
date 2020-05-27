@@ -19,7 +19,6 @@ export class SidebarComponent implements OnInit {
 		});
 		$(".sidebar__menu ul li").click(function(){
 			$(this).children().toggleClass('is-active');
-			$(this).children(".sub-menu").slideToggle();
 		});
 
 		// change font-size
@@ -33,6 +32,27 @@ export class SidebarComponent implements OnInit {
 			$(this).addClass('active');
 			$(".text-size .text-size__s").removeClass('active');
 			$('html').css('font-size','72%');
+		});
+
+		// change langauge 
+		$('.text-translate li').on("click", function(){
+			$('.text-translate li').removeClass("active");
+			$(this).addClass("active");	
+		});
+
+		// search 
+		$('.search-input').on('keyup keypress', function() {
+			if ($(this).val() != '') {
+				$('.clear-text').removeClass('d-none');
+			}else {
+				$('.clear-text').addClass('d-none');
+			}
+		});
+
+		// clear text search
+		$('.clear-text').on("click", function(){
+			$(this).addClass("d-none");
+			$('.search-input').val('');
 		});
   	}
 
