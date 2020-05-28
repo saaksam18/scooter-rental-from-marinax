@@ -21,4 +21,49 @@
     padding: .3em 1em;
     font-family: 'Roboto Condensed',sans-serif;
     text-align: center;
+    @media screen and (max-width: $smart-phone){
+        width: 35%;
+    }
 }
+
+/* ==== title ====*/
+.section-padding{
+    padding: 4vw 7vw;
+}
+.section-title{
+    font-size: 2.7rem;
+    text-align: center;
+    font-family: 'Roboto Condensed',sans-serif;
+    font-weight: 600;
+    span{
+        display: block;
+        font-size: 1.5rem;
+        font-weight: 500;
+        &::before{
+            content: '';
+            width: 3em;
+            height: 3px;
+            display: block;
+            margin: .7em auto .5em;
+        }
+    }
+}
+.blue-title{
+    @extend .section-title;
+    color: $blue;
+    span{
+        color: $gray001;
+        &::before{
+            background: $blue;
+        }
+    }
+}
+.white-title{
+    @extend .section-title;
+    color: $white;
+    span{
+        &::before{
+            background: $white;
+        }
+    }
+} 
