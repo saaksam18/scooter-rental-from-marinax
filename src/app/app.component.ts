@@ -7,12 +7,13 @@ import { Component , OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit{
   title = 'emc';
-  isPageLoad = true;
+  isLoading = true;
 
   ngOnInit() {
 		setTimeout(()=>{
-			document.getElementById("loading-page").classList.add("d-none");
-			this.isPageLoad = true;
+      this.isLoading = false;
+      document.getElementById("wrapper").classList.add("d-none");
+      document.getElementById("wrapper").classList.add("d-block");
 		},2500)
 	}
 }
