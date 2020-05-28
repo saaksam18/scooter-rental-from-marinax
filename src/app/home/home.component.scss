@@ -1,17 +1,8 @@
 @import '../../assets/scss/components/variables';
 
-ul{
-    padding: 0;
-    margin: 0;
-    li{
-        list-style-type: none;
-    }
-}
 a:hover{
-    text-decoration: none;
-}
-img{
-    max-width: 100%;
+    transition: all .2s ease-in-out;
+    opacity: .7;
 }
 .banner{
     width: 100%;
@@ -78,16 +69,6 @@ img{
     }
 }
 .content{
-    width: 85vw;
-    margin: 0 0 0 15vw;
-    @media screen and (max-width: $pc) { 
-        width: calc(100% - 220px);
-        margin: 0 0 0 220px;
-    }
-    @media screen and (max-width: $smart-phone) {
-        width: 100vw;
-        margin: 0;
-    }
     .news{
         &__list{
             border-top: 1px solid $blue;
@@ -329,7 +310,7 @@ img{
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            background: url('https://www.taxan.co.jp/jp/images/top/top-movie-img.jpg') no-repeat center center;
+            background: url('../../assets/images/top-movie-img.jpg') no-repeat center center;
             background-size: cover;
             position: relative;
             @media screen and (max-width: $smart-phone){
@@ -370,10 +351,6 @@ img{
                         object-fit: cover;
                     }
                 }
-                &:hover{
-                    transition: all .2s ease-in-out;
-                    opacity: .7;
-                }
                 p{
                     color: $white;
                     font-size: 2.2rem;
@@ -382,6 +359,7 @@ img{
                     margin: 50% auto 0;
                     transform: translateY(-50%);
                     @media screen and (max-width: $smart-phone){
+                        font-size: 16px;
                         margin: 0;
                         transform: none;
                     }
@@ -418,89 +396,10 @@ img{
                 z-index: 2;
                 bottom: 0;
                 background: rgba(255,255,255,.7);
-            }
-        }
-    }
-    .footer{
-        background: $gray006;
-        .category{
-            padding: 50px 5% 30px;
-            &__title{
-                font-size: 1.8rem;
-                font-weight: 700;
-                padding-left: 18px;
-                padding-bottom: 5px;
-                margin-bottom: 10px;
-                border-bottom: 1px solid $white;
-                position: relative;
-                a{
-                    &::after{
-                        content: '';
-                        position: absolute;
-                        background: $white;
-                        width: 4px;
-                        height: 25px;
-                        left: 0;
-                        bottom: 5px;
-                    }
-                }
-            }
-            a{
-                color: $white;
-            }
-            &__list{
-                margin-bottom: 20px;
-                min-height: 20em;
                 @media screen and (max-width: $smart-phone){
-                    min-height: auto;
-                }
-                li{
-                    font-size: 1.4rem;
-                    line-height: 1.4;
-                    margin-bottom: 10px;
+                    font-size: 10px;
                 }
             }
-        }
-        &__info{
-            .logo{
-                margin-bottom: 15px;
-                img{
-                    width: 30%;
-                }
-            }
-            .info{
-                color: $white;
-                font-size: 1.4rem;
-            }
-        }
-        &__menu{
-            font-size: 1.4rem;
-            padding: 10px;
-            background-color: $blue;
-            @media screen and (max-width: $smart-phone){
-                flex-wrap: wrap;
-            }
-            a{
-                color: $white;
-                padding-right: 20px;
-                margin-right: 20px;
-                text-align: center;
-                border-right: 1px solid;
-                @media screen and (max-width: $smart-phone){
-                    width: 50%;
-                    margin-right: 0;
-                    margin-bottom: 10px;
-                }
-                &:last-child{
-                    border-right: none;
-                }
-            }
-        }
-        &__copyright{
-            color: $white;
-            background: $black;
-            padding: 8px 0 10px;
-            font-size: calc(1rem + .2vw);
         }
     }
 }
