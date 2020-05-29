@@ -1,0 +1,112 @@
+@import '../../../assets/scss/components/variables';
+.pagetitle{
+    color: $white;
+    font-size: calc(1.5rem + .7vw);
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+.about{
+    width: 100%;
+    height: 38vh;
+    max-height: 380px;
+    padding: 4vh 7vw 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // animation: fade-in .8s ease both;
+    background: url('../../../assets/images/mainvisual-a_1.jpg') no-repeat center center;
+    background-size: cover;
+    &__title{
+        color: $white;
+        font-size: calc(1.1rem + 1vw);
+        font-weight: 400;
+        letter-spacing: .1em;
+        line-height: 1.8em;
+        text-shadow: 0 0 6px rgba(0,0,0,.1);
+        animation: 
+        bottom-in .3s both;
+        animation-delay: .1s;
+        display: flex;
+        flex-direction: column-reverse;
+        span{
+            font-size: calc(1rem + .5vw);
+            line-height: 2.5em;
+            margin-bottom: .2em;
+            font-weight: 500;
+            &::after{
+                content: '';
+                width: 2.8em;
+                height: 2px;
+                background: $white;
+                margin: .3em .1em;
+                display: block;
+            }
+        }
+    }
+    &__breadcrumbs{
+        display: flex;
+        a{
+            color: $white;
+            font-size: 1.3rem;
+            display: block;
+            line-height: 1em;
+            text-decoration: underline;
+            &::after{
+                content: '>';
+                display: inline-block;
+                padding: 0 .4em 0 .3em;
+            }
+        }
+        .active{
+            color: $white;
+            font-size: 1.3rem;
+            font-weight: 500;
+            line-height: 1em;
+        }
+    }
+}
+
+.founder {
+    &__banner {
+        width: 100%;
+        height: 36vw;
+        background: url('../../../assets/images/founder-mainimg.jpg') no-repeat center center;;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding-left: 15%; 
+
+        &--text {
+            color: $white;
+            font-size: 3rem;
+            font-weight: 500;
+            line-height: 1.8em;
+            display: inline-block;
+            border-bottom: 1px solid $white;
+            padding-bottom: .1em;
+            margin-bottom: .4em;
+        }
+        &--name {
+            color: $white;
+            p {
+                font-size: 1.8rem;
+                font-weight: 600;
+                span {
+                    font-size: 2.8rem;
+                    margin-right: 1em;
+                    font-weight: 600;
+                }
+            }
+            span {
+                width: 100%;
+                font-size: 1.5rem;
+                font-weight: 500;
+            }
+        }
+    }
+}
