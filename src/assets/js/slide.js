@@ -14,6 +14,20 @@ $(document).ready(function(){
           settings: {
             centerPadding: '0px',
           }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            centerPadding: '0px',
+          }
+        },
+        {
+          breakpoint: 320,
+          settings: {
+            slidesToShow: 1,
+            centerPadding: '0px',
+          }
         }
       ]
     });

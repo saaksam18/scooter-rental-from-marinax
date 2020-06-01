@@ -10,6 +10,9 @@ a:hover{
     margin: 0;
     position: relative;
     padding: 2vh 2vw 0 20vw;
+    @media screen and (max-width: $tablet){
+        padding-left: 240px;
+    }
     @media screen and (max-width: $smart-phone){
         padding: 70px 0 0;
     }
