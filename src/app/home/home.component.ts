@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import {TranslateService} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-home',
@@ -7,8 +7,12 @@ import * as $ from 'jquery';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
-  constructor() { }
+  constructor(private translate: TranslateService) {
+    translate.setDefaultLang('km');
+  }
+  useLanguage(language: string) {
+    this.translate.use(language);
+  }
 
   ngOnInit() {}
 
