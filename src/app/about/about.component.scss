@@ -290,6 +290,19 @@
             }
         }
     }
+    .is-show{
+        .id::after{
+            left: 120%;
+        }
+        p{
+            &::before{
+                left: 0;
+            }
+            &::after{
+                left: 120%;
+            }
+        }
+    }
     #story01::before{
         background: url('../../assets/images/about-img01.jpg') no-repeat center center;
         background-size: cover;

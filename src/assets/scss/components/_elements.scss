@@ -30,6 +30,9 @@
     @media screen and (max-width: $smart-phone){
         width: 35%;
     }
+    &:hover{
+        color: $white;
+    }
 }
 
 /* ==== title ====*/
