@@ -17,7 +17,7 @@
 
             <ul class="mb-0 parent-menu">
                 <li>
-                    <a routerLink="">Top</a>
+                    <a routerLink="">{{ 'menu.top' | translate }}</a>
                     <div class="sub-menu">
                         <ul>
                             <li><a routerLink="">EMC</a></li>
@@ -28,11 +28,11 @@
                     </div>
                 </li>
                 <li>
-                    <a routerLink="">About Us</a>
+                    <a routerLink="/about">{{ 'menu.about-us' | translate }}</a>
                     <div class="sub-menu">
                         <ul>
                             <li><a routerLink="">Mission / Philosophy</a></li>
-                            <li><a routerLink="">Fonuder Story</a></li>
+                            <li><a routerLink="/about/founder">Fonuder Story</a></li>
                             <li><a routerLink="">Corperate Information & Branch</a></li>
                             <li><a routerLink="">History</a></li>
                             <li><a routerLink="">Operational Team</a>
@@ -45,7 +45,7 @@
                     </div>
                 </li>
                 <li>
-                    <a routerLink="">Business Field</a>
+                    <a routerLink="">{{ 'menu.business-field' | translate }}</a>
                     <div class="sub-menu">
                         <ul>
                             <li><a routerLink="">Scoter Rental</a></li>
@@ -56,7 +56,7 @@
                     </div>
                 </li>
                 <li>
-                    <a routerLink="">Blog</a>
+                    <a routerLink="">{{ 'menu.blog' | translate }}</a>
                     <div class="sub-menu">
                         <ul>
                             <li><a routerLink="">Hisashi</a></li>
@@ -65,7 +65,7 @@
                     </div>
                 </li>
                 <li>
-                    <a routerLink="">Contact</a>
+                    <a routerLink="">{{ 'menu.contact' | translate }}</a>
                 </li>
             </ul>
 
@@ -77,9 +77,9 @@
                 <li class="text-size__m" data-font="72">A</li>
             </ul>
             <ul class="text-translate">
-                <li class="active">JP</li>
-                <li>EN</li>
-                <li>KH</li>
+                <li class="active" (click)="useLanguage('jp')">JP</li>
+                <li (click)="useLanguage('en')">EN</li>
+                <li (click)="useLanguage('km')">KH</li>
             </ul>
             
             <div class="form-search">
