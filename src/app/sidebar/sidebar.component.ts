@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { TranslateService } from '@ngx-translate/core';
 import $ from "jquery";
 
 @Component({
@@ -8,7 +9,12 @@ import $ from "jquery";
 })
 export class SidebarComponent implements OnInit {
 
-  	constructor() { }
+	constructor(private translate: TranslateService) {
+		translate.setDefaultLang('jp');
+	}
+	useLanguage(language: string) {
+		this.translate.use(language);
+	}
 
   	ngOnInit() {
 

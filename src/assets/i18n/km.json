@@ -1,6 +1,9 @@
 {
-    "demo": {
-        "title": "ការបង្ហាញការបកប្រែ",
-        "text": "នេះគឺជាកម្មវិធីបង្ហាញសាមញ្ញសម្រាប់បកប្រែ ngx-translate"
+    "menu": {
+        "top": "ទំព័រដើម",
+        "about-us":"អំពីយើង",
+        "business-field": "Business Field",
+        "blog": "Blog",
+        "contact": "ទំនាក់ទំនង"
     }
 }
