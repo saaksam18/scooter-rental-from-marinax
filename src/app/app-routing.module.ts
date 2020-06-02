@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
+import { HistoryComponent } from './about/history/history.component';
 import { FounderComponent } from './about/founder/founder.component';
 
 const routes: Routes = [
@@ -18,10 +19,15 @@ const routes: Routes = [
 				pathMatch: 'full'
 			},
 			{ 
-				path: 'founder', 
-				component: FounderComponent, 
+				path: 'history', 
+				component: HistoryComponent,
 				pathMatch: 'full', 
 			},
+			{
+				path: 'founder', 
+				component: FounderComponent,
+				pathMatch: 'full', 
+			}
 		]
 	},
 ];

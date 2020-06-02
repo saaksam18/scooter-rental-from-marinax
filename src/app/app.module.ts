@@ -7,6 +7,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
+import { HistoryComponent } from './about/history/history.component';
+import { AboutHeaderComponent } from './about/about-header/about-header.component';
 import { FounderComponent } from './about/founder/founder.component';
 
 // import ngx-translate and the http loader
@@ -21,6 +23,8 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
     HomeComponent,
     FooterComponent,
     AboutComponent,
+    HistoryComponent,
+    AboutHeaderComponent,
     FounderComponent
   ],
   imports: [
