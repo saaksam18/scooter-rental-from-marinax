@@ -1,6 +1,9 @@
 {
-    "demo": {
-        "title": "Translation demo",
-        "text": "This is a simple demonstration app for ngx-translate"
+    "menu": {
+        "top": "Top",
+        "about-us":"About Us",
+        "business-field": "Business Field",
+        "blog": "Blog",
+        "contact": "Contact"
     }
 }
