@@ -3,14 +3,14 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { HistoryComponent } from './about/history/history.component';
-
+import { FounderComponent } from './about/founder/founder.component';
 
 const routes: Routes = [
-  {
+	{
 		path: '',
 		component: HomeComponent
-  },
-  {
+	},
+	{
 		path: 'about',
 		children: [
 			{ 
@@ -20,17 +20,22 @@ const routes: Routes = [
 			},
 			{ 
 				path: 'history', 
-				component: HistoryComponent, 
+				component: HistoryComponent,
 				pathMatch: 'full', 
 			},
+			{
+				path: 'founder', 
+				component: FounderComponent,
+				pathMatch: 'full', 
+			}
 		]
 	},
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes,{
-    useHash: false
-  })],
-  exports: [RouterModule]
+	imports: [RouterModule.forRoot(routes, {
+		useHash: false,
+	})],
+	exports: [RouterModule]
 })
 export class AppRoutingModule { }

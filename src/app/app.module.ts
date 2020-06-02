@@ -9,6 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { HistoryComponent } from './about/history/history.component';
 import { AboutHeaderComponent } from './about/about-header/about-header.component';
+import { FounderComponent } from './about/founder/founder.component';
 
 // import ngx-translate and the http loader
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
@@ -23,7 +24,8 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
     FooterComponent,
     AboutComponent,
     HistoryComponent,
-    AboutHeaderComponent
+    AboutHeaderComponent,
+    FounderComponent
   ],
   imports: [
     BrowserModule,
