@@ -15,14 +15,6 @@ export class SidebarComponent implements OnInit {
 	}
   	ngOnInit() {
 		// menu
-		$(".menu-icon").click(function(){
-			$(this).toggleClass("active");
-			$("#content-menu").toggleClass("show");
-		});
-		$(".sidebar__menu ul.parent-menu > li").click(function(){
-			$(this).find(">a:first-child").toggleClass("is-active");
-			$(this).children(".sub-menu").toggleClass("is-active");
-		});
 
 		$("ul.parent-menu > li ").each(function(){
 			$(this).mouseenter(function(){
@@ -36,8 +28,19 @@ export class SidebarComponent implements OnInit {
 		$(".sub-menu ul li").click(function(){
 			$(".sub-menu").css("visibility","hidden");
 		});
-		
-		if( $( window ).width() <= 768 ) {
+
+		$(".menu-icon").click(function(){
+			$(this).toggleClass("active");
+			$("#content-menu").toggleClass("show");
+		});
+
+		if( $(window).width() <= 768 ) {
+
+			$(".sidebar__menu ul.parent-menu > li").click(function(){
+				$(this).find(">a:first-child").toggleClass("is-active");
+				$(this).children(".sub-menu").toggleClass("is-active");
+			});
+
 			$(".sub-menu ul li").click(function(){
 				$("#content-menu").removeClass("show");
 				$(".menu-icon").removeClass("active");
