@@ -12,8 +12,6 @@ export class AppComponent implements OnInit{
   ngOnInit() {
 		setTimeout(()=>{
       this.isLoading = false;
-      document.getElementById("wrapper").classList.add("d-none");
-      document.getElementById("wrapper").classList.add("d-block");
 		},2500)
 	}
 }
