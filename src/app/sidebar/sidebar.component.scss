@@ -70,7 +70,6 @@
             -o-transition: all .2s ease-in-out;
             -ms-transition: all .2s ease-in-out;
             transition: all .2s ease-in-out;
-            opacity: .7;
         }
     }
     ul {
@@ -251,9 +250,10 @@
                     &:hover {
                         background-color: $blue;
                         color: $white;
-                        transition: all .4s ease;
-                        opacity: 1;
-                        z-index: 10000;
+                        @media screen and (max-width: $smart-phone) {
+                            background-color: transparent;
+                            color: $blue;
+                        }
                     }
                 @media screen and (max-width: $smart-phone) {
                     padding: 10px 0 10px 10px;
@@ -347,6 +347,8 @@
                     transition-delay: .2s;
                     opacity: 1;
                     color: $white;
+                    background-color: $blue;
+                    z-index: 10000;
                     &::before {
                         border-right: 2px solid $white;
                         border-bottom: 2px solid $white;
