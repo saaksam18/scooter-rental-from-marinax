@@ -38,7 +38,8 @@ $(document).ready(function(){
         var imgPos = $(this).offset().top;
         var scroll = $(window).scrollTop();
         var windowHeight = $(window).height();
-        if (scroll > imgPos - windowHeight + windowHeight / 4){
+        $(this).removeClass("is-show");
+        if (scroll > imgPos - windowHeight + windowHeight / 2){
           $(this).addClass("is-show");
         }
       });
