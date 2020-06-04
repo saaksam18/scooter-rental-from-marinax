@@ -176,26 +176,6 @@
     }
 }
 
-/* ==== title sub-page ==== */
-.content-pagetitle {
-    @extend .bg-gray007;
-    .title-gray{
-        color: $white;
-        font-size: calc(1.5rem + .7vw);
-        height: 8vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0px;
-        @media screen and (max-width: $smart-phone){
-            height: auto;
-            padding: 30px 10px;
-            line-height: 1.5em;
-            font-size: 2.5rem;
-        }
-    }
-}
-
 /* ==== content sub-page ==== */
 .content {
     &__pagetitle{
@@ -216,19 +196,11 @@
             }
         }
     }
-    &__inner {
+    &__wrap {
         width: 100%;
-        height: 100%;
-        &--wrap {
-            width: 100%;
-            padding: 7vw 7vw 5vw;
-        }
+        padding: 7vw 7vw 5vw;
         .content-section {
             margin: 0 auto 10vh;
-            .is-how {
-                animation: section_fade_in .3s ease-in-out;
-                animation-fill-mode: both;
-            }
         }
     }
 }
