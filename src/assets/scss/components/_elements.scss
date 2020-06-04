@@ -34,6 +34,38 @@
         color: $white;
     }
 }
+.btn-detail{
+    width: 70%;
+    font-size: 1.6rem;
+    padding: 10px;
+    border: 1px solid $blue;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    @media screen and (max-width: $smart-phone){
+        width: 100%;
+        padding: 10px 20px 10px 30px;
+        text-align: left;
+    }
+    &::after{
+        content: '';
+        width: 20px;
+        height: 20px;
+        color: $blue;
+        position: absolute;
+        right: 10px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        border: 2px solid;
+        border-color: $blue $blue transparent transparent;
+        transform: rotate(45deg);
+        @media screen and (max-width: $smart-phone){
+            width: 8px;
+            height: 8px;
+        }
+    }
+}
 
 /* ==== title ====*/
 .section-padding{
@@ -117,5 +149,43 @@
         &::before {
             width: 12px;
         }
+    }
+}
+.title-gray{
+    color: $white;
+    font-size: calc(1.5rem + .7vw);
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    @media screen and (max-width: $smart-phone){
+        height: auto;
+        padding: 30px 10px;
+        line-height: 1.5em;
+        font-size: 2.5rem;
+    }
+}
+.title-borderbottom{
+    color: $blue;
+    font-weight: 700;
+    font-size: 2.6rem;
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+    @media screen and (max-width: $smart-phone){
+        font-size: 2.2rem;
+        margin: 0 -20px 50px;
+    }
+    &::after{
+        position: absolute;
+        content: '';
+        width: 50px;
+        height: 3px;
+        bottom: -20px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background-color: $blue;
     }
 }

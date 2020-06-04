@@ -16,6 +16,8 @@ import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import { PhilosophyComponent } from './about/philosophy/philosophy.component';
+import { BusinessFieldComponent } from './business-field/business-field.component';
+import { HeaderComponent } from './business-field/header/header.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { PhilosophyComponent } from './about/philosophy/philosophy.component';
     HistoryComponent,
     AboutHeaderComponent,
     FounderComponent,
-    PhilosophyComponent
+    PhilosophyComponent,
+    BusinessFieldComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
