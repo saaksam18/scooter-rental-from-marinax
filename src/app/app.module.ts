@@ -12,6 +12,8 @@ import { AboutHeaderComponent } from './about/about-header/about-header.componen
 import { FounderComponent } from './about/founder/founder.component';
 import { PhilosophyComponent } from './about/philosophy/philosophy.component';
 import { CorporateInfoComponent } from './about/corporate-info/corporate-info.component';
+import { BusinessFieldComponent } from './business-field/business-field.component';
+import { HeaderComponent } from './business-field/header/header.component';
 
 // import ngx-translate and the http loader
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
@@ -29,7 +31,9 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
     AboutHeaderComponent,
     FounderComponent,
     PhilosophyComponent,
-    CorporateInfoComponent
+    CorporateInfoComponent,
+    BusinessFieldComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
