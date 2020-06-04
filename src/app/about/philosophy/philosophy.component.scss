@@ -29,66 +29,6 @@
         width: 100%;
         padding: 7vw 7vw 5vw;
     }
-    &__title{
-        margin: 0 0 3vw;
-        h3{
-            font-size: calc(1.6rem + .5vw);
-            line-height: 1.5em;
-            color: $blue;
-            position: relative;
-            transition: .5s all ease .1s;
-            padding-top: .4em;
-            @media screen and (max-width: $smart-phone){
-                font-size: 1.6rem;
-            }
-            &::before{
-                content: '';
-                width: 0px;
-                height: 100%;
-                background: $blue;
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                transition: .5s all ease .1s;
-            }
-            &::after{
-                content: '';
-                width: 100%;
-                height: 1px;
-                background-color: $blue;
-                display: block;
-                margin-top: .4em;
-                margin-left: -8px;
-            }
-            span{
-                color: $blue;
-                font-weight: 600;
-                font-size: 3.8rem;
-                line-height: 2em;
-                // text-align: center;
-                // text-align-last: left;
-                letter-spacing: .3em;
-                display: block;
-                @media screen and (max-width: $smart-phone){
-                    // text-align-last: left;
-                    letter-spacing: .3em;
-                    display: block;
-                    font-size: 2rem;
-                }
-            }
-        }
-    }
-    .is-show h3 {
-        padding-left: 20px;
-        &::before {
-            width: 12px;
-        }
-        &::after {
-            width: calc(100% + 8px);
-            margin-left: -8px;
-            transition: .5s all ease .1s;
-        }
-    }
     &__bluetitle{
         color: $blue;
         font-weight: 600;

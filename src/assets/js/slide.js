@@ -45,9 +45,9 @@ $(document).ready(function(){
       });
     });
 
-    // animatin page philosophy
+    // animatin title with border left
     $(window).on("load scroll resize", function(){
-      $(".philosophy__title").each(function(){
+      $(".title-borderleft").each(function(){
         var imgPos = $(this).offset().top;
         var scroll = $(window).scrollTop();
         var windowHeight = $(window).height();
