@@ -1,0 +1,167 @@
+@import '../../../assets/scss/components/variables';
+.outline {
+    &__content {
+        width: 100%;
+        padding: 7vw 7vw 5vw;
+    }
+    &__list {
+        table {
+            width: 100%;
+            margin-bottom: 20px;
+            border-top: 3px solid $blue;
+            border-bottom: 3px solid $blue;
+            border-left: 1px solid $blue;
+            th, td {
+                font-size: 14px;
+                padding: 10px;
+                vertical-align: middle;
+                @media screen and (max-width: $smart-phone) {
+                    display: block;
+                }
+            }
+            th {
+                width: 20%;
+                text-align: center;
+                font-weight: 700;
+                color: $white;
+                background-color: $blue;
+                border-right: 1px solid $white;
+                border-bottom: 1px solid $white;
+                @media screen and (max-width: $smart-phone) {
+                    width: 100%;
+                    border-right: 1px solid $blue;
+                    border-bottom: 0;
+                    border-top: 0;
+                }
+            }
+            td {
+                width: 80%;
+                color: $black;
+                text-align: left;
+                background-color: $white;
+                border-top: 1px solid $blue;
+                border-right: 1px solid $blue;
+                @media screen and (max-width: $smart-phone) {
+                    width: 100%;
+                    border-right: 1px solid $blue;
+                }
+                p {
+                    font-size: 1.3rem;
+                    margin-bottom: 4vh;
+                    line-height: 1.7em;
+                }
+            }
+        }
+        dl {
+            display: flex;
+            margin-bottom: 0;
+            @media screen and (max-width: $smart-phone) {
+                flex-wrap: wrap;
+                margin-bottom: 10px;
+                justify-content: flex-start;
+            }
+            dt {
+                font-weight: 400;
+                min-width: 9em;
+                margin-right: 1em;
+                @media screen and (max-width: $smart-phone) {
+                    width: 100%;
+                    font-weight: 700;
+                    font-size: 1.2rem;
+                }
+            }
+            dd {
+                min-width: 6em;
+                margin-bottom: 0;
+                + dd {
+                    margin-left: 1em;
+                    @media screen and (max-width: $smart-phone) {
+                        margin-left: 20px;
+                    }
+                }
+                span {
+                    display: inline-block;
+                    @media screen and (max-width: $smart-phone) {
+                        display: block;
+                    }
+                    + span {
+                        margin-left: 15px;
+                        @media screen and (max-width: $smart-phone) {
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__map {
+        iframe {
+            height: 450px;
+            @media screen and (max-width: $smart-phone) {
+                height: 250px;
+            }
+        }
+        &--btn {
+            display: flex;
+            margin: 30px auto;
+            justify-content: center;
+            a {
+                color: $white;
+                background-color: $blue;
+                text-align: center;
+                padding: 5px;
+                border-radius: 2px;
+                width: 300px;
+                font-size: 1.2rem;
+                + a {
+                    margin-left: 10px;
+                }
+            }
+        }
+        &--access {
+            width: 48%;
+            margin-top: 30px;
+            .title {
+                display: block;
+                font-weight: 700;
+                color: $blue;
+                margin: 1em 0 .2em;
+                font-size: 1.7rem;
+                border-bottom: 1px solid $blue;
+            }
+            @media screen and (max-width: $smart-phone) {
+                width: 100%;
+            }
+        }
+    }
+    &__pdf {
+        &--btn {
+            margin: 10px 0 20px;
+            a {
+                display: flex;
+                align-items: center;
+                -webkit-justify-content: flex-start;
+                justify-content: flex-start;
+                width: 100%;
+                min-height: 60px;
+                padding: 10px 85px 10px 20px;
+                background-color: $blue;
+                position: relative;
+                color: $white;
+                text-decoration: underline;
+                font-size: 1.6rem;
+                border: 2px solid $blue;
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 65px;
+                    height: 100%;
+                    background: url("../../../assets/images/outline/link_btn_icon_pdf.png") no-repeat center center $blue004;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+            }
+        }
+    }
+}
