@@ -12,8 +12,9 @@ body {
     font-weight: 400;
     line-height: 1.8em;
     letter-spacing: .1em;
-    background: $white;
+    background-color: $white;
     font-feature-settings: "palt";
+    -webkit-font-smoothing: antialiased;
 }
 ul{
     padding: 0;
@@ -24,6 +25,12 @@ ul{
 }
 a:hover{
     text-decoration: none;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    opacity: .7;
 }
 img{
     max-width: 100%;
