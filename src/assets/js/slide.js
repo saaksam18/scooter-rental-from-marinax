@@ -44,4 +44,17 @@ $(document).ready(function(){
         }
       });
     });
+
+    // animatin page philosophy
+    $(window).on("load scroll resize", function(){
+      $(".philosophy__title").each(function(){
+        var imgPos = $(this).offset().top;
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        $(this).removeClass("is-show");
+        if (scroll > imgPos - windowHeight + windowHeight / 4){
+          $(this).addClass("is-show");
+        }
+      });
+    });
 });

@@ -1,0 +1,135 @@
+@import '../../../assets/scss/components/variables';
+.pagetitle{
+    color: $white;
+    font-size: calc(1.5rem + .7vw);
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    @media screen and (max-width: $smart-phone){
+        height: auto;
+        line-height: 1.5em;
+        font-size: 2.5rem;
+        padding: 30px 10px;
+    }
+}
+.page-des{
+    width: 84%;
+    color: $white;
+    font-size: 1.4rem;
+    line-height: 1.9em;
+    letter-spacing: .05em;
+    text-align: left;
+    padding-bottom: 20px;
+    margin: 0 auto;
+}
+.philosophy{
+    &__content{
+        width: 100%;
+        padding: 7vw 7vw 5vw;
+    }
+    &__title{
+        margin: 0 0 3vw;
+        h3{
+            font-size: calc(1.6rem + .5vw);
+            line-height: 1.5em;
+            color: $blue;
+            position: relative;
+            transition: .5s all ease .1s;
+            padding-top: .4em;
+            @media screen and (max-width: $smart-phone){
+                font-size: 1.6rem;
+            }
+            &::before{
+                content: '';
+                width: 0px;
+                height: 100%;
+                background: $blue;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                transition: .5s all ease .1s;
+            }
+            &::after{
+                content: '';
+                width: 100%;
+                height: 1px;
+                background-color: $blue;
+                display: block;
+                margin-top: .4em;
+                margin-left: -8px;
+            }
+            span{
+                color: $blue;
+                font-weight: 600;
+                font-size: 3.8rem;
+                line-height: 2em;
+                // text-align: center;
+                // text-align-last: left;
+                letter-spacing: .3em;
+                display: block;
+                @media screen and (max-width: $smart-phone){
+                    // text-align-last: left;
+                    letter-spacing: .3em;
+                    display: block;
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+    .is-show h3 {
+        padding-left: 20px;
+        &::before {
+            width: 12px;
+        }
+        &::after {
+            width: calc(100% + 8px);
+            margin-left: -8px;
+            transition: .5s all ease .1s;
+        }
+    }
+    &__bluetitle{
+        color: $blue;
+        font-weight: 600;
+        letter-spacing: .4em;
+        font-size: 3.8rem;
+        line-height: 2em;
+        text-align: center;
+        margin: 0 auto 10vh;
+        @media screen and (max-width: $smart-phone){
+            letter-spacing: .3em;
+            font-size: 2.8rem;
+            span{
+                display: block;
+            }
+        }
+    }
+    &__section{
+        margin: 0 auto 10vh;
+    }
+    &__list{
+        padding: 80px 10px 30px;
+        li{
+            @media screen and (max-width: $smart-phone){
+                margin-bottom: 50px;
+            }
+            &:last-child{
+                @media screen and (max-width: $smart-phone){
+                    margin-bottom: 0px;
+                }
+            }
+            p{
+                font-size: 3.6rem;
+                margin-bottom: 0;
+                span {
+                    color: $blue;
+                }
+            }
+            .jp-text{
+                font-size: 1.6rem;
+                margin-top: 20px;
+            }
+        }
+    }
+}
