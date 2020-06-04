@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Meta ,Title } from '@angular/platform-browser';
+import { TranslateService ,LangChangeEvent } from '@ngx-translate/core';
+import { Router } from '@angular/router';
 import $ from 'jquery';
 
 @Component({
@@ -8,7 +11,23 @@ import $ from 'jquery';
 })
 export class FounderComponent implements OnInit {
 
-	constructor() { }
+	title = this.translate.get('Founder').subscribe((res: string) => {
+		this.pageTitle.setTitle(res);
+	});
+	constructor(
+		private meta: Meta,
+		private pageTitle: Title,
+		private translate: TranslateService,
+		private router: Router
+	) {
+		if(this.router.url === '/founder'){
+			translate.onLangChange.subscribe((event: LangChangeEvent) => {
+				translate.get('Founder').subscribe((res: string) => {
+				this.pageTitle.setTitle(res);
+				});
+			});
+		}
+	}
 
 	ngOnInit() {
 		var accordion = "close";
