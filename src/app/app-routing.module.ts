@@ -5,6 +5,7 @@ import { AboutComponent } from './about/about.component';
 import { HistoryComponent } from './about/history/history.component';
 import { FounderComponent } from './about/founder/founder.component';
 import { PhilosophyComponent } from './about/philosophy/philosophy.component';
+import { CorporateInfoComponent } from './about/corporate-info/corporate-info.component';
 
 const routes: Routes = [
 	{
@@ -32,7 +33,12 @@ const routes: Routes = [
 			{
 				path: 'philosophy', 
 				component: PhilosophyComponent,
-				pathMatch: 'full', 
+				pathMatch: 'full'
+			},
+			{
+				path: 'outline', 
+				component: CorporateInfoComponent,
+				pathMatch: 'full'
 			}
 		]
 	},
