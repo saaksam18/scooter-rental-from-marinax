@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { HistoryComponent } from './about/history/history.component';
 import { FounderComponent } from './about/founder/founder.component';
+import { PhilosophyComponent } from './about/philosophy/philosophy.component';
 
 const routes: Routes = [
 	{
@@ -26,6 +27,11 @@ const routes: Routes = [
 			{
 				path: 'founder', 
 				component: FounderComponent,
+				pathMatch: 'full', 
+			},
+			{
+				path: 'philosophy', 
+				component: PhilosophyComponent,
 				pathMatch: 'full', 
 			}
 		]

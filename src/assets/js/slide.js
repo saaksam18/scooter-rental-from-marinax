@@ -44,4 +44,17 @@ $(document).ready(function(){
         }
       });
     });
+
+    // animatin title with border left
+    $(window).on("load scroll resize", function(){
+      $(".title-borderleft").each(function(){
+        var imgPos = $(this).offset().top;
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        $(this).removeClass("is-show");
+        if (scroll > imgPos - windowHeight + windowHeight / 4){
+          $(this).addClass("is-show");
+        }
+      });
+    });
 });
