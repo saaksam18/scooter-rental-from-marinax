@@ -7,6 +7,7 @@ import { FounderComponent } from './about/founder/founder.component';
 import { PhilosophyComponent } from './about/philosophy/philosophy.component';
 import { CorporateInfoComponent } from './about/corporate-info/corporate-info.component';
 import { BusinessFieldComponent } from './business-field/business-field.component';
+import { SitemapComponent } from './sitemap/sitemap.component';
 
 const routes: Routes = [
 	{
@@ -46,6 +47,10 @@ const routes: Routes = [
 	{
 		path: 'business-field',
 		component: BusinessFieldComponent
+	},
+	{
+		path: 'sitemap',
+		component: SitemapComponent
 	}
 ];
 
