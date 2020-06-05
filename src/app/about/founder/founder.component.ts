@@ -11,7 +11,7 @@ import $ from 'jquery';
 })
 export class FounderComponent implements OnInit {
 
-	title = this.translate.get('Founder').subscribe((res: string) => {
+	title = this.translate.get("Founder's story|About us|KAGA ELECTRONICS CO.,LTD.").subscribe((res: string) => {
 		this.pageTitle.setTitle(res);
 	});
 	constructor(
