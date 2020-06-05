@@ -176,6 +176,22 @@
     }
 }
 
+.bluetitle-noborder{
+    color: $blue;
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    padding-bottom: 25px;
+    margin-bottom: 20px;
+    @media screen and (max-width: $smart-phone){
+        span{
+            display: block;
+            margin-bottom: 10px;
+        }
+    }
+}
+
 /* ==== content sub-page ==== */
 .content {
     &__pagetitle{

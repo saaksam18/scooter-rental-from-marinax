@@ -19,6 +19,7 @@ import { PhilosophyComponent } from './about/philosophy/philosophy.component';
 import { CorporateInfoComponent } from './about/corporate-info/corporate-info.component';
 import { BusinessFieldComponent } from './business-field/business-field.component';
 import { HeaderComponent } from './business-field/header/header.component';
+import { SemiconductorComponent } from './business-field/semiconductor/semiconductor.component';
 import { SitemapComponent } from './sitemap/sitemap.component';
 
 @NgModule({
@@ -35,6 +36,7 @@ import { SitemapComponent } from './sitemap/sitemap.component';
     CorporateInfoComponent,
     BusinessFieldComponent,
     HeaderComponent,
+    SemiconductorComponent,
     SitemapComponent
   ],
   imports: [

@@ -17,9 +17,8 @@ a:hover{
         padding: 70px 0 0;
     }
     &__movie{
-        width: 100%;
         min-height: 100vh;
-        min-width: 100vw;
+        min-width: 100%;
         transition: all .3s ease;
         position: absolute;
         z-index: -1;
