@@ -11,6 +11,7 @@ import { SemiconductorComponent } from './business-field/semiconductor/semicondu
 import { SitemapComponent } from './sitemap/sitemap.component';
 import { EmsComponent } from './business-field/ems/ems.component';
 import { ProductInfoComponent } from './business-field/product-info/product-info.component';
+import { NewbusinessComponent } from './business-field/newbusiness/newbusiness.component';
 
 const routes: Routes = [
 	{
@@ -70,6 +71,11 @@ const routes: Routes = [
 				component: ProductInfoComponent,
 				pathMatch: 'full'
 			},
+			{ 
+				path: 'newbusiness',
+				component: NewbusinessComponent,
+				pathMatch: 'full'
+			}
 		]
 	},
 	{
