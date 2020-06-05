@@ -19,6 +19,7 @@ import { HeaderComponent } from './business-field/header/header.component';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
+import { SemiconductorComponent } from './business-field/semiconductor/semiconductor.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
     PhilosophyComponent,
     CorporateInfoComponent,
     BusinessFieldComponent,
-    HeaderComponent
+    HeaderComponent,
+    SemiconductorComponent
   ],
   imports: [
     BrowserModule,

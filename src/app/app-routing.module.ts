@@ -7,6 +7,7 @@ import { FounderComponent } from './about/founder/founder.component';
 import { PhilosophyComponent } from './about/philosophy/philosophy.component';
 import { CorporateInfoComponent } from './about/corporate-info/corporate-info.component';
 import { BusinessFieldComponent } from './business-field/business-field.component';
+import { SemiconductorComponent } from './business-field/semiconductor/semiconductor.component';
 
 const routes: Routes = [
 	{
@@ -45,7 +46,18 @@ const routes: Routes = [
 	},
 	{
 		path: 'business-field',
-		component: BusinessFieldComponent
+		children: [
+			{ 
+				path: '', 
+				component: BusinessFieldComponent, 
+				pathMatch: 'full'
+			},
+			{ 
+				path: 'semiconductor', 
+				component: SemiconductorComponent, 
+				pathMatch: 'full'
+			},
+		]
 	}
 ];
 
