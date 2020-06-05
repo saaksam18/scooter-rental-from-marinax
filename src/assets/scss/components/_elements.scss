@@ -215,6 +215,9 @@
     &__wrap {
         width: 100%;
         padding: 7vw 7vw 5vw;
+        @media screen and (max-width: $smart-phone){
+            padding: 30px;
+        }
         .content-section {
             margin: 0 auto 10vh;
         }
