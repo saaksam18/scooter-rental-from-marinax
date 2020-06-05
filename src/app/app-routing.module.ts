@@ -63,12 +63,17 @@ const routes: Routes = [
 	{
 		path: 'sitemap',
 		component: SitemapComponent
+	},
+	{
+		path: '**',
+		redirectTo: '/'
 	}
 ];
 
 @NgModule({
 	imports: [RouterModule.forRoot(routes, {
 		useHash: false,
+		scrollPositionRestoration: 'enabled',
 	})],
 	exports: [RouterModule]
 })

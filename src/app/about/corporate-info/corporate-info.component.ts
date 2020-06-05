@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class CorporateInfoComponent implements OnInit {
 
-  title = this.translate.get('Corporate Info').subscribe((res: string) => {
+  title = this.translate.get('Corporate information|About us|KAGA ELECTRONICS CO.,LTD.').subscribe((res: string) => {
     this.pageTitle.setTitle(res);
   });
   constructor(
