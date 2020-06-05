@@ -22,6 +22,7 @@ import { HeaderComponent } from './business-field/header/header.component';
 import { SemiconductorComponent } from './business-field/semiconductor/semiconductor.component';
 import { SitemapComponent } from './sitemap/sitemap.component';
 import { EmsComponent } from './business-field/ems/ems.component';
+import { ProductInfoComponent } from './business-field/product-info/product-info.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { EmsComponent } from './business-field/ems/ems.component';
     HeaderComponent,
     SemiconductorComponent,
     SitemapComponent,
-    EmsComponent
+    EmsComponent,
+    ProductInfoComponent
   ],
   imports: [
     BrowserModule,

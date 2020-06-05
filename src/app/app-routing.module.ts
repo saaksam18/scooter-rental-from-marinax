@@ -10,6 +10,7 @@ import { BusinessFieldComponent } from './business-field/business-field.componen
 import { SemiconductorComponent } from './business-field/semiconductor/semiconductor.component';
 import { SitemapComponent } from './sitemap/sitemap.component';
 import { EmsComponent } from './business-field/ems/ems.component';
+import { ProductInfoComponent } from './business-field/product-info/product-info.component';
 
 const routes: Routes = [
 	{
@@ -62,6 +63,11 @@ const routes: Routes = [
 			{ 
 				path: 'ems',
 				component: EmsComponent,
+				pathMatch: 'full'
+			},
+			{ 
+				path: 'product-info',
+				component: ProductInfoComponent,
 				pathMatch: 'full'
 			},
 		]
