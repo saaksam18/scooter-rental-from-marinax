@@ -8,6 +8,7 @@ import { PhilosophyComponent } from './about/philosophy/philosophy.component';
 import { CorporateInfoComponent } from './about/corporate-info/corporate-info.component';
 import { BusinessFieldComponent } from './business-field/business-field.component';
 import { SemiconductorComponent } from './business-field/semiconductor/semiconductor.component';
+import { SitemapComponent } from './sitemap/sitemap.component';
 
 const routes: Routes = [
 	{
@@ -58,6 +59,10 @@ const routes: Routes = [
 				pathMatch: 'full'
 			},
 		]
+	},
+	{
+		path: 'sitemap',
+		component: SitemapComponent
 	}
 ];
 
