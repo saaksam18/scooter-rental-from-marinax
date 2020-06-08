@@ -431,38 +431,6 @@
                 margin-right: 0px;
             }
         }
-        .form-search {
-            margin-top: 1em;
-            button {
-                padding: 7px 10px;
-                border-color: $blue;
-                background-color: $blue;
-                background-image: none;
-                filter: none;
-            }
-            svg {
-                fill: $white;
-            }
-            input {
-                margin-right: 5px;
-                font-size: 16px;
-                line-height: 1em;
-                width: 100%;
-                overflow: hidden;
-                border: 1px solid $white002;
-                border-radius: 2px;
-                &:focus{
-                    outline: none;
-                }
-            }
-            .clear-text {
-                position: absolute;
-                right: 45px;
-                top: 5%;
-                color: $light-purple;
-                cursor: pointer;
-            }
-        }
         .contact {
             font-weight: 700;
             margin: 15px 0 0;
