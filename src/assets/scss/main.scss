@@ -125,7 +125,9 @@ img{
         }
     }
     .content{
-        @media screen and (min-width: $smart-phone) { 
+        width: 85vw;
+        margin: 0 0 0 15vw;
+        @media screen and (max-width: 1466px) and (min-width:  $smart-phone) {
             width: calc(100% - 220px);
             margin: 0 0 0 220px;
         }
@@ -136,24 +138,38 @@ img{
     }
 }
 
-// popup result search
+// sidebar search
 .form-search {
     margin-top: 1em;
     .gsc-results-wrapper-overlay {
         left: 10vw;
         width: 80vw;
+        @media screen and (max-width: $smart-phone) {
+            height: 80vh;
+            top: 100%;
+        }
     }
     .gsc-search-button-v2 {
         padding: 7px 10px;
         margin-top: -2px;
         line-height: 1em;
         margin-left: 2px;
+        @media screen and (max-width: $smart-phone) {
+            margin: 0;
+            border-radius: 2px;
+        }
         svg {
             fill: $white;
         }
     }
+    .gsc-control-cse {
+        padding: 0;
+    }
     .gsib_a {
         line-height: 1em;
+        @media screen and (max-width: $smart-phone) {
+            padding: 6px 9px;
+        }
     }
     .gsc-search-button-v2,
     .gsc-search-button-v2:hover,
@@ -164,10 +180,23 @@ img{
         filter: none;
     }
     .gsc-control-cse {
-        padding: 0;
-    }
-    .gsc-control-cse {
         border-color: transparent;
         background-color: transparent;
+    }
+    @media screen and (max-width: $smart-phone) {
+        .gsc-modal-background-image-visible {
+            height: 100vh;
+            top: 100%;
+        }
+        .gsc-input-box,
+        .gsc-control-cse {
+            padding: 0; 
+        }
+        .gsc-input-box {
+            border-radius: 2px;
+        }
+        .gsc-input {
+            padding-right: 12px !important;
+        }
     }
 }
