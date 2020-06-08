@@ -54,5 +54,73 @@ $(document).ready(function () {
 			  $(this).addClass("is-show");
 			}
 		});
+		if( $(window).width() <= 768 ) {
+			$("ul.parent-menu > li ").click(function() {
+				$(this).find(">a:first-child").toggleClass("is-active");
+				$(this).children(".sub-menu").toggleClass("is-active");
+			})
+		}
+	});
+	
+	$(".sidebar__logo a ").click(function(){
+		$("#content-menu").toggleClass("show");
+		$(".menu-icon").removeClass("active");
+	});
+	
+	$(".menu-icon").click(function(){
+		$(this).toggleClass("active");
+		$("#content-menu").toggleClass("show");
+	});
+
+
+	$("ul.parent-menu > li ").each(function(){
+		$(this).mouseenter(function(){
+			$(this).children(".sub-menu").css("visibility","visible");
+		});
+	
+		$(this).mouseleave(function(){
+			$(this).children(".sub-menu").css("visibility","hidden");
+		});
+
+		if($(this).find(".sub-menu").length > 0){
+			$(this).find(">a:first-child").addClass("pointer-event");
+			$(this).click(function(){
+				$(this).children(".sub-menu").css("visibility","hidden");
+			});
+		}else {
+			$(this).click(function(){
+				$("#content-menu").removeClass("show");
+				$(".menu-icon").removeClass("active");
+				$("ul.parent-menu").find(".is-active").removeClass("is-active");
+				$(this).next(".sub-menu").removeClass("is-active");
+			});
+		}
+
+	});
+
+
+	$(".sub-menu ul li").click(function(){
+		$("#content-menu").removeClass("show");
+		$(".menu-icon").removeClass("active");
+		$(".sub-menu").css("visibility","hidden");
+		$(this).find(".is-active").parents().toggleClass("is-active");
+	});
+
+	// change font-size
+	$(".text-size .text-size__s").click(function(){
+		$(this).addClass("active");
+		$(".text-size .text-size__m").removeClass("active");
+		$("html").css("font-size","62.5%");
+	});
+	$(".text-size .text-size__m").click(function(){
+		$(this).addClass("active");
+		$(".text-size .text-size__s").removeClass("active");
+		$("html").css("font-size","72%");
+	});
+
+	// change langauge 
+	$(".text-translate li").on("click", function(){
+		$(".text-translate li").removeClass("active");
+		$(this).addClass("active");	
 	});
 });
