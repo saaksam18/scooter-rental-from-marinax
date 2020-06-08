@@ -21,6 +21,9 @@ import { BusinessFieldComponent } from './business-field/business-field.componen
 import { HeaderComponent } from './business-field/header/header.component';
 import { SemiconductorComponent } from './business-field/semiconductor/semiconductor.component';
 import { SitemapComponent } from './sitemap/sitemap.component';
+import { EmsComponent } from './business-field/ems/ems.component';
+import { ProductInfoComponent } from './business-field/product-info/product-info.component';
+import { NewbusinessComponent } from './business-field/newbusiness/newbusiness.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +40,10 @@ import { SitemapComponent } from './sitemap/sitemap.component';
     BusinessFieldComponent,
     HeaderComponent,
     SemiconductorComponent,
-    SitemapComponent
+    SitemapComponent,
+    EmsComponent,
+    ProductInfoComponent,
+    NewbusinessComponent
   ],
   imports: [
     BrowserModule,

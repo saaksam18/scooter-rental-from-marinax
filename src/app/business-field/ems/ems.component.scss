@@ -1,0 +1,45 @@
+@import '../../../assets/scss/components/variables';
+.top-banner{
+    background: url('../../../assets/images/ems/mainvisual-b_6.jpg') no-repeat center center;
+}
+.ems-title{
+    font-size: 100%;
+    line-height: 1.8;
+    color: $white;
+    font-weight: 700;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    background-color: $blue;
+}
+.ems-map{
+    border: 1px solid $blue;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.emsmap-btn{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 60px;
+    padding: 10px 85px 10px 20px;
+    background: $blue;
+    margin: 10px 0 20px;
+    position: relative;
+    color: $white;
+    text-decoration: underline;
+    font-size: 1.6rem;
+    border: 2px solid $blue;
+    &::after{
+        content: '';
+        width: 65px;
+        height: 100%;
+        background: url('../../../assets/images/ems/link_btn_icon.png') no-repeat center center #2080cf;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}

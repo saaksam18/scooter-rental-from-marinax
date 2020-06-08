@@ -9,6 +9,9 @@ import { CorporateInfoComponent } from './about/corporate-info/corporate-info.co
 import { BusinessFieldComponent } from './business-field/business-field.component';
 import { SemiconductorComponent } from './business-field/semiconductor/semiconductor.component';
 import { SitemapComponent } from './sitemap/sitemap.component';
+import { EmsComponent } from './business-field/ems/ems.component';
+import { ProductInfoComponent } from './business-field/product-info/product-info.component';
+import { NewbusinessComponent } from './business-field/newbusiness/newbusiness.component';
 
 const routes: Routes = [
 	{
@@ -19,19 +22,19 @@ const routes: Routes = [
 		path: 'about',
 		children: [
 			{ 
-				path: '', 
-				component: AboutComponent, 
+				path: '',
+				component: AboutComponent,
 				pathMatch: 'full'
 			},
 			{ 
-				path: 'history', 
+				path: 'history',
 				component: HistoryComponent,
-				pathMatch: 'full', 
+				pathMatch: 'full',
 			},
 			{
-				path: 'founder', 
+				path: 'founder',
 				component: FounderComponent,
-				pathMatch: 'full', 
+				pathMatch: 'full',
 			},
 			{
 				path: 'philosophy', 
@@ -49,15 +52,30 @@ const routes: Routes = [
 		path: 'business-field',
 		children: [
 			{ 
-				path: '', 
-				component: BusinessFieldComponent, 
+				path: '',
+				component: BusinessFieldComponent,
 				pathMatch: 'full'
 			},
 			{ 
-				path: 'semiconductor', 
-				component: SemiconductorComponent, 
+				path: 'semiconductor',
+				component: SemiconductorComponent,
 				pathMatch: 'full'
 			},
+			{ 
+				path: 'ems',
+				component: EmsComponent,
+				pathMatch: 'full'
+			},
+			{ 
+				path: 'product-info',
+				component: ProductInfoComponent,
+				pathMatch: 'full'
+			},
+			{ 
+				path: 'newbusiness',
+				component: NewbusinessComponent,
+				pathMatch: 'full'
+			}
 		]
 	},
 	{
