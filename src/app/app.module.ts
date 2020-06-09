@@ -24,6 +24,7 @@ import { SitemapComponent } from './sitemap/sitemap.component';
 import { EmsComponent } from './business-field/ems/ems.component';
 import { ProductInfoComponent } from './business-field/product-info/product-info.component';
 import { NewbusinessComponent } from './business-field/newbusiness/newbusiness.component';
+import { EmsItemComponent } from './business-field/ems/ems-item/ems-item.component';
 import { ItemComponent } from './business-field/product-info/item/item.component';
 import { SemiconductorItemComponent } from './business-field/semiconductor/semiconductor-item/semiconductor-item.component';
 
@@ -46,6 +47,7 @@ import { SemiconductorItemComponent } from './business-field/semiconductor/semic
     EmsComponent,
     ProductInfoComponent,
     NewbusinessComponent,
+    EmsItemComponent,
     ItemComponent,
     SemiconductorItemComponent
   ],
