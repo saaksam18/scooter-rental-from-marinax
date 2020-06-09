@@ -144,9 +144,20 @@ img{
     .gsc-results-wrapper-overlay {
         left: 10vw;
         width: 80vw;
+        top: 0;
+        bottom: 0;
         @media screen and (max-width: $smart-phone) {
             height: 80vh;
             top: 100%;
+            bottom: auto;
+        }
+    }
+    .gsc-modal-background-image-visible {
+        width: 100vw;
+        left: 0;
+        @media screen and (max-width: $smart-phone) {
+            height: 100vh;
+            top: 0;
         }
     }
     .gsc-search-button-v2 {
@@ -171,6 +182,11 @@ img{
             padding: 6px 9px;
         }
     }
+    .gsst_a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .gsc-search-button-v2,
     .gsc-search-button-v2:hover,
     .gsc-search-button-v2:focus{
@@ -183,11 +199,10 @@ img{
         border-color: transparent;
         background-color: transparent;
     }
+    .gsc-input {
+        padding-right: 5px !important;
+    }
     @media screen and (max-width: $smart-phone) {
-        .gsc-modal-background-image-visible {
-            height: 100vh;
-            top: 100%;
-        }
         .gsc-input-box,
         .gsc-control-cse {
             padding: 0; 
