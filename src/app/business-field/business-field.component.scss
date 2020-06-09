@@ -39,9 +39,6 @@
                     text-shadow: 0 1px 2px rgba(0,0,0,.2);
                     @media screen and (max-width: $smart-phone){
                         font-size: 1.6rem;
-                        br{
-                            display: none;
-                        }
                     }
                     &::after{
                         content: '';
@@ -68,11 +65,7 @@
             }
         }
     }
-    &__content{
-        padding: 7vw 7vw 5vw;
-    }
     &__section{
-        margin-bottom: 10vh;
         &--img{
             margin-bottom: 40px;
             box-shadow: 0 2px 4px rgba(0,0,0,.18);
@@ -85,11 +78,6 @@
                 font-weight: 700;
                 font-size: 2rem;
                 margin-bottom: 14px;
-                @media screen and (max-width: $smart-phone){
-                    br{
-                        display: none;
-                    }
-                }
             }
         }
     }

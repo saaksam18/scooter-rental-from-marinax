@@ -149,6 +149,7 @@ a:hover{
             p{
                 width: 68%;
                 line-height: 1.6em;
+                margin-bottom: 0;
                 @media screen and (max-width: $smart-phone){
                     width: 100%;      
                 }

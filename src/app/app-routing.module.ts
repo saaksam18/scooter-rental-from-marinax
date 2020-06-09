@@ -14,6 +14,7 @@ import { ProductInfoComponent } from './business-field/product-info/product-info
 import { NewbusinessComponent } from './business-field/newbusiness/newbusiness.component';
 import { ItemComponent } from './business-field/product-info/item/item.component';
 import { SemiconductorItemComponent } from './business-field/semiconductor/semiconductor-item/semiconductor-item.component';
+import { EmsItemComponent } from './business-field/ems/ems-item/ems-item.component';
 
 const routes: Routes = [
 	{
@@ -75,8 +76,18 @@ const routes: Routes = [
 			},
 			{ 
 				path: 'ems',
-				component: EmsComponent,
-				pathMatch: 'full'
+				children:[
+					{
+						path: '',
+						component: EmsComponent,
+						pathMatch: 'full'
+					},
+					{
+						path: 'item',
+						component: EmsItemComponent,
+						pathMatch: 'full'
+					}
+				]
 			},
 			{ 
 				path: 'product-info',
