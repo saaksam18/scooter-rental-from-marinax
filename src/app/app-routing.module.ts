@@ -15,7 +15,7 @@ import { NewbusinessComponent } from './business-field/newbusiness/newbusiness.c
 import { ItemComponent } from './business-field/product-info/item/item.component';
 import { SemiconductorItemComponent } from './business-field/semiconductor/semiconductor-item/semiconductor-item.component';
 import { EmsItemComponent } from './business-field/ems/ems-item/ems-item.component';
-
+import { MapComponent } from './about/corporate-info/map/map.component'
 const routes: Routes = [
 	{
 		path: '',
@@ -45,9 +45,19 @@ const routes: Routes = [
 				pathMatch: 'full'
 			},
 			{
-				path: 'outline', 
-				component: CorporateInfoComponent,
-				pathMatch: 'full'
+				path: 'outline',
+				children:[
+					{
+						path: '',
+						component: CorporateInfoComponent,
+						pathMatch: 'full'
+					},
+					{
+						path: 'map',
+						component: MapComponent,
+						pathMatch: 'full'
+					}
+				]
 			}
 		]
 	},
