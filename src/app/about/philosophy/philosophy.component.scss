@@ -25,10 +25,6 @@
     margin: 0 auto;
 }
 .philosophy{
-    &__content{
-        width: 100%;
-        padding: 7vw 7vw 5vw;
-    }
     &__bluetitle{
         color: $blue;
         font-weight: 600;
@@ -44,9 +40,6 @@
                 display: block;
             }
         }
-    }
-    &__section{
-        margin: 0 auto 10vh;
     }
     &__list{
         padding: 80px 10px 30px;

@@ -73,11 +73,6 @@
         line-height: 1.7;
         font-weight: 700;
         margin-bottom: 20px;
-        @media screen and (max-width: $smart-phone){
-            br{
-                display: none;
-            }
-        }
     }
     dd{
         font-size: 1.4rem;
