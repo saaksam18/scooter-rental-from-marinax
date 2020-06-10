@@ -2,45 +2,7 @@
 .outline {
     &__list {
         table {
-            width: 100%;
-            margin-bottom: 20px;
-            border-top: 3px solid $blue;
-            border-bottom: 3px solid $blue;
-            border-left: 1px solid $blue;
-            th, td {
-                font-size: 14px;
-                padding: 10px;
-                vertical-align: middle;
-                @media screen and (max-width: $smart-phone) {
-                    display: block;
-                }
-            }
-            th {
-                width: 20%;
-                text-align: center;
-                font-weight: 700;
-                color: $white;
-                background-color: $blue;
-                border-right: 1px solid $white;
-                border-bottom: 1px solid $white;
-                @media screen and (max-width: $smart-phone) {
-                    width: 100%;
-                    border-right: 1px solid $blue;
-                    border-bottom: 0;
-                    border-top: 0;
-                }
-            }
             td {
-                width: 80%;
-                color: $black;
-                text-align: left;
-                background-color: $white;
-                border-top: 1px solid $blue;
-                border-right: 1px solid $blue;
-                @media screen and (max-width: $smart-phone) {
-                    width: 100%;
-                    border-right: 1px solid $blue;
-                }
                 p {
                     font-size: 1.3rem;
                     margin-bottom: 4vh;
