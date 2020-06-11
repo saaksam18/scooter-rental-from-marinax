@@ -1,19 +1,5 @@
 @import '../../../assets/scss/components/variables';
-.pagetitle{
-    color: $white;
-    font-size: calc(1.5rem + .7vw);
-    height: 8vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0px;
-    @media screen and (max-width: $smart-phone){
-        height: auto;
-        line-height: 1.5em;
-        font-size: 2.5rem;
-        padding: 30px 10px;
-    }
-}
+
 .page-des{
     width: 84%;
     color: $white;
