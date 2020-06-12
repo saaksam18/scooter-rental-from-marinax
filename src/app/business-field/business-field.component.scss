@@ -9,6 +9,7 @@
             li{
                 height: 394px;
                 background-color: $blue;
+                background-size: cover !important;
                 @media screen and (max-width: $desktop){
                     height: 250px;
                 }
@@ -17,19 +18,15 @@
                 }
                 &:nth-child(1){
                     background: url('../../assets/images/business/business_btm_link01.jpg') no-repeat center center;
-                    background-size: cover;
                 }
                 &:nth-child(2){
                     background: url('../../assets/images/business/business_btm_link02.jpg') no-repeat center center;
-                    background-size: cover;
                 }
                 &:nth-child(3){
                     background: url('../../assets/images/business/business_btm_link03.jpg') no-repeat center center;
-                    background-size: cover;
                 }
                 &:nth-child(4){
                     background: url('../../assets/images/business/business_btm_link04.jpg') no-repeat center center;
-                    background-size: cover;
                 }
                 a{
                     font-size: 2rem;
