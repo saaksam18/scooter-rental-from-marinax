@@ -27,6 +27,7 @@ import { NewbusinessComponent } from './business-field/newbusiness/newbusiness.c
 import { EmsItemComponent } from './business-field/ems/ems-item/ems-item.component';
 import { ItemComponent } from './business-field/product-info/item/item.component';
 import { SemiconductorItemComponent } from './business-field/semiconductor/semiconductor-item/semiconductor-item.component';
+import { MapComponent } from './about/corporate-info/map/map.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { SemiconductorItemComponent } from './business-field/semiconductor/semic
     NewbusinessComponent,
     EmsItemComponent,
     ItemComponent,
-    SemiconductorItemComponent
+    SemiconductorItemComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,
