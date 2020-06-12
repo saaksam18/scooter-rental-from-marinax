@@ -81,6 +81,7 @@ function menuResponsive() {
 			$("ul.parent-menu li a").click(function(){
 				$("#content-menu").removeClass("show");
 				$(".menu-icon").removeClass("active");
+				$("ul.parent-menu > li > .on-menu > a ").removeClass("is-active");
 				$("ul.parent-menu > li").children().removeClass("sub-active");
 			});
 		}
@@ -94,7 +95,7 @@ function menuResponsive() {
 	$(".sub-menu ul li").click(function(){
 		$("#content-menu").removeClass("show");
 		$(".menu-icon").removeClass("active");
-		// $("ul.parent-menu > li").find("is-active").removeClass("is-active");
+		$("ul.parent-menu > li > .on-menu > a ").removeClass("is-active");
 		$("ul.parent-menu > li").find(".sub-active").removeClass("sub-active");
 	});
 }

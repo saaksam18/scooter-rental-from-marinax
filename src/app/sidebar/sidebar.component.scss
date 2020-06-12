@@ -156,7 +156,8 @@
                     position: relative;
                     z-index: 10;
                 }
-                .sub-menu {
+                .sub-menu,
+                .sub-menu.is-active {
                     &::before {
                         font-size: 2.5rem;
                         font-weight: 300;
@@ -168,6 +169,7 @@
                         top: 23vh;
                         right: 0;
                         padding-left: 2vw;
+                        z-index: 99;
                         @media screen and (max-width: $smart-phone) {
                             content: '' !important;
                         }
@@ -262,14 +264,16 @@
                 &:hover {
                     background-color: $blue;
                     color: $white;
-                    @media screen and (max-width: $smart-phone) {
+                    @media screen and (max-width: $desktop) {
                         background-color: transparent;
                         color: $blue;
                     }
                 }
-                &.is-active {
-                    color: $white;
-                    background-color: $blue;
+                @media screen and (max-width: $desktop) {
+                    &.is-active {
+                        color: $white;
+                        background-color: $blue;
+                    }
                 }
             }
         }
@@ -282,10 +286,11 @@
             top: 0;
             left: 100%;
             z-index: -1;
-            display: none;
             visibility: hidden;
-            background: rgba(17,80,140,.8);
-            background: linear-gradient(180deg,rgba(17,80,140,.8) 0,rgba(17,80,140,.8) 30%,rgba(250,250,250,.95) 30%,rgba(250,250,250,.95) 100%);
+            background: #ffc107;
+            background: linear-gradient(180deg, #ffc107 0, #ffc107 30%, rgba(250, 250, 250, 0.95) 30%, rgba(250, 250, 250, 0.95) 100%);
+            // background: rgba(17,80,140,.8);
+            // background: linear-gradient(180deg,rgba(17,80,140,.8) 0,rgba(17,80,140,.8) 30%,rgba(250,250,250,.95) 30%,rgba(250,250,250,.95) 100%);
             @media screen and (max-width: $smart-phone) {
                 width: 100%;
                 height: 0;
@@ -293,19 +298,27 @@
                 position: relative;
                 left: 0;
                 z-index: 0;
-                display: none;
                 padding-top: 0;
                 background: 0 0;
                 transition: .3s;
+                display: none;
                 &.sub-active {
                     height: 100%;
                     color: $blue;
                     display: block;
-                    opacity: 1;
                     visibility: visible !important;
                     transition: .3s;
                 }
             }
+            // @media screen and (max-width: $desktop) {
+            //     &.sub-active {
+            //         height: 100%;
+            //         color: $blue;
+            //         display: block;
+            //         visibility: visible !important;
+            //         transition: .3s;
+            //     }
+            // }
 
             ul {
                 z-index: 1;
