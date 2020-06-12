@@ -81,12 +81,14 @@
         height: 70vh;
         display: flex;
         flex-direction: column;
+        background-color: $dark-blue;
         @media screen and (max-width: $smart-phone) {
             height: 0;
             width: 100%;
             overflow-y: scroll;
             position: fixed;
             top: 70px;
+            background-color: $white;
             transition-property: all;
             transition-duration: .5s;
             transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
@@ -99,49 +101,93 @@
         }
     }
     &__logo {
-        h1 {
-            background-color: $blue;
-            height: 30vh;
-            width: 15vw;
-            min-width: 220px;
-            z-index: 10;
-            @media screen and (max-width: $smart-phone) {
-                width: calc(70% - 70px);
-                min-width: auto;
-                height: 70px;
-                margin-left: 20px;
-                position: absolute;
-                z-index: 0;
-            }
+        background-color: $dark-yellow;
+        height: 30vh;
+        width: 15vw;
+        min-width: 220px;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        @media screen and (max-width: $smart-phone) {
+            background-color: transparent;
+            width: calc(70% - 70px);
+            min-width: auto;
+            height: 70px;
+            margin-left: 20px;
+            position: absolute;
+            z-index: 0;
         }
         a {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            background: url('../../assets/images/leftnavi-logo.svg') no-repeat center center;
-            background-repeat: no-repeat;
-            background-position: center center;
-            -webkit-background-size: 82%;
-            -o-background-size: 82%;
-            background-size: 82%;
+            color: $white;
             display: block;
-            text-indent: 100%;
-            white-space: nowrap;
-            overflow: hidden;
-            transition: all .2s ease-in-out;
-            @media screen and (max-width: $smart-phone) {
-                background: url('../../assets/images/leftnavi-logo-res.svg') no-repeat center center;
-                -webkit-background-size: contain;
-                -o-background-size: contain;
-                background-size: contain;
+            width: 100%;
+            padding: 20px;
+            &:hover {
+                .logo {
+                    img {
+                        left: 65%;
+                        transition-property: left;
+                        transition-duration: 1s;
+                    }
+                }
             }
         }
+        .logo {
+            display: flex;
+            align-items: center;
+            position: relative;
+            margin-bottom: 10px;
+            &::after {
+                content: "";
+                display: block;
+                width: 100%;
+                position: absolute;
+                bottom: -10px;
+                border-bottom: 1px solid $white;
+            }
+            span {
+                font-size: 2em;
+                font-weight: 700;
+                &::first-letter {
+                    color: $black;
+                }
+            }
+            img {
+                position: absolute;
+                left: 76%;
+                transition-property: left;
+                transition-duration: 1s;
+            }
+        }
+        // a {
+        //     position: relative;
+        //     width: 100%;
+        //     height: 100%;
+        //     background: url('../../assets/images/leftnavi-logo.svg') no-repeat center center;
+        //     background-repeat: no-repeat;
+        //     background-position: center center;
+        //     -webkit-background-size: 82%;
+        //     -o-background-size: 82%;
+        //     background-size: 82%;
+        //     display: block;
+        //     text-indent: 100%;
+        //     white-space: nowrap;
+        //     overflow: hidden;
+        //     transition: all .2s ease-in-out;
+        //     @media screen and (max-width: $smart-phone) {
+        //         background: url('../../assets/images/leftnavi-logo-res.svg') no-repeat center center;
+        //         -webkit-background-size: contain;
+        //         -o-background-size: contain;
+        //         background-size: contain;
+        //     }
+        // }
     }
     &__menu {
         animation: menu-slide-left .5s ease-out backwards;
         animation-delay: 1s;
-        background-color: $white;
+        background-color: $dark-blue;
             @media screen and (max-width: $smart-phone) {
+                background-color: $white;
                 .pointer-even {
                     pointer-events: none;
                 }
@@ -151,7 +197,7 @@
             @media screen and (max-width: $smart-phone) {
                 padding: 10px 0;
             }
-            li {
+            li{
                 span {
                     position: relative;
                     z-index: 10;
@@ -241,8 +287,8 @@
                     .sub-menu {
                         visibility: visible;
                         animation: menu-slide-left .3s ease-out both;
-                        animation-delay: .3s;   
-                        @media screen and (max-width: $smart-phone) { 
+                        animation-delay: .3s;
+                        @media screen and (max-width: $desktop) and (min-width:  $smart-phone) {
                             visibility: hidden;
                             animation: none;
                         }
@@ -264,15 +310,19 @@
                 &:hover {
                     background-color: $blue;
                     color: $white;
-                    @media screen and (max-width: $desktop) {
+                    @media screen and (max-width: $smart-phone) {
                         background-color: transparent;
                         color: $blue;
                     }
                 }
-                @media screen and (max-width: $desktop) {
-                    &.is-active {
+                &.is-active {
+                    @media screen and (max-width: $smart-phone) {
                         color: $white;
                         background-color: $blue;
+                    }
+                    @media screen and (min-width: $desktop) {
+                        background-color: transparent;
+                        color: $blue;
                     }
                 }
             }
@@ -302,24 +352,18 @@
                 background: 0 0;
                 transition: .3s;
                 display: none;
-                &.sub-active {
+            }
+            &.sub-active {
+                @media screen and (max-width: $smart-phone) {
                     height: 100%;
                     color: $blue;
                     display: block;
                     visibility: visible !important;
                     transition: .3s;
                 }
+                
             }
-            // @media screen and (max-width: $desktop) {
-            //     &.sub-active {
-            //         height: 100%;
-            //         color: $blue;
-            //         display: block;
-            //         visibility: visible !important;
-            //         transition: .3s;
-            //     }
-            // }
-
+            
             ul {
                 z-index: 1;
                 -ms-overflow-style: none;
@@ -327,72 +371,74 @@
                 li {
                     width: 100%;
                     min-height: 5vh;
+                    a {
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        width: 100%;
+                        height: 100%;
+                        font-size: calc(1.1rem + .25vw);
+                        color: $blue;
+                        position: relative;
+                        z-index: 10;
+                        padding: 1vh 0;
+                        font-weight: 400;
+                        &::before {
+                            content: '';
+                            width: 8px;
+                            height: 8px;
+                            border-right: 1px solid $blue;
+                            border-bottom: 1px solid $blue;
+                            display: inline-block;
+                            transform: rotate(-45deg);
+                            margin-right: 10px;
+                            opacity: .3;
+                        }
+                        &:after {
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            background-color: $blue;
+                            top: 0;
+                            left: 0;
+                            width: 0;
+                            z-index: -1;
+                        }
+                    }
+                    &:hover {
+                        a {
+                            padding-left: .6em;
+                            transition: all .4s ease;
+                            transition-delay: .2s;
+                            opacity: 1;
+                            color: $white;
+                            background-color: $blue;
+                            z-index: 10000;
+                            &::before {
+                                border-right: 2px solid $white;
+                                border-bottom: 2px solid $white;
+                                transition-delay: .3s;
+                            }
+                            &:after {
+                                animation: sub-menu-left-hover .3s ease-in-out both;
+                                animation-delay: .2s;
+                            }
+                        }
+                    }
                 }          
-            }
-            a {
-                display: flex;
-                align-items: center;
-                justify-content: flex-start;
-                width: 100%;
-                height: 100%;
-                font-size: calc(1.1rem + .25vw);
-                color: $blue;
-                position: relative;
-                z-index: 10;
-                padding: 1vh 0;
-                font-weight: 400;
-                &::before {
-                    content: '';
-                    width: 8px;
-                    height: 8px;
-                    border-right: 1px solid $blue;
-                    border-bottom: 1px solid $blue;
-                    display: inline-block;
-                    transform: rotate(-45deg);
-                    margin-right: 10px;
-                    opacity: .3;
-                }
-                &:after {
-                    content: '';
-                    display: block;
-                    position: absolute;
-                    background-color: $blue;
-                    top: 0;
-                    left: 0;
-                    width: 0;
-                    z-index: -1;
-                }
-                &:hover {
-                    padding-left: .6em;
-                    transition: all .4s ease;
-                    transition-delay: .2s;
-                    opacity: 1;
-                    color: $white;
-                    background-color: $blue;
-                    z-index: 10000;
-                    &::before {
-                        border-right: 2px solid $white;
-                        border-bottom: 2px solid $white;
-                        transition-delay: .3s;
-                    }
-                    &:after {
-                        animation: sub-menu-left-hover .3s ease-in-out both;
-                        animation-delay: .2s;
-                    }
-                }
             }
         }
     }
 
     &__footer {
         display: block;
-        background-color: $white;
+        background-color: $dark-blue;
         margin: auto 0 0;
         padding: 0 2vw 4vh 2vw;
         @media screen and (max-width: $smart-phone) {
             margin: 0;
             padding: 30px;
-            background-color: $white001;
+            background-color: $white;
         }
         ul {
             display: flex;
@@ -409,17 +455,17 @@
                 border-radius: 2px;
                 cursor: pointer;
                 &.active {
-                    color: $white;
-                    background-color: $blue;
+                    color: $black;
+                    background-color: $dark-yellow;
                 }
             }
         }
         .text-size {
             li {
                 width: 17%;
-                border: 1px solid $blue;
+                border: 1px solid $dark-yellow;
                 background-color: $white;
-                color: $blue;
+                color: $dark-yellow;
                 padding: 5px;
                 font-weight: 700;
                 text-align: center;
@@ -440,9 +486,9 @@
             justify-content: space-between;
             li {
                 width: 20%;
-                border: 1px solid $blue;
+                border: 1px solid $dark-yellow;
                 background-color: $white;
-                color: $blue;
+                color: $dark-yellow;
                 padding: 5px;
                 font-size: 1.2rem;
                 font-weight: 700;
@@ -457,7 +503,7 @@
             width: 100%;
             a {
                 color: $white;
-                background-color: $blue;
+                background-color: $dark-yellow;
                 display: block;
                 text-align: center;
                 padding: 5px;
