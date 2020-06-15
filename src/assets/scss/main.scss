@@ -79,7 +79,9 @@ img{
         bottom: 0;
         z-index: 102;
     }
-    img{
+    h1{
+        color: #f39c12;
+        font-size: 100px;
         display: block;
         width: 60%;
         animation: avant_logo 1.2s ease-out both;
@@ -132,7 +134,7 @@ img{
             margin: 0 0 0 220px;
         }
         @media screen and (max-width: $smart-phone) {
-            width: 100vw;
+            width: 100%;
             margin: 0;
         }
     }
