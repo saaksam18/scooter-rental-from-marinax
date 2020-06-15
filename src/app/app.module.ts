@@ -17,14 +17,14 @@ import { AboutHeaderComponent } from './about/about-header/about-header.componen
 import { FounderComponent } from './about/founder/founder.component';
 import { PhilosophyComponent } from './about/philosophy/philosophy.component';
 import { CorporateInfoComponent } from './about/corporate-info/corporate-info.component';
-import { BusinessFieldComponent } from './business-field/business-field.component';
+import { VisaComponent } from './business/visa/visa.component';
 import { BusinessHeaderComponent } from './business/business-header/business-header.component';
 import { SemiconductorComponent } from './business-field/semiconductor/semiconductor.component';
 import { SitemapComponent } from './sitemap/sitemap.component';
-import { EmsComponent } from './business-field/ems/ems.component';
+import { EmsComponent } from './business/ems/ems.component';
 import { ProductInfoComponent } from './business-field/product-info/product-info.component';
 import { NewbusinessComponent } from './business-field/newbusiness/newbusiness.component';
-import { EmsItemComponent } from './business-field/ems/ems-item/ems-item.component';
+import { EmsItemComponent } from './business/ems/ems-item/ems-item.component';
 import { ItemComponent } from './business-field/product-info/item/item.component';
 import { SemiconductorItemComponent } from './business-field/semiconductor/semiconductor-item/semiconductor-item.component';
 import { MapComponent } from './about/corporate-info/map/map.component';
@@ -42,7 +42,7 @@ import { BusinessComponent } from './business/business.component';
     FounderComponent,
     PhilosophyComponent,
     CorporateInfoComponent,
-    BusinessFieldComponent,
+    VisaComponent,
     BusinessHeaderComponent,
     SemiconductorComponent,
     SitemapComponent,
