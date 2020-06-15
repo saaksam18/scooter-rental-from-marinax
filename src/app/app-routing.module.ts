@@ -6,16 +6,18 @@ import { HistoryComponent } from './about/history/history.component';
 import { FounderComponent } from './about/founder/founder.component';
 import { PhilosophyComponent } from './about/philosophy/philosophy.component';
 import { CorporateInfoComponent } from './about/corporate-info/corporate-info.component';
-import { BusinessFieldComponent } from './business-field/business-field.component';
+import { VisaComponent } from './business/visa/visa.component';
 import { SemiconductorComponent } from './business-field/semiconductor/semiconductor.component';
 import { SitemapComponent } from './sitemap/sitemap.component';
-import { EmsComponent } from './business-field/ems/ems.component';
+import { EmsComponent } from './business/ems/ems.component';
 import { ProductInfoComponent } from './business-field/product-info/product-info.component';
 import { NewbusinessComponent } from './business-field/newbusiness/newbusiness.component';
 import { ItemComponent } from './business-field/product-info/item/item.component';
 import { SemiconductorItemComponent } from './business-field/semiconductor/semiconductor-item/semiconductor-item.component';
-import { EmsItemComponent } from './business-field/ems/ems-item/ems-item.component';
+import { EmsItemComponent } from './business/ems/ems-item/ems-item.component';
 import { MapComponent } from './about/corporate-info/map/map.component'
+import { BusinessComponent } from './business/business.component';
+
 const routes: Routes = [
 	{
 		path: '',
@@ -62,27 +64,17 @@ const routes: Routes = [
 		]
 	},
 	{
-		path: 'business-field',
+		path: 'business',
 		children: [
 			{ 
 				path: '',
-				component: BusinessFieldComponent,
+				component: BusinessComponent,
 				pathMatch: 'full'
 			},
-			{ 
-				path: 'semiconductor',
-				children:[
-					{
-						path: '',
-						component: SemiconductorComponent,
-						pathMatch: 'full'
-					},
-					{
-						path: 'item',
-						component: SemiconductorItemComponent,
-						pathMatch: 'full'
-					}
-				]
+			{
+				path: 'visa',
+				component: VisaComponent,
+				pathMatch: 'full'
 			},
 			{ 
 				path: 'ems',
@@ -99,28 +91,9 @@ const routes: Routes = [
 					}
 				]
 			},
-			{ 
-				path: 'product-info',
-				children:[
-					{
-						path: '',
-						component: ProductInfoComponent,
-						pathMatch: 'full'
-					},
-					{
-						path: 'item',
-						component: ItemComponent,
-						pathMatch: 'full'
-					}
-				]
-			},
-			{ 
-				path: 'newbusiness',
-				component: NewbusinessComponent,
-				pathMatch: 'full'
-			}
 		]
 	},
+
 	{
 		path: 'sitemap',
 		component: SitemapComponent
@@ -136,7 +109,6 @@ const routes: Routes = [
 		useHash: false,
 		scrollPositionRestoration: 'enabled',
 		anchorScrolling: 'enabled',
-  		scrollOffset: [0, 64],
 	})],
 	exports: [RouterModule]
 })

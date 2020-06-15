@@ -4,13 +4,13 @@ import { TranslateService ,LangChangeEvent } from '@ngx-translate/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-business-field',
-  templateUrl: './business-field.component.html',
-  styleUrls: ['./business-field.component.scss']
+  selector: 'app-visa',
+  templateUrl: './visa.component.html',
+  styleUrls: ['./visa.component.scss']
 })
-export class BusinessFieldComponent implements OnInit {
+export class VisaComponent implements OnInit {
 
-  title = this.translate.get('Business Field').subscribe((res: string) => {
+  title = this.translate.get('Visa').subscribe((res: string) => {
     this.pageTitle.setTitle(res);
   });
   constructor(
@@ -19,9 +19,9 @@ export class BusinessFieldComponent implements OnInit {
     private translate: TranslateService,
     private router: Router
   ) {
-    if(this.router.url === '/busines-field'){
+    if(this.router.url === '/visa'){
       translate.onLangChange.subscribe((event: LangChangeEvent) => {
-        translate.get('Business Field').subscribe((res: string) => {
+        translate.get('Visa').subscribe((res: string) => {
         this.pageTitle.setTitle(res);
         });
       });
