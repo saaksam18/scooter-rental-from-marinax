@@ -19,14 +19,14 @@ import { PhilosophyComponent } from './about/philosophy/philosophy.component';
 import { CorporateInfoComponent } from './about/corporate-info/corporate-info.component';
 import { VisaComponent } from './business/visa/visa.component';
 import { BusinessHeaderComponent } from './business/business-header/business-header.component';
-import { SemiconductorComponent } from './business-field/semiconductor/semiconductor.component';
+import { ExchangeComponent } from './business/exchange/exchange.component';
+import { ExchangeItemComponent } from './business/exchange/exchange-item/exchange-item.component';
 import { SitemapComponent } from './sitemap/sitemap.component';
 import { EmsComponent } from './business/ems/ems.component';
+import { EmsItemComponent } from './business/ems/ems-item/ems-item.component';
 import { ProductInfoComponent } from './business-field/product-info/product-info.component';
 import { NewbusinessComponent } from './business-field/newbusiness/newbusiness.component';
-import { EmsItemComponent } from './business/ems/ems-item/ems-item.component';
 import { ItemComponent } from './business-field/product-info/item/item.component';
-import { SemiconductorItemComponent } from './business-field/semiconductor/semiconductor-item/semiconductor-item.component';
 import { MapComponent } from './about/corporate-info/map/map.component';
 import { BusinessComponent } from './business/business.component';
 
@@ -44,14 +44,14 @@ import { BusinessComponent } from './business/business.component';
     CorporateInfoComponent,
     VisaComponent,
     BusinessHeaderComponent,
-    SemiconductorComponent,
+    ExchangeComponent,
+    ExchangeItemComponent,
     SitemapComponent,
     EmsComponent,
+    EmsItemComponent,
     ProductInfoComponent,
     NewbusinessComponent,
-    EmsItemComponent,
     ItemComponent,
-    SemiconductorItemComponent,
     MapComponent,
     BusinessComponent
   ],
