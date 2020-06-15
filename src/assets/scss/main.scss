@@ -45,7 +45,7 @@ img{
     right: 0;
     bottom: 0;
     z-index: 1000000;
-    background: $blue002;
+    background-color: $dark-yellow;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -59,7 +59,7 @@ img{
         content: '';
         width: 100vw;
         height: 100vh;
-        background: $blue;
+        background-color: $blue;
         animation: avant_bg_anime .3s ease-out both;
         animation-delay: .3s;
         position: absolute;
@@ -190,8 +190,8 @@ img{
     .gsc-search-button-v2,
     .gsc-search-button-v2:hover,
     .gsc-search-button-v2:focus{
-        border-color: $blue;
-        background-color: $blue;
+        border-color: $dark-yellow;
+        background-color: $dark-yellow;
         background-image: none;
         filter: none;
     }

@@ -56,50 +56,50 @@ $(document).ready(function () {
 		});
 	});
 	
-	$(".sidebar__logo a ").click(function(){
-		$("#content-menu").toggleClass("show");
-		$(".menu-icon").removeClass("active");
-	});
+	menuResponsive(); 
+
+	ChangeFontsize();
 	
+	SwitchLang();
+
+});
+
+function menuResponsive() {
+	$(".sidebar__logo a ").click(function(){
+		$("#content-menu").removeClass("show");
+		$(".menu-icon").removeClass("active");
+		$("ul.parent-menu > li.main-item").children().removeClass("is-active");
+	});
+
 	$(".menu-icon").click(function(){
 		$(this).toggleClass("active");
 		$("#content-menu").toggleClass("show");
 	});
 
-
-	$("ul.parent-menu > li ").each(function(){
-		$(this).mouseenter(function(){
-			$(this).children(".sub-menu").css("visibility","visible");
-		});
-	
-		$(this).mouseleave(function(){
-			$(this).children(".sub-menu").css("visibility","hidden");
-		});
-
-		if($(this).find(".sub-menu").length > 0){
-			$(this).find(">a:first-child").addClass("pointer-event");
-		}else {
-			$(this).click(function(){
+	$("ul.parent-menu > li").each(function(){
+		if($(this).find(".sub-menu").length == 0) {
+			$("ul.parent-menu li a").click(function(){
 				$("#content-menu").removeClass("show");
 				$(".menu-icon").removeClass("active");
-				$("ul.parent-menu").find(".is-active").removeClass("is-active");
-				$(this).next(".sub-menu").removeClass("is-active");
+				$("ul.parent-menu > li > .on-menu > a ").removeClass("is-active");
+				$("ul.parent-menu > li").children().removeClass("sub-active");
 			});
 		}
 	});
-	$("ul.parent-menu > li ").click(function() {
-		$(this).find(">a:first-child").toggleClass("is-active");
-		$(this).children(".sub-menu").toggleClass("is-active");
-	});
 
+	$(".on-menu").click(function(){
+		$(this).children("a").toggleClass("is-active");
+		$(this).next().toggleClass("sub-active");
+	});
+	
 	$(".sub-menu ul li").click(function(){
 		$("#content-menu").removeClass("show");
 		$(".menu-icon").removeClass("active");
-		$(".sub-menu").css("visibility","hidden");
-		$(this).find(".is-active").parents().removeClass("is-active");
+		$("ul.parent-menu > li > .on-menu > a ").removeClass("is-active");
+		$("ul.parent-menu > li").find(".sub-active").removeClass("sub-active");
 	});
-
-	// change font-size
+}
+function ChangeFontsize() {
 	$(".text-size .text-size__s").click(function(){
 		$(this).addClass("active");
 		$(".text-size .text-size__m").removeClass("active");
@@ -110,11 +110,10 @@ $(document).ready(function () {
 		$(".text-size .text-size__s").removeClass("active");
 		$("html").css("font-size","72%");
 	});
-
-	// change langauge 
+}
+function SwitchLang() {
 	$(".text-translate li").on("click", function(){
 		$(".text-translate li").removeClass("active");
 		$(this).addClass("active");	
 	});
-
-});
+}
