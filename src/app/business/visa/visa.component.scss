@@ -1,4 +1,4 @@
-@import '../../assets/scss/components/variables';
+@import '../../../assets/scss/components/variables';
 .business{
     a:hover{
         transition: all .2s ease-in-out;
@@ -8,7 +8,7 @@
         ul{
             li{
                 height: 394px;
-                background-color: $blue;
+                background-color: $dark-yellow;
                 background-size: cover !important;
                 @media screen and (max-width: $desktop){
                     height: 250px;
@@ -17,16 +17,16 @@
                     height: 100px;
                 }
                 &:nth-child(1){
-                    background: url('../../assets/images/business/business_btm_link01.jpg') no-repeat center center;
+                    background: url('../../../assets/images/business/business_btm_link01.jpg') no-repeat center center;
                 }
                 &:nth-child(2){
-                    background: url('../../assets/images/business/business_btm_link02.jpg') no-repeat center center;
+                    background: url('../../../assets/images/business/business_btm_link02.jpg') no-repeat center center;
                 }
                 &:nth-child(3){
-                    background: url('../../assets/images/business/business_btm_link03.jpg') no-repeat center center;
+                    background: url('../../../assets/images/business/business_btm_link03.jpg') no-repeat center center;
                 }
                 &:nth-child(4){
-                    background: url('../../assets/images/business/business_btm_link04.jpg') no-repeat center center;
+                    background: url('../../../assets/images/business/business_btm_link04.jpg') no-repeat center center;
                 }
                 a{
                     font-size: 2rem;

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BusinessFieldComponent } from './business-field.component';
+import { BusinessHeaderComponent } from './business-header.component';
 
-describe('BusinessFieldComponent', () => {
-  let component: BusinessFieldComponent;
-  let fixture: ComponentFixture<BusinessFieldComponent>;
+describe('BusinessBusinessHeaderComponent', () => {
+  let component: BusinessHeaderComponent;
+  let fixture: ComponentFixture<BusinessHeaderComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BusinessFieldComponent ]
+      declarations: [ BusinessHeaderComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BusinessFieldComponent);
+    fixture = TestBed.createComponent(BusinessHeaderComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SemiconductorItemComponent } from './semiconductor-item.component';
+import { ExchangeComponent } from './exchange.component';
 
-describe('SemiconductorItemComponent', () => {
-  let component: SemiconductorItemComponent;
-  let fixture: ComponentFixture<SemiconductorItemComponent>;
+describe('ExchangeComponent', () => {
+  let component: ExchangeComponent;
+  let fixture: ComponentFixture<ExchangeComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SemiconductorItemComponent ]
+      declarations: [ ExchangeComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SemiconductorItemComponent);
+    fixture = TestBed.createComponent(ExchangeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
