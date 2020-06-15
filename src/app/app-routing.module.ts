@@ -6,17 +6,17 @@ import { HistoryComponent } from './about/history/history.component';
 import { FounderComponent } from './about/founder/founder.component';
 import { PhilosophyComponent } from './about/philosophy/philosophy.component';
 import { CorporateInfoComponent } from './about/corporate-info/corporate-info.component';
+import { MapComponent } from './about/corporate-info/map/map.component';
+import { BusinessComponent } from './business/business.component';
 import { VisaComponent } from './business/visa/visa.component';
 import { ExchangeComponent } from './business/exchange/exchange.component';
 import { ExchangeItemComponent } from './business/exchange/exchange-item/exchange-item.component';
-import { SitemapComponent } from './sitemap/sitemap.component';
 import { EmsComponent } from './business/ems/ems.component';
 import { EmsItemComponent } from './business/ems/ems-item/ems-item.component';
-import { MapComponent } from './about/corporate-info/map/map.component';
-import { BusinessComponent } from './business/business.component';
-import { ProductInfoComponent } from './business-field/product-info/product-info.component';
-import { NewbusinessComponent } from './business-field/newbusiness/newbusiness.component';
-import { ItemComponent } from './business-field/product-info/item/item.component';
+import { ProductInfoComponent } from './business/product-info/product-info.component';
+import { NewbusinessComponent } from './business/newbusiness/newbusiness.component';
+import { ItemComponent } from './business/product-info/item/item.component';
+import { SitemapComponent } from './sitemap/sitemap.component';
 
 const routes: Routes = [
 	{
@@ -105,6 +105,26 @@ const routes: Routes = [
 						pathMatch: 'full'
 					}
 				]
+			},
+			{
+				path: 'product-info',
+				children:[
+					{
+						path: '',
+						component: ProductInfoComponent,
+						pathMatch: 'full'
+					},
+					{
+						path: 'item',
+						component: ItemComponent,
+						pathMatch: 'full'
+					}
+				]
+			},
+			{
+				path: 'newbusiness',
+				component: NewbusinessComponent,
+				pathMatch: 'full'
 			},
 		]
 	},
