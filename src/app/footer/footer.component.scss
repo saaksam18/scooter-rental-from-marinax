@@ -1,6 +1,6 @@
 @import '../../assets/scss/components/variables';
 .footer{
-    background: $gray006;
+    background-color: $blue001;
     .category{
         padding: 50px 5% 30px;
         &__title{
@@ -43,7 +43,7 @@
         .logo{
             margin-bottom: 15px;
             img{
-                width: 30%;
+                width: 100px;
             }
         }
         .info{
@@ -54,7 +54,7 @@
     &__menu{
         font-size: 1.4rem;
         padding: 10px;
-        background-color: $blue;
+        background-color: $dark-yellow;
         @media screen and (max-width: $smart-phone){
             flex-wrap: wrap;
         }

@@ -1,15 +1,20 @@
 
 <div class="container-fluid px-0">
     <!-- loading page -->
-    <!-- <div *ngIf="isLoading"> -->
+    <div *ngIf="isLoading">
         <div id="loading-page">
-            <div class="w-100 h-100 d-flex justify-content-end align-items-center">
-                <img src="assets/images/main-logo.svg" alt="">
-                <h1><span>E</span>MC</h1>
+            <div class="w-100 h-100 d-flex justify-content-center align-items-end flex-column">
+                <h1 data-aos="slide-right" data-aos-delay="800" data-aos-duration="1000">
+                    <span>E</span>MC
+                </h1>
+                <div class="moto-img" data-aos="slide-right" data-aos-delay="300" data-aos-duration="1000">
+                    <img src="../assets/images/moto.png" alt="">
+                </div>
+                <p data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">Expat Motorbike Cambodia</p>
             </div>
         </div>
-    <!-- </div> -->
-    <div id="wrapper" class="wrapper d-none">
+    </div>
+    <div id="wrapper" class="wrapper invisible">
         <div class="left-nav">
             <app-sidebar></app-sidebar>
         </div>

@@ -45,21 +45,17 @@ img{
     right: 0;
     bottom: 0;
     z-index: 1000000;
-    background-color: $dark-yellow;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    background-color: $yellow;
     animation: avant_bg .3s both;
     animation-timing-function: cubic-bezier(1,.6,.1);
     animation-delay: 1.3s;
     padding-bottom: 1%;
     overflow: hidden;
-    z-index: 100;
     &::before{
         content: '';
         width: 100vw;
         height: 100vh;
-        background-color: $blue;
+        background-color: $dark-yellow;
         animation: avant_bg_anime .3s ease-out both;
         animation-delay: .3s;
         position: absolute;
@@ -71,7 +67,7 @@ img{
         content: '';
         width: 100vw;
         height: 100vh;
-        background: $blue003;
+        background: $dark-yellow;
         animation: avant_bg_anime .3s ease-out both;
         animation-delay: .1s;
         position: absolute;
@@ -80,15 +76,44 @@ img{
         z-index: 102;
     }
     h1{
-        color: #f39c12;
-        font-size: 100px;
+        color: $white;
+        font-family: 'Roboto Condensed',sans-serif;
+        font-size: 300px;
         display: block;
-        width: 60%;
-        animation: avant_logo 1.2s ease-out both;
-        animation-timing-function: cubic-bezier(.2,.5,.1);
-        animation-delay: .4s;
         z-index: 110;
         position: relative;
+        width: 100%;
+        padding-right: 25%;
+        text-align: right;
+        @media screen and (max-width: $smart-phone){
+            font-size: 150px;
+        }
+        span{
+            color: $white;
+        }
+    }
+    p{
+        color: $dark-blue;
+        font-family: 'Roboto Condensed',sans-serif;
+        font-size: 35px;
+        display: block;
+        z-index: 110;
+        position: relative;
+        @media screen and (max-width: $smart-phone){
+            font-size: 20px;
+        }
+    }
+    .moto-img{
+        width: 100%;
+        padding-right: 20px;
+        position: absolute;
+        z-index: 999;
+        border-bottom: 1px solid $white;
+        text-align: right;
+        img{
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+        }
     }
 }
 .wrapper{

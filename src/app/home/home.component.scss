@@ -9,7 +9,7 @@ a:hover{
     height: 100vh;
     margin: 0;
     position: relative;
-    padding: 2vh 2vw 0 20vw;
+    padding: 2vh 5vw 0 20vw;
     @media screen and (max-width: $desktop){
         padding-left: 240px;
     }
@@ -38,15 +38,22 @@ a:hover{
             top: 70px;
             left: 0;
         }
-        img{
-            width: 48%;
+        h1{
+            color: $white;
+            font-size: 200px;
+            font-family: 'Roboto Condensed',sans-serif;
+            margin-bottom: 0;
             @media screen and (max-width: $smart-phone) {
-                transform: rotate(90deg);
-                position: absolute;
-                width: 75vh;
-                top: 25vh;
-                right: -23vh;
-                opacity: .3;
+                font-size: 110px;
+            }
+            span{
+                color: $white;
+            }
+        }
+        p{
+            color: $white;
+            @media screen and (max-width: $smart-phone) {
+                font-size: 15px;
             }
         }
     }
@@ -73,7 +80,7 @@ a:hover{
 .content{
     .news{
         &__list{
-            border-top: 1px solid $blue;
+            border-top: 1px solid $yellow;
             padding-top: 4vh;
             padding-left: 0px;
             margin-top: 5vh;
@@ -159,7 +166,7 @@ a:hover{
     .event{
         &__list{
             padding-left: 0px;
-            border: 1px solid $blue;
+            border: 1px solid $yellow;
             li:last-child{
                 a{
                     @media screen and (max-width: $desktop){
@@ -183,7 +190,7 @@ a:hover{
             }
         }
         &__title{
-            background-color: $blue;
+            background-color: $yellow;
             flex-direction: column;
             @media screen and (max-width: $desktop){
                 padding: 10px;
@@ -210,7 +217,7 @@ a:hover{
             top: 15px;
             left: 50%;
             transform: translateX(-50%);
-            background-color: $blue;
+            background-color: $yellow;
         }
         &__date{
             .year{
@@ -259,6 +266,7 @@ a:hover{
         }
     }
     .company{
+        background-color: $blue001;
         &__link{
             display: flex;
             justify-content: space-between;
@@ -296,7 +304,7 @@ a:hover{
                     span{
                         font-size: 1.3rem;
                         display: block;
-                        color: $blue;
+                        color: $yellow;
                         background-color: $white;
                         padding: 0 4px;
                         margin-top: 8px;
@@ -344,13 +352,11 @@ a:hover{
     &__contact{
         width: 100%;
         font-size: 15px;
-        color: $white;
-        background-color: #082642;
+        color: $black;
+        opacity: .9;
         ul{
             li{
-                border-right: 1px solid $white;
                 @media screen and (max-width: $desktop){
-                    border-right: 0;
                     border-bottom: 1px solid $white;
                     padding-bottom: 15px;
                     margin-bottom: 20px;
@@ -365,6 +371,7 @@ a:hover{
                 }
                 .icon{
                     &::before{
+                        color: $white;
                         font-family: "Font Awesome 5 Free";
                         width: 50px;
                         height: 50px;
@@ -373,7 +380,7 @@ a:hover{
                         border-radius: 50%;
                         margin-right: 20px;
                         text-align: center;
-                        background: #f39c12;
+                        background-color: $yellow;
                         display: inline-block;
                         vertical-align: middle;
                         font-weight:900;
@@ -397,10 +404,10 @@ a:hover{
             }
         }
         p{
-            font-size: 12px;
+            font-size: 14px;
             margin-bottom: 0;
             span{
-                color: #f39c12;
+                color: $dark-yellow;
             }
         }
     }

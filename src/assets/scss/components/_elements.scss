@@ -24,7 +24,7 @@
     font-size: 1.5rem;
     color: $white;
     margin: 4vh auto 2vh;
-    background: $blue;
+    background: $dark-yellow;
     padding: .3em 1em;
     font-family: 'Roboto Condensed',sans-serif;
     text-align: center;
@@ -90,13 +90,13 @@
         }
     }
 }
-.blue-title{
+.yellow-title{
     @extend .section-title;
-    color: $blue;
+    color: $dark-yellow;
     span{
         color: $gray001;
         &::before{
-            background: $blue;
+            background: $dark-yellow;
         }
     }
 }

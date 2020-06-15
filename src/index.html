@@ -31,16 +31,16 @@
 	<script src="../../assets/js/slide.js"></script>
 	<script>
 		$(document).ready(function () {
+			AOS.init({
+				offset: 200,
+				duration: 600,
+				easing: 'ease-in-out',
+				delay: 100,
+			});
 			setTimeout(function () {
-				$("#wrapper").removeClass("d-none");
-				$("#wrapper").addClass("d-block");
-				AOS.init({
-					offset: 200,
-					duration: 600,
-					easing: 'ease-in-out',
-					delay: 100,
-				});
-			}, 2500);
+				$("#wrapper").removeClass("invisible");
+				$("#wrapper").addClass("visible");
+			}, 3000);
 		});
 	</script>
 </body>
