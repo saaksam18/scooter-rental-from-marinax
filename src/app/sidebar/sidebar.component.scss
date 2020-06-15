@@ -88,7 +88,7 @@
             overflow-y: scroll;
             position: fixed;
             top: 70px;
-            background-color: $white;
+            background-color: transparent;
             transition-property: all;
             transition-duration: .5s;
             transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
@@ -102,12 +102,9 @@
     }
     &__logo {
         background-color: $dark-yellow;
-        height: 30vh;
         width: 15vw;
         min-width: 220px;
         z-index: 10;
-        display: flex;
-        align-items: center;
         @media screen and (max-width: $smart-phone) {
             background-color: transparent;
             width: calc(70% - 70px);
@@ -119,68 +116,20 @@
         }
         a {
             color: $white;
-            display: block;
-            width: 100%;
-            padding: 20px;
-            &:hover {
-                .logo {
-                    img {
-                        left: 65%;
-                        transition-property: left;
-                        transition-duration: 1s;
-                    }
-                }
-            }
-        }
-        .logo {
             display: flex;
             align-items: center;
-            position: relative;
-            margin-bottom: 10px;
-            &::after {
-                content: "";
-                display: block;
-                width: 100%;
-                position: absolute;
-                bottom: -10px;
-                border-bottom: 1px solid $white;
-            }
-            span {
-                font-size: 2em;
-                font-weight: 700;
-                &::first-letter {
-                    color: $black;
-                }
+            width: 100%;
+            height: 30vh;
+            @media screen and (max-width: $smart-phone) {
+                height: 100%;
             }
             img {
-                position: absolute;
-                left: 76%;
-                transition-property: left;
-                transition-duration: 1s;
+                width: 100%;
+                @media screen and (max-width: $smart-phone) {
+                    width: 75px;
+                }
             }
         }
-        // a {
-        //     position: relative;
-        //     width: 100%;
-        //     height: 100%;
-        //     background: url('../../assets/images/leftnavi-logo.svg') no-repeat center center;
-        //     background-repeat: no-repeat;
-        //     background-position: center center;
-        //     -webkit-background-size: 82%;
-        //     -o-background-size: 82%;
-        //     background-size: 82%;
-        //     display: block;
-        //     text-indent: 100%;
-        //     white-space: nowrap;
-        //     overflow: hidden;
-        //     transition: all .2s ease-in-out;
-        //     @media screen and (max-width: $smart-phone) {
-        //         background: url('../../assets/images/leftnavi-logo-res.svg') no-repeat center center;
-        //         -webkit-background-size: contain;
-        //         -o-background-size: contain;
-        //         background-size: contain;
-        //     }
-        // }
     }
     &__menu {
         animation: menu-slide-left .5s ease-out backwards;
@@ -303,26 +252,29 @@
                 font-size: calc(1.1rem + .25vw);
                 letter-spacing: .03em;
                 line-height: 1.4em;
-                color: $blue;
+                color: $yellow;
                 font-weight: 500;
                 position: relative;
                 z-index: 10;
                 &:hover {
-                    background-color: $blue;
+                    background-color: $dark-yellow;
                     color: $white;
                     @media screen and (max-width: $smart-phone) {
                         background-color: transparent;
-                        color: $blue;
+                        color: $yellow;
                     }
+                }
+                @media screen and (max-width: $smart-phone) {
+                    padding: 10px 0 10px 10px;
                 }
                 &.is-active {
                     @media screen and (max-width: $smart-phone) {
                         color: $white;
-                        background-color: $blue;
+                        background-color: $dark-yellow;
                     }
                     @media screen and (min-width: $desktop) {
                         background-color: transparent;
-                        color: $blue;
+                        color: $yellow;
                     }
                 }
             }
@@ -337,14 +289,12 @@
             left: 100%;
             z-index: -1;
             visibility: hidden;
-            background: #ffc107;
-            background: linear-gradient(180deg, #ffc107 0, #ffc107 30%, rgba(250, 250, 250, 0.95) 30%, rgba(250, 250, 250, 0.95) 100%);
-            // background: rgba(17,80,140,.8);
-            // background: linear-gradient(180deg,rgba(17,80,140,.8) 0,rgba(17,80,140,.8) 30%,rgba(250,250,250,.95) 30%,rgba(250,250,250,.95) 100%);
+            background: rgb(214, 151, 9, .8);
+            background: linear-gradient(180deg, rgba(225, 255, 255, .2) 0, rgba(214, 151, 9, 0.8) 30%, rgba(5, 26, 46, 0.95) 30%, rgba(5, 26, 46, 0.95) 100%);
             @media screen and (max-width: $smart-phone) {
                 width: 100%;
                 height: 0;
-                color: $blue;
+                color: $yellow;
                 position: relative;
                 left: 0;
                 z-index: 0;
@@ -356,7 +306,7 @@
             &.sub-active {
                 @media screen and (max-width: $smart-phone) {
                     height: 100%;
-                    color: $blue;
+                    color: $yellow;
                     display: block;
                     visibility: visible !important;
                     transition: .3s;
@@ -378,7 +328,7 @@
                         width: 100%;
                         height: 100%;
                         font-size: calc(1.1rem + .25vw);
-                        color: $blue;
+                        color: $dark-yellow;
                         position: relative;
                         z-index: 10;
                         padding: 1vh 0;
@@ -387,8 +337,8 @@
                             content: '';
                             width: 8px;
                             height: 8px;
-                            border-right: 1px solid $blue;
-                            border-bottom: 1px solid $blue;
+                            border-right: 1px solid $dark-yellow;
+                            border-bottom: 1px solid $dark-yellow;
                             display: inline-block;
                             transform: rotate(-45deg);
                             margin-right: 10px;
@@ -398,7 +348,7 @@
                             content: '';
                             display: block;
                             position: absolute;
-                            background-color: $blue;
+                            background-color: $dark-yellow;
                             top: 0;
                             left: 0;
                             width: 0;
@@ -412,7 +362,7 @@
                             transition-delay: .2s;
                             opacity: 1;
                             color: $white;
-                            background-color: $blue;
+                            background-color: $dark-yellow;
                             z-index: 10000;
                             &::before {
                                 border-right: 2px solid $white;
@@ -446,13 +396,16 @@
             margin: 0 auto;
             li {
                 height: 24px;
-                display: flex;
-                -webkit-align-items: center;
-                align-items: center;
-                -webkit-justify-content: center;
-                justify-content: center;
-                -webkit-border-radius: 2px;
+                line-height: 24px;
                 border-radius: 2px;
+                font-weight: 700;
+                padding: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid $dark-yellow;
+                background-color: $dark-blue;
+                color: $yellow;
                 cursor: pointer;
                 &.active {
                     color: $black;
@@ -463,12 +416,6 @@
         .text-size {
             li {
                 width: 17%;
-                border: 1px solid $dark-yellow;
-                background-color: $white;
-                color: $dark-yellow;
-                padding: 5px;
-                font-weight: 700;
-                text-align: center;
                 margin-right: 5%;
                 margin-bottom: 5%;
                 @media screen and (max-width: $smart-phone) {
@@ -486,15 +433,8 @@
             justify-content: space-between;
             li {
                 width: 20%;
-                border: 1px solid $dark-yellow;
-                background-color: $white;
-                color: $dark-yellow;
-                padding: 5px;
                 font-size: 1.2rem;
-                font-weight: 700;
-                text-align: center;
                 letter-spacing: 0;
-                margin-right: 0px;
             }
         }
         .contact {
@@ -506,7 +446,6 @@
                 background-color: $dark-yellow;
                 display: block;
                 text-align: center;
-                padding: 5px;
                 border-radius: 2px;
                 width: 100%;
                 font-size: 1.2rem;
