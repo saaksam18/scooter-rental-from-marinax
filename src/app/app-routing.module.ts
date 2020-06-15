@@ -16,6 +16,8 @@ import { ItemComponent } from './business-field/product-info/item/item.component
 import { SemiconductorItemComponent } from './business-field/semiconductor/semiconductor-item/semiconductor-item.component';
 import { EmsItemComponent } from './business-field/ems/ems-item/ems-item.component';
 import { MapComponent } from './about/corporate-info/map/map.component'
+import { BusinessComponent } from './business/business.component';
+
 const routes: Routes = [
 	{
 		path: '',
@@ -60,6 +62,10 @@ const routes: Routes = [
 				]
 			}
 		]
+	},
+	{
+		path: 'business',
+		component: BusinessComponent
 	},
 	{
 		path: 'business-field',

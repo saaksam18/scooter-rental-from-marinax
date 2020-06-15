@@ -18,7 +18,7 @@ import { FounderComponent } from './about/founder/founder.component';
 import { PhilosophyComponent } from './about/philosophy/philosophy.component';
 import { CorporateInfoComponent } from './about/corporate-info/corporate-info.component';
 import { BusinessFieldComponent } from './business-field/business-field.component';
-import { HeaderComponent } from './business-field/header/header.component';
+import { BusinessHeaderComponent } from './business/business-header/business-header.component';
 import { SemiconductorComponent } from './business-field/semiconductor/semiconductor.component';
 import { SitemapComponent } from './sitemap/sitemap.component';
 import { EmsComponent } from './business-field/ems/ems.component';
@@ -28,6 +28,7 @@ import { EmsItemComponent } from './business-field/ems/ems-item/ems-item.compone
 import { ItemComponent } from './business-field/product-info/item/item.component';
 import { SemiconductorItemComponent } from './business-field/semiconductor/semiconductor-item/semiconductor-item.component';
 import { MapComponent } from './about/corporate-info/map/map.component';
+import { BusinessComponent } from './business/business.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,7 @@ import { MapComponent } from './about/corporate-info/map/map.component';
     PhilosophyComponent,
     CorporateInfoComponent,
     BusinessFieldComponent,
-    HeaderComponent,
+    BusinessHeaderComponent,
     SemiconductorComponent,
     SitemapComponent,
     EmsComponent,
@@ -51,7 +52,8 @@ import { MapComponent } from './about/corporate-info/map/map.component';
     EmsItemComponent,
     ItemComponent,
     SemiconductorItemComponent,
-    MapComponent
+    MapComponent,
+    BusinessComponent
   ],
   imports: [
     BrowserModule,
