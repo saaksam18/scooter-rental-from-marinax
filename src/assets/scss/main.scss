@@ -119,7 +119,7 @@ img{
             height: 70px;
             padding: 0;
             flex-direction: row;
-            background: $blue;
+            background-color: $blue;
             animation: leftnavi_slide_in .4s ease-out both;
             animation-delay: 1.8s;
         }
@@ -170,7 +170,7 @@ img{
             border-radius: 2px;
         }
         svg {
-            fill: $white;
+            fill: $dark-blue;
         }
     }
     .gsc-control-cse {
