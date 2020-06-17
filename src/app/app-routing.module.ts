@@ -21,10 +21,16 @@ import { SitemapComponent } from './sitemap/sitemap.component';
 const routes: Routes = [
 	{
 		path: '',
-		component: HomeComponent
+		component: HomeComponent,
+		data: {
+			breadcrumb: 'Home'
+		},
 	},
 	{
 		path: 'about',
+		data: {
+			breadcrumb: 'About'
+		},
 		children: [
 			{ 
 				path: '',
@@ -35,19 +41,31 @@ const routes: Routes = [
 				path: 'history',
 				component: HistoryComponent,
 				pathMatch: 'full',
+				data: {
+					breadcrumb: 'History'
+				},
 			},
 			{
 				path: 'founder',
 				component: FounderComponent,
 				pathMatch: 'full',
+				data: {
+					breadcrumb: 'Founder'
+				},
 			},
 			{
 				path: 'philosophy', 
 				component: PhilosophyComponent,
-				pathMatch: 'full'
+				pathMatch: 'full',
+				data: {
+					breadcrumb: 'Philosophy'
+				},
 			},
 			{
 				path: 'outline',
+				data: {
+					breadcrumb: 'Outline'
+				},
 				children:[
 					{
 						path: '',
@@ -57,7 +75,10 @@ const routes: Routes = [
 					{
 						path: 'map',
 						component: MapComponent,
-						pathMatch: 'full'
+						pathMatch: 'full',
+						data: {
+							breadcrumb: 'Map'
+						},
 					}
 				]
 			}
@@ -65,6 +86,9 @@ const routes: Routes = [
 	},
 	{
 		path: 'business',
+		data: {
+			breadcrumb: 'menu.about-us'
+		},
 		children: [
 			{ 
 				path: '',
@@ -74,64 +98,91 @@ const routes: Routes = [
 			{
 				path: 'visa',
 				component: VisaComponent,
-				pathMatch: 'full'
+				pathMatch: 'full',
+				data: {
+					breadcrumb: 'Visa'
+				},
 			},
 			{ 
 				path: 'ems',
+				data: {
+					breadcrumb: 'Ems'
+				},
 				children:[
 					{
 						path: '',
 						component: EmsComponent,
-						pathMatch: 'full'
+						pathMatch: 'full',
 					},
 					{
 						path: 'item',
 						component: EmsItemComponent,
-						pathMatch: 'full'
+						pathMatch: 'full',
+						data: {
+							breadcrumb: 'Items'
+						},
 					}
 				]
 			},
 			{ 
 				path: 'exchange',
+				data: {
+					breadcrumb: 'Exchange'
+				},
 				children:[
 					{
 						path: '',
 						component: ExchangeComponent,
-						pathMatch: 'full'
+						pathMatch: 'full',
 					},
 					{
 						path: 'item',
 						component: ExchangeItemComponent,
-						pathMatch: 'full'
+						pathMatch: 'full',
+						data: {
+							breadcrumb: 'Item'
+						},
 					}
 				]
 			},
 			{
 				path: 'product-info',
+				data: {
+					breadcrumb: 'Product info'
+				},
 				children:[
 					{
 						path: '',
 						component: ProductInfoComponent,
-						pathMatch: 'full'
+						pathMatch: 'full',
 					},
 					{
 						path: 'item',
 						component: ItemComponent,
-						pathMatch: 'full'
+						pathMatch: 'full',
+						data: {
+							breadcrumb: 'Item'
+						},
 					}
 				]
 			},
 			{
 				path: 'newbusiness',
 				component: NewbusinessComponent,
-				pathMatch: 'full'
+				pathMatch: 'full',
+				data: {
+					breadcrumb: 'New Business'
+				},
 			},
 		]
 	},
 
 	{
 		path: 'sitemap',
-		component: SitemapComponent
+		component: SitemapComponent,
+		data: {
+			breadcrumb: 'Site map'
+		},
 	},
 	{
 		path: '**',
