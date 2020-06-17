@@ -65,7 +65,7 @@
             justify-content: center;
             a {
                 color: $white;
-                background-color: $blue;
+                background-color: $dark-yellow;
                 text-align: center;
                 padding: 5px;
                 border-radius: 2px;
@@ -82,10 +82,10 @@
             .title {
                 display: block;
                 font-weight: 700;
-                color: $blue;
+                color: $dark-yellow;
                 margin: 1em 0 .2em;
                 font-size: 1.7rem;
-                border-bottom: 1px solid $blue;
+                border-bottom: 1px solid $dark-yellow;
             }
             @media screen and (max-width: $smart-phone) {
                 width: 100%;
@@ -103,18 +103,18 @@
                 width: 100%;
                 min-height: 60px;
                 padding: 10px 85px 10px 20px;
-                background-color: $blue;
+                background-color: $dark-yellow;
                 position: relative;
                 color: $white;
                 text-decoration: underline;
                 font-size: 1.6rem;
-                border: 2px solid $blue;
+                border: 2px solid $dark-yellow;
                 &::after {
                     content: '';
                     display: block;
                     width: 65px;
                     height: 100%;
-                    background: url("../../../assets/images/outline/link_btn_icon_pdf.png") no-repeat center center $blue004;
+                    background: url("../../../assets/images/outline/link_btn_icon_pdf.png") no-repeat center center $dark-blue;
                     position: absolute;
                     top: 0;
                     right: 0;

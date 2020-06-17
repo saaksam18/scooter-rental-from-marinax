@@ -195,14 +195,15 @@ img{
         justify-content: space-between;
         background: $white;
         animation: leftnavi_slide_in .4s ease-out both;
-        animation-delay: 0.4s;    
+        animation-delay: 0.4s;   
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.69); 
         @media screen and (max-width: $smart-phone) {
             width: 100%;
             min-width: 100%;
             height: 70px;
             padding: 0;
             flex-direction: row;
-            background-color: $blue;
+            background-color: $dark-yellow;
             animation: leftnavi_slide_in .4s ease-out both;
             animation-delay: 1.8s;
         }
