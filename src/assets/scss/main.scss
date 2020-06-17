@@ -224,7 +224,6 @@ img{
 
 // sidebar search
 .form-search {
-    margin-top: 1em;
     .gsc-results-wrapper-overlay {
         left: 10vw;
         width: 80vw;
@@ -245,13 +244,12 @@ img{
         }
     }
     .gsc-search-button-v2 {
-        padding: 7px 10px;
-        margin-top: -2px;
+        padding: 6px 10px;
+        margin: -2px 0 0 2px;
         line-height: 1em;
-        margin-left: 2px;
+        border-radius: 2px;
         @media screen and (max-width: $smart-phone) {
             margin: 0;
-            border-radius: 2px;
         }
         svg {
             fill: $dark-blue;
@@ -286,13 +284,14 @@ img{
     .gsc-input {
         padding-right: 5px !important;
     }
+    .gsc-input-box {
+        padding: 0;
+        border-radius: 2px;
+    }
     @media screen and (max-width: $smart-phone) {
         .gsc-input-box,
         .gsc-control-cse {
             padding: 0; 
-        }
-        .gsc-input-box {
-            border-radius: 2px;
         }
         .gsc-input {
             padding-right: 12px !important;
