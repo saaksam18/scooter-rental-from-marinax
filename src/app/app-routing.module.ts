@@ -15,6 +15,7 @@ import { EmsComponent } from './business/ems/ems.component';
 import { EmsItemComponent } from './business/ems/ems-item/ems-item.component';
 import { ProductInfoComponent } from './business/product-info/product-info.component';
 import { NewbusinessComponent } from './business/newbusiness/newbusiness.component';
+import { RentalComponent } from './business/rental/rental.component';
 import { ItemComponent } from './business/product-info/item/item.component';
 import { SitemapComponent } from './sitemap/sitemap.component';
 
@@ -173,6 +174,11 @@ const routes: Routes = [
 				data: {
 					breadcrumb: 'New Business'
 				},
+			},
+			{
+				path: 'rental',
+				component: RentalComponent,
+				pathMatch: 'full'
 			},
 		]
 	},

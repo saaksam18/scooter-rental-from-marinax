@@ -83,7 +83,7 @@
     li{
         width: 100%;
         padding: 30px 70px;
-        border: 1px solid $blue;
+        border: 1px solid $dark-yellow;
         margin-bottom: 35px;
         background-size: 170px 115px !important;
         @media screen and (max-width: $smart-phone){
@@ -99,7 +99,7 @@
             background: url('assets/images/semiconductor/point_num03.png') no-repeat center center;
         }
         dt{
-            color: $blue;
+            color: $dark-yellow;
             font-size: 2.2rem;
             font-weight: 400;
             line-height: 1;
@@ -130,7 +130,7 @@
     align-items: center;
     flex-direction: column;
     padding: 20px;
-    background-color: $blue;
+    background-color: $dark-yellow;
     border: 5px solid rgba(255,255,255,.2);
     span{
         color: $white;
@@ -165,7 +165,7 @@
             font-size: 1.8rem;
             font-weight: 700;
             text-align: center;
-            border: 2px solid $blue;
+            border: 2px solid $dark-yellow;
             box-shadow: 0 5px 5px rgba(0,0,0,.2);
             background-size: cover !important;
             @media screen and (max-width: $smart-phone){
@@ -209,7 +209,7 @@
     }
     &__title{
         width: 100%;
-        background-color: $blue;
+        background-color: $dark-yellow;
         margin-bottom: 30px;
         text-align: center;
         h3{
