@@ -29,6 +29,7 @@ import { ProductInfoComponent } from './business/product-info/product-info.compo
 import { ItemComponent } from './business/product-info/item/item.component';
 import { NewbusinessComponent } from './business/newbusiness/newbusiness.component';
 import { SitemapComponent } from './sitemap/sitemap.component';
+import { RentalComponent } from './business/rental/rental.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import { SitemapComponent } from './sitemap/sitemap.component';
     NewbusinessComponent,
     ItemComponent,
     MapComponent,
-    BusinessComponent
+    BusinessComponent,
+    RentalComponent
   ],
   imports: [
     BrowserModule,

@@ -8,8 +8,8 @@
             content: '';
             width: 100%;
             height: calc(100% - 5rem);
-            border-top: 2px solid $blue;
-            border-left: 2px solid $blue;
+            border-top: 2px solid $dark-yellow;
+            border-left: 2px solid $dark-yellow;
             position: absolute;
             bottom: 0;
             right: 0;
@@ -17,7 +17,7 @@
         }
     }
     &__title{
-        color: $blue;
+        color: $dark-yellow;
         font-weight: 700;
         position: relative;
         h4{
@@ -59,7 +59,7 @@
         }
         dt{
             width: 100px;
-            color: $blue;
+            color: $dark-yellow;
             font-weight: 700;
             background-color: $white;
             padding: 5px 10px;
@@ -89,13 +89,13 @@
                     content: '';
                     width: .5rem;
                     height: .5rem;
-                    background: $blue;
+                    background: $dark-yellow;
                     position: absolute;
                     left: 0;
                     top: 1.4rem;
                 }
                 &.point{
-                    color: $blue;
+                    color: $dark-yellow;
                     font-weight: 700;
                     font-size: 2rem;
                     margin-bottom: 20px;
