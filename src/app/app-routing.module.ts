@@ -201,6 +201,7 @@ const routes: Routes = [
 		useHash: false,
 		scrollPositionRestoration: 'enabled',
 		anchorScrolling: 'enabled',
+		scrollOffset: [0, 64]
 	})],
 	exports: [RouterModule]
 })

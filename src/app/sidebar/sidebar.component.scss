@@ -184,12 +184,12 @@
         animation: menu-slide-left .5s ease-out backwards;
         animation-delay: 1s;
         background-color: $dark-blue;
-            @media screen and (max-width: $smart-phone) {
-                background-color: $white;
-                .pointer-even {
-                    pointer-events: none;
-                }
+        @media screen and (max-width: $smart-phone) {
+            background-color: $white;
+            .pointer-even {
+                pointer-events: none;
             }
+        }
         ul {
             padding-top: 3vh;
             @media screen and (max-width: $smart-phone) {
@@ -330,7 +330,6 @@
                 }
                 
             }
-            
             ul {
                 z-index: 1;
                 -ms-overflow-style: none;
@@ -345,11 +344,14 @@
                         width: 100%;
                         height: 100%;
                         font-size: calc(1.1rem + .25vw);
-                        color: $dark-yellow;
+                        color: $white;
                         position: relative;
                         z-index: 10;
                         padding: 1vh 0;
                         font-weight: 400;
+                        @media screen and (max-width: $smart-phone) {
+                            color: $dark-yellow;
+                        }
                         &::before {
                             content: '';
                             width: 8px;
