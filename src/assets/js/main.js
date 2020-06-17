@@ -68,7 +68,8 @@ function menuResponsive() {
 	$(".sidebar__logo a ").click(function(){
 		$("#content-menu").removeClass("show");
 		$(".menu-icon").removeClass("active");
-		$("ul.parent-menu > li.main-item").children().removeClass("is-active");
+		$("ul.parent-menu > li").find(".is-active").removeClass("is-active");
+		$("ul.parent-menu > li").children().removeClass("sub-active");
 	});
 
 	$(".menu-icon").click(function(){
@@ -97,6 +98,10 @@ function menuResponsive() {
 		$(".menu-icon").removeClass("active");
 		$("ul.parent-menu > li > .on-menu > a ").removeClass("is-active");
 		$("ul.parent-menu > li").find(".sub-active").removeClass("sub-active");
+		$(this).parents(".sub-menu").toggleClass("invisible");
+		setTimeout(function() {
+			$(".sub-menu").removeClass('invisible');
+		}, 800);
 	});
 }
 function ChangeFontsize() {
