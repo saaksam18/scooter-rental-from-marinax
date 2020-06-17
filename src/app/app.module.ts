@@ -29,6 +29,7 @@ import { ProductInfoComponent } from './business/product-info/product-info.compo
 import { ItemComponent } from './business/product-info/item/item.component';
 import { NewbusinessComponent } from './business/newbusiness/newbusiness.component';
 import { SitemapComponent } from './sitemap/sitemap.component';
+import {BreadcrumbModule} from 'xng-breadcrumb';
 import { RentalComponent } from './business/rental/rental.component';
 
 @NgModule({
@@ -61,6 +62,7 @@ import { RentalComponent } from './business/rental/rental.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    BreadcrumbModule,
     TranslateModule.forRoot({
         loader: {
             provide: TranslateLoader,
