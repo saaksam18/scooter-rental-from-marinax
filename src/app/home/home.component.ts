@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
-  title = this.translate.get('加賀電子株式会社').subscribe((res: string) => {
+  title = this.translate.get('EMC-Expat Motorbike Cambodia').subscribe((res: string) => {
     this.pageTitle.setTitle(res);
   });
   constructor(
@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
   ) {
     if(this.router.url === '/'){
       translate.onLangChange.subscribe((event: LangChangeEvent) => {
-          translate.get('加賀電子株式会社').subscribe((res: string) => {
+          translate.get('EMC-Expat Motorbike Cambodia').subscribe((res: string) => {
           this.pageTitle.setTitle(res);
           });
       });
