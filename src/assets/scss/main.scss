@@ -50,28 +50,24 @@ img{
     animation-timing-function: cubic-bezier(1,.6,.1);
     animation-delay: 1.3s;
     overflow: hidden;
-    &::before{
+    &::before,
+    &::after {
         content: '';
         width: 100vw;
         height: 100vh;
-        background-color: $dark-yellow;
-        animation: avant_bg_anime .3s ease-out both;
-        animation-delay: .3s;
         position: absolute;
         left: 0;
         bottom: 0;
+        animation: avant_bg_anime .3s ease-out both;
+    }
+    &::before{
+        background-color: $dark-yellow;
+        animation-delay: .3s;
         z-index: 104;
     }
     &::after{
-        content: '';
-        width: 100vw;
-        height: 100vh;
         background: $dark-yellow;
-        animation: avant_bg_anime .3s ease-out both;
         animation-delay: .1s;
-        position: absolute;
-        left: 0;
-        bottom: 0;
         z-index: 102;
     }
     span{
@@ -182,29 +178,16 @@ img{
         min-width: 220px;
         height: 100vh;
         position: fixed;
-        z-index: 100000!important;
-        left: 0;
-        top: 0;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-        background: $white;
         animation: leftnavi_slide_in .4s ease-out both;
         animation-delay: 0.4s;   
         box-shadow: 0 0 4px rgba(0, 0, 0, 0.69); 
+        z-index: 99;
         @media screen and (max-width: $smart-phone) {
             width: 100%;
             min-width: 100%;
             height: 70px;
             padding: 0;
-            flex-direction: row;
             background-color: $dark-yellow;
-            animation: leftnavi_slide_in .4s ease-out both;
             animation-delay: 1.8s;
         }
     }

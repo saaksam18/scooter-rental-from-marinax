@@ -88,24 +88,18 @@
     &__logo {
         width: 15vw;
         min-width: 220px;
-        z-index: 10;
         background-color: $dark-yellow;
         @media screen and (max-width: $smart-phone) {
             background-color: transparent;
             width: calc(70% - 70px);
             min-width: auto;
             height: 70px;
-            margin-left: 20px;
-            position: absolute;
-            z-index: 0;
         }
         @media screen and (max-width: $small-device) {
             width: calc(95% - 70px);
-            margin-left: 0;
         }
         a {
             width: 100%;
-            padding: 20px;
             height: 30vh;
             color: $white;
             display: flex;
@@ -127,6 +121,7 @@
                     height: 100%;
                     margin-left: 5px;
                     line-height: 1;
+                    margin-bottom: 8px;
                 }
             }
         }
@@ -153,6 +148,7 @@
                 width: 80%;
                 font-size: 2em;
                 font-weight: 700;
+                margin-bottom: 0;
                 @media screen and (max-width: $smart-phone) {
                     width: auto;
                 }
