@@ -1,4 +1,4 @@
-@keyframes trigger-brfore {
+@keyframes trigger-before {
     0% {
         transform:translateY(11px) rotate(45deg);
     }
@@ -46,21 +46,6 @@
     }
 }
 
-@keyframes sub-menu-left-hover {
-    0% {
-        left: 0;
-        width: 0;
-    }
-    70% {
-        left: 0;
-        width: 100%;
-    }
-    100% { 
-        left: 0;
-        width: 100%;
-    }
-}
-
 @keyframes menu-slide-left {
     0% { 
         opacity:0;
@@ -69,17 +54,6 @@
     100% {
         opacity:1;
         transform:translateX(0);
-    }
-}
-
-@keyframes section_fade_in {
-    0% {
-        opacity: 0;
-        transform: translateY(5px)
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0)
     }
 }
 

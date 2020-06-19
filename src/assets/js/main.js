@@ -98,10 +98,10 @@ function menuResponsive() {
 		$(".menu-icon").removeClass("active");
 		$("ul.parent-menu > li > .on-menu > a ").removeClass("is-active");
 		$("ul.parent-menu > li").find(".sub-active").removeClass("sub-active");
-		$(this).parents(".sub-menu").toggleClass("invisible");
+		$(this).parents(".sub-menu").slideToggle();
 		setTimeout(function() {
-			$(".sub-menu").removeClass('invisible');
-		}, 800);
+			$(".sub-menu").attr('style', ''); 
+		}, 1000);
 	});
 }
 function ChangeFontsize() {
