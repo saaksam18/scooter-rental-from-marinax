@@ -237,7 +237,8 @@
 /* ==== content sub-page ==== */
 .content {
     &__pagetitle{
-        @extend .bg-gray007;
+        background-color: $blue001;
+        opacity: .8;
         .title-gray{
             color: $white;
             font-size: calc(1.5rem + .7vw);
