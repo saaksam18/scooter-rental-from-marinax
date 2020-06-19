@@ -1,31 +1,30 @@
 @import '../../assets/scss/components/variables';
 .story{
     li{
-        height: 394px;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         &:nth-child(odd){
             background-color: $dark-yellow;
         }
         &:nth-child(even){
             background-color: $dark-blue;
         }
-        @media screen and (max-width: $desktop){
-            height: 250px;
-        }
-        @media screen and (max-width: $smart-phone){
-            height: 100px;
-            padding-top: 0;
-            padding-bottom: 20px;
-        }
         a{
+            height: 360px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
             color: $white;
             font-size: 2rem;
-            @media screen and (max-width: $desktop){
+            @media screen and (max-width: $large-desktop){
                 font-size: 1.6rem;
                 width: 100%;
+                height: 250px;
+            }
+            @media screen and (max-width: $smart-phone){
+                height: 100px;
+                padding-top: 0;
+                padding-bottom: 20px;
             }
             &::after{
                 content: '';
@@ -142,35 +141,17 @@
         margin-top: -30vmin;
         margin-bottom: 50px;
         .id{
-            width: max-content;
+            width: auto;
             color: $white;
             background-color: $dark-yellow;
-            padding: 0 5px;
             margin-bottom: 30px;
             font-size: 1.6rem;
             font-weight: 400;
-            transition: .1s all ease .9s;
             &::before{
-                content: '';
                 background: $dark-yellow;
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                top: 0;
-                left: -100%;
-                z-index: -1;
-                transition: .6s all ease .2s;
             }
             &::after{
-                content: '';
                 background: $white;
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                top: 0;
-                left: -100%;
-                z-index: -1;
-                transition: 1s all ease .6s;
             }
         }
         p{
@@ -181,7 +162,7 @@
             overflow: hidden;
             position: relative;
             z-index: 1;
-            display: inline;
+            display: table;
             margin-right: auto;
             font-weight: 700;
             transition: .1s all ease .9s;
@@ -193,14 +174,13 @@
                 position: absolute;
                 top: 0;
                 left: -100%;
-                left: 0;
                 z-index: -1;
                 transition: .6s all ease .2s;
             }
             &::after{
                 content: '';
                 background: $dark-yellow;
-                width: 120%;
+                width: 100%;
                 height: 100%;
                 position: absolute;
                 top: 0;
@@ -213,9 +193,6 @@
     .is-show{
         &::after{
             opacity: 0;
-        }
-        .id::after{
-            left: 120%;
         }
         p{
             &::before{

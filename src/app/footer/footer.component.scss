@@ -4,11 +4,10 @@
     .category{
         padding: 50px 5% 30px;
         &__title{
-            font-size: 1.8rem;
+            font-size: 1.8rem !important;
             font-weight: 700;
             padding-left: 18px;
             padding-bottom: 5px;
-            margin-bottom: 10px;
             border-bottom: 1px solid $white;
             position: relative;
             a{
