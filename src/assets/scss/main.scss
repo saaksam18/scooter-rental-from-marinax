@@ -27,11 +27,6 @@ ul{
 }
 a:hover{
     text-decoration: none;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    -ms-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
     opacity: .7;
 }
 img{
@@ -227,7 +222,7 @@ img{
         }
     }
     .gsc-search-button-v2 {
-        padding: 6px 10px;
+        padding: 7px 10px;
         margin: -2px 0 0 2px;
         line-height: 1em;
         border-radius: 2px;

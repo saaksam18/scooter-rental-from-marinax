@@ -29,8 +29,8 @@
                 width: 100%;
                 &:before {
                     top: -12px;
-                    -webkit-animation: trigger-brfore .5s forwards;
-                    animation: trigger-brfore .5s forwards;
+                    -webkit-animation: trigger-before .5s forwards;
+                    animation: trigger-before .5s forwards;
                 }
                 &:after {
                     top: 12px;
@@ -280,6 +280,13 @@
                     }
                 }
             }
+            + ul {
+                li:hover {
+                    a {
+                        background-color: transparent;
+                    }
+                }
+            }
         }
         .sub-menu {
             width: calc(5vw + 220px);
@@ -302,13 +309,11 @@
                 z-index: 0;
                 padding-top: 0;
                 background: 0 0;
-                display: none;
             }
             &.sub-active {
                 @media screen and (max-width: $smart-phone) {
-                    height: 100%;
+                    height: auto;
                     color: $yellow;
-                    display: block;
                     visibility: visible !important;
                 }
                 
@@ -327,6 +332,7 @@
                         font-size: calc(1.1rem + .25vw);
                         padding: 1vh 0;
                         font-weight: 400;
+                        z-index: 999;
                         &::before {
                             content: '';
                             width: 8px;
@@ -348,24 +354,14 @@
                             width: 0;
                             z-index: -1;
                         }
-                    }
-                    &:hover {
-                        a {
+                        &:hover {
                             padding-left: .6em;
                             transition: all .4s ease;
-                            transition-delay: .2s;
-                            opacity: 1;
                             color: $white;
                             background-color: $dark-yellow;
-                            z-index: 10000;
                             &::before {
                                 border-right: 2px solid $white;
                                 border-bottom: 2px solid $white;
-                                transition-delay: .3s;
-                            }
-                            &:after {
-                                animation: sub-menu-left-hover .3s ease-in-out both;
-                                animation-delay: .2s;
                             }
                         }
                     }
