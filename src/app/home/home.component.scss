@@ -33,10 +33,7 @@ a:hover{
         width: 100%;
         text-align: right;
         @media screen and (max-width: $smart-phone) {
-            position: absolute;
-            height: 100vh;
-            top: 70px;
-            left: 0;
+            padding-right: 20px;
         }
         h1{
             color: $white;
@@ -74,6 +71,9 @@ a:hover{
             font-size: 1.6rem;
             font-weight: 500;
             margin-bottom: 0;
+            @media screen and (max-width: $smart-phone){
+                font-size: 14px;
+            }
         }
     }
 }
@@ -134,7 +134,7 @@ a:hover{
                 width: 10%;
                 min-width: 6em;
                 font-size: 1.4rem;
-                padding: 0 .5em;
+                padding: 0 15px;
                 @media screen and (max-width: $smart-phone){
                     width: auto;
                     margin-left: 35px;
@@ -178,8 +178,6 @@ a:hover{
             a{
                 color: $gray;
                 height: 16vw;
-                flex-direction: column;
-                position: relative;
                 padding-top: 3.2vw;
                 background-color: $white;
                 @media screen and (max-width: $desktop){
@@ -191,7 +189,6 @@ a:hover{
         }
         &__title{
             background-color: $dark-yellow;
-            flex-direction: column;
             @media screen and (max-width: $desktop){
                 padding: 10px;
             }
@@ -220,6 +217,9 @@ a:hover{
             background-color: $dark-yellow;
         }
         &__date{
+            @media screen and (max-width: $desktop){
+                margin-top: 10px;
+            }
             .year{
                 font-size: 1rem;
                 font-weight: 600;
@@ -296,7 +296,6 @@ a:hover{
                     text-shadow: 0 0 8px rgba(0,0,0,.4);
                     flex-direction: column;
                     padding-top: 15%;
-                    position: relative;
                     @media screen and (max-width: $smart-phone){                    
                         height: 14rem;
                         padding-top: 0;
@@ -347,67 +346,61 @@ a:hover{
             }
         }
     }
-}
-.access{
-    &__contact{
-        width: 100%;
-        font-size: 15px;
-        color: $black;
-        opacity: .9;
-        ul{
-            li{
-                @media screen and (max-width: $desktop){
-                    border-bottom: 1px solid $white;
-                    padding-bottom: 15px;
-                    margin-bottom: 20px;
-                }
-                &:last-child{
-                    border: 0;
-                }
-                h3{
-                    font-size: 15px;
-                    width: fit-content;
-                    margin-top: 15px;
-                }
-                .icon{
-                    &::before{
-                        color: $white;
-                        font-family: "Font Awesome 5 Free";
-                        width: 50px;
-                        height: 50px;
-                        line-height: 50px;
-                        font-size: 22px;
-                        border-radius: 50%;
-                        margin-right: 20px;
-                        text-align: center;
-                        background-color: $yellow;
-                        display: inline-block;
-                        vertical-align: middle;
-                        font-weight:900;
+    .access{
+        &__contact{
+            width: 100%;
+            font-size: 15px;
+            color: $black;
+            opacity: .9;
+            padding: 50px;
+            ul{
+                li{
+                    @media screen and (max-width: $desktop){
+                        border-bottom: 1px solid $white;
+                        padding-bottom: 15px;
+                        margin-bottom: 20px;
+                    }
+                    &:last-child{
+                        border: 0;
+                    }
+                    h3{
+                        font-size: 15px;
+                        width: fit-content;
+                        margin-top: 15px;
+                    }
+                    .icon{
+                        &::before{
+                            color: $yellow;;
+                            font-family: "Font Awesome 5 Free";
+                            line-height: 50px;
+                            font-size: 30px;
+                            margin-right: 20px;
+                            vertical-align: middle;
+                        }
                     }
                 }
             }
-        }
-        .location{
-            &::before{
-                content: "\f3c5";
+            .location{
+                &::before{
+                    content: "\f3c5";
+                }
             }
-        }
-        .time{
-            &::before{
-                content: "\f017";
+            .time{
+                &::before{
+                    content: "\f017";
+                }
             }
-        }
-        .phone{
-            &::before{
-                content: "\f3cd";
+            .phone{
+                &::before{
+                    content: "\f3cd";
+                }
             }
-        }
-        p{
-            font-size: 14px;
-            margin-bottom: 0;
-            span{
-                color: $dark-yellow;
+            p{
+                font-size: 14px;
+                margin-bottom: 0;
+                span{
+                    color: $dark-yellow;
+                }
             }
         }
     }
