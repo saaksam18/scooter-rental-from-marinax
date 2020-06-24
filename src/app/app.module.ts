@@ -31,6 +31,7 @@ import { NewbusinessComponent } from './business/newbusiness/newbusiness.compone
 import { SitemapComponent } from './sitemap/sitemap.component';
 import {BreadcrumbModule} from 'xng-breadcrumb';
 import { RentalComponent } from './business/rental/rental.component';
+import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
@@ -58,6 +59,7 @@ import { ContactComponent } from './contact/contact.component';
     MapComponent,
     BusinessComponent,
     RentalComponent,
+    BlogComponent,
     ContactComponent
   ],
   imports: [
