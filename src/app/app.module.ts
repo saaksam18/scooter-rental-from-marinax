@@ -33,6 +33,7 @@ import {BreadcrumbModule} from 'xng-breadcrumb';
 import { RentalComponent } from './business/rental/rental.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
+import { Error404Component } from './error404/error404.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +61,8 @@ import { ContactComponent } from './contact/contact.component';
     BusinessComponent,
     RentalComponent,
     BlogComponent,
-    ContactComponent
+    ContactComponent,
+    Error404Component
   ],
   imports: [
     BrowserModule,
