@@ -18,7 +18,7 @@ import { NewbusinessComponent } from './business/newbusiness/newbusiness.compone
 import { RentalComponent } from './business/rental/rental.component';
 import { ItemComponent } from './business/product-info/item/item.component';
 import { SitemapComponent } from './sitemap/sitemap.component';
-
+import { BlogComponent } from './blog/blog.component';
 const routes: Routes = [
 	{
 		path: '',
@@ -182,13 +182,16 @@ const routes: Routes = [
 			},
 		]
 	},
-
 	{
 		path: 'sitemap',
 		component: SitemapComponent,
 		data: {
 			breadcrumb: 'Site map'
 		},
+	},
+	{
+		path: 'blog',
+		component: BlogComponent
 	},
 	{
 		path: '**',

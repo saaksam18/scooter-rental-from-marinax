@@ -1,0 +1,18 @@
+.blog-img {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+@media screen and (min-width: 1200px) {
+    .w-xl-6 {
+        width: 50% !important;
+    }
+}
+@media screen and (max-width: 1200px){
+    .blog-text {
+        height: calc(100% - 250px);
+    }
+}

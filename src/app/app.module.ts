@@ -31,6 +31,7 @@ import { NewbusinessComponent } from './business/newbusiness/newbusiness.compone
 import { SitemapComponent } from './sitemap/sitemap.component';
 import {BreadcrumbModule} from 'xng-breadcrumb';
 import { RentalComponent } from './business/rental/rental.component';
+import { BlogComponent } from './blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,8 @@ import { RentalComponent } from './business/rental/rental.component';
     ItemComponent,
     MapComponent,
     BusinessComponent,
-    RentalComponent
+    RentalComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,
