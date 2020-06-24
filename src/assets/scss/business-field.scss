@@ -42,6 +42,9 @@
     span{
         color: $white;
         font-size: 2rem;
+        @media screen and (max-width: $smart-phone){
+            font-size: 16px;
+        }
     }
     .breadcrumbs{
         display: flex;
