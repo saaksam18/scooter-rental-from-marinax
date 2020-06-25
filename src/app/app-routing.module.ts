@@ -18,9 +18,9 @@ import { NewbusinessComponent } from './business/newbusiness/newbusiness.compone
 import { RentalComponent } from './business/rental/rental.component';
 import { ItemComponent } from './business/product-info/item/item.component';
 import { SitemapComponent } from './sitemap/sitemap.component';
-import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
 import { Error404Component } from './error404/error404.component';
+import { BlogComponent } from './blog/blog.component';
 
 const routes: Routes = [
 	{

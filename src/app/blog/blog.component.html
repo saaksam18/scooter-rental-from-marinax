@@ -1,24 +1,68 @@
 <div class="content">
     <app-about-header></app-about-header>
-    <div class="content__pagetitle">
-        <h3 class="title-gray">Blog</h3>
-    </div>
     <div class="blog bg-lightblue">
         <div class="content__wrap">
-            <div class="row">
-                <div class="col-xl-6 col-lg-4 col-md-6 col-12 my-3" *ngFor="let number of [0,1,2,3]">
-                    <div class="row no-gutters b-darkyellow">
-                        <div class="col-12 blog-img my-xl-auto">
-                            <img src="assets/images/business/rental__img01.jpg" alt="ss" class="w-100">
-                        </div>
-                        <div class="col-12 bg-white blog-text">
-                            <div class="p-5">
-                                <div class="text-center">
-                                    <h3 class="yellow-title">aa</h3>
+            <div id="hisashi" class="section-content" data-aos="fade-up" data-aos-delay="50">
+                <div class="mb-5">
+                    <h3 class="title-blog">Hisashi</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12 my-4" *ngFor="let post of posts">
+                        <div class="d-flex flex-column h-100 b-darkblue">
+                            <div class="my-xl-auto blog-img">
+                                <ng-container *ngIf="post._embedded['wp:featuredmedia'] ; else notImg">
+                                    <img src="{{ post._embedded['wp:featuredmedia'][0].source_url }}" alt="{{ post.title.rendered }}" class="w-100">
+                                </ng-container>
+                                <ng-template #notImg>
+                                    <img src="assets/images/imgAvailable.png" alt="no image available" class="w-100"> 
+                                </ng-template>
+                            </div>
+                            <div class="bg-white blog-text">
+                                <div class="p-5">
+                                    <div class="text-center">
+                                        <h3 class="yellow-title">{{ post.title.rendered }}</h3>
+                                    </div>
+                                    <div bind-innerHTML="post.content.rendered"></div>
                                 </div>
-                                <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s</div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-8 col-12 mx-auto my-5">
+                        <a href="http://localhost:8080/island/" target="_blank">More</a>
+                    </div>
+                </div>
+            </div>
+            <div id="shugo" class="section-content" data-aos="fade-up" data-aos-delay="50">
+                <div class="my-5">
+                    <h3 class="title-blog">Shungo</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12 my-4" *ngFor="let post of posts">
+                        <div class="d-flex flex-column h-100 b-darkblue">
+                            <div class="my-xl-auto blog-img">
+                                <ng-container *ngIf="post._embedded['wp:featuredmedia'] ; else notImg">
+                                    <img src="{{ post._embedded['wp:featuredmedia'][0].source_url }}" alt="{{ post.title.rendered }}" class="w-100">
+                                </ng-container>
+                                <ng-template #notImg>
+                                    <img src="assets/images/imgAvailable.png" alt="no image available" class="w-100"> 
+                                </ng-template>
+                            </div>
+                            <div class="bg-white blog-text">
+                                <div class="p-5">
+                                    <div class="text-center">
+                                        <h3 class="yellow-title">{{ post.title.rendered }}</h3>
+                                    </div>
+                                    <div bind-innerHTML="post.content.rendered"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-8 col-12 mx-auto my-5">
+                        <a href="http://localhost:8080/samurai/" target="_blank">More</a>
                     </div>
                 </div>
             </div>
