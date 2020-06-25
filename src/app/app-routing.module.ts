@@ -20,6 +20,7 @@ import { ItemComponent } from './business/product-info/item/item.component';
 import { SitemapComponent } from './sitemap/sitemap.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
+import { ThankComponent } from './contact/thank/thank.component';
 
 const routes: Routes = [
 	{
@@ -186,10 +187,24 @@ const routes: Routes = [
 	},
 	{
 		path: 'contact',
-		component: ContactComponent,
 		data: {
 			breadcrumb: 'Contact'
 		},
+		children:[
+			{
+				path: '',
+				component: ContactComponent,
+				pathMatch: 'full',
+			},
+			{
+				path: 'thank',
+				component: ThankComponent,
+				pathMatch: 'full',
+				data: {
+					breadcrumb: 'Thank You'
+				},
+			}
+		]
 	},
 	{
 		path: 'sitemap',

@@ -34,6 +34,7 @@ import { RentalComponent } from './business/rental/rental.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ThankComponent } from './contact/thank/thank.component';
 
 @NgModule({
   declarations: [
@@ -61,7 +62,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     BusinessComponent,
     RentalComponent,
     BlogComponent,
-    ContactComponent
+    ContactComponent,
+    ThankComponent
   ],
   imports: [
     BrowserModule,
