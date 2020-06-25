@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { HomeComponent } from './home/home.component';
@@ -34,6 +35,7 @@ import { RentalComponent } from './business/rental/rental.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
 import { Error404Component } from './error404/error404.component';
+
 
 @NgModule({
   declarations: [
@@ -69,6 +71,8 @@ import { Error404Component } from './error404/error404.component';
     AppRoutingModule,
     HttpClientModule,
     BreadcrumbModule,
+    FormsModule,
+    ReactiveFormsModule,
     TranslateModule.forRoot({
         loader: {
             provide: TranslateLoader,

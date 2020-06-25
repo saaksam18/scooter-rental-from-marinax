@@ -55,24 +55,47 @@
             </div>
             <div class="content-section" data-aos="fade-up" data-aos-delay="50">
                 <h3 class="yellow-title">Contact From</h3>
-                <form class="d-flex align-items-center flex-column" method="POST" data-email="sreysros@marinax.co.jp" action="https://script.google.com/a/marinax.co.jp/macros/s/AKfycbzUOuoQnc0WtSy8cBpWdGai1CzKYYFcYpREENI1FurhfkAMLSg/exec">
+                <form id="contact_form" class="d-flex align-items-center flex-column"
+                [formGroup]="contactForm" novalidate (ngSubmit)= "submit()">
                     <div class="form-group">
-                        <label for="name">Name</label>
-                        <input name="name" class="px-3" placeholder="Your Full Name">
+                        <label for="name"><span class="text-danger">*</span>Name</label>
+                        <input name="name" formControlName="name" class="px-3" placeholder="Your Full Name" autocomplete="off">
+                        <div *ngIf="contactForm.controls['name'].invalid && contactForm.controls['name'].touched" class="px-3 text-danger text-right">
+                            <p *ngIf="contactForm.controls['name'].errors.required">Name is required</p>
+                            <p *ngIf="contactForm.get('name').hasError('pattern')">Your name must be at least 2 characters</p>
+                        </div>
                     </div>
                     <div class="form-group">
-                        <label for="email">Email address</label>
-                        <input type="email" name="email" class="px-3" placeholder="Your Email">
+                        <label for="email"><span class="text-danger">*</span>Email address</label>
+                        <input type="email" name="email" formControlName="email" class="px-3" placeholder="Your Email" autocomplete="off">
+                        <div *ngIf="contactForm.controls['email'].invalid && contactForm.controls['email'].touched" class="px-3 text-danger text-right">
+                            <p *ngIf="contactForm.controls['email'].errors.required">Email is required</p>
+                            <p *ngIf="contactForm.get('email').hasError('pattern')" class="text-danger">Email must be a valid email address</p> 
+                        </div>
                     </div>
                     <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input name="subject" class="px-3" id="subject" placeholder="Your Subject">
+                        <label for="email"><span class="text-danger">*</span>Phone Number</label>
+                        <input type="tel" maxlength="10" formControlName="phone" name="phone" class="px-3" placeholder="Your Phone Number" autocomplete="off">
+                        <div *ngIf="contactForm.controls['phone'].invalid && contactForm.controls['phone'].touched" class="px-3 text-danger text-right">
+                            <p *ngIf="contactForm.controls['phone'].errors.required">hone is required</p>
+                            <ng-template [ngIf]="contactForm.controls['phone'].hasError('minlength') || contactForm.get('phone').hasError('pattern')">
+                                <p>Your number phone not correct</p>
+                            </ng-template>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject"><span class="text-danger">*</span>Subject</label>
+                        <input name="subject" formControlName="subject" class="px-3" id="subject" placeholder="Your Subject" autocomplete="off">
+                        <div *ngIf="contactForm.controls['subject'].invalid && contactForm.controls['subject'].touched" class="px-3 text-danger text-right">
+                            <span *ngIf="contactForm.controls['subject'].errors.required">Subject is required</span>
+                            <span *ngIf="contactForm.get('subject').hasError('pattern')">Enter must be at least 5 characters</span>
+                        </div>
                     </div>
                     <div class="form-group">
                         <label for="message">Message</label>
                         <textarea name="message" class="px-3" id="message" rows="3" placeholder="Your Message"></textarea>
                     </div>
-                    <button type="submit">Submit</button>
+                    <button type="submit" [disabled]="contactForm.invalid">Submit</button>
                 </form>
             </div>
         </div>

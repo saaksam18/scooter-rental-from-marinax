@@ -65,7 +65,7 @@
         margin-top: 50px;
         .form-group{
             width: 70%;
-            display: flex;
+            // display: flex;
             margin-bottom: 30px;
             @media screen and (max-width: $smart-phone){
                 width: 100%;
@@ -79,6 +79,7 @@
             border-style: none;
             border-bottom: 1px solid $yellow;
             padding-bottom: 10px;
+            outline: none;
         }
         textarea{
             width: 70%;
