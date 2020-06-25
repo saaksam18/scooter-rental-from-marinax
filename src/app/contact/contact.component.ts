@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { environment } from '../../environments/environment';
+import { FormGroup, Validators, FormControl } from '@angular/forms';
+import { Router } from '@angular/router';
+import $ from 'jquery';
 
 @Component({
   selector: 'app-contact',
@@ -6,10 +10,55 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
-
-  constructor() { }
+  contactForm: FormGroup;
+  constructor(private router:Router) { }
 
   ngOnInit() {
+    // validation
+		this.contactForm = new FormGroup({
+			name:	new FormControl('', Validators.compose([
+					Validators.required,
+					Validators.pattern('^.{2,30}$')
+			])),
+			email:	new FormControl('',Validators.compose([
+					Validators.required,
+					Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$')
+			])),
+			phone:	new FormControl('', Validators.compose([
+					Validators.required,
+					Validators.pattern('^((\\+91-?)|0)?[0-9]{9}$')
+			])),
+			subject:	new FormControl('',Validators.compose([
+					Validators.required,
+					Validators.pattern('^.{5,100}$')
+			])),
+			message:	new FormControl('',Validators.compose([])),
+		});
+  }
+  submit(){
+    var form = $('#contact_form');
+
+    const urlApi = environment.contactApi;
+    const crossAnyway = 'https://cors-anywhere.herokuapp.com/';
+    $.ajax({
+			type		:	'POST',
+			url			:	crossAnyway+urlApi,
+			datatype	:	'json',
+      data		: 	form.serialize(),
+			success		:	function() {
+				$('#sms-success').removeClass('d-none').addClass('alert-primary d-block');
+				setTimeout(function() {
+					$('#sms-success').remove();
+				}, 5000);
+			},
+			error		:	function() {
+				$('#sms-error').removeClass('d-none').addClass('alert-primary d-block');
+				setTimeout(function() {
+					$('#sms-error').remove();
+				}, 5000);
+			}
+    });
+    this.router.navigate(['/']);
   }
 
 }
