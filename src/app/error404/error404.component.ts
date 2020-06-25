@@ -1,0 +1,33 @@
+import { Component, OnInit } from '@angular/core';
+import { Meta ,Title } from '@angular/platform-browser';
+import { TranslateService ,LangChangeEvent } from '@ngx-translate/core';
+import { Router } from '@angular/router';
+@Component({
+  selector: 'app-error404',
+  templateUrl: './error404.component.html',
+  styleUrls: ['./error404.component.scss']
+})
+export class Error404Component implements OnInit {
+
+  	title = this.translate.get('404 Page Not Found').subscribe((res: string) => {
+		this.pageTitle.setTitle(res);
+	});
+	constructor(
+		private meta: Meta,
+		private pageTitle: Title,
+		private translate: TranslateService,
+		private router: Router
+	) {
+		if(this.router.url === '/404'){
+			translate.onLangChange.subscribe((event: LangChangeEvent) => {
+				translate.get('404 Page Not Found').subscribe((res: string) => {
+				this.pageTitle.setTitle(res);
+				});
+			});
+		}
+	}
+
+  ngOnInit() {
+  }
+
+}
