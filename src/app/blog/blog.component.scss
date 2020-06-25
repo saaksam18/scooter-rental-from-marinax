@@ -6,13 +6,8 @@
     align-items: center;
     overflow: hidden;
 }
-@media screen and (min-width: 1200px) {
-    .w-xl-6 {
-        width: 50% !important;
-    }
-}
-@media screen and (max-width: 1200px){
-    .blog-text {
-        height: calc(100% - 250px);
-    }
-}
+// @media screen and (max-width: 1200px){
+//     .blog-text {
+//         height: calc(100% - 250px);
+//     }
+// }

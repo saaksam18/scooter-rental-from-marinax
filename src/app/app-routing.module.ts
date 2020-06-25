@@ -20,6 +20,7 @@ import { ItemComponent } from './business/product-info/item/item.component';
 import { SitemapComponent } from './sitemap/sitemap.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
+import { Error404Component } from './error404/error404.component';
 
 const routes: Routes = [
 	{
@@ -206,8 +207,13 @@ const routes: Routes = [
 		},
 	},
 	{
+		path: "404",
+		component: Error404Component,
+		data: { state: '404' }
+	},
+	{
 		path: '**',
-		redirectTo: '/'
+		redirectTo: '404'
 	}
 ];
 

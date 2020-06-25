@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { HomeComponent } from './home/home.component';
@@ -33,7 +34,8 @@ import {BreadcrumbModule} from 'xng-breadcrumb';
 import { RentalComponent } from './business/rental/rental.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { Error404Component } from './error404/error404.component';
+
 
 @NgModule({
   declarations: [
@@ -61,7 +63,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     BusinessComponent,
     RentalComponent,
     BlogComponent,
-    ContactComponent
+    ContactComponent,
+    Error404Component
   ],
   imports: [
     BrowserModule,
