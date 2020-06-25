@@ -8,6 +8,7 @@ import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BreadcrumbModule } from 'xng-breadcrumb';
 
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { HomeComponent } from './home/home.component';
@@ -30,11 +31,10 @@ import { ProductInfoComponent } from './business/product-info/product-info.compo
 import { ItemComponent } from './business/product-info/item/item.component';
 import { NewbusinessComponent } from './business/newbusiness/newbusiness.component';
 import { SitemapComponent } from './sitemap/sitemap.component';
-import {BreadcrumbModule} from 'xng-breadcrumb';
 import { RentalComponent } from './business/rental/rental.component';
-import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
 import { Error404Component } from './error404/error404.component';
+import { BlogComponent } from './blog/blog.component';
 
 
 @NgModule({
@@ -62,9 +62,9 @@ import { Error404Component } from './error404/error404.component';
     MapComponent,
     BusinessComponent,
     RentalComponent,
-    BlogComponent,
     ContactComponent,
-    Error404Component
+    Error404Component,
+    BlogComponent,
   ],
   imports: [
     BrowserModule,
