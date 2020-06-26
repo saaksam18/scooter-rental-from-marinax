@@ -33,6 +33,7 @@ import { NewbusinessComponent } from './business/newbusiness/newbusiness.compone
 import { SitemapComponent } from './sitemap/sitemap.component';
 import { RentalComponent } from './business/rental/rental.component';
 import { ContactComponent } from './contact/contact.component';
+import { ThankComponent } from './contact/thank/thank.component';
 import { Error404Component } from './error404/error404.component';
 import { BlogComponent } from './blog/blog.component';
 
@@ -65,6 +66,8 @@ import { BlogComponent } from './blog/blog.component';
     ContactComponent,
     Error404Component,
     BlogComponent,
+    ContactComponent,
+    ThankComponent
   ],
   imports: [
     BrowserModule,

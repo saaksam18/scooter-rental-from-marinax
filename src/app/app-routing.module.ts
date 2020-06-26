@@ -19,6 +19,7 @@ import { RentalComponent } from './business/rental/rental.component';
 import { ItemComponent } from './business/product-info/item/item.component';
 import { SitemapComponent } from './sitemap/sitemap.component';
 import { ContactComponent } from './contact/contact.component';
+import { ThankComponent } from './contact/thank/thank.component';
 import { Error404Component } from './error404/error404.component';
 import { BlogComponent } from './blog/blog.component';
 
@@ -187,10 +188,24 @@ const routes: Routes = [
 	},
 	{
 		path: 'contact',
-		component: ContactComponent,
 		data: {
 			breadcrumb: 'Contact'
 		},
+		children:[
+			{
+				path: '',
+				component: ContactComponent,
+				pathMatch: 'full',
+			},
+			{
+				path: 'thank',
+				component: ThankComponent,
+				pathMatch: 'full',
+				data: {
+					breadcrumb: 'Thank You'
+				},
+			}
+		]
 	},
 	{
 		path: 'sitemap',
