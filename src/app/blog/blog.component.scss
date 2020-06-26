@@ -18,6 +18,7 @@
         overflow: hidden;
     }
     .blog-text {
+        border-top: 1px solid $dark-blue;
         height: calc(100% - 250px);
     }
     .b-darkblue {
@@ -44,7 +45,6 @@
             border-right-width: 1px;
         }
         &:hover {
-            transform: scale(1.05);
             border: 0;
             &::before,
             &::after {
@@ -61,6 +61,9 @@
             &::after {
                 -webkit-transition-delay: 0s, 0.25s, 0s;
                 transition-delay: 0s, 0.25s, 0s;
+            }
+            .blog-text {
+                border-top: 1px solid $dark-yellow;
             }
         }
     }
