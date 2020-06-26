@@ -1,0 +1,33 @@
+import { Component, OnInit } from '@angular/core';
+import { Meta ,Title } from '@angular/platform-browser';
+import { Router } from '@angular/router';
+import { TranslateService ,LangChangeEvent } from '@ngx-translate/core';
+
+@Component({
+  selector: 'app-thank',
+  templateUrl: './thank.component.html',
+  styleUrls: ['./thank.component.scss']
+})
+export class ThankComponent implements OnInit {
+	title = this.translate.get('Thank').subscribe((res: string) => {
+    this.pageTitle.setTitle(res);
+  });
+  constructor(
+		private meta: Meta,
+    private pageTitle: Title,
+    private translate: TranslateService,
+		private router:Router
+  ) {
+    if(this.router.url === 'thank'){
+      translate.onLangChange.subscribe((event: LangChangeEvent) => {
+          translate.get('Thank').subscribe((res: string) => {
+          this.pageTitle.setTitle(res);
+          });
+      });
+    }
+  }
+
+  ngOnInit() {
+  }
+
+}

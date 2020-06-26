@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Meta ,Title } from '@angular/platform-browser';
+import { TranslateService ,LangChangeEvent } from '@ngx-translate/core';
 import { environment } from '../../environments/environment';
 import { FormGroup, Validators, FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
@@ -10,8 +12,24 @@ import $ from 'jquery';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
+	title = this.translate.get('Contact').subscribe((res: string) => {
+    this.pageTitle.setTitle(res);
+  });
   contactForm: FormGroup;
-  constructor(private router:Router) { }
+  constructor(
+		private meta: Meta,
+    private pageTitle: Title,
+    private translate: TranslateService,
+		private router:Router
+	) {
+		if(this.router.url === 'contact'){
+      translate.onLangChange.subscribe((event: LangChangeEvent) => {
+          translate.get('Contact').subscribe((res: string) => {
+          this.pageTitle.setTitle(res);
+          });
+      });
+    }
+	}
 
   ngOnInit() {
     // validation
@@ -58,7 +76,7 @@ export class ContactComponent implements OnInit {
 				}, 5000);
 			}
     });
-    this.router.navigate(['/']);
+    this.router.navigate(['/contact/thank']);
   }
 
 }

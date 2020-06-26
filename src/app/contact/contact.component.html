@@ -12,9 +12,13 @@
                             <h2 class="mt-5 text-center">
                                 OUR LOCATION
                             </h2>
-                            <h3 class="mt-5 font-weight-bold">First Shop: Boeung Keng Kang 1</h3>
+                            <h3 class="mt-5 font-weight-bold">
+                                <span><i class="far fa-hand-point-right"></i></span>First Shop: Boeung Keng Kang 1
+                            </h3>
                             <p class="pl-4"><span class="font-weight-bold">Address:</span> No.38E0, St.322,Boeung Keng Kang 1, Chamkamon (Near Eric Kayser Bakery Cafe)</p>
-                            <h3 class="font-weight-bold">Second Shop: Toul Tom Pong</h3>
+                            <h3 class="font-weight-bold">
+                                <span><i class="far fa-hand-point-right"></i></span>Second Shop: Toul Tom Pong
+                            </h3>
                             <p class="pl-4"><span class="font-weight-bold">Address:</span> #3A, st. 418, Toul Tom Poung 1 (To the west of Toul Tom Poung pagoda)</p>
                             <div class="icon location"></div>
                         </div>
@@ -24,9 +28,13 @@
                             <h2 class="mt-5 text-center">
                                 WORKING HOURS
                             </h2>
-                            <h3 class="mt-5 font-weight-bold">First Shop: Boeung Keng Kang 1</h3>
+                            <h3 class="mt-5 font-weight-bold">
+                                <span><i class="far fa-hand-point-right"></i></span>First Shop: Boeung Keng Kang 1
+                            </h3>
                             <p class="pl-4"><span class="font-weight-bold">Working Hours:</span> 9AM–5:30PM</p>
-                            <h3 class="font-weight-bold">Second Shop: Toul Tom Pong</h3>
+                            <h3 class="font-weight-bold">
+                                <span><i class="far fa-hand-point-right"></i></span>Second Shop: Toul Tom Pong
+                            </h3>
                             <p class="pl-4"><span class="font-weight-bold">Working Hours:</span> 9AM–5:00PM</p>
                             <div class="icon time"></div>
                         </div>
@@ -36,14 +44,18 @@
                             <h2 class="mt-5 text-center">
                                 PHONE NUMBER
                             </h2>
-                            <h3 class="mt-5 font-weight-bold">First Shop: Boeung Keng Kang 1</h3>
+                            <h3 class="mt-5 font-weight-bold">
+                                <span><i class="far fa-hand-point-right"></i></span>First Shop: Boeung Keng Kang 1
+                            </h3>
                             <div class="pl-4">
                                 <p><span class="font-weight-bold">Motorbike Inquiry:</span> +855(0)69400260</p>
                                 <p><span class="font-weight-bold">Visa and Work Permit Inquiry:</span> +855(0)69400260</p>
                                 <p><span class="font-weight-bold">Japanese:</span>+855(0)89518867</p>
                                 <p><span class="font-weight-bold">Motorcycle Trouble::</span>+855(0)17682748</p>
                             </div>
-                            <h3 class="font-weight-bold">Second Shop: Toul Tom Pong</h3>
+                            <h3 class="font-weight-bold">
+                                <span><i class="far fa-hand-point-right"></i></span>Second Shop: Toul Tom Pong
+                            </h3>
                             <div class="pl-4">
                                 <p><span class="font-weight-bold">Manager:</span>+855(0)85486318</p>
                                 <p><span class="font-weight-bold">Vice Manager:</span> +855(0)10682748</p>
@@ -54,7 +66,7 @@
                 </ul>
             </div>
             <div class="content-section" data-aos="fade-up" data-aos-delay="50">
-                <h3 class="yellow-title">Contact From</h3>
+                <h3 class="yellow-title">Contact Form</h3>
                 <form id="contact_form" class="d-flex align-items-center flex-column"
                 [formGroup]="contactForm" novalidate (ngSubmit)= "submit()">
                     <div class="form-group">
@@ -74,12 +86,12 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="email"><span class="text-danger">*</span>Phone Number</label>
+                        <label for="phone"><span class="text-danger">*</span>Phone Number</label>
                         <input type="tel" maxlength="10" formControlName="phone" name="phone" class="px-3" placeholder="Your Phone Number" autocomplete="off">
                         <div *ngIf="contactForm.controls['phone'].invalid && contactForm.controls['phone'].touched" class="px-3 text-danger text-right">
-                            <p *ngIf="contactForm.controls['phone'].errors.required">hone is required</p>
+                            <p *ngIf="contactForm.controls['phone'].errors.required">Phone number is required</p>
                             <ng-template [ngIf]="contactForm.controls['phone'].hasError('minlength') || contactForm.get('phone').hasError('pattern')">
-                                <p>Your number phone not correct</p>
+                                <p>Your phone number not correct</p>
                             </ng-template>
                         </div>
                     </div>
@@ -91,11 +103,11 @@
                             <span *ngIf="contactForm.get('subject').hasError('pattern')">Enter must be at least 5 characters</span>
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group d-flex">
                         <label for="message">Message</label>
                         <textarea name="message" class="px-3" id="message" rows="3" placeholder="Your Message"></textarea>
                     </div>
-                    <button type="submit" [disabled]="contactForm.invalid">Submit</button>
+                    <button id="btn-submit" [ngClass]="{'disabled': contactForm.invalid}" type="submit" [disabled]="contactForm.invalid">Submit</button>
                 </form>
             </div>
         </div>
