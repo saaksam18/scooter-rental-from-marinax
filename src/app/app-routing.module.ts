@@ -224,7 +224,7 @@ const routes: Routes = [
 	{
 		path: "404",
 		component: Error404Component,
-		data: { state: '404' }
+		pathMatch: 'full'
 	},
 	{
 		path: '**',
