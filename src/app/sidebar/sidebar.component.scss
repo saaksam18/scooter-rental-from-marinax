@@ -268,15 +268,15 @@
                     padding: 10px 0 10px 10px;
                 }
                 &.is-active {
-                    @media screen and (max-width: $smart-phone) {
-                        color: $white;
-                        background-color: $dark-yellow;
-                    }
                     @media screen and (min-width: $desktop) {
                         background-color: transparent;
                         &:hover {
                             background-color: $dark-yellow;
                         }
+                    }
+                    @media screen and (max-width: $smart-phone) {
+                        color: $white;
+                        background-color: $dark-yellow;
                     }
                 }
             }
