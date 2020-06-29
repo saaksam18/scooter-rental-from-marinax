@@ -112,10 +112,6 @@
             line-height: 1.8em;
             margin-top: 10px;
             letter-spacing: normal;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
         }
         &:before {
             content: '';
@@ -154,21 +150,19 @@
             width: 100%;
             height: 22vw;
             margin-bottom: 3vw;
+            background-size: cover !important;
             @media screen and (max-width: $smart-phone) {
                 height: 20rem;
                 margin-bottom: 30px;
             }
             &.accordion-img01 {
                 background: url('../../../assets/images/founder/founder-img01.jpg') no-repeat center center;
-                background-size: cover;
             }
             &.accordion-img02 {
                 background: url('../../../assets/images/founder/founder-img02.jpg') no-repeat center center;
-                background-size: cover;
             }
             &.accordion-img03 {
                 background: url('../../../assets/images/founder/founder-img03.jpg') no-repeat center center;
-                background-size: cover;
             }
         }
         p {
