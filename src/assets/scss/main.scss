@@ -198,6 +198,23 @@ img{
             margin: 0;
         }
     }
+    /* button go to top */
+    .btn-gotop {
+        width: 55px;
+        height: 55px;
+        position: fixed;
+        bottom: 5px;
+        right: 5px;
+        text-align: center;
+        outline: none;
+        border: 0;
+        color: $white;
+        background-color: $dark-yellow;
+        border-radius: 50%;
+        i{
+            font-size: 40px;
+        }
+    }
 }
 
 // sidebar search
