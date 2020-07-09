@@ -21,7 +21,6 @@
                     <div class="sub-menu">
                         <ul>
                             <li><a routerLink fragment="emc">EMC</a></li>
-                            <li><a routerLink fragment="kubobro">japanese Shop / KUBOBRO & Khmers</a></li>
                             <li><a routerLink fragment="business">Business & Services</a></li>
                             <li><a routerLink fragment="access">Map & Contact (TEL)</a></li>
                         </ul>
@@ -65,7 +64,7 @@
                     </div>
                 </li>
                 <li>
-                    <a routerLink="">{{ 'menu.contact' | translate }}</a>
+                    <a routerLink="/contact">{{ 'menu.contact' | translate }}</a>
                 </li>
             </ul>
         </div>
@@ -77,11 +76,11 @@
             <ul class="pb-3 text-translate">
                 <li class="active" (click)="useLanguage('jp')">JP</li>
                 <li (click)="useLanguage('en')">EN</li>
-                <li (click)="useLanguage('km')">KH</li>
+                <!-- <li (click)="useLanguage('km')">KH</li> -->
             </ul>
-            <div class="mt-5 form-search">
+            <!-- <div class="mt-5 form-search">
                 <div class="gcse-search"></div>
-            </div>
+            </div> -->
             <div class="mt-3 contact">
                 <a routerLink="/contact">お問い合わせ</a>
             </div>
