@@ -4,19 +4,24 @@
         <p>Expat Motorbike Cambodia</p>
     </div>
     <div class="banner__text">
-        <h2>すべてはお客様のために。</h2>
-        <p>加賀電子株式会社は、エレクトロニクス総合商社として</p>
-        <p>業界トップクラスの技術とサービス、</p>
-        <p>そして独立商社ならではのグローバルなネットワーク力を活かし、</p>
-        <p>すべてのお客様の輝かしい未来のために、</p>
-        <p>今日も変化し続けています。</p>
+        <h2>カンボジア在住外国人のために</h2>
+        <p>EMCはあなたのカンボジア生活を支える「日本人」による安心と信頼のサービス</p>
+        <p>2013年創業時からの経験とネットワークを活かし、お客様の海外生活を支えるサービスを提供します</p>
+        <p class="mt-3">プノンペンの中心地　BKK１ St.63からSt.322をモニボン側に曲がりすぐ～</p>
+        <p>０９～１８時　（月ー土）　日曜定休・祭日休み</p>
+        <p>4.7 ★★★★☆Googleクチコミ（78） スクーターレンタル</p>
+        <p>4.6 ★★★★☆Googleクチコミ（40） VISAサービス</p>
+        <p>5.0 ★★★★★Googleクチコミ（19） 外貨両替サービス</p>
     </div>
-    <video class="banner__movie" autoplay loop>
+    <div class="banner__movie">
+        <img src="../../assets/images/main-banner.jpg" alt="">
+    </div>
+    <!-- <video class="banner__movie" autoplay loop>
         <source src="assets/videos/web_top.mp4" type="video/mp4">
-    </video>
+    </video> -->
 </div>
 <div class="content">
-    <div id="kubobro" class="w-100 news section-padding bg-lightblue" data-aos="fade-up" data-aos-delay="50">
+    <!-- <div id="kubobro" class="w-100 news section-padding bg-lightblue" data-aos="fade-up" data-aos-delay="50">
         <h3 class="yellow-title">NEWS RELEASE<span>ニュースリリース</span></h3>
         <ul class="news__list">
             <li>
@@ -45,9 +50,9 @@
             </li>
         </ul>
         <a routerLink="../news-information/news" class="btn-more">MORE</a>
-    </div>
+    </div> -->
     <!-- Event -->
-    <div class="w-100 section-padding event bg-gray004" data-aos="fade-up" data-aos-delay="50">
+    <!-- <div class="w-100 section-padding event bg-gray004" data-aos="fade-up" data-aos-delay="50">
         <div class="event__list">
             <ul class="row no-gutters">
                 <li class="col-xl-3 col-12 d-flex justify-content-center align-items-center event__title">
@@ -96,63 +101,53 @@
             </ul>
         </div>
         <a routerLink="../news-information/event_news" class="btn-more">MORE</a>
-    </div>
+    </div> -->
     <!-- company section -->
     <div class="w-100 section-padding company" data-aos="fade-up">
         <h3 class="white-title">COMPANY<span>企業情報</span></h3>
         <ul class="company__link">
-            <li><a routerLink="company/about.html">加賀電子とは<span>KAGA STORY</span></a></li>
-            <li><a routerLink="company/founder.html">創業者が語る<br>ストーリー</a></li>
-            <li><a routerLink="company/vision.html">企業理念</a></li>
+            <li><a routerLink="/about">EMCとは
+                <!-- <span>KAGA STORY</span> -->
+            </a></li>
+            <li><a routerLink="/about/founder">創業者が語る<br>ストーリー</a></li>
+            <li><a routerLink="/about/philosophy">企業理念</a></li>
         </ul>
     </div>
     <!-- business section -->
     <div id="business" class="w-100 section-padding business" data-aos="fade-up" data-aos-delay="50">
-        <h3 class="yellow-title">OUR BUSINESS<span>事業紹介</span></h3>
+        <h3 class="yellow-title">OUR BUSINESS<span>事業紹介 or サービス一覧</span></h3>
         <div class="business__link">
             <div class="row no-gutters">
-                <div class="col-lg-6 col-12">
-                    <a routerLink="business/solution.html">
-                        <p class="w-100 position-absolute text-center">加賀電子の<br>ワンストップビジネス</p>
-                        <img class="position-relative" src="../../assets/images/top-bnr-img01.jpg" alt="">
+                <div class="col-lg-3 col-6">
+                    <a routerLink="/business/rental">
+                        <p class="w-100 position-absolute text-center">スクーターレンタル</p>
+                        <img class="position-relative" src="../../assets/images/business/rental-scooters.jpg" alt="">
                     </a>
                 </div>
-                <div class="col-lg-6 col-12">
-                    <div class="row no-gutters">
-                        <div class="col-6">
-                            <a routerLink="business/semiconductor.html">
-                                <p class="w-100 position-absolute text-center">電子部品・<br>半導体ビジネス</p>
-                                <img class="position-relative" src="../../assets/images/top-bnr-img02.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="col-6">
-                            <a routerLink="business/ems.html">
-                                <p class="w-100 position-absolute text-center">EMSビジネス</p>
-                                <img class="position-relative" src="../../assets/images/top-bnr-img03.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row no-gutters">
-                        <div class="col-6">
-                            <a routerLink="business/information_product.html">
-                                <p class="w-100 position-absolute text-center">情報機器ビジネス</p>
-                                <img class="position-relative" src="../../assets/images/top-bnr-img04.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="col-6">
-                            <a routerLink="business/newbusiness.html">
-                                <p class="w-100 position-absolute text-center">ニュービジネス</p>
-                                <img class="position-relative" src="../../assets/images/top-bnr-img05.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
+                <div class="col-lg-3 col-6">
+                    <a routerLink="/business/visa">
+                        <p class="w-100 position-absolute text-center">ビザサービス・<br>労働許可証</p>
+                        <img class="position-relative" src="../../assets/images/business/word-permit.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <a routerLink="">
+                        <p class="w-100 position-absolute text-center">旅行代理店（国内ツアー）</p>
+                        <img class="position-relative" src="../../assets/images/business/local-trip-adviser.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <a routerLink="/business/exchange">
+                        <p class="w-100 position-absolute text-center">外貨両替</p>
+                        <img class="position-relative" src="../../assets/images/business/currency-exchange.jpeg" alt="">
+                    </a>
                 </div>
             </div>
         </div>
     </div>
     <!-- COntact section -->
     <div id="access" class="access" data-aos="fade-up" data-aos-delay="50">
-        <h3 class="mb-5 access__title yellow-title">Access<span>アクセス</span></h3>
+        <h3 class="mb-5 access__title yellow-title">Access<span>店舗案内</span></h3>
         <div class="emc-map" data-aos="fade-up" data-aos-delay="50">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15636.07335760034!2d104.923545!3d11.550542!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x57d8373682216c7b!2sEMC+Motorbike+Rental!5e0!3m2!1sen!2skh!4v1507966475470" height="500" frameborder="0" style="width:100%;border:0" allowfullscreen=""></iframe>
         </div>
@@ -162,36 +157,23 @@
                     <div class="mb-3 font-weight-bold icon location">
                         OUR LOCATION
                     </div>
-                    <h3 class="font-weight-bold">First Shop: Boeung Keng Kang 1 (BKK1)</h3>
-                    <p class="pl-4"><span class="font-weight-bold">Address:</span> No.38E0, St.322,Boeung Keng Kang 1, Chamkamon (Near Eric Kayser Bakery Cafe)</p>
-                    <h3 class="font-weight-bold">Second Shop: Toul Tom Pong (TTP)</h3>
-                    <p class="pl-4"><span class="font-weight-bold">Address:</span> #3A, st. 418, Toul Tom Poung 1 (To the west of Toul Tom Poung pagoda)</p>
+                    <p class="pl-4">
+                        #38E0, St.322, BKK1, Chamkarmon, Phnom Penh
+                        BKK1 Street 63を南に下り、エリックカイザーの角を曲がってすぐ
+                    </p>
                 </li>
                 <li class="col-lg-4 col-12" data-aos="fade-up" data-aos-delay="50">
                     <div class="mb-3 font-weight-bold icon time">
                         WORKING HOURS
                     </div>
-                    <h3 class="font-weight-bold">First Shop: Boeung Keng Kang 1 (BKK1)</h3>
                     <p class="pl-4"><span class="font-weight-bold">Working Hours:</span> 9AM–5:30PM</p>
-                    <h3 class="font-weight-bold">Second Shop: Toul Tom Pong (TTP)</h3>
-                    <p class="pl-4"><span class="font-weight-bold">Working Hours:</span> 9AM–5:00PM</p>
                 </li>
                 <li class="col-lg-4 col-12" data-aos="fade-up" data-aos-delay="50">
                     <div class="mb-3 font-weight-bold icon phone">
                         PHONE NUMBER
                     </div>
-                    <h3 class="font-weight-bold">First Shop: Boeung Keng Kang 1 (BKK1)</h3>
-                    <div class="pl-4">
-                        <p><span class="font-weight-bold">Motorbike Inquiry:</span> +855(0)69400260</p>
-                        <p><span class="font-weight-bold">Visa and Work Permit Inquiry:</span> +855(0)69400260</p>
-                        <p><span class="font-weight-bold">Japanese:</span>+855(0)89518867</p>
-                        <p><span class="font-weight-bold">Motorcycle Trouble::</span>+855(0)17682748</p>
-                    </div>
-                    <h3 class="font-weight-bold">Second Shop: Toul Tom Pong (TTP)</h3>
-                    <div class="pl-4">
-                        <p><span class="font-weight-bold">Manager:</span>+855(0)85486318</p>
-                        <p><span class="font-weight-bold">Vice Manager:</span> +855(0)10682748</p>
-                    </div>
+                    <p class="pl-4">+855 (0)69 499 260 (JPN, ENG)</p>
+                    <p class="pl-4">+855 (0)89 518 867 (JPN, ENG)</p>
                 </li>
             </ul>
         </div>

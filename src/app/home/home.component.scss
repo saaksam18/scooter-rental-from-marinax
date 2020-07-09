@@ -319,7 +319,14 @@ a:hover{
                 height: auto;
             }
             a{
-                display: block;
+                height: 300px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                @media screen and (max-width: $large-desktop){
+                    height: 270px;
+                }
                 @media screen and (max-width: $smart-phone){
                     height: 15rem;
                     display: flex;
@@ -335,13 +342,16 @@ a:hover{
                     font-size: 2.2rem;
                     font-weight: 500;
                     z-index: 1;
-                    margin: 50% auto 0;
-                    transform: translateY(-50%);
                     @media screen and (max-width: $smart-phone){
                         font-size: 16px;
                         margin: 0;
                         transform: none;
                     }
+                }
+                img{
+                    max-height: 100%;
+                    width: 500px;
+                    max-width: 500px;
                 }
             }
         }
