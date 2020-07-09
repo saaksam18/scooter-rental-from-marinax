@@ -36,6 +36,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ThankComponent } from './contact/thank/thank.component';
 import { Error404Component } from './error404/error404.component';
 import { BlogComponent } from './blog/blog.component';
+import { TeamsComponent } from './about/teams/teams.component';
 
 
 @NgModule({
@@ -67,7 +68,8 @@ import { BlogComponent } from './blog/blog.component';
     Error404Component,
     BlogComponent,
     ContactComponent,
-    ThankComponent
+    ThankComponent,
+    TeamsComponent
   ],
   imports: [
     BrowserModule,
