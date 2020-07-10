@@ -2,7 +2,7 @@
 <div class="content footer">
     <div class="category">
         <div class="row">
-            <div class="col-md-6 col-12">
+            <div class="col-xl-6 col-12">
                 <!-- <ul class="category__list">
                     <li class="category__title"><a routerLink="/">{{ 'menu.top' | translate }}</a></li>
                     <li><a routerLink fragment="emc">EMC</a></li>
@@ -12,14 +12,21 @@
                 </ul> -->
                 <ul class="category__list">
                     <li class="category__title"><a routerLink="/about">{{ 'menu.about-us' | translate }}</a></li>
-                    <li><a routerLink="/about/philosophy">Mission / Philosophy</a></li>
-                    <li><a routerLink="/about/founder">Fonuder Story</a></li>
-                    <li><a routerLink="/about/outline">Corperate Information & Branch</a></li>
-                    <li><a routerLink="/about/history">History</a></li>
+                    <li><a routerLink="/about/philosophy">{{ 'menu.mission-philosophy' | translate }}</a></li>
+                    <li><a routerLink="/about/founder">{{ 'menu.founder-story' | translate }}</a></li>
+                    <li><a routerLink="/about/outline">{{ 'menu.corperate-info' | translate }}</a></li>
+                    <li><a routerLink="/about/history">{{ 'menu.history' | translate }}</a></li>
                 </ul>
             </div>
-            <div class="col-md-6 col-12 text-center">
-                <div class="fb-page" data-href="https://www.facebook.com/service4expat" data-tabs="timeline" data-width="800" data-height="700" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/service4expat" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/service4expat">EMC Scooter Rental ＆ Visa Service, Phnom Penh</a></blockquote></div>
+            <div class="col-xl-6 col-12 text-center">
+                <!-- <div *ngIf = "isFbPc"> -->
+                <div [ngClass]="{'d-none': !isFbPc}">
+                    <div class="fb-page" data-href="https://www.facebook.com/service4expat" data-tabs="timeline" data-width="500" data-height="700" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/service4expat" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/service4expat">EMC Motorbike Rental ＆ Visa Service, Phnom Penh</a></blockquote></div>
+                </div>
+                <!-- <div *ngIf = "!isFbPc"> -->
+                <div [ngClass]="{'d-none': isFbPc}">
+                    <div class="fb-page" data-href="https://www.facebook.com/service4expat" data-tabs="timeline" data-width="280" data-height="" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/service4expat" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/service4expat">EMC Motorbike Rental ＆ Visa Service, Phnom Penh</a></blockquote></div>
+                </div>
                 <!-- <ul class="category__list">
                     <li class="category__title"><a routerLink="/business">{{ 'menu.business-field' | translate }}</a></li>
                     <li><a routerLink="/business/rental">Scoter Rental</a></li>
@@ -40,10 +47,10 @@
         <div class="w-100 mb-5 info">#38E0, St.322, BKK1, Chamkarmon, Phnom Penh</div>
     </div>
     <div class="d-flex justify-content-center footer__menu">
-        <a routerLink="/contact/">お問い合わせ</a>
-        <a routerLink="/sitemap">サイトマップ</a>
-        <a routerLink="">プライバシーポリシー</a>
-        <a routerLink="/about">当サイトについて</a>
+        <a routerLink="/contact">{{ 'menu.contact' | translate }}</a>
+        <a routerLink="/sitemap">{{ 'menu.site-map' | translate }}</a>
+        <a routerLink="">{{ 'menu.privacy' | translate }}</a>
+        <a routerLink="/about">{{ 'menu.about-us' | translate }}</a>
     </div>
     <div class="text-center footer__copyright">Copyright © 2018 - EMC Motorbike Rental Co., Ltd. All rights reserved.</div>
 </div>

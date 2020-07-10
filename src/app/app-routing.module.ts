@@ -29,13 +29,13 @@ const routes: Routes = [
 		path: '',
 		component: HomeComponent,
 		data: {
-			breadcrumb: 'Home'
+			breadcrumb: 'menu.top'
 		},
 	},
 	{
 		path: 'about',
 		data: {
-			breadcrumb: 'About'
+			breadcrumb: 'menu.about-us'
 		},
 		children: [
 			{ 
@@ -48,7 +48,7 @@ const routes: Routes = [
 				component: HistoryComponent,
 				pathMatch: 'full',
 				data: {
-					breadcrumb: 'History'
+					breadcrumb: 'menu.history'
 				},
 			},
 			{
@@ -56,21 +56,21 @@ const routes: Routes = [
 				component: FounderComponent,
 				pathMatch: 'full',
 				data: {
-					breadcrumb: 'Founder'
+					breadcrumb: 'menu.founder-story'
 				},
 			},
 			{
-				path: 'philosophy', 
+				path: 'philosophy',
 				component: PhilosophyComponent,
 				pathMatch: 'full',
 				data: {
-					breadcrumb: 'Philosophy'
+					breadcrumb: 'menu.mission-philosophy'
 				},
 			},
 			{
 				path: 'outline',
 				data: {
-					breadcrumb: 'Outline'
+					breadcrumb: 'menu.corperate-info'
 				},
 				children:[
 					{
@@ -93,7 +93,7 @@ const routes: Routes = [
 				component: TeamsComponent,
 				pathMatch: 'full',
 				data: {
-					breadcrumb: 'Teams'
+					breadcrumb: 'menu.operational-team'
 				},
 			}
 		]
@@ -101,7 +101,7 @@ const routes: Routes = [
 	{
 		path: 'business',
 		data: {
-			breadcrumb: 'menu.about-us'
+			breadcrumb: 'menu.business-field'
 		},
 		children: [
 			{ 
@@ -114,7 +114,7 @@ const routes: Routes = [
 				component: VisaComponent,
 				pathMatch: 'full',
 				data: {
-					breadcrumb: 'Visa'
+					breadcrumb: 'menu.visa-wp'
 				},
 			},
 			{ 
@@ -141,7 +141,7 @@ const routes: Routes = [
 			{ 
 				path: 'exchange',
 				data: {
-					breadcrumb: 'Exchange'
+					breadcrumb: 'menu.current-exchange'
 				},
 				children:[
 					{
@@ -191,14 +191,17 @@ const routes: Routes = [
 			{
 				path: 'rental',
 				component: RentalComponent,
-				pathMatch: 'full'
+				pathMatch: 'full',
+				data: {
+					breadcrumb: 'menu.scoter-rental'
+				},
 			},
 		]
 	},
 	{
 		path: 'contact',
 		data: {
-			breadcrumb: 'Contact'
+			breadcrumb: 'menu.contact'
 		},
 		children:[
 			{
@@ -227,7 +230,7 @@ const routes: Routes = [
 		path: 'blog',
 		component: BlogComponent,
 		data: {
-			breadcrumb: 'Blog'
+			breadcrumb: 'menu.blog'
 		},
 	},
 	{
