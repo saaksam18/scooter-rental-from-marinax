@@ -202,15 +202,14 @@
                         }
                     }
                 }
-                $parent-menu: ("Top","About Us","Business Field","Blog","Contact");
-                @each $menu in $parent-menu {
-                    $i: index($parent-menu, $menu);
-                    &:nth-child(#{$i}):hover {
-                        .sub-menu {
-                            &::before {
-                                content: $menu;
-                            }
-                        }
+                .title-hover {
+                    position: absolute;
+                    bottom: 73%;
+                    font-size: 2.5rem;
+                    font-weight: 500;
+                    padding-left: 2vw;
+                    @media screen and (max-width: $smart-phone) {
+                        display: none;
                     }
                 }
                 &:hover {

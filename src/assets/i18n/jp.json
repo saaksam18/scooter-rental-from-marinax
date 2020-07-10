@@ -1,9 +1,23 @@
 {
     "menu": {
-        "top": "Top",
-        "about-us":"会社情報",
-        "business-field": "Business Field",
-        "blog": "Blog",
-        "contact": "お問い合わせ"
+        "top": "トップ",
+        "emc": "EMC",
+        "bussiness-service": "事業紹介 / サービス一覧",
+        "map-contact": "地図 & 連絡先（TEL）",
+        "about-us": "会社情報",
+        "mission-philosophy": "ミッション / 哲学",
+        "founder-story": "創業者が語るストーリー",
+        "corperate-info" : "企業情報 ＆ ブランチ",
+        "history" : "会社沿革",
+        "operational-team" : "運用チーム",
+        "business-field": "事業紹介",
+        "scoter-rental" : "スクーターレンタル",
+        "visa-wp" : "ビザサービス・労働許可証",
+        "current-exchange" : "外貨両替",
+        "travel-agency" : "旅行代理店（国内ツアー）",
+        "blog": "ブログ",
+        "contact": "お問い合わせ",
+        "privacy": "プライバシーポリシー",
+        "site-map": "サイトマップ"
     }
 }

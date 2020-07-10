@@ -1,9 +1,23 @@
 {
     "menu": {
         "top": "Top",
+        "emc": "EMC",
+        "bussiness-service": "Business & Services",
+        "map-contact": "Map & Contact (TEL)",
         "about-us":"About Us",
+        "mission-philosophy": "Mission / Philosophy",
+        "founder-story": "Fonuder Story",
+        "corperate-info": "Corperate Information & Branch",
+        "history": "History",
+        "operational-team": "Operational Team",
         "business-field": "Business Field",
+        "scoter-rental": "Scoter Rental",
+        "visa-wp": "Visa & WP",
+        "current-exchange": "Current Exchange & ATM Machine",
+        "travel-agency": "Travel Agency",
         "blog": "Blog",
-        "contact": "Contact"
+        "contact": "Contact",
+        "privacy": "Privacy Policy",
+        "site-map": "Site Map"
     }
 }
