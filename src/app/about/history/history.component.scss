@@ -1,6 +1,20 @@
 @import '../../../assets/scss/components/variables';
 
 .history{
+    .founder-des{
+        padding: 40px 90px;
+        border: 1px solid $dark-yellow;
+        h3{
+            font-size: 32px;
+            color: $dark-yellow;
+            font-weight: 400;
+        }
+        p{
+            font-size: 1.8rem;
+            font-weight: 400;
+            text-align: center;
+        }
+    }
     &__section{
         position: relative;
         z-index: 0;

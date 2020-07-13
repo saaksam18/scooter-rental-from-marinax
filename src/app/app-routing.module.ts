@@ -23,6 +23,7 @@ import { ThankComponent } from './contact/thank/thank.component';
 import { Error404Component } from './error404/error404.component';
 import { BlogComponent } from './blog/blog.component';
 import { TeamsComponent } from './about/teams/teams.component';
+import { TravelAgencyComponent } from './business/travel-agency/travel-agency.component';
 
 const routes: Routes = [
 	{
@@ -189,13 +190,21 @@ const routes: Routes = [
 				},
 			},
 			{
-				path: 'rental',
+				path: 'scooter-rental',
 				component: RentalComponent,
 				pathMatch: 'full',
 				data: {
 					breadcrumb: 'menu.scoter-rental'
 				},
 			},
+			{
+				path: 'travel-agency',
+				component: TravelAgencyComponent,
+				pathMatch: 'full',
+				data: {
+					breadcrumb: 'menu.travel-agency'
+				},
+			}
 		]
 	},
 	{

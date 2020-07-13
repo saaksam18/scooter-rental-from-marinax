@@ -1,5 +1,6 @@
 {
     "menu": {
+        "title" : "Menu",
         "top": "Top",
         "emc": "EMC",
         "bussiness-service": "Business & Services",
@@ -19,5 +20,25 @@
         "contact": "Contact",
         "privacy": "Privacy Policy",
         "site-map": "Site Map"
+    },
+    "contact": {
+        "name-required":"Name is required",
+        "name-pattern":"Your name must be at least 2 characters",
+        "email-required":"Email is required",
+        "email-pattern":"Email must be a valid email address",
+        "phone-required":"Phone is required",
+        "phone-pattern":"Your number phone not correct",
+        "subject-reuired":"Subject is required",
+        "subject-pattern":"Enter must be at least 5 characters",
+        "message-reuired":"Message is required",
+        "message-pattern":"Enter must be at least 5 characters",
+        "name":"Name",
+        "email":"E-mail",
+        "phone":"Phone",
+        "subject":"Subject",
+        "message":"Message"
+    },
+    "button": {
+        "submit": "SUBMIT"
     }
 }

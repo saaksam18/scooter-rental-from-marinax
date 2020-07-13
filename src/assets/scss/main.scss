@@ -66,8 +66,9 @@ img{
         z-index: 102;
     }
     span{
-        font-family: 'Roboto Condensed',sans-serif;
+        font-family: Helvetica, "メイリオ" , Meiryo;
         font-size: 250px;
+        font-weight: bold;
         z-index: 110;
         color: $white;
         &:nth-child(3){
@@ -130,8 +131,9 @@ img{
     }
     p{
         color: $dark-blue;
-        font-family: "Roboto Condensed", sans-serif;
-        font-size: 35px;
+        font-family: "ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro";
+        font-size: 43px;
+        font-weight: 500;
         display: block;
         z-index: 9999;
         position: absolute;

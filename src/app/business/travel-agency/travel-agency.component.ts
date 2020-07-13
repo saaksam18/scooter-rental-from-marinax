@@ -4,13 +4,13 @@ import { TranslateService ,LangChangeEvent } from '@ngx-translate/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-rental',
-  templateUrl: './rental.component.html',
-  styleUrls: ['./rental.component.scss']
+  selector: 'app-travel-agency',
+  templateUrl: './travel-agency.component.html',
+  styleUrls: ['./travel-agency.component.scss']
 })
-export class RentalComponent implements OnInit {
+export class TravelAgencyComponent implements OnInit {
 
-  title = this.translate.get('Scooter Rental').subscribe((res: string) => {
+  title = this.translate.get('Travel Agency').subscribe((res: string) => {
     this.pageTitle.setTitle(res);
   });
   constructor(
@@ -19,9 +19,9 @@ export class RentalComponent implements OnInit {
     private translate: TranslateService,
     private router: Router
   ) {
-    if(this.router.url === '/scooter-rental'){
+    if(this.router.url === '/travel-agency'){
       translate.onLangChange.subscribe((event: LangChangeEvent) => {
-          translate.get('Scooter Rental').subscribe((res: string) => {
+          translate.get('Travel Agency').subscribe((res: string) => {
           this.pageTitle.setTitle(res);
           });
       });

@@ -2,54 +2,50 @@
 <div class="content footer">
     <div class="category">
         <div class="row">
+
+            <!-- Menu Category -->
             <div class="col-xl-6 col-12">
-                <!-- <ul class="category__list">
-                    <li class="category__title"><a routerLink="/">{{ 'menu.top' | translate }}</a></li>
-                    <li><a routerLink fragment="emc">EMC</a></li>
-                    <li><a routerLink fragment="kubobro">japanese Shop / KUBOBRO & Khmers</a></li>
-                    <li><a routerLink fragment="business">Business & Services</a></li>
-                    <li><a routerLink fragment="access">Map & Contact (TEL)</a></li>
-                </ul> -->
                 <ul class="category__list">
-                    <li class="category__title"><a routerLink="/about">{{ 'menu.about-us' | translate }}</a></li>
-                    <li><a routerLink="/about/philosophy">{{ 'menu.mission-philosophy' | translate }}</a></li>
-                    <li><a routerLink="/about/founder">{{ 'menu.founder-story' | translate }}</a></li>
+                    <li class="category__title"><a href="/">{{ 'menu.title' | translate }}</a></li>
+                    <li><a routerLink="/">{{ 'menu.top' | translate }}</a></li>
+                    <li><a routerLink="/about">{{ 'menu.about-us' | translate }}</a></li>
                     <li><a routerLink="/about/outline">{{ 'menu.corperate-info' | translate }}</a></li>
                     <li><a routerLink="/about/history">{{ 'menu.history' | translate }}</a></li>
+                    <li><a routerLink="/about/teams">{{ 'menu.operational-team' | translate }}</a></li>
+                    <li><a routerLink="/business">{{ 'menu.business-field' | translate }}</a></li>
+                    <li><a routerLink="/business/scooter-rental">{{ 'menu.scoter-rental' | translate }}</a></li>
+                    <li><a routerLink="/business/visa">{{ 'menu.visa-wp' | translate }}</a></li>
+                    <li><a routerLink="/business/exchange">{{ 'menu.current-exchange' | translate }}</a></li>
+                    <li><a routerLink="/business/travel-agency">{{ 'menu.travel-agency' | translate }}</a></li>
+                    <li><a routerLink="/blog">{{ 'menu.blog' | translate }}</a></li>
+                    <li><a routerLink="/contact">{{ 'menu.contact' | translate }}</a></li>
                 </ul>
             </div>
+
+            <!-- facebook page -->
             <div class="col-xl-6 col-12 text-center">
                 <!-- <div *ngIf = "isFbPc"> -->
                 <div [ngClass]="{'d-none': !isFbPc}">
-                    <div class="fb-page" data-href="https://www.facebook.com/service4expat" data-tabs="timeline" data-width="500" data-height="700" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/service4expat" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/service4expat">EMC Motorbike Rental ＆ Visa Service, Phnom Penh</a></blockquote></div>
+                    <div class="fb-page" data-href="https://www.facebook.com/service4expat" data-tabs="timeline" data-width="400" data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/service4expat" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/service4expat">EMC Motorbike Rental ＆ Visa Service, Phnom Penh</a></blockquote></div>
                 </div>
                 <!-- <div *ngIf = "!isFbPc"> -->
                 <div [ngClass]="{'d-none': isFbPc}">
                     <div class="fb-page" data-href="https://www.facebook.com/service4expat" data-tabs="timeline" data-width="280" data-height="" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/service4expat" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/service4expat">EMC Motorbike Rental ＆ Visa Service, Phnom Penh</a></blockquote></div>
                 </div>
-                <!-- <ul class="category__list">
-                    <li class="category__title"><a routerLink="/business">{{ 'menu.business-field' | translate }}</a></li>
-                    <li><a routerLink="/business/rental">Scoter Rental</a></li>
-                    <li><a routerLink="/business/visa">Visa & WP</a></li>
-                    <li><a routerLink="/business/exchange">Current Exchange & ATM Machine</a></li>
-                    <li><a routerLink="">Travel Agency</a></li>
-                </ul> -->
-                <!-- <ul class="category__list">
-                    <li class="category__title"><a routerLink="">{{ 'menu.blog' | translate }}</a></li>
-                    <li><a routerLink="/blog" fragment="hisashi">Hisashi</a></li>
-                    <li><a routerLink="/blog" fragment="shugo">Shungo</a></li>
-                </ul> -->
             </div>
         </div>
     </div>
+
+    <!-- Footer Address -->
     <div class="w-100 text-center footer__info">
         <div class="w-100 logo"><img src="../../assets/images/logo.png" alt=""></div>
         <div class="w-100 mb-5 info">#38E0, St.322, BKK1, Chamkarmon, Phnom Penh</div>
     </div>
+
+    <!-- Menu footer -->
     <div class="d-flex justify-content-center footer__menu">
         <a routerLink="/contact">{{ 'menu.contact' | translate }}</a>
         <a routerLink="/sitemap">{{ 'menu.site-map' | translate }}</a>
-        <a routerLink="">{{ 'menu.privacy' | translate }}</a>
         <a routerLink="/about">{{ 'menu.about-us' | translate }}</a>
     </div>
     <div class="text-center footer__copyright">Copyright © 2018 - EMC Motorbike Rental Co., Ltd. All rights reserved.</div>

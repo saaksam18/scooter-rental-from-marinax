@@ -2,7 +2,7 @@
     <div class="sidebar__logo">
         <a routerLink="/" class="p-md-4 p-3">
             <div class="logo">
-                <span>EMC</span>
+                <span>{{ 'menu.emc' | translate }}</span>
                 <img src="../../assets/images/logo-white.png" alt="Expat Motorbikes Cambodia">
             </div>
             <span class="text-md-center text-left">Expat Motorbikes Cambodia</span>
@@ -32,16 +32,9 @@
                     <div class="sub-menu">
                         <span class="title-hover">{{ 'menu.about-us' | translate }}</span>
                         <ul>
-                            <li><a routerLink="/about/philosophy">{{ 'menu.mission-philosophy' | translate }}</a></li>
-                            <li><a routerLink="/about/founder">{{ 'menu.founder-story' | translate }}</a></li>
                             <li><a routerLink="/about/outline">{{ 'menu.corperate-info' | translate }}</a></li>
                             <li><a routerLink="/about/history">{{ 'menu.history' | translate }}</a></li>
-                            <li><a routerLink="/about/teams">{{ 'menu.operational-team' | translate }}</a>
-                                <ul class="pt-0">
-                                    <li><a routerLink="">japanese</a></li>
-                                    <li><a routerLink="">Khmer</a></li>
-                                </ul>
-                            </li>
+                            <li><a routerLink="/about/teams">{{ 'menu.operational-team' | translate }}</a></li>
                         </ul>
                     </div>
                 </li>
@@ -50,10 +43,10 @@
                     <div class="sub-menu">
                         <span class="title-hover">{{ 'menu.business-field' | translate }}</span>
                         <ul>
-                            <li><a routerLink="/business/rental">{{ 'menu.scoter-rental' | translate }}</a></li>
+                            <li><a routerLink="/business/scooter-rental">{{ 'menu.scoter-rental' | translate }}</a></li>
                             <li><a routerLink="/business/visa">{{ 'menu.visa-wp' | translate }}</a></li>
                             <li><a routerLink="/business/exchange">{{ 'menu.current-exchange' | translate }}</a></li>
-                            <li><a routerLink="">{{ 'menu.travel-agency' | translate }}</a></li>
+                            <li><a routerLink="/business/travel-agency">{{ 'menu.travel-agency' | translate }}</a></li>
                         </ul>
                     </div>
                 </li>

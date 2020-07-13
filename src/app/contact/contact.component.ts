@@ -50,7 +50,10 @@ export class ContactComponent implements OnInit {
 					Validators.required,
 					Validators.pattern('^.{5,100}$')
 			])),
-			message:	new FormControl('',Validators.compose([])),
+			message:	new FormControl('',Validators.compose([
+					Validators.required,
+					Validators.pattern('^.{5,100}$')
+			]))
 		});
   }
   submit(){

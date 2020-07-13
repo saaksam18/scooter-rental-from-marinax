@@ -43,6 +43,16 @@
             line-height: 1.8;
             margin: 0 auto;
         }
+        .table {
+            color: $yellow002;
+            border: 3px solid $yellow003 !important;
+            td{
+                width: 50%;
+                border: 3px solid $yellow003 !important;
+                border-top: 0 !important;
+                padding: 30px;
+            }
+        }
     }
     .title-buttom{
         letter-spacing: 1.2vw;
@@ -64,6 +74,7 @@
     }
     .scene {
         display: flex;
+        justify-content: center;
         margin-bottom: 80px;
         @media screen and (max-width: $tablet) {
             flex-direction: column;
@@ -193,7 +204,7 @@
                 }
             }
             &::before {
-                content: 'SCENE';
+                content: 'STEP';
                 background: $dark-yellow;
                 top: 0;
                 padding-top: 10px;

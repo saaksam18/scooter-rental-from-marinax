@@ -1,5 +1,6 @@
 {
     "menu": {
+        "title" : "メニュー",
         "top": "トップ",
         "emc": "EMC",
         "bussiness-service": "事業紹介 / サービス一覧",
@@ -19,5 +20,25 @@
         "contact": "お問い合わせ",
         "privacy": "プライバシーポリシー",
         "site-map": "サイトマップ"
+    },
+    "contact": {
+        "name-required":"氏名の入力は必須です",
+        "name-pattern":"フルネームで入力してください",
+        "email-required":"Emailの入力は必須です",
+        "email-pattern":"有効なEmail形式で入力してください",
+        "phone-required":"電話番号は必須です",
+        "phone-pattern":"電話番号の形式が誤っています",
+        "subject-reuired":"件名の入力は必須です",
+        "subject-pattern":"５文字以上で入力してください",
+        "message-reuired":"問い合わせ内容は必須です",
+        "message-pattern":"５文字以上で入力してください",
+        "name":"氏名",
+        "email":"Email",
+        "phone":"電話番号",
+        "subject":"件名",
+        "message":"問い合わせ内容"
+    },
+    "button": {
+        "submit": "送信"
     }
 }

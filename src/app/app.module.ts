@@ -37,6 +37,7 @@ import { ThankComponent } from './contact/thank/thank.component';
 import { Error404Component } from './error404/error404.component';
 import { BlogComponent } from './blog/blog.component';
 import { TeamsComponent } from './about/teams/teams.component';
+import { TravelAgencyComponent } from './business/travel-agency/travel-agency.component';
 
 
 @NgModule({
@@ -69,7 +70,8 @@ import { TeamsComponent } from './about/teams/teams.component';
     BlogComponent,
     ContactComponent,
     ThankComponent,
-    TeamsComponent
+    TeamsComponent,
+    TravelAgencyComponent
   ],
   imports: [
     BrowserModule,

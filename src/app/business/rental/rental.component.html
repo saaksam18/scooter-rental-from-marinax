@@ -12,38 +12,86 @@
             </div>
             <div class="col-lg-10 col-12 mx-auto mb-5">
                 <div class="header-desc">
-                    <span class="d-block">プノンペン在住者向け　　　　月貸し　60-130ドル</span>
-                    <span class="d-block">ビジネス出張者・旅行者向け　日貸し　4-10ドル</span>
-                    <p class="mt-3">バイク修理専門学校卒のスタッフによる安心のバイクメンテナンス防犯セキュリティーグッズ完備</p>
+                    <table class="table table-bordered bg-white mt-5">
+                        <tr>
+                            <td class="text-center"><span>プノンペン在住者向け(月貸し)</span></td>
+                            <td class="pl-5"><span>60-130ドル</span></td>
+                        </tr>
+                        <tr>
+                            <td class="text-center"><span>ビジネス出張者・旅行者向け(日貸し)</span></td>
+                            <td class="pl-5"><span>4-10ドル</span></td>
+                        </tr>
+                    </table>
+                    <p class="mt-3">バイク修理専門学校卒のスタッフによる安心のバイクメンテナンス</p>
+                    <p>防犯セキュリティーグッズ完備</p>
                 </div>
-            </div>
-            <div class="col-lg-10 col-12 text-center mx-auto">
-                <div class="title-buttom">GENERALITY OF KAGA ELECTRONICS</div>
             </div>
         </div>
     </div>
     <div class="rental content__wrap bg-lightblue">
         <div class="content-section">
-            <h3 class="step-title">ONE STOP SUPPORT</h3>
+            <h3 class="step-title">バイクレンタルまでのフロー</h3>
             <ul class="scene">
-                <li *ngFor="let number of [1,2,3,4,5,6]">
+                <li>
                     <div class="scene-circle">
-                        <span>SCENE</span>
-                        0{{ number }}
+                        <span>STEP</span>01
                     </div>
-                    <div class="scene-text">コンサルテーション</div>
+                    <div class="scene-text">事前準備</div>
+                </li>
+                <li>
+                    <div class="scene-circle">
+                        <span>STEP</span>02
+                    </div>
+                    <div class="scene-text">EMCショップ</div>
+                </li>
+                <li>
+                    <div class="scene-circle">
+                        <span>STEP</span>03
+                    </div>
+                    <div class="scene-text">そのままレンタル</div>
                 </li>
             </ul>
-            <div class="scene-block" *ngFor="let number of [1,2,3]">
+            <div class="scene-block">
                 <div class="scene-left">
                     <dl>
                         <dt>
-                            CONSULTATION
-                            <span>コンサルテーション</span>
+                            下記の必要な書類を手元にご用意ください。
                         </dt>
-                        <dd>プロジェクトを成功に導く鍵は、互いの信頼に支えられたアイデアの広がりと昇華の中にあります。
-                        お客様のご要望を徹底的に聞き、その奥に隠れる真の課題を見つけ出して最も効果的な解決策を一緒に考えます。
-                        業界最強の黒子として伴走し、お客様のビジネスを支えます。</dd>
+                        <dd>
+                            <p>・パスポート</p>
+                            <p>・他に必要なドキュメントがあれば</p>
+                            <p>・他に必要なドキュメントがあれば</p>
+                            <p>・他に必要なドキュメントがあれば</p>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="scene-right"></div>
+            </div>
+            <div class="scene-block">
+                <div class="scene-left">
+                    <dl>
+                        <dt>
+                            EMCショップ
+                        </dt>
+                        <dd>
+                            <p>EMCにご来店いただき、連絡したいバイクを選んでいただきます。</p>
+                            <p>もし事前にご希望の車種等ございましたら、お問い合わせください。</p>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="scene-right"></div>
+            </div>
+            <div class="scene-block">
+                <div class="scene-left">
+                    <dl>
+                        <dt>
+                            そのままレンタル
+                        </dt>
+                        <dd>
+                            <p>必要書類を提出していただき、バイクの選定後お支払いをしていただきます。</p>
+                            <p>問題がなければ、バイクに乗ってプノンペンを走行していただくことが可能です。</p>
+                            <p>ご希望のお客様には、ヘルメットのレンタルも合わせて行なっております。</p>
+                        </dd>
                     </dl>
                 </div>
                 <div class="scene-right"></div>

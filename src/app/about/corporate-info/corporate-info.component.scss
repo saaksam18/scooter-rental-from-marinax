@@ -1,5 +1,26 @@
 @import '../../../assets/scss/components/variables';
 .outline {
+    &__philosophy{
+        h3{
+            font-size: calc(1.5rem + .7vw);
+            line-height: 1.5em;
+            color: $dark-yellow;
+            background-color: $white;
+            position: relative;
+            transition: 0.5s all ease 0.1s;
+            padding: 0.4em 0;
+            border: 1px solid $dark-yellow;
+        }
+        p{
+            font-size: 22px;
+            line-height: 3;
+            letter-spacing: 8px;
+            margin-bottom: 0;
+            @media screen and (max-width: $desktop) {
+                letter-spacing: 0;
+            }
+        }
+    }
     &__list {
         table {
             td {

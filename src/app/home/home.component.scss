@@ -37,18 +37,20 @@ a:hover{
         }
         h1{
             color: $white;
+            font-family: Helvetica, "メイリオ" , Meiryo;
+            font-weight: bold;
             font-size: 200px;
-            font-family: 'Roboto Condensed',sans-serif;
             margin-bottom: 0;
+            line-height: .8;
             @media screen and (max-width: $smart-phone) {
                 font-size: 110px;
-            }
-            span{
-                color: $white;
             }
         }
         p{
             color: $white;
+            font-size: 26px;
+            font-weight: 500;
+            font-family: "ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro";
             @media screen and (max-width: $smart-phone) {
                 font-size: 15px;
             }
@@ -56,7 +58,7 @@ a:hover{
     }
     &__text{
         width: 60%;
-        margin: 15vh 0 0;
+        margin: 20vh 0 0;
         color: $white;
         @media screen and (max-width: $smart-phone) { 
             width: 90%;
@@ -324,6 +326,7 @@ a:hover{
                 justify-content: center;
                 align-items: center;
                 overflow: hidden;
+                position: relative;
                 @media screen and (max-width: $large-desktop){
                     height: 270px;
                 }
@@ -341,7 +344,7 @@ a:hover{
                     color: $white;
                     font-size: 2.2rem;
                     font-weight: 500;
-                    z-index: 1;
+                    z-index: 2;
                     @media screen and (max-width: $smart-phone){
                         font-size: 16px;
                         margin: 0;
@@ -352,6 +355,15 @@ a:hover{
                     max-height: 100%;
                     width: 500px;
                     max-width: 500px;
+                }
+                .bg-overlay{
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    background: rgba(0, 0, 0, 0.4);
+                    z-index: 1;
                 }
             }
         }
@@ -372,6 +384,9 @@ a:hover{
                     }
                     &:last-child{
                         border: 0;
+                    }
+                    a{
+                        color: $black;
                     }
                     h3{
                         font-size: 15px;
