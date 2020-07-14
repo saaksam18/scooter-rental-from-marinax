@@ -5,35 +5,35 @@
         </div>
         <div class="content__wrap py-5">
             <div class="content-section" data-aos="fade-up" data-aos-delay="50">
-                <h3 class="yellow-title">Contact Us</h3>
+                <h3 class="yellow-title">{{ 'menu.contact' | translate }}</h3>
 
                 <ul class="row">
                     <li class="col-xl-4 col-12">
                         <div class="p-5 inner">
                             <h2 class="mt-5 text-center">
-                                OUR LOCATION
+                                {{ 'contact.our-location' | translate }}
                             </h2>
-                            <p class="pl-4">#38E0, St.322, BKK1, Chamkarmon, Phnom Penh BKK1 Street 63を南に下り、エリックカイザーの角を曲がってすぐ</p>
+                            <p class="pl-4">{{ 'contact.address.line-1' | translate }} {{ 'contact.address.line-2' | translate }}</p>
                             <div class="icon location"></div>
                         </div>
                     </li>
                     <li class="col-xl-4 col-12">
                         <div class="p-5 text-center inner">
                             <h2 class="mt-5 text-center">
-                                WORKING HOURS
+                                {{ 'contact.work-hours' | translate }}
                             </h2>
-                            <p class="pl-4">9AM–5:30PM</p>
+                            <p class="pl-4"> {{ 'contact.time' | translate }}</p>
                             <div class="icon time"></div>
                         </div>
                     </li>
                     <li class="col-xl-4 col-12">
                         <div class="p-5 inner">
                             <h2 class="mt-5 text-center">
-                                PHONE NUMBER
+                                {{ 'contact.phone-number.title' | translate }}
                             </h2>
                             <div class="pl-4">
-                                <a href="tel:069 499 260"><p class="pl-4">+855 (0)69 499 260 (JPN, ENG)</p></a>
-                                <a href="tel:089 518 867"><p class="pl-4">+855 (0)89 518 867 (JPN, ENG)</p></a>
+                                <a href="tel:069 499 260"><p class="pl-4">{{ 'contact.phone-number.line-1' | translate }}</p></a>
+                                <a href="tel:089 518 867"><p class="pl-4">{{ 'contact.phone-number.line-2' | translate }}</p></a>
                             </div>
                             <div class="icon phone"></div>
                         </div>
@@ -41,7 +41,7 @@
                 </ul>
             </div>
             <div class="content-section" data-aos="fade-up" data-aos-delay="50">
-                <h3 class="yellow-title">Contact Form</h3>
+                <h3 class="yellow-title">{{ 'contact.contact-form' | translate }}</h3>
                 <form id="contact_form" class="d-flex align-items-center flex-column"
                 [formGroup]="contactForm" novalidate (ngSubmit)= "submit()">
                     <div class="form-group">

@@ -1,15 +1,15 @@
 <!-- Emc Header -->
 <div id="emc" class="banner">
     <div class="banner__logo">
-        <h1>EMC</h1>
+        <h1>{{ 'menu.emc' | translate }}</h1>
         <p>EXPAT MOTORBIKE CAMBODIA.</p>
     </div>
     <div class="banner__text">
-        <h2>カンボジア在住外国人のために</h2>
-        <p>EMCはあなたのカンボジア生活を支える</p>
-        <p>「日本人」による安心と信頼のサービス</p>
-        <p>2013年創業時からの経験とネットワークを活かし、</p>
-        <p>お客様の海外生活を支えます</p>
+        <h2>{{ 'home.header.title' | translate }}</h2>
+        <p>{{ 'home.header.description-1' | translate }}</p>
+        <p>{{ 'home.header.description-2' | translate }}</p>
+        <p>{{ 'home.header.description-3' | translate }}</p>
+        <p>{{ 'home.header.description-4' | translate }}</p>
     </div>
     <img class="banner__movie" src="../../assets/images/main-banner.jpg" alt="">
 </div>
@@ -112,13 +112,13 @@
 
     <!-- business section -->
     <div id="business" class="w-100 bg-white section-padding business" data-aos="fade-up" data-aos-delay="50">
-        <h3 class="yellow-title">OUR BUSINESS<span>事業紹介 / サービス一覧</span></h3>
+        <h3 class="yellow-title">{{ 'home.title.our-business' | translate }}<span>{{ 'home.sub-title.our-business' | translate }}</span></h3>
         <div class="business__link">
             <div class="row no-gutters">
                 <div class="col-lg-3 col-6">
                     <a routerLink="/business/scooter-rental">
                         <p class="w-100 position-absolute text-center">{{ 'menu.scoter-rental' | translate }}</p>
-                        <img class="position-relative" src="../../assets/images/business/scooter-rental .jpg" alt="">
+                        <img class="position-relative" src="../../assets/images/business/scooter-rental.jpg" alt="">
                         <div class="bg-overlay"></div>
                     </a>
                 </div>
@@ -132,8 +132,8 @@
                 <div class="col-lg-3 col-6">
                     <a routerLink="/business/travel-agency">
                         <p class="w-100 position-absolute text-center">
-                            <span class="d-block">旅行代理店</span>
-                            <span>（国内ツアー）</span>
+                            <span class="d-block">{{ 'home.business.travel-agency' | translate }}</span>
+                            <span>{{ 'home.business.domestic' | translate }}</span>
                         </p>
                         <img class="position-relative" src="../../assets/images/business/local-trip-adviser.jpg" alt="">
                         <div class="bg-overlay"></div>
@@ -141,7 +141,7 @@
                 </div>
                 <div class="col-lg-3 col-6">
                     <a routerLink="/business/exchange">
-                        <p class="w-100 position-absolute text-center">外貨両替</p>
+                        <p class="w-100 position-absolute text-center">{{ 'menu.current-exchange' | translate }}</p>
                         <img class="position-relative" src="../../assets/images/business/currency-exchange.jpg" alt="">
                         <div class="bg-overlay"></div>
                     </a>
@@ -152,7 +152,7 @@
 
     <!-- Contact section -->
     <div id="access" class="access" data-aos="fade-up" data-aos-delay="50">
-        <h3 class="mb-5 access__title yellow-title">Access<span>店舗案内</span></h3>
+        <h3 class="mb-5 access__title yellow-title">{{ 'home.title.access' | translate }}<span>{{ 'home.sub-title.access' | translate }}</span></h3>
         <div class="emc-map" data-aos="fade-up" data-aos-delay="50">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15636.07335760034!2d104.923545!3d11.550542!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x57d8373682216c7b!2sEMC+Motorbike+Rental!5e0!3m2!1sen!2skh!4v1507966475470" height="500" frameborder="0" style="width:100%;border:0" allowfullscreen=""></iframe>
         </div>
@@ -160,23 +160,23 @@
             <ul class="row">
                 <li class="col-lg-4 col-12" data-aos="fade-up" data-aos-delay="50">
                     <div class="mb-3 font-weight-bold icon location">
-                        OUR LOCATION
+                        {{ 'contact.our-location' | translate }}
                     </div>
-                    <p class="pl-4">#38E0, St.322, BKK1, Chamkarmon,</p>
-                    <p class="pl-4">Phnom Penh BKK1 Street 63を南に下り、エリックカイザーの角を曲がってすぐ</p>
+                    <p class="pl-4">{{ 'contact.address.line-1' | translate }}</p>
+                    <p class="pl-4">{{ 'contact.address.line-2' | translate }}</p>
                 </li>
                 <li class="col-lg-4 col-12" data-aos="fade-up" data-aos-delay="50">
                     <div class="mb-3 font-weight-bold icon time">
-                        WORKING HOURS
+                        {{ 'contact.work-hours' | translate }}
                     </div>
-                    <p class="pl-4">9AM–5:30PM</p>
+                    <p class="pl-4">{{ 'contact.time' | translate }}</p>
                 </li>
                 <li class="col-lg-4 col-12" data-aos="fade-up" data-aos-delay="50">
                     <div class="mb-3 font-weight-bold icon phone">
-                        PHONE NUMBER
+                        {{ 'contact.phone-number.title' | translate }}
                     </div>
-                    <a href="tel:069 499 260"><p class="pl-4">+855 (0)69 499 260 (JPN, ENG)</p></a>
-                    <a href="tel:089 518 867"><p class="pl-4">+855 (0)89 518 867 (JPN, ENG)</p></a>
+                    <p class="pl-4"><a href="tel:069 499 260">{{ 'contact.phone-number.line-1' | translate }}</a></p>
+                    <p class="pl-4"><a href="tel:089 518 867">{{ 'contact.phone-number.line-2' | translate }}</a></p>
                 </li>
             </ul>
         </div>
