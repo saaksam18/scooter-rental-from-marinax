@@ -8,7 +8,10 @@
     flex-direction: column;
     justify-content: space-between;
     animation: fade-in .8s ease both;
-    background: url('../../../assets/images/about/mainvisual-a_1.jpg') no-repeat center center;
+    background:  linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url('../../../assets/images/business/busines-banner.jpg') no-repeat center center;
     background-size: cover;
     @media screen and (max-width: $smart-phone){
         min-height: 280px;

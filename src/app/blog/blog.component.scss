@@ -19,7 +19,10 @@
     }
     .blog-text {
         border-top: 1px solid $dark-blue;
-        height: calc(100% - 250px);
+        .blog-des{
+            height: 284px;
+            overflow: hidden;
+        }
     }
     .b-darkblue {
         border: 1px solid $dark-blue;

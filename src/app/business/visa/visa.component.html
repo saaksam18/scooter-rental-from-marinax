@@ -1,80 +1,116 @@
-<div class="content visa">
+<div class="content">
+
+    <!-- Business Header -->
     <app-business-header></app-business-header>
-    <div class="content__pagetitle">
-        <h3 class="main-title">ビザ更新およびワークパーミット（労働許可証）の代理申請サービス</h3>
+
+    <!-- Visa Header -->
+    <div class="visa-header bg-darkyellow">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="title-border">{{ 'visa.title' | translate }}</h3>
+            </div>
+            <div class="col-12">
+                <div class="sub-title"> 
+                    <span>{{ 'visa.sub-title' | translate }}</span>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="visa__list">
-        <ul class="row no-gutters">
-            <li class="col-lg-3 col-12 d-flex justify-content-center align-items-center">
-                <a routerLink="/business/rental" fragment="visa1">スクーターレンタル</a>
-            </li>
-            <li class="col-lg-3 col-12 d-flex justify-content-center align-items-center">
-                <a routerLink="/business/visa" fragment="visa2">ビザサービス・労働許可証</a>
-            </li>
-            <li class="col-lg-3 col-12 d-flex justify-content-center align-items-center">
-                <a routerLink="/business/travel" fragment="visa3">旅行代理店（国内ツアー）</a>
-            </li>
-            <li class="col-lg-3 col-12 d-flex justify-content-center align-items-center">
-                <a routerLink="/business/exchange" fragment="visa4">外貨両替</a>
-            </li>
-        </ul>
-    </div>
-    <div class="content__wrap bg-lightblue">
-        <div class="content-section" data-aos="fade-up" data-aos-delay="50" id="visa1">
-            <h3 class="title-borderbottom">電子部品・半導体ビジネス</h3>
-            <div class="visa__section--img"><img src="../../assets/images/business/business-fields__img01.jpg" alt=""></div>
-            <div class="visa__section--text">
-                <p>世界最高水準の部品を国内外から調達し、<br class="d-none d-lg-block">
-                専門の技術チームとともにお客様に提供しています。</p>
-                加賀電子は、日本をはじめ、北米、欧州、アジアに広がるグループ会社と連携し、世界各地に60社を超えるネットワークを展開しています。そのグループ力を活かし、専門の技術チームのもと、世界最高水準の部品をお客様へお届けしています。さらに、貴重な製品情報の発信、テクニカルサポート体制の確立など、お客様に安心と信頼をご提供しています。
-            </div>
-            <a class="w-100" routerLink="/business/exchange">
-                <div class="btn-detail">
-                    電子部品・半導体ビジネスの詳しい情報はコチラから
+
+    <!-- Visa Content -->
+    <div class="visa content__wrap bg-lightblue">
+        <div class="content-section">
+            <h3 class="step-title">{{ 'visa.flow.title' | translate }}</h3>
+            <!-- Visa Step -->
+            <ul class="scene">
+                <li>
+                    <div class="scene-circle">
+                        <span>STEP</span>01
+                    </div>
+                    <div class="scene-text">{{ 'visa.flow.step-1' | translate }}</div>
+                </li>
+                <li>
+                    <div class="scene-circle">
+                        <span>STEP</span>02
+                    </div>
+                    <div class="scene-text">{{ 'visa.flow.step-2' | translate }}</div>
+                </li>
+                <li>
+                    <div class="scene-circle">
+                        <span>STEP</span>03
+                    </div>
+                    <div class="scene-text">{{ 'visa.flow.step-3' | translate }}</div>
+                </li>
+                <li>
+                    <div class="scene-circle">
+                        <span>STEP</span>04
+                    </div>
+                    <div class="scene-text">{{ 'visa.flow.step-4' | translate }}</div>
+                </li>
+            </ul>
+            <!-- Section 01 -->
+            <div class="scene-block">
+                <div class="scene-left">
+                    <dl>
+                        <dt>
+                            {{ 'visa.step-1.title' | translate }}
+                        </dt>
+                        <dd>
+                            <p>{{ 'visa.step-1.des-1' | translate }}</p>
+                            <p>{{ 'visa.step-1.des-2' | translate }}</p>
+                            <p>{{ 'visa.step-1.des-2' | translate }}</p>
+                            <p>{{ 'visa.step-1.des-2' | translate }}</p>
+                        </dd>
+                    </dl>
                 </div>
-            </a>
-        </div>
-        <div class="content-section" data-aos="fade-up" data-aos-delay="50" id="visa2">
-            <h3 class="title-borderbottom">EMSビジネス</h3>
-            <div class="visa__section--img"><img src="../../assets/images/business/business-fields__img02.jpg" alt=""></div>
-            <div class="visa__section--text">
-                <p>多品種・小ロットにも対応できるフレキシブルな生産体制を確立。<br class="d-none d-lg-block">
-                半完成品から完成品まで、お客様に寄り添って、ご希望の場所でカタチにします。</p>
-                中国をはじめアセアンや欧州にさらには米州まで、グローバルに展開する生産工場を活用し、お客様のご希望に合わせた地域で生産できる体制を整えています。製品の設計開発をはじめ、多品種・小ロット生産、半完成品から完成品まで柔軟に対応できるトータルサポート体制を実現しました。また、北米、欧州、アジアなど世界中の仕入先から、お客様に最適な使用部材の代替提案をすることも可能にしています。
+                <div class="scene-right"></div>
             </div>
-            <a class="w-100" routerLink="/business/ems">
-                <div class="btn-detail">
-                    EMSビジネスの詳しい情報はコチラから
+            <!-- Section 02 -->
+            <div class="scene-block">
+                <div class="scene-left">
+                    <dl>
+                        <dt>
+                            {{ 'visa.step-2.title' | translate }}
+                        </dt>
+                        <dd>
+                            <p>{{ 'visa.step-2.des-1' | translate }}</p>
+                            <p>{{ 'visa.step-2.des-2' | translate }}</p>
+                        </dd>
+                    </dl>
                 </div>
-            </a>
-        </div>
-        <div class="content-section" data-aos="fade-up" data-aos-delay="50" id="visa3">
-            <h3 class="title-borderbottom">情報機器ビジネス</h3>
-            <div class="visa__section--img"><img src="../../assets/images/business/business-fields__img03.jpg" alt=""></div>
-            <div class="visa__section--text">
-                <p>PCやPC周辺機器、ストレージ機器の販売、そして電気通信工事からシステム構築まで、<br class="d-none d-lg-block">
-                ネットワークソリューションのワンストップサービスをお届けします。</p>
-                国内外の有名ブランドPCやPC周辺機器をメインに、大手家電量販店やコンビニエンスストア、教育機関など独自の流通チャネルを強みとした販売代理店業務を行っています。また、企業や官公庁向けにLANシステムの構築や情報セキュリティシステムなどの提案のほか、電気・通信設備の敷設や内装工事も可能な体制を整え、ネットワークソリューションに関わるワンストップサービスを実現しています。
+                <div class="scene-right"></div>
             </div>
-            <a class="w-100" routerLink="/business/product-info">
-                <div class="btn-detail">
-                    情報機器ビジネスの詳しい情報はコチラから
+            <!-- Section 03 -->
+            <div class="scene-block">
+                <div class="scene-left">
+                    <dl>
+                        <dt>
+                            {{ 'visa.step-3.title' | translate }}
+                        </dt>
+                        <dd>
+                            <p>{{ 'visa.step-3.des-1' | translate }}</p>
+                            <p>{{ 'visa.step-3.des-2' | translate }}</p><br>
+                            <p>{{ 'visa.step-3.des-3' | translate }}</p>
+                        </dd>
+                    </dl>
                 </div>
-            </a>
-        </div>
-        <div class="content-section" data-aos="fade-up" data-aos-delay="50" id="visa4">
-            <h3 class="title-borderbottom">ニュービジネス</h3>
-            <div class="visa__section--img"><img src="../../assets/images/business/business-fields__img04.jpg" alt=""></div>
-            <div class="visa__section--text">
-                <p>エレクトロニクスとアミューズメント業界で培ったノウハウを活かして、<br class="d-none d-lg-block">
-                新たなビジネス領域への挑戦を続けています。</p>
-                加賀電子グループのネットワークとノウハウを最大限活用して、エンターテインメントの世界を広げるソフトやアミューズメント機器を提供しています。また、お客様のご要望に即したOEM による機器開発のほか、PC リサイクル、PC 関連機器の設定などにも対応します。
+                <div class="scene-right"></div>
             </div>
-            <a class="w-100" routerLink="/business/newbusiness">
-                <div class="btn-detail">
-                    ニュービジネスの詳しい情報はコチラから
+            <!-- Section 04 -->
+            <div class="scene-block">
+                <div class="scene-left">
+                    <dl>
+                        <dt>
+                            {{ 'visa.step-4.title' | translate }}
+                        </dt>
+                        <dd>
+                            <p>{{ 'visa.step-4.des-1' | translate }}</p>
+                            <p>{{ 'visa.step-4.des-2' | translate }}</p>
+                        </dd>
+                    </dl>
                 </div>
-            </a>
+                <div class="scene-right"></div>
+            </div>
         </div>
     </div>
 </div>

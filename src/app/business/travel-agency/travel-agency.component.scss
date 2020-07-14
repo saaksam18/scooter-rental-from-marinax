@@ -1,5 +1,5 @@
 @import '../../../assets/scss/components/variables';
-.visa-header {
+.travel-header {
     color: $white;
     padding: 50px 50px 0 50px;
     @media screen and (max-width: $smart-phone) {
@@ -31,7 +31,7 @@
         }
     }
 }
-.visa {
+.travel {
     .step-title {
         font-family: Roboto;
         font-size: 3.2rem;
@@ -146,26 +146,6 @@
                 border: 0;
             }
         }
-        &:nth-of-type(1) {
-            .scene-right {
-                background: url("../../../assets/images/business/document.jpg") no-repeat center center;
-            }
-        }
-        &:nth-of-type(2) {
-            .scene-right {
-                background: url("../../../assets/images/business/emc-shop.jpg") no-repeat center center;
-            }
-        }
-        &:nth-of-type(3) {
-            .scene-right {
-                background: url("../../../assets/images/business/visa.jpg") no-repeat center center;
-            }
-        }
-        &:nth-of-type(4) {
-            .scene-right {
-                background: url("../../../assets/images/business/acception.jpg") no-repeat center center;
-            }
-        }
         .scene-left {
             width: 50%;
             display: flex;
@@ -230,6 +210,26 @@
             dd {
                 font-size: 1.4rem;
                 line-height: 1.8;
+            }
+        }
+        &:nth-of-type(1) {
+            .scene-right {
+                background: url("../../../assets/images/business/document.jpg") no-repeat center center;
+            }
+        }
+        &:nth-of-type(2) {
+            .scene-right {
+                background: url("../../../assets/images/business/emc-shop.jpg") no-repeat center center;
+            }
+        }
+        &:nth-of-type(3) {
+            .scene-right {
+                background: url("../../../assets/images/business/local-trip-adviser.jpg") no-repeat center center;
+            }
+        }
+        &:nth-of-type(4) {
+            .scene-right {
+                background: url("../../../assets/images/business/local-trip-adviser.jpg") no-repeat center center;
             }
         }
         .scene-right {

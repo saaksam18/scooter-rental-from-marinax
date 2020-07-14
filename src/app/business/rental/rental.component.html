@@ -1,49 +1,108 @@
 <div class="content">
+
+    <!-- Business Header -->
     <app-business-header></app-business-header>
+
+    <!-- Scooter Rental Header -->
     <div class="rental-header bg-darkyellow">
         <div class="row">
             <div class="col-12">
-                <h3 class="title-border">スクーターレンタルサービス</h3>
+                <h3 class="title-border">{{ 'scooter-rental.title' | translate }}</h3>
             </div>
             <div class="col-12">
                 <div class="sub-title"> 
-                    <span>整備の行き届いたスクーター、安心のアフターケア</span>
+                    <span>{{ 'scooter-rental.sub-title' | translate }}</span>
                 </div>
             </div>
             <div class="col-lg-10 col-12 mx-auto mb-5">
                 <div class="header-desc">
-                    <span class="d-block">プノンペン在住者向け　　　　月貸し　60-130ドル</span>
-                    <span class="d-block">ビジネス出張者・旅行者向け　日貸し　4-10ドル</span>
-                    <p class="mt-3">バイク修理専門学校卒のスタッフによる安心のバイクメンテナンス防犯セキュリティーグッズ完備</p>
+                    <table class="table table-bordered bg-white mt-5">
+                        <tr>
+                            <td class="text-center"><span>{{ 'scooter-rental.table.monthly-rental' | translate }}</span></td>
+                            <td class="pl-5"><span>{{ 'scooter-rental.table.monthly-rental-des' | translate }}</span></td>
+                        </tr>
+                        <tr>
+                            <td class="text-center"><span>{{ 'scooter-rental.table.day-rental' | translate }}</span></td>
+                            <td class="pl-5"><span>{{ 'scooter-rental.table.day-rental-des' | translate }}</span></td>
+                        </tr>
+                    </table>
+                    <p class="mt-3">{{ 'scooter-rental.reliable-des' | translate }}</p>
+                    <p>{{ 'scooter-rental.equip-des' | translate }}</p>
                 </div>
-            </div>
-            <div class="col-lg-10 col-12 text-center mx-auto">
-                <div class="title-buttom">GENERALITY OF KAGA ELECTRONICS</div>
             </div>
         </div>
     </div>
+
+    <!-- Scooter Rental Content -->
     <div class="rental content__wrap bg-lightblue">
         <div class="content-section">
-            <h3 class="step-title">ONE STOP SUPPORT</h3>
+            <h3 class="step-title">{{ 'scooter-rental.flow.title' | translate }}</h3>
+
+            <!-- Section Step -->
             <ul class="scene">
-                <li *ngFor="let number of [1,2,3,4,5,6]">
+                <li>
                     <div class="scene-circle">
-                        <span>SCENE</span>
-                        0{{ number }}
+                        <span>STEP</span>01
                     </div>
-                    <div class="scene-text">コンサルテーション</div>
+                    <div class="scene-text">{{ 'scooter-rental.flow.step-1' | translate }}</div>
+                </li>
+                <li>
+                    <div class="scene-circle">
+                        <span>STEP</span>02
+                    </div>
+                    <div class="scene-text">{{ 'scooter-rental.flow.step-2' | translate }}</div>
+                </li>
+                <li>
+                    <div class="scene-circle">
+                        <span>STEP</span>03
+                    </div>
+                    <div class="scene-text">{{ 'scooter-rental.flow.step-3' | translate }}</div>
                 </li>
             </ul>
-            <div class="scene-block" *ngFor="let number of [1,2,3]">
+            <!-- Section 01 -->
+            <div class="scene-block">
                 <div class="scene-left">
                     <dl>
                         <dt>
-                            CONSULTATION
-                            <span>コンサルテーション</span>
+                            {{ 'scooter-rental.step-1.title' | translate }}
                         </dt>
-                        <dd>プロジェクトを成功に導く鍵は、互いの信頼に支えられたアイデアの広がりと昇華の中にあります。
-                        お客様のご要望を徹底的に聞き、その奥に隠れる真の課題を見つけ出して最も効果的な解決策を一緒に考えます。
-                        業界最強の黒子として伴走し、お客様のビジネスを支えます。</dd>
+                        <dd>
+                            <p>{{ 'scooter-rental.step-1.des-1' | translate }}</p>
+                            <p>{{ 'scooter-rental.step-1.des-2' | translate }}</p>
+                            <p>{{ 'scooter-rental.step-1.des-2' | translate }}</p>
+                            <p>{{ 'scooter-rental.step-1.des-2' | translate }}</p>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="scene-right"></div>
+            </div>
+            <!-- Section 02 -->
+            <div class="scene-block">
+                <div class="scene-left">
+                    <dl>
+                        <dt>
+                            {{ 'scooter-rental.step-2.title' | translate }}
+                        </dt>
+                        <dd>
+                            <p>{{ 'scooter-rental.step-2.des-1' | translate }}</p>
+                            <p>{{ 'scooter-rental.step-2.des-2' | translate }}</p>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="scene-right"></div>
+            </div>
+            <!-- Section 03 -->
+            <div class="scene-block">
+                <div class="scene-left">
+                    <dl>
+                        <dt>
+                            {{ 'scooter-rental.step-3.title' | translate }}
+                        </dt>
+                        <dd>
+                            <p>{{ 'scooter-rental.step-3.des-1' | translate }}</p>
+                            <p>{{ 'scooter-rental.step-3.des-2' | translate }}</p>
+                            <p>{{ 'scooter-rental.step-3.des-3' | translate }}</p>
+                        </dd>
                     </dl>
                 </div>
                 <div class="scene-right"></div>

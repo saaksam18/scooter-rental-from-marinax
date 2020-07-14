@@ -5,34 +5,35 @@
         </div>
         <div class="content__wrap py-5">
             <div class="content-section" data-aos="fade-up" data-aos-delay="50">
-                <h3 class="yellow-title">Contact Us</h3>
+                <h3 class="yellow-title">{{ 'menu.contact' | translate }}</h3>
+
                 <ul class="row">
                     <li class="col-xl-4 col-12">
                         <div class="p-5 inner">
                             <h2 class="mt-5 text-center">
-                                OUR LOCATION
+                                {{ 'contact.our-location' | translate }}
                             </h2>
-                            <p class="pl-4">#38E0, St.322, BKK1, Chamkarmon, Phnom Penh BKK1 Street 63を南に下り、エリックカイザーの角を曲がってすぐ</p>
+                            <p class="pl-4">{{ 'contact.address.line-1' | translate }} {{ 'contact.address.line-2' | translate }}</p>
                             <div class="icon location"></div>
                         </div>
                     </li>
                     <li class="col-xl-4 col-12">
-                        <div class="p-5 inner">
+                        <div class="p-5 text-center inner">
                             <h2 class="mt-5 text-center">
-                                WORKING HOURS
+                                {{ 'contact.work-hours' | translate }}
                             </h2>
-                            <p class="pl-4"><span class="font-weight-bold">Working Hours:</span> 9AM–5:30PM</p>
+                            <p class="pl-4"> {{ 'contact.time' | translate }}</p>
                             <div class="icon time"></div>
                         </div>
                     </li>
                     <li class="col-xl-4 col-12">
                         <div class="p-5 inner">
                             <h2 class="mt-5 text-center">
-                                PHONE NUMBER
+                                {{ 'contact.phone-number.title' | translate }}
                             </h2>
                             <div class="pl-4">
-                                <p>+855 (0)69 499 260 (JPN, ENG)</p>
-                                <p>+855 (0)89 518 867 (JPN, ENG)</p>
+                                <a href="tel:069 499 260"><p class="pl-4">{{ 'contact.phone-number.line-1' | translate }}</p></a>
+                                <a href="tel:089 518 867"><p class="pl-4">{{ 'contact.phone-number.line-2' | translate }}</p></a>
                             </div>
                             <div class="icon phone"></div>
                         </div>
@@ -40,48 +41,52 @@
                 </ul>
             </div>
             <div class="content-section" data-aos="fade-up" data-aos-delay="50">
-                <h3 class="yellow-title">Contact Form</h3>
+                <h3 class="yellow-title">{{ 'contact.contact-form' | translate }}</h3>
                 <form id="contact_form" class="d-flex align-items-center flex-column"
                 [formGroup]="contactForm" novalidate (ngSubmit)= "submit()">
                     <div class="form-group">
-                        <label for="name"><span class="text-danger">*</span>Name</label>
-                        <input name="name" formControlName="name" class="px-3" placeholder="Your Full Name" autocomplete="off">
+                        <label for="name"><span class="text-danger">*</span>{{ 'contact.name' | translate }}</label>
+                        <input name="name" formControlName="name" class="px-3" placeholder="{{ 'contact.name' | translate }}" autocomplete="off">
                         <div *ngIf="contactForm.controls['name'].invalid && contactForm.controls['name'].touched" class="px-3 text-danger text-right">
-                            <p *ngIf="contactForm.controls['name'].errors.required">Name is required</p>
-                            <p *ngIf="contactForm.get('name').hasError('pattern')">Your name must be at least 2 characters</p>
+                            <p *ngIf="contactForm.controls['name'].errors.required">{{ 'contact.name-required' | translate }}</p>
+                            <p *ngIf="contactForm.get('name').hasError('pattern')">{{ 'contact.name-pattern' | translate }}</p>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="email"><span class="text-danger">*</span>Email address</label>
-                        <input type="email" name="email" formControlName="email" class="px-3" placeholder="Your Email" autocomplete="off">
+                        <label for="email"><span class="text-danger">*</span>{{ 'contact.email' | translate }}</label>
+                        <input type="email" name="email" formControlName="email" class="px-3" placeholder="{{ 'contact.email' | translate }}" autocomplete="off">
                         <div *ngIf="contactForm.controls['email'].invalid && contactForm.controls['email'].touched" class="px-3 text-danger text-right">
-                            <p *ngIf="contactForm.controls['email'].errors.required">Email is required</p>
-                            <p *ngIf="contactForm.get('email').hasError('pattern')" class="text-danger">Email must be a valid email address</p> 
+                            <p *ngIf="contactForm.controls['email'].errors.required">{{ 'contact.email-required' | translate }}</p>
+                            <p *ngIf="contactForm.get('email').hasError('pattern')" class="text-danger">{{ 'contact.email-pattern' | translate }}</p> 
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="phone"><span class="text-danger">*</span>Phone Number</label>
-                        <input type="tel" maxlength="10" formControlName="phone" name="phone" class="px-3" placeholder="Your Phone Number" autocomplete="off">
+                        <label for="phone"><span class="text-danger">*</span>{{ 'contact.phone' | translate }}</label>
+                        <input type="tel" maxlength="10" formControlName="phone" name="phone" class="px-3" placeholder="{{ 'contact.phone' | translate }}" autocomplete="off">
                         <div *ngIf="contactForm.controls['phone'].invalid && contactForm.controls['phone'].touched" class="px-3 text-danger text-right">
-                            <p *ngIf="contactForm.controls['phone'].errors.required">Phone number is required</p>
+                            <p *ngIf="contactForm.controls['phone'].errors.required">{{ 'contact.phone-required' | translate }}</p>
                             <ng-template [ngIf]="contactForm.controls['phone'].hasError('minlength') || contactForm.get('phone').hasError('pattern')">
-                                <p>Your phone number not correct</p>
+                                <p>{{ 'contact.phone-pattern' | translate }}</p>
                             </ng-template>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="subject"><span class="text-danger">*</span>Subject</label>
-                        <input name="subject" formControlName="subject" class="px-3" id="subject" placeholder="Your Subject" autocomplete="off">
+                        <label for="subject"><span class="text-danger">*</span>{{ 'contact.subject' | translate }}</label>
+                        <input name="subject" formControlName="subject" class="px-3" id="subject" placeholder="{{ 'contact.subject' | translate }}" autocomplete="off">
                         <div *ngIf="contactForm.controls['subject'].invalid && contactForm.controls['subject'].touched" class="px-3 text-danger text-right">
-                            <span *ngIf="contactForm.controls['subject'].errors.required">Subject is required</span>
-                            <span *ngIf="contactForm.get('subject').hasError('pattern')">Enter must be at least 5 characters</span>
+                            <span *ngIf="contactForm.controls['subject'].errors.required">{{ 'contact.subject-reuired' | translate }}</span>
+                            <span *ngIf="contactForm.get('subject').hasError('pattern')">{{ 'contact.subject-pattern' | translate }}</span>
                         </div>
                     </div>
                     <div class="form-group d-flex">
-                        <label for="message">Message</label>
-                        <textarea name="message" class="px-3" id="message" rows="3" placeholder="Your Message"></textarea>
+                        <label for="message"><span class="text-danger">*</span>{{ 'contact.message' | translate }}</label>
+                        <textarea name="message" formControlName="message" class="px-3" id="message" rows="3" placeholder="{{ 'contact.message' | translate }}"></textarea>
                     </div>
-                    <button id="btn-submit" [ngClass]="{'disabled': contactForm.invalid}" type="submit" [disabled]="contactForm.invalid">Submit</button>
+                    <div *ngIf="contactForm.controls['message'].invalid && contactForm.controls['message'].touched" class="w-75 px-5 text-danger text-right">
+                        <span *ngIf="contactForm.controls['message'].errors.required">{{ 'contact.message-reuired' | translate }}</span>
+                        <span *ngIf="contactForm.get('message').hasError('pattern')">{{ 'contact.message-pattern' | translate }}</span>
+                    </div>
+                    <button id="btn-submit" [ngClass]="{'disabled': contactForm.invalid}" type="submit" [disabled]="contactForm.invalid">{{ 'button.submit' | translate }}</button>
                 </form>
             </div>
         </div>

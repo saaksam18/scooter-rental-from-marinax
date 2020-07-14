@@ -1,71 +1,70 @@
+<!-- Outline page -->
 <div class="content">
     <app-about-header></app-about-header>
     <div class="content__pagetitle">
-        <h3 class="main-title">会社情報</h3>
+        <h3 class="main-title">{{ 'outline.title' | translate }}</h3>
     </div>
     <div class="outline content__wrap bg-lightblue">
+        <!-- Phylosophy -->
+        <div class="content-section">
+            <div class="text-center outline__philosophy">
+                <h3 class="yellow-title">{{ 'outline.philosophy.title' | translate }}</h3>
+                <div class="w-100 outline__map--access">
+                    <p>{{ 'outline.philosophy.des.line-1' | translate }}</p>
+                    <p>{{ 'outline.philosophy.des.line-2' | translate }}</p>
+                    <p>{{ 'outline.philosophy.des.line-3' | translate }}</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Outline Table -->
         <div class="content-section">
             <div class="outline__list">
                 <table class="table table-darkyellow">
                     <tr>
-                        <th>会社</th>
-                        <td>EMC Motorbike Rental</td>
+                        <th>{{ 'outline.table.company' | translate }}</th>
+                        <td>{{ 'outline.table.company-des' | translate }}</td>
                     </tr>
                     <tr>
-                        <th>所在地</th>
-                        <td>#38E0, St.322, BKK1, Chamkarmon, Phnom Penh</td>
+                        <th>{{ 'outline.table.location' | translate }}</th>
+                        <td>{{ 'contact.address.line-1' | translate }}</td>
                     </tr>
                     <tr>
-                        <th>事業内容</th>
-                        <td>レンタルスクーター、ビザおよび労働許可証代理申請外貨両替</td>
+                        <th>{{ 'outline.table.business' | translate }}</th>
+                        <td>{{ 'outline.table.business-des' | translate }}</td>
                     </tr>
                     <tr>
-                        <th>設立</th>
-                        <td>2013年11月</td>
+                        <th>{{ 'outline.table.establishment' | translate }}</th>
+                        <td>{{ 'outline.table.establishment-des' | translate }}</td>
                     </tr>
                     <tr>
-                        <th>資本金</th>
-                        <td>800万円</td>
+                        <th>{{ 'outline.table.capital' | translate }}</th>
+                        <td>{{ 'outline.table.capital-des' | translate }}</td>
                     </tr>
                     <tr>
-                        <th>グループ会社</th>
+                        <th>{{ 'outline.table.group-company.title' | translate }}</th>
                         <td>
-                            <p class="mb-0">GREEN ROOT MONEY EXCHANGE CO.,LTD.</p>
-                            <p class="mb-0">POPULAR TRAVEL & TOURS</p>  
+                            <p class="mb-0">{{ 'outline.table.group-company.des-line-1' | translate }}</p>
+                            <p class="mb-0">{{ 'outline.table.group-company.des-line-2' | translate }}</p>  
                         </td>
                     </tr>
                 </table>
             </div>
         </div>
+
+        <!-- Access Map -->
         <div class="content-section">
             <div class="outline__map">
                 <div class="title-borderleft">
-                    <h3>アクセス</h3>
+                    <h3>{{ 'outline.access' | translate }}</h3>
                 </div>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15636.07335760034!2d104.923545!3d11.550542!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x57d8373682216c7b!2sEMC+Motorbike+Rental!5e0!3m2!1sen!2skh!4v1507966475470" height="500" frameborder="0" style="width:100%;border:0" allowfullscreen=""></iframe>
                 <div class="outline__map--btn">
-                    <a routerLink="https://www.google.com/maps?ll=35.701027,139.775271&amp;z=16&amp;t=m&amp;hl=ja&amp;gl=JP&amp;mapclient=embed&amp;cid=6044375204572546162" target="_blank">Google マップで見る</a>
-                    <a routerLink="map" target="_blank">地図画像を見る</a>
+                    <a href="https://www.google.com/maps/place/EMC+MOTORBIKE+RENTAL+BKK1/@11.550542,104.9213563,17z/data=!3m1!4b1!4m5!3m4!1s0x310951244505894b:0x57d8373682216c7b!8m2!3d11.550542!4d104.923545" target="_blank">{{ 'button.google-map' | translate }}</a>
                 </div>
                 <div class="outline__map--access">
-                    <span class="title">交通のご案内</span>
-                    <ul>
-                        <li>JR「秋葉原」駅 昭和通り口より徒歩5分</li>
-                        <li>つくばエクスプレス「秋葉原」駅 A3出口より徒歩4分</li>
-                        <li>東京メトロ日比谷線「秋葉原」駅 2番出口より徒歩4分</li>
-                        <li>東京メトロ銀座線「末広町」駅 3番出口より徒歩7分</li>
-                        <li>都営新宿線「岩本町」駅 A3出口より徒歩7分</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="content-section">
-            <div class="outline__pdf">
-                <div class="title-borderleft">
-                    <h3>会社案内</h3>
-                </div>
-                <div class="outline__pdf--btn">
-                    <a routerLink="https://www.taxan.co.jp/jp/company/pdf/corporate_profile_jp.pdf" target="_blank">加賀電子株式会社 会社案内</a>
+                    <span class="title">{{ 'outline.transportation-info' | translate }}</span>
+                    <p>{{ 'contact.address.line-2' | translate }}</p>
                 </div>
             </div>
         </div>
