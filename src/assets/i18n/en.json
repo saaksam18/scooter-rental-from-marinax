@@ -21,6 +21,29 @@
         "privacy": "Privacy Policy",
         "site-map": "Site Map"
     },
+    "home": {
+        "header" : {
+            "title": "カンボジア在住外国人のために",
+            "description-1": "EMCはあなたのカンボジア生活を支える",
+            "description-2": "「日本人」による安心と信頼のサービス",
+            "description-3": "2013年創業時からの経験とネットワークを活かし、",
+            "description-4": "お客様の海外生活を支えます"
+        },
+        "title": {
+            "our-business": "OUR BUSINESS",
+            "access": "ACCESS"
+        },
+        "sub-title":{
+            "our-business": "事業紹介 / サービス一覧",
+            "access": "店舗案内"
+        },
+        "business": {
+            "visa": "ビザサービス",
+            "work-permit": "労働許可証",
+            "travel-agency": "旅行代理店",
+            "domestic": "（国内ツアー）"
+        }
+    },
     "contact": {
         "name-required":"Name is required",
         "name-pattern":"Your name must be at least 2 characters",
