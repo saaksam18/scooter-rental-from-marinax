@@ -3,20 +3,11 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { HistoryComponent } from './about/history/history.component';
-import { FounderComponent } from './about/founder/founder.component';
-import { PhilosophyComponent } from './about/philosophy/philosophy.component';
 import { CorporateInfoComponent } from './about/corporate-info/corporate-info.component';
-import { MapComponent } from './about/corporate-info/map/map.component';
 import { BusinessComponent } from './business/business.component';
 import { VisaComponent } from './business/visa/visa.component';
 import { ExchangeComponent } from './business/exchange/exchange.component';
-import { ExchangeItemComponent } from './business/exchange/exchange-item/exchange-item.component';
-import { EmsComponent } from './business/ems/ems.component';
-import { EmsItemComponent } from './business/ems/ems-item/ems-item.component';
-import { ProductInfoComponent } from './business/product-info/product-info.component';
-import { NewbusinessComponent } from './business/newbusiness/newbusiness.component';
 import { RentalComponent } from './business/rental/rental.component';
-import { ItemComponent } from './business/product-info/item/item.component';
 import { SitemapComponent } from './sitemap/sitemap.component';
 import { ContactComponent } from './contact/contact.component';
 import { ThankComponent } from './contact/thank/thank.component';
@@ -53,41 +44,12 @@ const routes: Routes = [
 				},
 			},
 			{
-				path: 'founder',
-				component: FounderComponent,
-				pathMatch: 'full',
-				data: {
-					breadcrumb: 'menu.founder-story'
-				},
-			},
-			{
-				path: 'philosophy',
-				component: PhilosophyComponent,
-				pathMatch: 'full',
-				data: {
-					breadcrumb: 'menu.mission-philosophy'
-				},
-			},
-			{
 				path: 'outline',
+				component: CorporateInfoComponent,
+				pathMatch: 'full',
 				data: {
 					breadcrumb: 'menu.corperate-info'
-				},
-				children:[
-					{
-						path: '',
-						component: CorporateInfoComponent,
-						pathMatch: 'full'
-					},
-					{
-						path: 'map',
-						component: MapComponent,
-						pathMatch: 'full',
-						data: {
-							breadcrumb: 'Map'
-						},
-					}
-				]
+				}
 			},
 			{
 				path: 'teams', 
@@ -119,75 +81,12 @@ const routes: Routes = [
 				},
 			},
 			{ 
-				path: 'ems',
-				data: {
-					breadcrumb: 'Ems'
-				},
-				children:[
-					{
-						path: '',
-						component: EmsComponent,
-						pathMatch: 'full',
-					},
-					{
-						path: 'item',
-						component: EmsItemComponent,
-						pathMatch: 'full',
-						data: {
-							breadcrumb: 'Items'
-						},
-					}
-				]
-			},
-			{ 
 				path: 'exchange',
-				data: {
-					breadcrumb: 'menu.current-exchange'
-				},
-				children:[
-					{
-						path: '',
-						component: ExchangeComponent,
-						pathMatch: 'full',
-					},
-					{
-						path: 'item',
-						component: ExchangeItemComponent,
-						pathMatch: 'full',
-						data: {
-							breadcrumb: 'Item'
-						},
-					}
-				]
-			},
-			{
-				path: 'product-info',
-				data: {
-					breadcrumb: 'Product info'
-				},
-				children:[
-					{
-						path: '',
-						component: ProductInfoComponent,
-						pathMatch: 'full',
-					},
-					{
-						path: 'item',
-						component: ItemComponent,
-						pathMatch: 'full',
-						data: {
-							breadcrumb: 'Item'
-						},
-					}
-				]
-			},
-			{
-				path: 'newbusiness',
-				component: NewbusinessComponent,
+				component: ExchangeComponent,
 				pathMatch: 'full',
 				data: {
-					breadcrumb: 'New Business'
-				},
+					breadcrumb: 'menu.current-exchange'
+				}
 			},
 			{
 				path: 'scooter-rental',
