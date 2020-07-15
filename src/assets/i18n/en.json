@@ -12,6 +12,7 @@
         "blog": "EMC | Blog",
         "contact": "EMC | Contact Us",
         "site-map": "EMC | Site Map",
+        "expat-moto": "EXPAT MOTORBIKE CAMBODIA.",
         "thank": "EMC | Thanks You",
         "page-404": "404 Page Not Found"
     },
@@ -226,7 +227,12 @@
             "title": "外貨両替代理業務",
             "des-1": "プノンペン両替商ネットワークを通じた”ベストレート”の提供",
             "des-2": "両替業務にかかる情報探索コスト/時間を節約"
-        }
+        },
+        "feature": "特徴"
+    },
+    "blog": {
+        "hisashi": "Hisashi",
+        "shungo": "Shungo"
     },
     "contact": {
         "contact-form": "Contact Form",
@@ -258,11 +264,22 @@
             "line-2": "+855 (0)89 518 867 (JPN, ENG)"
         }
     },
+    "thank": {
+        "title": "Thank You!",
+        "des": "Your submission is received and we will contact you soon."
+    },
+    "page-404" : {
+        "title": "404",
+        "sub-title": "Page Not Found",
+        "des": "The page you requested was not found."
+    },
     "footer": {
         "copy-right": "Copyright © 2018 - EMC Motorbike Rental Co., Ltd. All rights reserved."
     },
     "button": {
         "submit": "SUBMIT",
-        "google-map": "Google マップで見る"
+        "google-map": "Google マップで見る",
+        "back-to-top": "Back To Top",
+        "more": "More"
     }
 }
