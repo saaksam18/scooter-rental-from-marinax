@@ -1,18 +1,19 @@
+<!-- Page Not Found -->
 <div class="content">
     <div class="error404">
         <div class="content__wrap">
             <div class="row">
                 <div class="col-12 text-center">
                     <div class="d-flex flex-column">
-                        <h2>404</h2>
-                        <span>Page Not Found</span>
+                        <h2>{{ 'page-404.title' | translate }}</h2>
+                        <span>{{ 'page-404.sub-title' | translate }}</span>
                     </div>
                 </div>
                 <div class="col-12 text-center my-5">
-                    <p>The page you requested was not found.</p>
+                    <p>{{ 'page-404.des' | translate }}</p>
                 </div>
                 <div class="col-12 text-center">
-                    <a routerLink="/" class="back-to-top"><i class="fas fa-chevron-left pr-3"></i>TOPへ戻る</a>
+                    <a routerLink="/" class="back-to-top"><i class="fas fa-chevron-left pr-3"></i>{{ 'button.back-to-top' | translate }}</a>
                 </div>
             </div>
         </div>

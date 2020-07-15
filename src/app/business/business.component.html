@@ -1,18 +1,22 @@
 <div class="content">
+
+    <!-- Business Header -->
     <app-business-header></app-business-header>
+
+    <!-- Business Content -->
     <div class="business-inner">
         <ul class="row no-gutters">
             <li class="col-lg-4 col-12">
-                <a routerLink="/business/scooter-rental"><span>Scoter Rental</span></a>
+                <a routerLink="/business/scooter-rental"><span>{{ 'menu.scoter-rental' | translate }}</span></a>
             </li>
             <li class="col-lg-4 col-12">
-                <a routerLink="/business/visa"><span>Visa & WP</span></a>
+                <a routerLink="/business/visa"><span>{{ 'menu.visa-wp' | translate }}</span></a>
             </li>
             <li class="col-lg-4 col-12">
-                <a routerLink="/business/exchange"><span>Current Exchange</span></a>
+                <a routerLink="/business/exchange"><span>{{ 'menu.current-exchange' | translate }}</span></a>
             </li>
             <li class="col-lg-4 col-12">
-                <a routerLink="/business/travel-agency"><span>Travel Agency</span></a>
+                <a routerLink="/business/travel-agency"><span>{{ 'menu.travel-agency' | translate }}</span></a>
             </li>
         </ul>
     </div>
