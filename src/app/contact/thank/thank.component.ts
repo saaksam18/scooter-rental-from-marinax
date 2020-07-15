@@ -9,7 +9,7 @@ import { TranslateService ,LangChangeEvent } from '@ngx-translate/core';
   styleUrls: ['./thank.component.scss']
 })
 export class ThankComponent implements OnInit {
-	title = this.translate.get('Thank').subscribe((res: string) => {
+	title = this.translate.get('page-title.thank').subscribe((res: string) => {
     this.pageTitle.setTitle(res);
   });
   constructor(
@@ -18,9 +18,9 @@ export class ThankComponent implements OnInit {
     private translate: TranslateService,
 		private router:Router
   ) {
-    if(this.router.url === 'thank'){
+    if(this.router.url === '/contact/thank'){
       translate.onLangChange.subscribe((event: LangChangeEvent) => {
-          translate.get('Thank').subscribe((res: string) => {
+          translate.get('page-title.thank').subscribe((res: string) => {
           this.pageTitle.setTitle(res);
           });
       });

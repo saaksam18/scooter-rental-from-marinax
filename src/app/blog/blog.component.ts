@@ -15,7 +15,7 @@ export class BlogComponent implements OnInit {
     hisashiApi = environment.hisashi;
     shungoApi = environment.shungo;
 
-    title = this.translate.get('EMC | Blog').subscribe((res: string) => {
+    title = this.translate.get('page-title.blog').subscribe((res: string) => {
 		this.pageTitle.setTitle(res);
     });
     
@@ -28,7 +28,7 @@ export class BlogComponent implements OnInit {
 	) {
 		if(this.router.url === '/blog'){
 			translate.onLangChange.subscribe((event: LangChangeEvent) => {
-				translate.get('EMC | Blog').subscribe((res: string) => {
+				translate.get('page-title.blog').subscribe((res: string) => {
 				this.pageTitle.setTitle(res);
 				});
 			});

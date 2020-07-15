@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class RentalComponent implements OnInit {
 
-  title = this.translate.get('Scooter Rental').subscribe((res: string) => {
+  title = this.translate.get('page-title.scooter-rental').subscribe((res: string) => {
     this.pageTitle.setTitle(res);
   });
   constructor(
@@ -19,9 +19,9 @@ export class RentalComponent implements OnInit {
     private translate: TranslateService,
     private router: Router
   ) {
-    if(this.router.url === '/scooter-rental'){
+    if(this.router.url === '/business/scooter-rental'){
       translate.onLangChange.subscribe((event: LangChangeEvent) => {
-          translate.get('Scooter Rental').subscribe((res: string) => {
+          translate.get('page-title.scooter-rental').subscribe((res: string) => {
           this.pageTitle.setTitle(res);
           });
       });

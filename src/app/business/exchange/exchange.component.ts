@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class ExchangeComponent implements OnInit {
 
-  title = this.translate.get('Current Exchange').subscribe((res: string) => {
+  title = this.translate.get('page-title.exchange').subscribe((res: string) => {
     this.pageTitle.setTitle(res);
   });
   constructor(
@@ -19,9 +19,9 @@ export class ExchangeComponent implements OnInit {
     private translate: TranslateService,
     private router: Router
   ) {
-    if(this.router.url === '/exchange'){
+    if(this.router.url === '/business/exchange'){
       translate.onLangChange.subscribe((event: LangChangeEvent) => {
-          translate.get('Current Exchange').subscribe((res: string) => {
+          translate.get('page-title.exchange').subscribe((res: string) => {
           this.pageTitle.setTitle(res);
           });
       });

@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class Error404Component implements OnInit {
 
-  	title = this.translate.get('404 Page Not Found').subscribe((res: string) => {
+  	title = this.translate.get('page-title.page-404').subscribe((res: string) => {
 		this.pageTitle.setTitle(res);
 	});
 	constructor(
@@ -20,7 +20,7 @@ export class Error404Component implements OnInit {
 	) {
 		if(this.router.url === '/404'){
 			translate.onLangChange.subscribe((event: LangChangeEvent) => {
-				translate.get('404 Page Not Found').subscribe((res: string) => {
+				translate.get('page-title.page-404').subscribe((res: string) => {
 				this.pageTitle.setTitle(res);
 				});
 			});

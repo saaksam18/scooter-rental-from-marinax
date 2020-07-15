@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class HistoryComponent implements OnInit {
 
-  title = this.translate.get('History').subscribe((res: string) => {
+  title = this.translate.get('page-title.history').subscribe((res: string) => {
     this.pageTitle.setTitle(res);
   });
   constructor(
@@ -19,9 +19,9 @@ export class HistoryComponent implements OnInit {
     private translate: TranslateService,
     private router: Router
   ) {
-    if(this.router.url === '/history'){
+    if(this.router.url === '/about/history'){
       translate.onLangChange.subscribe((event: LangChangeEvent) => {
-          translate.get('History').subscribe((res: string) => {
+          translate.get('page-title.history').subscribe((res: string) => {
           this.pageTitle.setTitle(res);
           });
       });

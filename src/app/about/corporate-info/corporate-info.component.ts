@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class CorporateInfoComponent implements OnInit {
 
-  title = this.translate.get('Corporate information|About us|KAGA ELECTRONICS CO.,LTD.').subscribe((res: string) => {
+  title = this.translate.get('page-title.outline').subscribe((res: string) => {
     this.pageTitle.setTitle(res);
   });
   constructor(
@@ -19,9 +19,9 @@ export class CorporateInfoComponent implements OnInit {
     private translate: TranslateService,
     private router: Router
   ) {
-    if(this.router.url === '/outline'){
+    if(this.router.url === '/about/outline'){
       translate.onLangChange.subscribe((event: LangChangeEvent) => {
-          translate.get('Corporate Info').subscribe((res: string) => {
+          translate.get('page-title.outline').subscribe((res: string) => {
           this.pageTitle.setTitle(res);
           });
       });

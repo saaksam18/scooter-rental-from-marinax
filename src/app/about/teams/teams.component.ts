@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 export class TeamsComponent implements OnInit {
 
   
-  title = this.translate.get('Teams').subscribe((res: string) => {
+  title = this.translate.get('page-title.team').subscribe((res: string) => {
     this.pageTitle.setTitle(res);
   });
   constructor(
@@ -20,9 +20,9 @@ export class TeamsComponent implements OnInit {
     private translate: TranslateService,
     private router: Router
   ) {
-    if(this.router.url === '/teams'){
+    if(this.router.url === '/about/teams'){
       translate.onLangChange.subscribe((event: LangChangeEvent) => {
-          translate.get('Teams').subscribe((res: string) => {
+          translate.get('page-title.team').subscribe((res: string) => {
           this.pageTitle.setTitle(res);
           });
       });

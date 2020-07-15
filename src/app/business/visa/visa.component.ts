@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class VisaComponent implements OnInit {
 
-  title = this.translate.get('Visa').subscribe((res: string) => {
+  title = this.translate.get('page-title.visa').subscribe((res: string) => {
     this.pageTitle.setTitle(res);
   });
   constructor(
@@ -19,9 +19,9 @@ export class VisaComponent implements OnInit {
     private translate: TranslateService,
     private router: Router
   ) {
-    if(this.router.url === '/visa'){
+    if(this.router.url === '/business/visa'){
       translate.onLangChange.subscribe((event: LangChangeEvent) => {
-        translate.get('Visa').subscribe((res: string) => {
+        translate.get('page-title.visa').subscribe((res: string) => {
         this.pageTitle.setTitle(res);
         });
       });

@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class BusinessComponent implements OnInit {
 
-  title = this.translate.get('Business').subscribe((res: string) => {
+  title = this.translate.get('page-title.business').subscribe((res: string) => {
     this.pageTitle.setTitle(res);
   });
   constructor(
@@ -20,7 +20,7 @@ export class BusinessComponent implements OnInit {
   ) {
     if(this.router.url === '/business'){
       translate.onLangChange.subscribe((event: LangChangeEvent) => {
-          translate.get('Business').subscribe((res: string) => {
+          translate.get('page-title.business').subscribe((res: string) => {
           this.pageTitle.setTitle(res);
           });
       });

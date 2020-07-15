@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class TravelAgencyComponent implements OnInit {
 
-  title = this.translate.get('Travel Agency').subscribe((res: string) => {
+  title = this.translate.get('page-title.travel-agency').subscribe((res: string) => {
     this.pageTitle.setTitle(res);
   });
   constructor(
@@ -19,9 +19,9 @@ export class TravelAgencyComponent implements OnInit {
     private translate: TranslateService,
     private router: Router
   ) {
-    if(this.router.url === '/travel-agency'){
+    if(this.router.url === '/business/travel-agency'){
       translate.onLangChange.subscribe((event: LangChangeEvent) => {
-          translate.get('Travel Agency').subscribe((res: string) => {
+          translate.get('page-title.travel-agency').subscribe((res: string) => {
           this.pageTitle.setTitle(res);
           });
       });

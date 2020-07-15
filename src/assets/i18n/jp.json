@@ -1,4 +1,20 @@
 {
+    "page-title": {
+        "top": "EMC-Expat Motobike Cambodia",
+        "outline": "EMC | Outline",
+        "history": "EMC | History",
+        "team": "EMC | Teams",
+        "business": "EMC | Business",
+        "scooter-rental": "EMC | Scooter Rental",
+        "visa": "EMC | Visa-Work Permit",
+        "exchange": "EMC | Exchange",
+        "travel-agency": "EMC | Travel Agency",
+        "blog": "EMC | Blog",
+        "contact": "EMC | Contact Us",
+        "site-map": "EMC | Site Map",
+        "thank": "EMC | Thanks You",
+        "page-404": "404 Page Not Found"
+    },
     "menu": {
         "title" : "メニュー",
         "top": "トップ",

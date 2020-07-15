@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class SitemapComponent implements OnInit {
 
-	title = this.translate.get('サイトマップ|KAGA ELECTRONICS CO.,LTD.').subscribe((res: string) => {
+	title = this.translate.get('page-title.site-map').subscribe((res: string) => {
 		this.pageTitle.setTitle(res);
 	});
 	constructor(
@@ -21,7 +21,7 @@ export class SitemapComponent implements OnInit {
 	) {
 		if(this.router.url === '/sitemap'){
 			translate.onLangChange.subscribe((event: LangChangeEvent) => {
-				translate.get('Sitemap').subscribe((res: string) => {
+				translate.get('page-title.site-map').subscribe((res: string) => {
 				this.pageTitle.setTitle(res);
 				});
 			});

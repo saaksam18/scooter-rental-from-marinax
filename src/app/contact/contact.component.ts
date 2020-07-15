@@ -12,7 +12,7 @@ import $ from 'jquery';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
-	title = this.translate.get('Contact').subscribe((res: string) => {
+	title = this.translate.get('page-title.contact').subscribe((res: string) => {
     this.pageTitle.setTitle(res);
   });
   contactForm: FormGroup;
@@ -22,9 +22,9 @@ export class ContactComponent implements OnInit {
     private translate: TranslateService,
 		private router:Router
 	) {
-		if(this.router.url === 'contact'){
+		if(this.router.url === '/contact'){
       translate.onLangChange.subscribe((event: LangChangeEvent) => {
-          translate.get('Contact').subscribe((res: string) => {
+          translate.get('page-title.contact').subscribe((res: string) => {
           this.pageTitle.setTitle(res);
           });
       });
