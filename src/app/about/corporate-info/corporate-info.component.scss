@@ -113,34 +113,4 @@
             }
         }
     }
-    &__pdf {
-        &--btn {
-            margin: 10px 0 20px;
-            a {
-                display: flex;
-                align-items: center;
-                -webkit-justify-content: flex-start;
-                justify-content: flex-start;
-                width: 100%;
-                min-height: 60px;
-                padding: 10px 85px 10px 20px;
-                background-color: $dark-yellow;
-                position: relative;
-                color: $white;
-                text-decoration: underline;
-                font-size: 1.6rem;
-                border: 2px solid $dark-yellow;
-                &::after {
-                    content: '';
-                    display: block;
-                    width: 65px;
-                    height: 100%;
-                    background: url("../../../assets/images/outline/link_btn_icon_pdf.png") no-repeat center center $dark-blue;
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                }
-            }
-        }
-    }
 }

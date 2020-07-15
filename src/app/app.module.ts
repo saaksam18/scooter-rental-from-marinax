@@ -16,20 +16,11 @@ import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { AboutHeaderComponent } from './about/about-header/about-header.component';
 import { HistoryComponent } from './about/history/history.component';
-import { FounderComponent } from './about/founder/founder.component';
-import { PhilosophyComponent } from './about/philosophy/philosophy.component';
 import { CorporateInfoComponent } from './about/corporate-info/corporate-info.component';
-import { MapComponent } from './about/corporate-info/map/map.component';
 import { BusinessComponent } from './business/business.component';
 import { BusinessHeaderComponent } from './business/business-header/business-header.component';
 import { VisaComponent } from './business/visa/visa.component';
 import { ExchangeComponent } from './business/exchange/exchange.component';
-import { ExchangeItemComponent } from './business/exchange/exchange-item/exchange-item.component';
-import { EmsComponent } from './business/ems/ems.component';
-import { EmsItemComponent } from './business/ems/ems-item/ems-item.component';
-import { ProductInfoComponent } from './business/product-info/product-info.component';
-import { ItemComponent } from './business/product-info/item/item.component';
-import { NewbusinessComponent } from './business/newbusiness/newbusiness.component';
 import { SitemapComponent } from './sitemap/sitemap.component';
 import { RentalComponent } from './business/rental/rental.component';
 import { ContactComponent } from './contact/contact.component';
@@ -49,20 +40,11 @@ import { TravelAgencyComponent } from './business/travel-agency/travel-agency.co
     AboutComponent,
     HistoryComponent,
     AboutHeaderComponent,
-    FounderComponent,
-    PhilosophyComponent,
     CorporateInfoComponent,
     VisaComponent,
     BusinessHeaderComponent,
     ExchangeComponent,
-    ExchangeItemComponent,
     SitemapComponent,
-    EmsComponent,
-    EmsItemComponent,
-    ProductInfoComponent,
-    NewbusinessComponent,
-    ItemComponent,
-    MapComponent,
     BusinessComponent,
     RentalComponent,
     ContactComponent,
