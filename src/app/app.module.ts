@@ -29,8 +29,8 @@ import { Error404Component } from './error404/error404.component';
 import { BlogComponent } from './blog/blog.component';
 import { TeamsComponent } from './about/teams/teams.component';
 import { TravelAgencyComponent } from './business/travel-agency/travel-agency.component';
-
-
+import { SlimLoadingBarModule } from 'ng2-slim-loading-bar';
+import { NgxLoadingModule } from 'ngx-loading';
 @NgModule({
   declarations: [
     AppComponent,
@@ -62,6 +62,8 @@ import { TravelAgencyComponent } from './business/travel-agency/travel-agency.co
     BreadcrumbModule,
     FormsModule,
     ReactiveFormsModule,
+    SlimLoadingBarModule,
+    NgxLoadingModule.forRoot({}),
     TranslateModule.forRoot({
         loader: {
             provide: TranslateLoader,
