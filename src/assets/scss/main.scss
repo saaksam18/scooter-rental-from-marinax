@@ -4,6 +4,10 @@
 @import 'business-field';
 
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Noto+Sans+JP:300,400,500,700|Roboto+Condensed:400,400i,700,700i&display=swap&subset=japanese');
+@font-face {
+    font-family: "Handel Gothic";
+    src: url('/assets/fonts/Handel_Gothic.otf');
+}
 
 html {
     font-size: 62.5%;
@@ -66,7 +70,7 @@ img{
         z-index: 102;
     }
     span{
-        font-family: Helvetica, "メイリオ" , Meiryo;
+        font-family: 'Handel Gothic', "メイリオ" , Meiryo;
         font-size: 250px;
         font-weight: bold;
         z-index: 110;
@@ -131,8 +135,8 @@ img{
     }
     p{
         color: $dark-blue;
-        font-family: "ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro";
-        font-size: 43px;
+        font-family: "Handel Gothic";
+        font-size: 47px;
         font-weight: 500;
         display: block;
         z-index: 9999;

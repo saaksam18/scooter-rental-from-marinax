@@ -32,8 +32,16 @@ a:hover{
     &__logo{
         width: 100%;
         text-align: right;
+        @media screen and (max-width: $large-desktop) {
+            img{
+                width: 350px;
+            }
+        }
         @media screen and (max-width: $smart-phone) {
             padding-right: 20px;
+            img{
+                width: 250px;
+            }
         }
         h1{
             color: $white;

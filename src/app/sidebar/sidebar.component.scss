@@ -89,6 +89,7 @@
         width: 15vw;
         min-width: 220px;
         background-color: $dark-yellow;
+        font-family: 'Handel Gothic';
         @media screen and (max-width: $smart-phone) {
             background-color: transparent;
             width: calc(70% - 70px);
@@ -106,7 +107,7 @@
             flex-direction: column;
             justify-content: center;
             span {
-                font-size: 14px;
+                font-size: 13px;
                 @media screen and (max-width: $desktop) {
                     font-size: 10px;
                 }
