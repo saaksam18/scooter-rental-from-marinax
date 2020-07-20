@@ -38,11 +38,18 @@
                 justify-content: center;
                 align-items: center;
                 box-shadow: 0 3px 5px rgba(85,85,85,.25);
+                @media screen and (max-width: $small-device){
+                    width: 60px;
+                    height: 60px;
+                }
                 &::before{
                     color: $white;
                     font-family: "Font Awesome 5 Free";
                     font-size: 35px;
                     font-weight:900;
+                    @media screen and (max-width: $small-device){
+                        font-size: 25px;
+                    }
                 }
             }
             .location{
@@ -65,6 +72,10 @@
                 background: $light-blue;
                 box-shadow: 0 3px 5px rgba(85,85,85,.25);
                 transition: all .3s ease-in-out 0s;
+                padding: 30px;
+                @media screen and (max-width: $small-device){
+                    padding: 30px 10px;
+                }
                 &:hover{
                     transform: scale(1.05);
                 }
@@ -88,10 +99,17 @@
             margin-bottom: 30px;
             @media screen and (max-width: $smart-phone){
                 width: 100%;
+                margin-bottom: 50px;
+                &:last-child{
+                    flex-direction: column;
+                }
             }
         }
         label{
             width: 30%;
+            @media screen and (max-width: $smart-phone){
+                width: 100%;
+            }
         }
         input{
             width: 70%;
@@ -99,8 +117,13 @@
             border-bottom: 1px solid $yellow;
             padding-bottom: 10px;
             outline: none;
+            border-radius: 0;
             &:-internal-autofill-selected{
                 background-color: $white !important; 
+            }
+            @media screen and (max-width: $smart-phone){
+                width: 100%;
+                margin-top: 20px;
             }
         }
         textarea{
@@ -109,6 +132,16 @@
             border-bottom: 1px solid $yellow;
             outline: none;
             padding-bottom: 10px;
+            border-radius: 0;
+            @media screen and (max-width: $smart-phone){
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+        .msg-error{
+            @media screen and (max-width: $smart-phone){
+                width: 100% !important;
+            }
         }
         button{
             width: 150px;
@@ -116,6 +149,7 @@
             border-radius: 18px;
             color: $white;
             background-color: $dark-yellow;
+            padding: 6px;
             margin: 50px 0;
         }
     }

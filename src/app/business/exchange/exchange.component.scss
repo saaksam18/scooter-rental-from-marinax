@@ -15,6 +15,9 @@
             font-size: 2.2rem;
             padding: 20px 10px;
         }
+        @media screen and (max-width: $small-device){
+            font-size: 1.7rem;
+        }
     }
     .sub-title {
         font-size: 2.4rem;
@@ -29,188 +32,16 @@
             display: inline-block;
             text-align: left;
         }
+        @media screen and (max-width: $small-device){
+            font-size: 1.7rem;
+        }
     }
 }
 .exchange {
-    .step-title {
-        font-family: Roboto;
-        font-size: 3.2rem;
-        text-align: center;
-        color: $dark-yellow;
-        letter-spacing: .8vw;
-        margin-bottom: 40px;
-    }
-    .scene {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 80px;
-        @media screen and (max-width: $tablet) {
-            flex-direction: column;
-        }
-        li {
-            width: 15%;
-            margin-right: 2%;
-            @media screen and (max-width: $tablet) {
-                width: 100%;
-                display: flex;
-                align-items: center;
-            }
-            .scene-circle {
-                width: 80px;
-                height: 80px;
-                font-size: 3rem;
-                border-radius: 50%;
-                margin: 0 auto 20px auto;
-                background-color: $dark-yellow;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-                position: relative;
-                color: $white;
-                span {
-                    color: $white;
-                    font-size: 1.2rem;
-                    display: block;
-                }
-                &::after {
-                    content: '';
-                    width: 10vw;
-                    height: 1px;
-                    position: absolute;
-                    left: 100%;
-                    top: 0;
-                    bottom: 0;
-                    margin: auto;
-                    background-color: $dark-yellow;
-                    @media screen and (max-width: $tablet) {
-                        width: 1px;
-                        height: 30px;
-                        top: auto;
-                        left: 40px;
-                        bottom: -30px;
-                    }
-                }
-            }
-            &:last-child {
-                .scene-circle {
-                    &::after {
-                        background-color: transparent;
-                    }
-                }
-            }
-            .scene-text {
-                color: $dark-blue;
-                font-size: 1.4rem;
-                line-height: 1;
-                width: 100%;
-                text-align: center;
-                @media screen and (max-width: $tablet) {
-                    width: calc(100% - 80px);
-                    text-align: left;
-                    padding-left: 10px;
-                    margin-bottom: 20px;
-                }
-            }
-        }
-    }
     .scene-block {
-        border: 1px solid $dark-yellow;
-        height: 350px;
-        min-height: 350px;
-        margin-bottom: 60px;
-        display: flex;
-        position: relative;
-        @media screen and (max-width: $desktop) {
-            flex-direction: column;
-            height: auto;
-            min-height: 100%;
-            flex-wrap: wrap;
-            margin-bottom: 100px;
-        }
-        &::after {
-            content: '';
-            width: 0;
-            height: 0;
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: -40px;
-            margin: auto;
-            border-left: 20px solid transparent;
-            border-right: 20px solid transparent;
-            border-top: 20px solid $dark-yellow;
-        }
-        &:last-child {
-            &::after {
-                border: 0;
-            }
-        }
         .scene-left {
-            width: 50%;
-            display: flex;
-            align-items: center;
-            position: relative;
-            @media screen and (max-width: $desktop) {
-                width: 100%;
-            }
-            &:before,
-            &::after {
-                width: 80px;
-                height: 80px;
-                border-radius: 50%;
-                color: $white;
-                margin: auto;
-                text-align: center;
-                position: absolute;
-                bottom: 0;
-                right: -40px;
-                z-index: 1;
-                @media screen and (max-width: $desktop) {
-                    bottom: auto;
-                    right: calc(50% - 40px);
-                }
-            }
             &::before {
                 content: '特徴';
-                background: $dark-yellow;
-                top: 0;
-                padding-top: 10px;
-                font-size: 1.2rem;
-                @media screen and (max-width: $desktop) {
-                    top: -40px;
-                }
-            }
-            &::after {
-                content: '';
-                top: 70px;
-                font-size: 3rem;
-                line-height: .8em;
-                @media screen and (max-width: $desktop) {
-                    top: -5px;
-                }
-            }
-            dl {
-                width: 100%;
-                padding: 20px 10%;
-                color: $dark-yellow;
-                font-weight: 400;
-                @media screen and (max-width: $desktop) {
-                    padding: 50px 5% 20px;
-                }
-            }
-            dt {
-                font-size: 2.4rem;
-                text-align: center;
-                margin-bottom: 20px;
-                span {
-                    font-size: 1.4rem;
-                    display: block;
-                }
-            }
-            dd {
-                font-size: 1.4rem;
-                line-height: 1.8;
             }
         }
         &:nth-of-type(1) {
@@ -226,22 +57,6 @@
         &:nth-of-type(3) {
             .scene-right {
                 background: url("../../../assets/images/business/currency-exchange.jpg") no-repeat center center;
-            }
-        }
-        .scene-right {
-            width: 50%;
-            height: 100%;
-            background-size: cover !important;
-            @media screen and (max-width: $desktop) {
-                width: 100%;
-                height: 200px;
-            }
-        }
-        @for $i from 1 through 10 {
-            &:nth-of-type( #{$i} ) {
-                .scene-left::after {
-                    content: '0#{$i}';
-                }
             }
         }
     }

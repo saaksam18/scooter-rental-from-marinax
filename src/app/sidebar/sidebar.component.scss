@@ -79,7 +79,7 @@
             position: fixed;
             top: 70px;
             background-color: transparent;
-            transition: height .5s ease;
+            transition: height .3s ease;
             &.show {
                 height: calc(100vh - 70px);
             }
@@ -125,6 +125,16 @@
                     margin-bottom: 8px;
                 }
             }
+            @media screen and (max-width: $small-device){
+                display: block;
+                span {
+                    height: auto;
+                    display: block !important;
+                    &:last-child {
+                        margin-top: 10px;
+                    }
+                }
+            }
         }
         .logo {
             display: flex;
@@ -135,6 +145,9 @@
             @media screen and (max-width: $smart-phone) {
                 margin: 0 10px 5px 0;
                 justify-content: center;
+            }
+            @media screen and (max-width: $small-device){
+                justify-content: space-between;
             }
             &::after {
                 content: "";
@@ -150,6 +163,7 @@
                 font-size: 2em;
                 font-weight: 700;
                 margin-bottom: 0;
+                margin-right: 5px;
                 @media screen and (max-width: $smart-phone) {
                     width: auto;
                 }
@@ -177,7 +191,7 @@
         ul {
             padding-top: 3vh;
             @media screen and (max-width: $smart-phone) {
-                padding: 10px 0;
+                padding: 40px;
             }
             li{
                 span {
@@ -264,6 +278,7 @@
                     }
                 }
                 @media screen and (max-width: $smart-phone) {
+                    font-size: 16px;
                     color: $dark-yellow;
                     padding: 10px 0 10px 10px;
                 }
@@ -377,7 +392,7 @@
         padding: 0 2vw 4vh 2vw;
         @media screen and (max-width: $smart-phone) {
             margin: 0;
-            padding: 30px;
+            padding: 45px;
             background-color: $dark-blue;
         }
         ul {
@@ -385,7 +400,8 @@
             width: 100%;
             margin: 0 auto;
             li {
-                height: 24px;
+                font-size: 1.5rem;
+                height: 32px;
                 line-height: 24px;
                 border-radius: 2px;
                 font-weight: 700;
@@ -408,6 +424,7 @@
             }
         }
         .text-size {
+            margin-bottom: 35px;
             li {
                 width: 17%;
                 margin-right: 5%;
@@ -420,6 +437,7 @@
             }
         }
         .text-translate {
+            margin-bottom: 35px;
             justify-content: space-between;
             li {
                 width: 20%;
