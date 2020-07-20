@@ -15,6 +15,9 @@
             font-size: 2.2rem;
             padding: 20px 10px;
         }
+        @media screen and (max-width: $small-device) {
+            font-size: 1.7rem;
+        }
     }
     .sub-title {
         font-size: 2.4rem;
@@ -28,6 +31,9 @@
             font-size: 2rem;
             display: inline-block;
             text-align: left;
+        }
+        @media screen and (max-width: $small-device) {
+            font-size: 1.7rem;
         }
     }
     .header-desc {
@@ -51,6 +57,12 @@
                 border: 3px solid $yellow003 !important;
                 border-top: 0 !important;
                 padding: 30px;
+                @media screen and (max-width: $small-device) {
+                    padding: 10px;
+                    span{
+                        font-size: 14px;
+                    }
+                }
             }
         }
     }
@@ -63,6 +75,9 @@
         color: $dark-yellow;
         letter-spacing: .8vw;
         margin-bottom: 40px;
+        @media screen and (max-width: $small-device) {
+            font-size: 1.7rem;
+        }
     }
     .scene {
         display: flex;
@@ -244,6 +259,9 @@
                 span {
                     font-size: 1.4rem;
                     display: block;
+                }
+                @media screen and (max-width: $small-device) {
+                    font-size: 1.7rem;
                 }
             }
             dd {

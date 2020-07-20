@@ -19,6 +19,9 @@
             @media screen and (max-width: $desktop) {
                 letter-spacing: 0;
             }
+            @media screen and (max-width: $smart-phone) {
+                font-size: 20px;
+            }
         }
     }
     &__list {
@@ -107,9 +110,6 @@
                 margin: 1em 0 .2em;
                 font-size: 1.7rem;
                 border-bottom: 1px solid $dark-yellow;
-            }
-            @media screen and (max-width: $smart-phone) {
-                width: 100%;
             }
         }
     }

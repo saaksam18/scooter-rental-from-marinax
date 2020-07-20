@@ -4,15 +4,24 @@
     .founder-des{
         padding: 40px 90px;
         border: 1px solid $dark-yellow;
+        @media screen and (max-width: $small-device){
+            padding: 15px;
+        }
         h3{
             font-size: 32px;
             color: $dark-yellow;
             font-weight: 400;
+            @media screen and (max-width: $small-device){
+                font-size: 22px;
+            }
         }
         p{
             font-size: 1.8rem;
             font-weight: 400;
             text-align: center;
+            @media screen and (max-width: $small-device){
+                font-size: 13px;
+            }
         }
     }
     &__section{
