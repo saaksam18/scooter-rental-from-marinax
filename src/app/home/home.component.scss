@@ -32,14 +32,15 @@ a:hover{
     &__logo{
         width: 100%;
         text-align: right;
-        @media screen and (max-width: $large-desktop) {
-            img{
-                width: 350px;
-            }
-        }
         @media screen and (max-width: $smart-phone) {
             padding-right: 20px;
-            img{
+        }
+        img{
+            width: 40%;
+            @media screen and (max-width: $large-desktop) {
+                width: 350px;
+            }
+            @media screen and (max-width: $smart-phone) {
                 width: 250px;
             }
         }
@@ -70,7 +71,7 @@ a:hover{
         color: $white;
         @media screen and (max-width: $smart-phone) { 
             width: 90%;
-            margin: 30vh 5% auto;
+            margin: 17vh 5% auto;
         }
         h2{
             font-size: 2.2rem;

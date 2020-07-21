@@ -53,6 +53,13 @@ function menuResponsive() {
 		$("ul.parent-menu > li").children().removeClass("sub-active");
 	});
 
+	$("#btn-contact").click(function(){
+		$("#content-menu").removeClass("show");
+		$(".menu-icon").removeClass("active");
+		$("ul.parent-menu > li").find(".is-active").removeClass("is-active");
+		$("ul.parent-menu > li").children().removeClass("sub-active");
+	});
+
 	$(".menu-icon").click(function(){
 		$(this).toggleClass("active");
 		$("#content-menu").toggleClass("show");

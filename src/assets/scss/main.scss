@@ -69,6 +69,22 @@ img{
         animation-delay: .1s;
         z-index: 102;
     }
+    .white-line{
+        width: 100%;
+        position: absolute;
+        z-index: 999;
+        border-bottom: 1px solid $white;
+        top: 66%;
+        @media screen and (max-width: $smart-phone){
+            top: 60%;
+        }
+        @media (max-width: 767.98px) {
+            top: 67%;
+        }
+        @media screen and (max-width: $small-device){
+            top: 57%;
+        }
+    }
     span{
         font-family: 'Handel Gothic', "メイリオ" , Meiryo;
         font-size: 250px;
@@ -86,7 +102,6 @@ img{
         }
         &:nth-child(4){
             position: absolute;
-            border-bottom: 1px solid white;
             width: 100%;
             text-align: right;
             top: 62%;
@@ -100,6 +115,9 @@ img{
             }
             @media screen and (max-width: $desktop){
                 top: 58%;
+            }
+            @media (max-width: 767.98px) {
+                top: 66%;
             }
             @media screen and (max-width: $small-device){
                 top: 55%;
@@ -143,7 +161,7 @@ img{
         position: absolute;
         right: 20px;
         margin-top: 20px;
-        top: 60%;
+        top: 65%;
         width: 100%;
         text-align: right;
         padding-top: 20px;
@@ -160,6 +178,10 @@ img{
         }
         @media screen and (max-width: $smart-phone){
             font-size: 26px;
+            top: 60%;
+        }
+        @media (max-width: 767.98px) {
+            top: 67%;
         }
         @media screen and (max-width: $small-device){
             font-size: 14px;
@@ -220,6 +242,7 @@ img{
         border: 0;
         color: $white;
         background-color: $dark-yellow;
+        border: 2px solid $white;
         border-radius: 50%;
         i{
             font-size: 40px;
@@ -313,6 +336,13 @@ img{
 }
 .xng-breadcrumb-separator{
     display: none !important;
+}
+.xng-breadcrumb-list{
+    li{
+        @media screen and (max-width: $small-device) {
+            font-size: 12px;
+        }
+    }
 }
 .xng-breadcrumb-link{
     &::after{
