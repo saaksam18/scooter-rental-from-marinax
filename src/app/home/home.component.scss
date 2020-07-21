@@ -33,7 +33,7 @@ a:hover{
         width: 100%;
         text-align: right;
         @media screen and (max-width: $smart-phone) {
-            padding-right: 20px;
+            padding: 20px 20px 0px 0px;
         }
         img{
             width: 40%;
@@ -43,25 +43,8 @@ a:hover{
             @media screen and (max-width: $smart-phone) {
                 width: 250px;
             }
-        }
-        h1{
-            color: $white;
-            font-family: Helvetica, "メイリオ" , Meiryo;
-            font-weight: bold;
-            font-size: 200px;
-            margin-bottom: 0;
-            line-height: .8;
-            @media screen and (max-width: $smart-phone) {
-                font-size: 110px;
-            }
-        }
-        p{
-            color: $white;
-            font-size: 26px;
-            font-weight: 500;
-            font-family: "ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro";
-            @media screen and (max-width: $smart-phone) {
-                font-size: 15px;
+            @media screen and (max-width: $bt-small-device){
+                width: 200px;
             }
         }
     }
@@ -69,14 +52,26 @@ a:hover{
         width: 60%;
         margin: 20vh 0 0;
         color: $white;
-        @media screen and (max-width: $smart-phone) { 
+        @media screen and (max-width: $smart-phone) {
             width: 90%;
+            margin: 17vh 5% auto;
+        }
+        @media screen and (max-width: $bt-small-device) { 
+            margin: 2vh 5% auto;
+            p{
+                line-height: 1.5;
+            }
+        }
+        @media screen and (max-width: $small-device){
             margin: 17vh 5% auto;
         }
         h2{
             font-size: 2.2rem;
             font-weight: 500;
             margin-bottom: 1em;
+            @media screen and (max-width: $smart-phone){
+                font-size: 1.7rem;
+            }
         }
         p{
             font-size: 1.6rem;
@@ -337,7 +332,7 @@ a:hover{
                 overflow: hidden;
                 position: relative;
                 @media screen and (max-width: $large-desktop){
-                    height: 270px;
+                    height: 200px;
                 }
                 @media screen and (max-width: $smart-phone){
                     height: 15rem;
@@ -354,6 +349,9 @@ a:hover{
                     font-size: 2.2rem;
                     font-weight: 500;
                     z-index: 2;
+                    @media screen and (max-width: $large-desktop){
+                        font-size: 1.7rem;
+                    }
                     @media screen and (max-width: $smart-phone){
                         font-size: 16px;
                         margin: 0;
@@ -375,6 +373,9 @@ a:hover{
             color: $black;
             opacity: .9;
             padding: 50px;
+            @media screen and (max-width: $small-device){
+                padding: 50px 15px;
+            }
             ul{
                 li{
                     @media screen and (max-width: $desktop){

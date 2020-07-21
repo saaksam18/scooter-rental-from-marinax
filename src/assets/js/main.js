@@ -79,18 +79,25 @@ function menuResponsive() {
 	$(".on-menu").click(function(){
 		$(this).children("a").toggleClass("is-active");
 		$(this).next().toggleClass("sub-active");
+		$(".sub-menu").removeClass("d-none");
 	});
 	
+	$( "ul.parent-menu > li" ).hover(function() {
+		$(".sub-menu").removeClass("d-none");
+	});
+
 	$(".sub-menu ul li").click(function(){
 		$("#content-menu").removeClass("show");
 		$(".menu-icon").removeClass("active");
 		$("ul.parent-menu > li > .on-menu > a ").removeClass("is-active");
 		$("ul.parent-menu > li").find(".sub-active").removeClass("sub-active");
+		$(".sub-menu").addClass("d-none");
 		$(this).parents(".sub-menu").slideToggle();
 		setTimeout(function() {
-			$(".sub-menu").attr('style', ''); 
+			$(".sub-menu").attr('style', '');
 		}, 1000);
 	});
+
 }
 function ChangeFontsize() {
 	$(".text-size .text-size__s").click(function(){
