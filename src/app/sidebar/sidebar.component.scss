@@ -5,6 +5,9 @@
     .menu-trigger {
         display: none;
     }
+    .pc-pointer-none{
+        pointer-events: none;
+    }
     @media screen and (max-width: $smart-phone) {
         .menu-trigger {
             position: fixed;
@@ -79,7 +82,7 @@
             position: fixed;
             top: 70px;
             background-color: transparent;
-            transition: height .3s ease;
+            transition: height .1s ease;
             &.show {
                 height: calc(100vh - 70px);
             }
@@ -191,7 +194,7 @@
         ul {
             padding-top: 3vh;
             @media screen and (max-width: $smart-phone) {
-                padding: 40px;
+                padding: 40px 0;
             }
             li{
                 span {
@@ -228,6 +231,12 @@
                     }
                 }
                 &:hover {
+                    background-color: $dark-yellow;
+                    color: $white;
+                    @media screen and (max-width: $smart-phone) {
+                        background-color: transparent;
+                        color: $yellow;
+                    }
                     li {
                         $n: 0.05;
                         @for $i from 1 through 10 {
@@ -247,7 +256,7 @@
                             animation: menu-slide-left .3s ease-out both;
                             animation-delay: .3s;
                         }
-                        @media screen and (max-width: $desktop) and (min-width: $smart-phone) {
+                        @media screen and (max-width: $smart-phone) {
                             visibility: hidden;
                             animation: none;
                             &.sub-active {
@@ -269,18 +278,13 @@
                 font-weight: 500;
                 position: relative;
                 z-index: 10;
-                &:hover {
-                    background-color: $dark-yellow;
-                    color: $white;
-                    @media screen and (max-width: $smart-phone) {
-                        background-color: transparent;
-                        color: $yellow;
-                    }
-                }
                 @media screen and (max-width: $smart-phone) {
                     font-size: 16px;
                     color: $dark-yellow;
-                    padding: 10px 0 10px 10px;
+                    padding: 10px 0 10px 40px;
+                }
+                @media screen and (max-width: $small-device) {
+                    padding: 10px 0 10px 30px;
                 }
                 &.is-active {
                     @media screen and (min-width: $desktop) {
@@ -339,6 +343,8 @@
                 li {
                     width: 100%;
                     min-height: 5vh;
+                    display: flex;
+                    align-items: center;
                     a {
                         display: flex;
                         align-items: center;
@@ -348,6 +354,12 @@
                         padding: 1vh 0;
                         font-weight: 400;
                         z-index: 999;
+                        @media screen and (max-width: $smart-phone){
+                            padding: 1vh 45px;
+                        }
+                        @media screen and (max-width: $small-device) {
+                            padding: 10px 0 10px 35px;
+                        }
                         &::before {
                             content: '';
                             width: 8px;
@@ -395,6 +407,9 @@
             padding: 45px;
             background-color: $dark-blue;
         }
+        @media screen and (max-width: $small-device) {
+            padding: 30px;
+        }
         ul {
             display: flex;
             width: 100%;
@@ -402,7 +417,7 @@
             li {
                 font-size: 1.5rem;
                 height: 32px;
-                line-height: 24px;
+                line-height: 32px;
                 border-radius: 2px;
                 font-weight: 700;
                 padding: 5px;
@@ -426,8 +441,8 @@
         .text-size {
             margin-bottom: 35px;
             li {
-                width: 17%;
-                margin-right: 5%;
+                width: 25%;
+                margin-right: 15%;
             }
             &__m {
                 font-size: 1.4rem;
@@ -440,8 +455,7 @@
             margin-bottom: 35px;
             justify-content: space-between;
             li {
-                width: 20%;
-                font-size: 1.2rem;
+                width: 25%;
                 letter-spacing: 0;
             }
         }
@@ -451,12 +465,14 @@
             a {
                 color: $white;
                 background-color: $dark-yellow;
-                display: block;
-                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 border-radius: 2px;
                 width: 100%;
+                height: 32px;
                 line-height: 2.5;
-                font-size: 1.2rem;
+                font-size: 1.5rem;
             }
         }
     }

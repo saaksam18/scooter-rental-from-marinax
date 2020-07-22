@@ -75,11 +75,14 @@ img{
         z-index: 999;
         border-bottom: 1px solid $white;
         top: 66%;
-        @media screen and (max-width: $smart-phone){
-            top: 60%;
+        @media screen and (max-width: $desktop){
+            top: 62%;
         }
-        @media (max-width: 767.98px) {
-            top: 67%;
+        @media screen and (max-width: $smart-phone){
+            top: 59%;
+        }
+        @media (max-width: $bt-small-device) {
+            top: 69%;
         }
         @media screen and (max-width: $small-device){
             top: 57%;
@@ -116,7 +119,7 @@ img{
             @media screen and (max-width: $desktop){
                 top: 58%;
             }
-            @media (max-width: 767.98px) {
+            @media (max-width: $bt-small-device) {
                 top: 66%;
             }
             @media screen and (max-width: $small-device){
@@ -173,14 +176,13 @@ img{
             font-size: 34px;
         }
         @media screen and (max-width: $desktop){
-            font-size: 25px;
+            font-size: 28px;
             padding-top: 0px;
         }
         @media screen and (max-width: $smart-phone){
-            font-size: 26px;
             top: 60%;
         }
-        @media (max-width: 767.98px) {
+        @media (max-width: $bt-small-device) {
             top: 67%;
         }
         @media screen and (max-width: $small-device){
@@ -343,11 +345,16 @@ img{
             font-size: 12px;
         }
     }
+    label{
+        margin-bottom: 0;
+    }
 }
 .xng-breadcrumb-link{
+    letter-spacing: 0px;
     &::after{
         content: '>';
-        display: inline-block;
+        display: flex;
+        align-items: center;
         padding: 0 .4em 0 .3em;
     }
     &:hover{
