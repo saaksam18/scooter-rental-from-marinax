@@ -360,9 +360,12 @@ a:hover{
                 }
                 img{
                     width: 500px;
-                    height: 100%;
                     max-width: 500px;
                     max-height: 100%;
+                    // style for firefox only
+                    @supports (-moz-appearance:none) {
+                        height: 100%;
+                    }
                 }
             }
         }

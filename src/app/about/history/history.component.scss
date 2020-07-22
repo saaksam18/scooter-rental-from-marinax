@@ -4,6 +4,9 @@
     .founder-des{
         padding: 40px 90px;
         border: 1px solid $dark-yellow;
+        @media screen and (max-width: $smart-phone){
+            padding: 50px;
+        }
         @media screen and (max-width: $small-device){
             padding: 15px;
         }
@@ -92,7 +95,7 @@
             align-items: center;
             justify-content: center;
             @media screen and (max-width: $smart-phone){
-                width: 80px;
+                width: 130px;
                 margin-right: 10px;
                 padding: 5px;
             }

@@ -18,6 +18,8 @@ export class BusinessComponent implements OnInit {
     private translate: TranslateService,
     private router: Router
   ) {
+		this.meta.updateTag({property: 'og:url', content: 'https://emc-groups.com/business'});
+		this.meta.updateTag({property: 'og:title', content: 'EMC Business'});
     if(this.router.url === '/business'){
       translate.onLangChange.subscribe((event: LangChangeEvent) => {
           translate.get('page-title.business').subscribe((res: string) => {

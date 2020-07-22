@@ -98,6 +98,9 @@
             width: 70%;
             margin-bottom: 30px;
             @media screen and (max-width: $smart-phone){
+                width: 88%;
+            }
+            @media screen and (max-width: $bt-small-device){
                 width: 100%;
                 margin-bottom: 50px;
                 &:last-child{
@@ -107,7 +110,7 @@
         }
         label{
             width: 30%;
-            @media screen and (max-width: $smart-phone){
+            @media screen and (max-width: $bt-small-device){
                 width: 100%;
             }
         }
@@ -121,7 +124,7 @@
             &:-internal-autofill-selected{
                 background-color: $white !important; 
             }
-            @media screen and (max-width: $smart-phone){
+            @media screen and (max-width: $bt-small-device){
                 width: 100%;
                 margin-top: 20px;
             }
@@ -133,13 +136,13 @@
             outline: none;
             padding-bottom: 10px;
             border-radius: 0;
-            @media screen and (max-width: $smart-phone){
+            @media screen and (max-width: $bt-small-device){
                 width: 100%;
                 margin-top: 20px;
             }
         }
         .msg-error{
-            @media screen and (max-width: $smart-phone){
+            @media screen and (max-width: $bt-small-device){
                 width: 100% !important;
             }
         }

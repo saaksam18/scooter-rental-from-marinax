@@ -19,6 +19,8 @@ export class HomeComponent implements OnInit {
     private translate: TranslateService,
     private router: Router
   ) {
+    this.meta.updateTag({property: 'og:url', content: 'https://emc-groups.com/'});
+		this.meta.updateTag({property: 'og:title', content: 'Home'});
     if(this.router.url === '/'){
       translate.onLangChange.subscribe((event: LangChangeEvent) => {
           translate.get('page-title.top').subscribe((res: string) => {

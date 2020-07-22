@@ -239,15 +239,17 @@ img{
         position: fixed;
         bottom: 30px;
         right: 5px;
-        text-align: center;
         outline: none;
         border: 0;
         color: $white;
         background-color: $dark-yellow;
         border: 2px solid $white;
         border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         i{
-            font-size: 40px;
+            font-size: 35px;
         }
     }
 }
