@@ -78,6 +78,9 @@ img{
         @media screen and (max-width: $desktop){
             top: 62%;
         }
+        @media screen and (max-width: $tablet){
+            top: 68%;
+        }
         @media screen and (max-width: $smart-phone){
             top: 59%;
         }
@@ -118,6 +121,12 @@ img{
             }
             @media screen and (max-width: $desktop){
                 top: 58%;
+            }
+            @media screen and (max-width: $tablet){
+                top: 68%;
+            }
+            @media (max-width: $smart-phone) {
+                top: 57%;
             }
             @media (max-width: $bt-small-device) {
                 top: 66%;
@@ -240,7 +249,6 @@ img{
         bottom: 30px;
         right: 5px;
         outline: none;
-        border: 0;
         color: $white;
         background-color: $dark-yellow;
         border: 2px solid $white;

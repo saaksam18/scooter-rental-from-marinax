@@ -4,7 +4,7 @@
     .founder-des{
         padding: 40px 90px;
         border: 1px solid $dark-yellow;
-        @media screen and (max-width: $smart-phone){
+        @media screen and (max-width: $desktop){
             padding: 50px;
         }
         @media screen and (max-width: $small-device){
@@ -82,6 +82,9 @@
             &:last-child{
                 margin-bottom: 0px;
             }
+            @media screen and (max-width: $bt-small-device){
+                flex-direction: column;
+            }
         }
         dt{
             width: 200px;
@@ -99,11 +102,17 @@
                 margin-right: 10px;
                 padding: 5px;
             }
+            @media screen and (max-width: $bt-small-device){
+                width: 100%;
+            }
         }
         dd{
             width: calc(100% - 120px);
             @media screen and (max-width: $smart-phone){
                 width: calc(100% - 90px);
+            }
+            @media screen and (max-width: $bt-small-device){
+                width: 100%;
             }
             p{
                 margin-bottom: 15px;
