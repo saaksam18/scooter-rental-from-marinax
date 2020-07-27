@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
+import $ from 'jquery';
 
 @Component({
 	selector: 'app-thank',
@@ -32,6 +33,12 @@ export class ThankComponent implements OnInit {
 	}
 
 	ngOnInit() {
+		$(document).ready(function () {
+			// block direct access to thank you page
+			if (document.referrer == ''){
+				window.location.href='/';
+			}
+		});
 	}
 
 }
