@@ -78,6 +78,9 @@ img{
         @media screen and (max-width: $desktop){
             top: 62%;
         }
+        @media screen and (max-width: $tablet){
+            top: 68%;
+        }
         @media screen and (max-width: $smart-phone){
             top: 59%;
         }
@@ -118,6 +121,12 @@ img{
             }
             @media screen and (max-width: $desktop){
                 top: 58%;
+            }
+            @media screen and (max-width: $tablet){
+                top: 68%;
+            }
+            @media (max-width: $smart-phone) {
+                top: 57%;
             }
             @media (max-width: $bt-small-device) {
                 top: 66%;
@@ -239,15 +248,16 @@ img{
         position: fixed;
         bottom: 30px;
         right: 5px;
-        text-align: center;
         outline: none;
-        border: 0;
         color: $white;
         background-color: $dark-yellow;
         border: 2px solid $white;
         border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         i{
-            font-size: 40px;
+            font-size: 35px;
         }
     }
 }

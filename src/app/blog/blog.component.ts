@@ -26,6 +26,10 @@ export class BlogComponent implements OnInit {
         private router: Router,
         private http: HttpClient
 	) {
+        this.meta.updateTag({ property: 'og:title', content: 'Emc Blogs' });
+        this.meta.updateTag({ property: 'og:description', content: "" });
+        this.meta.updateTag({ property: 'og:image', content: "" });
+        this.meta.updateTag({ property: 'og:url', content: 'https://emc-groups.com/blog' });
 		if(this.router.url === '/blog'){
 			translate.onLangChange.subscribe((event: LangChangeEvent) => {
 				translate.get('page-title.blog').subscribe((res: string) => {

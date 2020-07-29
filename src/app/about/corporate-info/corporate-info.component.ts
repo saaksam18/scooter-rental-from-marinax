@@ -1,34 +1,38 @@
 import { Component, OnInit } from '@angular/core';
-import { Meta ,Title } from '@angular/platform-browser';
-import { TranslateService ,LangChangeEvent } from '@ngx-translate/core';
+import { Meta, Title } from '@angular/platform-browser';
+import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-corporate-info',
-  templateUrl: './corporate-info.component.html',
-  styleUrls: ['./corporate-info.component.scss']
+	selector: 'app-corporate-info',
+	templateUrl: './corporate-info.component.html',
+	styleUrls: ['./corporate-info.component.scss']
 })
 export class CorporateInfoComponent implements OnInit {
 
-  title = this.translate.get('page-title.outline').subscribe((res: string) => {
-    this.pageTitle.setTitle(res);
-  });
-  constructor(
-    private meta: Meta,
-    private pageTitle: Title,
-    private translate: TranslateService,
-    private router: Router
-  ) {
-    if(this.router.url === '/about/outline'){
-      translate.onLangChange.subscribe((event: LangChangeEvent) => {
-          translate.get('page-title.outline').subscribe((res: string) => {
-          this.pageTitle.setTitle(res);
-          });
-      });
-    }
-  }
+	title = this.translate.get('page-title.outline').subscribe((res: string) => {
+		this.pageTitle.setTitle(res);
+	});
+	constructor(
+		private meta: Meta,
+		private pageTitle: Title,
+		private translate: TranslateService,
+		private router: Router
+	) {
+		this.meta.updateTag({ property: 'og:title', content: 'Emc Corporate Information' });
+		this.meta.updateTag({ property: 'og:description', content: "" });
+		this.meta.updateTag({ property: 'og:image', content: "" });
+		this.meta.updateTag({ property: 'og:url', content: 'https://emc-groups.com/about/outline' });
+		if (this.router.url === '/about/outline') {
+			translate.onLangChange.subscribe((event: LangChangeEvent) => {
+				translate.get('page-title.outline').subscribe((res: string) => {
+					this.pageTitle.setTitle(res);
+				});
+			});
+		}
+	}
 
-  ngOnInit() {
-  }
+	ngOnInit() {
+	}
 
 }

@@ -84,7 +84,7 @@
                             <span *ngIf="contactForm.get('subject').hasError('pattern')">{{ 'contact.subject-pattern' | translate }}</span>
                         </div>
                     </div>
-                    <div class="form-group d-flex flex-lg-row flex-column">
+                    <div class="form-group d-flex flex-md-row flex-column">
                         <label for="message"><span class="text-danger">*</span>{{ 'contact.message' | translate }}</label>
                         <textarea name="message" formControlName="message" class="px-3" id="message" rows="3" placeholder="{{ 'contact.message' | translate }}"></textarea>
                     </div>

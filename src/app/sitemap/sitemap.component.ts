@@ -19,6 +19,10 @@ export class SitemapComponent implements OnInit {
 		private translate: TranslateService,
 		private router: Router
 	) {
+		this.meta.updateTag({ property: 'og:title', content: 'Emc Site Map' });
+		this.meta.updateTag({ property: 'og:description', content: "" });
+		this.meta.updateTag({ property: 'og:image', content: "" });
+		this.meta.updateTag({ property: 'og:url', content: 'https://emc-groups.com/sitemap' });
 		if(this.router.url === '/sitemap'){
 			translate.onLangChange.subscribe((event: LangChangeEvent) => {
 				translate.get('page-title.site-map').subscribe((res: string) => {

@@ -4,9 +4,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 // import ngx-translate and the http loader
-import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
-import {TranslateHttpLoader} from '@ngx-translate/http-loader';
-import {HttpClient, HttpClientModule} from '@angular/common/http';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BreadcrumbModule } from 'xng-breadcrumb';
 
@@ -32,51 +32,51 @@ import { TravelAgencyComponent } from './business/travel-agency/travel-agency.co
 import { SlimLoadingBarModule } from 'ng2-slim-loading-bar';
 import { NgxLoadingModule } from 'ngx-loading';
 @NgModule({
-  declarations: [
-    AppComponent,
-    SidebarComponent,
-    HomeComponent,
-    FooterComponent,
-    AboutComponent,
-    HistoryComponent,
-    AboutHeaderComponent,
-    CorporateInfoComponent,
-    VisaComponent,
-    BusinessHeaderComponent,
-    ExchangeComponent,
-    SitemapComponent,
-    BusinessComponent,
-    RentalComponent,
-    ContactComponent,
-    Error404Component,
-    BlogComponent,
-    ContactComponent,
-    ThankComponent,
-    TeamsComponent,
-    TravelAgencyComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    BreadcrumbModule,
-    FormsModule,
-    ReactiveFormsModule,
-    SlimLoadingBarModule,
-    NgxLoadingModule.forRoot({}),
-    TranslateModule.forRoot({
-        loader: {
-            provide: TranslateLoader,
-            useFactory: HttpLoaderFactory,
-            deps: [HttpClient]
-        }
-    })
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+	declarations: [
+		AppComponent,
+		SidebarComponent,
+		HomeComponent,
+		FooterComponent,
+		AboutComponent,
+		HistoryComponent,
+		AboutHeaderComponent,
+		CorporateInfoComponent,
+		VisaComponent,
+		BusinessHeaderComponent,
+		ExchangeComponent,
+		SitemapComponent,
+		BusinessComponent,
+		RentalComponent,
+		ContactComponent,
+		Error404Component,
+		BlogComponent,
+		ContactComponent,
+		ThankComponent,
+		TeamsComponent,
+		TravelAgencyComponent
+	],
+	imports: [
+		BrowserModule,
+		AppRoutingModule,
+		HttpClientModule,
+		BreadcrumbModule,
+		FormsModule,
+		ReactiveFormsModule,
+		SlimLoadingBarModule,
+		NgxLoadingModule.forRoot({}),
+		TranslateModule.forRoot({
+			loader: {
+				provide: TranslateLoader,
+				useFactory: HttpLoaderFactory,
+				deps: [HttpClient]
+			}
+		})
+	],
+	providers: [],
+	bootstrap: [AppComponent]
 })
 export class AppModule { }
 
 export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http);
+	return new TranslateHttpLoader(http);
 }

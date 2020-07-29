@@ -9,7 +9,7 @@ a:hover{
     height: 100vh;
     margin: 0;
     position: relative;
-    padding: 2vh 5vw 0 20vw;
+    padding: 0 0 0 20vw;
     @media screen and (max-width: $large-desktop){
         padding-left: 240px;
     }
@@ -360,9 +360,12 @@ a:hover{
                 }
                 img{
                     width: 500px;
-                    height: 100%;
                     max-width: 500px;
                     max-height: 100%;
+                    // style for firefox only
+                    @supports (-moz-appearance:none) {
+                        height: 100%;
+                    }
                 }
             }
         }

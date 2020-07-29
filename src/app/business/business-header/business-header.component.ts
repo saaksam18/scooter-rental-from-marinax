@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-business-header',
-  templateUrl: './business-header.component.html',
-  styleUrls: ['./business-header.component.scss']
+	selector: 'app-business-header',
+	templateUrl: './business-header.component.html',
+	styleUrls: ['./business-header.component.scss']
 })
 export class BusinessHeaderComponent implements OnInit {
 
-  constructor() { }
+	constructor() { }
 
-  ngOnInit() {
-  }
+	ngOnInit() {
+	}
 
 }
