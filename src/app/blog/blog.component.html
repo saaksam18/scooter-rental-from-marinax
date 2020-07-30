@@ -11,22 +11,24 @@
                 <div class="row">
                     <div class="col-xl-4 col-md-6 col-12 my-4" *ngFor="let post of hisashi_posts">
                         <div class="d-flex flex-column h-100 b-darkblue">
-                            <div class="my-xl-auto blog-img">
-                                <ng-container *ngIf="post._embedded['wp:featuredmedia'] ; else notImg">
-                                    <img src="{{ post._embedded['wp:featuredmedia'][0].source_url }}" alt="{{ post.title.rendered }}" class="w-100">
-                                </ng-container>
-                                <ng-template #notImg>
-                                    <img src="assets/images/imgAvailable.png" alt="no image available" class="w-100"> 
-                                </ng-template>
-                            </div>
-                            <div class="bg-white blog-text">
-                                <div class="p-5">
-                                    <div class="text-center">
-                                        <h3 class="yellow-title">{{ post.title.rendered }}</h3>
-                                    </div>
-                                    <div class="blog-des" bind-innerHTML="post.content.rendered"></div>
+                            <a class="p-0 border-0" href="{{ post.link }}">
+                                <div class="my-xl-auto blog-img">
+                                    <ng-container *ngIf="post._embedded['wp:featuredmedia'] ; else notImg">
+                                        <img src="{{ post._embedded['wp:featuredmedia'][0].source_url }}" alt="{{ post.title.rendered }}" class="w-100">
+                                    </ng-container>
+                                    <ng-template #notImg>
+                                        <img src="assets/images/imgAvailable.png" alt="no image available" class="w-100"> 
+                                    </ng-template>
                                 </div>
-                            </div>
+                                <div class="bg-white blog-text">
+                                    <div class="p-5">
+                                        <div class="text-center">
+                                            <h3 class="yellow-title">{{ post.title.rendered }}</h3>
+                                        </div>
+                                        <div class="blog-des" bind-innerHTML="post.content.rendered"></div>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>

@@ -251,27 +251,27 @@
         "phone": "電話番号",
         "subject": "件名",
         "message": "問い合わせ内容",
-        "our-location": "OUR LOCATION",
+        "our-location": "私たちの場所",
         "address": {
             "line-1": "#38E0, St.322, BKK1, Chamkarmon,Phnom Penh",
             "line-2": "BKK1 Street 63を南に下り、エリックカイザーの角を曲がってすぐ"
         },
-        "work-hours": "WORKING HOURS",
+        "work-hours": "労働時間",
         "time": "9AM–5:30PM",
         "phone-number": {
-            "title": "PHONE NUMBER",
+            "title": "電話番号",
             "line-1": "+855 (0)69 499 260 (JPN, ENG)",
             "line-2": "+855 (0)89 518 867 (JPN, ENG)"
         }
     },
     "thank": {
-        "title": "Thank You!",
-        "des": "Your submission is received and we will contact you soon."
+        "title": "ありがとうございました！",
+        "des": "提出物を受け取りました。すぐにご連絡いたします。"
     },
     "page-404" : {
         "title": "404",
-        "sub-title": "Page Not Found",
-        "des": "The page you requested was not found."
+        "sub-title": "ページが見つかりません",
+        "des": "あなたが要求したページは見つかりませんでした。"
     },
     "footer": {
         "copy-right": "Copyright © 2018 - EMC Motorbike Rental Co., Ltd. All rights reserved."

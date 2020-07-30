@@ -20,6 +20,8 @@ export class TeamsComponent implements OnInit {
 		private translate: TranslateService,
 		private router: Router
 	) {
+		this.meta.updateTag({ name: 'description', content: '' });
+		this.meta.updateTag({ name: 'keywords', content: '' });
 		this.meta.updateTag({ property: 'og:title', content: 'Emc Teams' });
 		this.meta.updateTag({ property: 'og:description', content: "" });
 		this.meta.updateTag({ property: 'og:image', content: "" });
@@ -36,7 +38,7 @@ export class TeamsComponent implements OnInit {
 	teams = [
 		{ name: 'SHUNGO KUBO' },
 		{ name: 'HISASHI KUBO' },
-		{ name: 'HAK HEANG', position: 'スタッフ情報提供' },
+		{ name: 'HAK HEANG' },
 		{ name: 'CHUM HAK' },
 		{ name: 'PISETH' },
 		{ name: 'MAKARA' },

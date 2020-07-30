@@ -1,6 +1,8 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component,  ElementRef,OnInit, HostListener } from '@angular/core';
 import smoothscroll from 'smoothscroll-polyfill';
 import { SlimLoadingBarService } from 'ng2-slim-loading-bar';
+import { TranslateService } from '@ngx-translate/core';
+import { Subscription } from 'rxjs/Subscription';
 
 import {
 	NavigationCancel,
@@ -20,10 +22,14 @@ export class AppComponent implements OnInit {
 	isShow: boolean;
 	topPosToStartShowing = 100;
 
+	onLangChange: Subscription = undefined;
 	constructor(
 		private _loadingBar: SlimLoadingBarService, 
-		private _router: Router
+		private _router: Router,
+		public el: ElementRef,
+		private translate: TranslateService,
 	) {
+		
 		this._router.events.subscribe((event: Event) => {
 			this.navigationInterceptor(event);
 		});
@@ -64,8 +70,23 @@ export class AppComponent implements OnInit {
 		});
 	}
 	ngOnInit() {
+		
+		// dynamic html lang
+		this.onLangChange = this.translate.onLangChange.subscribe(() => {
+			this.updateLanguage();
+		});
+		
+		// Loading
 		setTimeout(() => {
 			this.isLoading = false;
 		}, 4500);
+	}
+	/**
+   * Update the language in the lang attribute of the html element.
+   */
+	updateLanguage(): void {
+		const lang = document.createAttribute('lang');
+		lang.value = this.translate.currentLang;
+		this.el.nativeElement.parentElement.parentElement.attributes.setNamedItem(lang);
 	}
 }

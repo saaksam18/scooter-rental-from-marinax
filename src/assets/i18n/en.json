@@ -40,195 +40,195 @@
     },
     "home": {
         "header" : {
-            "title": "カンボジア在住外国人のために",
-            "description-1": "EMCはあなたのカンボジア生活を支える",
-            "description-2": "「日本人」による安心と信頼のサービス",
-            "description-3": "2013年創業時からの経験とネットワークを活かし、",
-            "description-4": "お客様の海外生活を支えます"
+            "title": "For foreigners living in Cambodia",
+            "description-1": "EMC supports your Cambodian life",
+            "description-2": "Safe and reliable service by「Japanese people」",
+            "description-3": "Utilizing the experience and network since the establishment in 2013,",
+            "description-4": "Supporting your overseas life"
         },
         "title": {
             "our-business": "OUR BUSINESS",
             "access": "ACCESS"
         },
         "sub-title":{
-            "our-business": "事業紹介 / サービス一覧",
-            "access": "アクセス"
+            "our-business": "Business introduction / service list",
+            "access": "access"
         },
         "business": {
-            "visa": "ビザサービス",
-            "work-permit": "労働許可証",
-            "travel-agency": "旅行代理店",
-            "domestic": "（国内ツアー）"
+            "visa": "Visa service",
+            "work-permit": "Work permit",
+            "travel-agency": "Travel agency",
+            "domestic": "(Domestic tour)"
         }
     },
     "outline": {
-        "title": "会社情報",
+        "title": "Company information",
         "access": "ACCESS",
         "philosophy": {
-            "title": "経営理念",
+            "title": "Management philosophy",
             "des": {
-                "line-1": "我々EMCのサービスを通じて周りの人たちを幸せに。。。",
-                "line-2": "縁あって集ったスタッフ、カンボジアに居る外国人在住者が",
-                "line-3": "肩の力を抜いて日々を楽しく過ごせるようサポートします！！"
+                "line-1": "We make people happy by our service...",
+                "line-2": "Staff who gathered together, foreign residents in Cambodia",
+                "line-3": "We will support you to relax your shoulders and enjoy your days!!!"
             }
         },
         "table": {
-            "company": "会社",
+            "company": "Company",
             "company-des": "EMC Motorbike Rental",
-            "location": "所在地",
-            "business": "事業内容",
-            "business-des": "レンタルスクーター、ビザおよび労働許可証代理申請、外貨両替",
-            "establishment": "設立",
-            "establishment-des": "2013年11月",
-            "capital": "資本金",
-            "capital-des": "800万円",
+            "location": "Location",
+            "business": "Business content",
+            "business-des": "Rental scooter, visa and work permit proxy application, foreign currency exchange",
+            "establishment": "Establishment",
+            "establishment-des": "November 2013",
+            "capital": "Capital",
+            "capital-des": "8 million yen",
             "group-company": {
-                "title": "グループ会社",
+                "title": "Group company",
                 "des-line-1": "GREEN ROOT MONEY EXCHANGE CO.,LTD.",
                 "des-line-2": "POPULAR TRAVEL & TOURS"
             }
         },
-        "transportation-info": "交通のご案内"
+        "transportation-info": "Transportation information"
     },
     "history": {
-        "title": "EMC 沿革",
+        "title": "EMC History",
         "founder": {
-            "title": "EMC 創業ストーリー",
-            "des-1": "2013年下旬、プノンペンでバイクファイナンス会社に勤めていた久保弟が会社同僚のすすめにより、タイから輸入された中古バイクを６台購入し、奈良の実家でくすぶっていた兄を無理やりプノンペンに呼び寄せたことがEMCの始まり。",
-            "des-2": "弟の会社同僚の親戚、プノンペンに上京したばかりの若きクメール大学生＝ヒーンを加えた３名がスターティングメンバー。当時住んでいたバンケンコンのアパートの一角を間借りしデスクを置いただけの青空事務所がスタート。",
-            "des-3": "営業開始から初めの２ヶ月は鳴かず飛ばずであったものの、BKKの中心地というアクセスの良さ、顧客中心の接客スタイルが在住欧米人の間でクチコミとして広がり、じわじわとファンを獲得する。",
-            "des-4": "営業開始から半年後には現在の本店舗地であるBKK１のストリート３２２にオフィス移転。後にヒーンと同郷の親友、現在はシニアエンジニアを勤めるハック、EMCのオペレーションを裏から支えるITシステム開発者のピセスといった現在のEMCの屋台骨を支える主要EMCメンバーが揃う。"
+            "title": "EMC founding story",
+            "des-1": "In late 2013, my brother Kubo, who worked for a motorcycle finance company in Phnom Penh, purchased six used motorcycles imported from Thailand by the recommendation of a colleague of the company, and forced his brother who was smoldering at his parents' house in Nara to Phnom Penh. Is the beginning of EMC.",
+            "des-2": "The younger Khmer college student, Heen, who just moved to Tokyo, is one of the starting members. Aozora office started just by renting a corner of an apartment in Bankenkon where I lived at that time and only placing a desk.",
+            "des-3": "Although it didn't ring for the first two months after the start of business, the good access to the center of BKK and the customer-centered customer service style spread as word-of-mouth among the resident Europeans and Americans, and gradually gained fans.",
+            "des-4": "Six months after the start of business, the office was moved to Street 322 of BKK1, which is the current store location. Later, he and his hometown best friend, Hack, who now works as a senior engineer, and IT system developer Pices, who underpins EMC's operations, will be the main EMC members supporting the current backbone of EMC."
         },
         "sec-1": {
             "title": "2013",
-            "year-title": "2013年 11月",
-            "year-des": "BKK1, Palm Villageアパートメント駐車場にて営業開始"
+            "year-title": "November 2013",
+            "year-des": "BKK1, Palm Village Apartment Open in parking lot"
         },
         "sec-2": {
             "title": "2014",
-            "year-title": "2014年 04月",
-            "year-des": "オフィスを現在のBKK本店舗地に移転"
+            "year-title": "April 2014",
+            "year-des": "Moved office to current BKK main store location"
         },
         "sec-3": {
             "title": "2016",
-            "year-title": "2016年 08月",
-            "year-des": "ビザ更新 代理申請事業 開始"
+            "year-title": "August 2016",
+            "year-des": "Visa renewal agency application business started"
         },
         "sec-4": {
             "title": "2017",
-            "year-title": "2017年 10月",
-            "year-des": "労働許可証 代理申請事業 開始"
+            "year-title": "October 2017",
+            "year-des": "Commencement of work application for work permit"
         },
         "sec-5": {
             "title": "2018",
-            "year-title": "2018年 11月",
-            "year-des": "EMCトゥールトンポン支店設立"
+            "year-title": "November 2018",
+            "year-des": "Established EMC Tuol Tumpung Branch"
         },
         "sec-6": {
             "title": "2019",
-            "year-title-02": "2019年 02月",
-            "year-des-02": "外貨両替ATM事業　スタート",
-            "year-title-11": "2019年 11月",
-            "year-des-11-1": "Natiional Bank of Cambodia より外貨両替ライセンス取得 License No.006/19",
-            "year-des-11-2": "GREEN ROOT MONEY EXCHANGE CO.,LTD.設立"
+            "year-title-02": "February 2019",
+            "year-des-02": "Foreign currency exchange ATM business started",
+            "year-title-11": "November 2019",
+            "year-des-11-1": "Acquired foreign currency exchange license from Natiional Bank of Cambodia License No.006/19",
+            "year-des-11-2": "GREEN ROOT MONEY EXCHANGE CO.,LTD.Establishment"
         },
         "sec-7": {
             "title": "2020",
-            "year-title": "2020年 5月",
-            "year-des": "EMCトゥールトンポン支店は旅行代理店へ業態変更"
+            "year-title": "May 2020",
+            "year-des": "EMC Tuol Tumpung branch changed to a travel agency"
         }
     },
     "scooter-rental": {
-        "title": "スクーターレンタルサービス",
-        "sub-title": "整備の行き届いたスクーター、安心のアフターケア",
+        "title": "Scooter rental service",
+        "sub-title": "Well-maintained scooter, safe aftercare",
         "table": {
-            "monthly-rental": "プノンペン在住者向け(月貸し)",
-            "monthly-rental-des": "60-130ドル",
-            "day-rental": "ビジネス出張者・旅行者向け(日貸し)",
-            "day-rental-des": "4-10ドル"
+            "monthly-rental": "For residents of Phnom Penh (monthly rental)",
+            "monthly-rental-des": "$60-130",
+            "day-rental": "For business travelers/travelers (day rental)",
+            "day-rental-des": "$4-10"
         },
-        "reliable-des": "バイク修理専門学校卒のスタッフによる安心のバイクメンテナンス",
-        "equip-des": "防犯セキュリティーグッズ完備",
+        "reliable-des": "Reliable bike maintenance by staff graduated from motorcycle repair college",
+        "equip-des": "Complete with crime prevention security goods",
         "flow": {
-            "title": "バイクレンタルまでのフロー",
-            "step-1": "事前準備",
-            "step-2": "EMCショップ",
-            "step-3": "そのままレンタル"
+            "title": "Flow to bike rental",
+            "step-1": "Advance preparation",
+            "step-2": "EMC shop",
+            "step-3": "Rental as it is"
         },
         "step-1": {
-            "title": "下記の必要な書類を手元にご用意ください。",
-            "des-1": "・パスポート",
-            "des-2": "・他に必要なドキュメントがあれば"
+            "title": "Please have the following required documents at hand.",
+            "des-1": "・Passport",
+            "des-2": "・If there are other required documents"
         },
         "step-2": {
-            "title": "EMCショップ",
-            "des-1": "EMCにご来店いただき、連絡したいバイクを選んでいただきます。",
-            "des-2": "もし事前にご希望の車種等ございましたら、お問い合わせください。"
+            "title": "EMC shop",
+            "des-1": "Please visit EMC and select the bike you want to contact.",
+            "des-2": "If you have a desired car model in advance, please contact us."
         },
         "step-3": {
-            "title": "そのままレンタル",
-            "des-1": "必要書類を提出していただき、バイクの選定後お支払いをしていただきます。",
-            "des-2": "問題がなければ、バイクに乗ってプノンペンを走行していただくことが可能です。",
-            "des-3": "ご希望のお客様には、ヘルメットのレンタルも合わせて行なっております。"
+            "title": "Rental as it is",
+            "des-1": "Please submit the required documents and pay after selecting the bike.",
+            "des-2": "If there is no problem, you can ride a motorcycle and drive in Phnom Penh.",
+            "des-3": "We also rent helmets for customers who wish."
         }
 
     },
     "visa": {
-        "title": "ビザサービス・労働許可証",
-        "sub-title": "ビザ更新およびワークパーミット（労働許可証）の代理申請サービス",
+        "title": "Visa service and work permit",
+        "sub-title": "Visa Renewal and Work Permit (Work Permit) Proxy Application Service",
         "flow": {
-            "title": "VISA更新までのフロー",
-            "step-1": "事前準備",
-            "step-2": "EMCショップ",
-            "step-3": "VISA・労働許可証",
-            "step-4": "受け取り"
+            "title": "Flow until VISA update",
+            "step-1": "Advance preparation",
+            "step-2": "EMC shop",
+            "step-3": "VISA/work permit",
+            "step-4": "Acceptance"
         },
         "step-1": {
-            "title": "下記の必要な書類を手元にご用意ください。",
-            "des-1": "・パスポート",
-            "des-2": "・他に必要なドキュメントがあれば"
+            "title": "Please have the following required documents at hand.",
+            "des-1": "・Passport",
+            "des-2": "・If there are other required documents"
         },
         "step-2": {
-            "title": "EMCショップ",
-            "des-1": "EMCにご来店いただき、連絡したいバイクを選んでいただきます。",
-            "des-2": "もし事前にご希望の車種等ございましたら、お問い合わせください。"
+            "title": "EMC shop",
+            "des-1": "Please visit EMC and select the bike you want to contact.",
+            "des-2": "If you have a desired car model in advance, please contact us."
         },
         "step-3": {
-            "title": "VISA・労働許可証 更新 / 作成",
-            "des-1": "更新が完了致しましたら、当店からご連絡SMS、電話等にてご連絡させていただきます。",
-            "des-2": "更新完了までお待ちください。",
-            "des-3": "なお、お急ぎの方に関しては、エクスプレスサービス等もございます。"
+            "title": "VISA/work permit renewal/creation",
+            "des-1": "Once the update is complete, we will contact you via SMS, phone, etc.",
+            "des-2": "Please wait until the update is completed.",
+            "des-3": "If you are in a hurry, we also offer express services."
         },
         "step-4": {
-            "title": "受け取り",
-            "des-1": "EMCから更新/作成の完了を送らせていただいたのち、店頭までお受け取りに来ていただきます。",
-            "des-2": "なお、希望の方には更新完了後、送付させていただくサービスも承っております。"
+            "title": "Acceptance",
+            "des-1": "After sending the update/creation completion from EMC, you will receive it at the store.",
+            "des-2": "If you wish, we also offer a service that will be sent after the update is completed."
         }
     },
     "exchange": {
-        "title": "外貨両替",
-        "sub-title": "顧客視点による新しい外貨両替サービス",
+        "title": "Foreign currency exchange",
+        "sub-title": "New foreign currency exchange service from the customer's perspective",
         "flow": {
-            "title": "弊社両替サービスの特徴",
-            "step-1": "外貨両替ATM（24時間稼働）",
-            "step-2": "店頭両替",
-            "step-3": "外貨両替代理業務"
+            "title": "Features of our currency exchange service",
+            "step-1": "Foreign currency exchange ATM (24 hours operation)",
+            "step-2": "Over-the-counter exchange",
+            "step-3": "Foreign currency exchange agency business"
         },
         "step-1": {
-            "title": "外貨両替ATM（24時間稼働）",
-            "des": "小口両替、スピーディーかつ正確な両替サービス"
+            "title": "Foreign currency exchange ATM (24 hours operation)",
+            "des": "Small currency exchange, speedy and accurate currency exchange service"
         },
         "step-2": {
-            "title": "店頭両替",
-            "des-1": "大口および法人両替、事前連絡要",
+            "title": "Over-the-counter exchange",
+            "des-1": "Large and corporate exchanges, prior contact required",
             "des-2": "+855(0)78-849-977"
         },
         "step-3": {
-            "title": "外貨両替代理業務",
-            "des-1": "プノンペン両替商ネットワークを通じた”ベストレート”の提供",
-            "des-2": "両替業務にかかる情報探索コスト/時間を節約"
+            "title": "Foreign currency exchange agency business",
+            "des-1": "Providing the 'best rate' through the Phnom Penh money changer network",
+            "des-2": "Saves information search costs/time for currency exchange operations"
         },
-        "feature": "特徴"
+        "feature": "Feature"
     },
     "blog": {
         "hisashi": "Hisashi",
@@ -254,7 +254,7 @@
         "our-location": "OUR LOCATION",
         "address": {
             "line-1": "#38E0, St.322, BKK1, Chamkarmon,Phnom Penh",
-            "line-2": "BKK1 Street 63を南に下り、エリックカイザーの角を曲がってすぐ"
+            "line-2": "Go south on BKK1 Street 63, just around the corner of Eric Kaiser"
         },
         "work-hours": "WORKING HOURS",
         "time": "9AM–5:30PM",
@@ -278,7 +278,7 @@
     },
     "button": {
         "submit": "SUBMIT",
-        "google-map": "Google マップで見る",
+        "google-map": "View on Google Map",
         "back-to-top": "Back To Top",
         "more": "More"
     }
