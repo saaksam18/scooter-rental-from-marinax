@@ -18,6 +18,8 @@ export class Error404Component implements OnInit {
 		private translate: TranslateService,
 		private router: Router
 	) {
+		this.meta.updateTag({ name: 'description', content: '' });
+		this.meta.updateTag({ name: 'keywords', content: '' });
 		this.meta.updateTag({ property: 'og:title', content: '404 Not Found' });
 		this.meta.updateTag({ property: 'og:description', content: "" });
 		this.meta.updateTag({ property: 'og:image', content: "" });

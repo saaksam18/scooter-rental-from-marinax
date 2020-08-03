@@ -1,6 +1,5 @@
 import { Component, OnInit } from "@angular/core";
 import { TranslateService } from '@ngx-translate/core';
-import $ from "jquery";
 @Component({
 	selector: "app-sidebar",
 	templateUrl: "./sidebar.component.html",

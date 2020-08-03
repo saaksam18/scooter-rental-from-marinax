@@ -131,7 +131,7 @@ const routes: Routes = [
 		path: 'sitemap',
 		component: SitemapComponent,
 		data: {
-			breadcrumb: 'Site map'
+			breadcrumb: 'menu.site-map'
 		},
 	},
 	{

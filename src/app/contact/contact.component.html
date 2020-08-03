@@ -17,7 +17,8 @@
                             <h2 class="mt-5 text-center">
                                 {{ 'contact.our-location' | translate }}
                             </h2>
-                            <p class="pl-4">{{ 'contact.address.line-1' | translate }} {{ 'contact.address.line-2' | translate }}</p>
+                            <p class="pl-4">{{ 'contact.address.line-1' | translate }}</p>
+                            <p class="pl-4">{{ 'contact.address.line-2' | translate }}</p>
                             <div class="icon location"></div>
                         </div>
                     </li>
@@ -90,7 +91,7 @@
                     </div>
                     <div *ngIf="contactForm.controls['message'].invalid && contactForm.controls['message'].touched" class="w-75 px-5 text-danger text-right msg-error">
                         <span *ngIf="contactForm.controls['message'].errors.required">{{ 'contact.message-reuired' | translate }}</span>
-                        <span *ngIf="contactForm.get('message').hasError('pattern')">{{ 'contact.message-pattern' | translate }}</span>
+                        <span *ngIf="contactForm.get('message').errors.minlength">{{ 'contact.message-pattern' | translate }}</span>
                     </div>
                     <button id="btn-submit" [ngClass]="{'disabled': contactForm.invalid}" type="submit" [disabled]="contactForm.invalid">{{ 'button.submit' | translate }}</button>
                 </form>

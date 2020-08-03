@@ -3,6 +3,14 @@
     <div class="sitemap bg-lightblue">
         <div class="sitemap__content">
             
+            <!-- Top -->
+            <ul class="menu-category">
+                <li><a routerLink="/">{{ 'menu.top' | translate }}</a></li>
+                <li><a routerLink fragment="emc">{{ 'menu.emc' | translate }}</a></li>
+                <li><a routerLink fragment="business">{{ 'menu.bussiness-service' | translate }}</a></li>
+                <li><a routerLink fragment="access">{{ 'menu.map-contact' | translate }}</a></li>
+            </ul>
+
             <!-- About Us -->
             <ul class="menu-category">
                 <li><a routerLink="/about">{{ 'menu.about-us' | translate }}</a></li>
@@ -25,6 +33,11 @@
                 <li><a routerLink="/blog">{{ 'menu.blog' | translate }}</a></li>
                 <li><a routerLink="">Hisashi</a></li>
                 <li><a routerLink="">Shngo</a></li>
+            </ul>
+
+            <!-- Contact -->
+            <ul class="menu-category">
+                <li><a routerLink="/contact">{{ 'menu.contact' | translate }}</a></li>
             </ul>
         </div>
     </div>

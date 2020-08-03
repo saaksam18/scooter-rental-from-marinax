@@ -19,6 +19,8 @@ export class HistoryComponent implements OnInit {
 		private translate: TranslateService,
 		private router: Router
 	) {
+		this.meta.updateTag({ name: 'description', content: '' });
+		this.meta.updateTag({ name: 'keywords', content: '' });
 		this.meta.updateTag({ property: 'og:title', content: 'Emc History' });
 		this.meta.updateTag({ property: 'og:description', content: "" });
 		this.meta.updateTag({ property: 'og:image', content: "" });

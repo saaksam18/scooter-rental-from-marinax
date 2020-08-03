@@ -22,6 +22,8 @@ export class ContactComponent implements OnInit {
 		private translate: TranslateService,
 		private router: Router
 	) {
+		this.meta.updateTag({ name: 'description', content: '' });
+		this.meta.updateTag({ name: 'keywords', content: '' });
 		this.meta.updateTag({ property: 'og:title', content: 'EMC Contact' });
 		this.meta.updateTag({ property: 'og:description', content: "" });
 		this.meta.updateTag({ property: 'og:image', content: "" });
@@ -56,7 +58,7 @@ export class ContactComponent implements OnInit {
 			])),
 			message: new FormControl('', Validators.compose([
 				Validators.required,
-				Validators.pattern('^.{5,100}$')
+				Validators.minLength(5)
 			]))
 		});
 	}
@@ -69,19 +71,7 @@ export class ContactComponent implements OnInit {
 			type: 'POST',
 			url: crossAnyway + urlApi,
 			datatype: 'json',
-			data: form.serialize(),
-			success: function () {
-				$('#sms-success').removeClass('d-none').addClass('alert-primary d-block');
-				setTimeout(function () {
-					$('#sms-success').remove();
-				}, 5000);
-			},
-			error: function () {
-				$('#sms-error').removeClass('d-none').addClass('alert-primary d-block');
-				setTimeout(function () {
-					$('#sms-error').remove();
-				}, 5000);
-			}
+			data: form.serialize()
 		});
 		this.router.navigate(['/contact/thank']);
 	}
