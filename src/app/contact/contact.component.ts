@@ -62,7 +62,7 @@ export class ContactComponent implements OnInit {
 	}
 
 	validateText(control: AbstractControl): { [key: string]: any } | null {
-		let value = control.value || '';
+		let value = control.value.trim() || '';
         if(value == '') {
             return { required: true};
 		}
