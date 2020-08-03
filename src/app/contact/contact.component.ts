@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { environment } from '../../environments/environment';
-import { FormGroup, Validators, FormControl } from '@angular/forms';
+import { FormGroup, Validators, FormControl, AbstractControl } from '@angular/forms';
 import { Router } from '@angular/router';
 import $ from 'jquery';
 
@@ -53,15 +53,27 @@ export class ContactComponent implements OnInit {
 				Validators.pattern('^((\\+91-?)|0)?[0-9]{9}$')
 			])),
 			subject: new FormControl('', Validators.compose([
-				Validators.required,
-				Validators.pattern('^.{5,100}$')
+				this.validateText
 			])),
 			message: new FormControl('', Validators.compose([
-				Validators.required,
-				Validators.minLength(5)
+				this.validateText
 			]))
 		});
 	}
+
+	validateText(control: AbstractControl): { [key: string]: any } | null {
+		let value = control.value || '';
+        if(value == '') {
+            return { required: true};
+		}
+		console.log({value});
+		
+        if (value && value.length < 5) {
+            return { minlength: true };
+        }
+        return null;
+	}
+
 	submit() {
 		var form = $('#contact_form');
 
