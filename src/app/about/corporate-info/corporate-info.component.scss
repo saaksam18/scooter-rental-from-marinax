@@ -12,7 +12,7 @@
             border: 1px solid $dark-yellow;
         }
         p{
-            font-size: 22px;
+            font-size: 2rem;
             line-height: 3;
             letter-spacing: 8px;
             margin-bottom: 0;
@@ -20,7 +20,7 @@
                 letter-spacing: 0;
             }
             @media screen and (max-width: $smart-phone) {
-                font-size: 20px;
+                font-size: 1.8rem;
             }
         }
     }
