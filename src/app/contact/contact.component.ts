@@ -66,7 +66,6 @@ export class ContactComponent implements OnInit {
         if(value == '') {
             return { required: true};
 		}
-		console.log({value});
 		
         if (value && value.length < 5) {
             return { minlength: true };
