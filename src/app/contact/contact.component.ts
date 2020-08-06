@@ -78,11 +78,12 @@ export class ContactComponent implements OnInit {
 
 		const urlApi = environment.contactApi;
 		const crossAnyway = 'https://cors-anywhere.herokuapp.com/';
+		
 		$.ajax({
-			type: 'POST',
-			url: crossAnyway + urlApi,
-			datatype: 'json',
-			data: form.serialize()
+			type: 'POST', // define the type of HTTP verb we want to use (POST for our form)
+			url: crossAnyway + urlApi, // the url where we want to POST
+			datatype: 'json', // what type of data do we expect back from the server
+			data: form.serialize() // our data object
 		});
 		this.router.navigate(['/contact/thank']);
 	}
