@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { Router } from '@angular/router';
+import $ from 'jquery';
 
 @Component({
 	selector: 'app-teams',
@@ -35,18 +36,14 @@ export class TeamsComponent implements OnInit {
 		}
 	}
 
-	teams = [
-		{ name: 'SHUNGO KUBO' },
-		{ name: 'HISASHI KUBO' },
-		{ name: 'HAK HEANG' },
-		{ name: 'CHUM HAK' },
-		{ name: 'PISETH' },
-		{ name: 'MAKARA' },
-		{ name: 'SAAK' },
-		{ name: 'KREY SAK' },
-		{ name: 'YUTHEA' }
-	]
 	ngOnInit() {
+		// hide show block rental Q&A
+		let toggle = $(".button-more");
+		
+		toggle.click(function(){
+			$(this).siblings(".more").toggleClass("d-block");
+			$(this).toggleClass("less");
+		});
 	}
 
 }

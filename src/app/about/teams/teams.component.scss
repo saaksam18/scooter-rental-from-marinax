@@ -1,7 +1,39 @@
+@import '../../../assets/scss/components/variables';
+
 .team{
-    &__block{
+    &--block{
+        padding-left: 6rem !important;
+        padding-right: 6rem !important;
+    }
+    &--thumb{
+        img{
+            border-radius: 50%;
+            border: 3px solid $dark-yellow;
+        }
         &:hover{
             transform: scale(1.05);
+        }
+    }
+    &--detail{
+        font-size: 1.4rem;
+        margin-top: 50px;
+        p{
+            margin-bottom: 0;
+        }
+        .more{
+            display: none;
+        }
+        .button-more{
+            color: $dark-yellow;
+            &::after{
+                content: "More";
+            }
+        }
+        .less{
+            color: $dark-yellow;
+            &::after{
+                content: "Less";
+            }
         }
     }
 }

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { Router } from '@angular/router';
+import $ from 'jquery';
 
 @Component({
 	selector: 'app-visa',
@@ -35,6 +36,14 @@ export class VisaComponent implements OnInit {
 	}
 
 	ngOnInit() {
+
+		// hide show block rental Q&A
+		let toggle = $(".rental-Q");
+		
+		toggle.click(function(){
+			$(this).siblings(".rental-A").toggleClass("d-block");
+			$(this).toggleClass("minus");
+		});
 	}
 
 }

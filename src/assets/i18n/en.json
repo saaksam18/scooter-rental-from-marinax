@@ -144,8 +144,8 @@
         "table": {
             "monthly-rental": "For residents of Phnom Penh (monthly rental)",
             "monthly-rental-des": "$60-130",
-            "day-rental": "For business travelers/travelers (day rental)",
-            "day-rental-des": "$4-10"
+            "day-rental": "For business travelers/travelers (week rental)",
+            "day-rental-des": "From $21-50"
         },
         "reliable-des": "Reliable bike maintenance by staff graduated from motorcycle repair college",
         "equip-des": "Complete with crime prevention security goods",
@@ -237,6 +237,10 @@
     "visa": {
         "title": "Visa service and work permit",
         "sub-title": "Visa Renewal and Work Permit (Work Permit) Proxy Application Service",
+        "des": {
+            "line-1": "If you want to make sure your visa is updated without stress, use EMC!",
+            "line-2": "In order to extend your stay, you can also select proxy procedures such as necessary documents. The best choice for visa renewal is possible with EMC, without having to worry about extension failures."
+        },
         "flow": {
             "title": "Flow until VISA update",
             "step-1": "Advance preparation",
@@ -264,6 +268,81 @@
             "title": "Acceptance",
             "des-1": "After sending the update/creation completion from EMC, you will receive it at the store.",
             "des-2": "If you wish, we also offer a service that will be sent after the update is completed."
+        },
+        "qa": {
+            "title": "Visa Q&A",
+            "sec-1": {
+                "title": "I. About visa",
+                "q1": "Q: I'd like to know new information about visa rules.",
+                "a1": {
+                    "line-1": "In our shop,",
+                    "line-2": "Yes, we do. Even if the Cambodia visa renewal deadline comes while you are renting a motorcycle, you can extend your visa during the rental if you apply in advance."
+                },
+                "q2": "Q: How long does it take to get my passport with a renewed visa?",
+                "a2": "It takes one to two weeks. Depending on the season, the number of days required for renewal will change. The Visa Renewal Office is closed on Saturdays, Sundays and national holidays. If the immigration office's holiday falls between the renewal periods, it will take days. It may be delayed due to the reasons of the Immigration Bureau. When extending your visa, please allow enough time for your stay.",
+                "note": "ビザに関する情報の更新等については、TwitterかFacebookを御覧ください。こちらは２０２０年８月現在の情報です。",
+                "q3": "Q. ビザ延長に必要な、ＦＰＣＳとは何ですか？",
+                "a3": {
+                    "line-1": "カンボジアに住んでいる外国人の住所を管理するためのカンボジアのシステムです。登録は、大家さんの責任で行われることになっています。登録されていない場合、ビザ延長はできないので、事前に登録をお願いします。",
+                    "line-2": "大家さん以外の方から登録する場合は、大家さんから許可を取るように、お願いします。"
+                },
+                "q4": "Q.長期滞在のビザには、どのような選択肢があるのですか？",
+                "a4": {
+                    "line-1": "長期滞在のためには、まず、ビジネスビザ(E)を取得してください。",
+                    "line-2": "カンボジアで１ヶ月滞在が可能です。滞在中に、延長手続きを当店のような代理店で申請してください。滞在延長できる期間は、１ヶ月、３ヶ月、６ヶ月、１２ヶ月から選べます。",
+                    "line-3": "こちらの選択肢を示した図を載せています。",
+                    "line-4": "次の４種類の中のいずれかに延長できます。",
+                    "line-5": "・仕事を探している場合は、求職者ビザ（EG）",
+                    "line-6": "・仕事が決まっている場合は、ビジネスビザ（EB）",
+                    "line-7": "・学生の場合は学生ビザ（ES）",
+                    "line-8": "・リタイアされている方はリタイアメントビザ（ER）",
+                    "line-9": "求職者ビザ（EG）は最大６ヶ月、他の３種類は最大１年まで延長が可能です。"
+                },
+                "q5": "Q:ビザで延長できる期間と価格を教えてください。",
+                "a5": {
+                    "line-1": "延長できる期間は１ヶ月（＄５１）、３ヶ月（＄８１）、６ヶ月（＄１６４）、１２ヶ月（＄２９４）の４種類あります。バイクレンタルしていない、お客さんの場合、＄５追加されます。",
+                    "line-2": "ビザの種類によって、値段の差はありません。"
+                },
+                "q6": "Q. 延長のために必要な書類を教えてください。",
+                "a6": {
+                    "line-1": "●全員に必要",
+                    "line-2": "・アプリで使ってＦＰＣＳで住所登録したことを示す、画面の印刷",
+                    "line-3": "●電子申請のeVisaを取得して入国",
+                    "line-4": "・eVisa申請の証明書の印刷（メールで添付として送信されている）",
+                    "line-5": "ビジネスビザ(E)からの延長については、こちらの図から一覧できます。",
+                    "line-6": "●EGビザへの更新",
+                    "line-7": "・延長を希望する理由を記した宣誓書",
+                    "line-8": "●EBビザへの更新",
+                    "line-9": "・在職証明書、またはビザ申請者本人の名前が記載されたパテント（事業税支払い証明書）",
+                    "line-10": "●EGビザからEBビザへの更新、またはビジネスビザ(EB)へ１ヶ月または３ヶ月の更新",
+                    "line-11": "・ワークパーミットが追加",
+                    "line-12": "●ESビザへの更新",
+                    "line-13": "・教育省に登録された学校で発行された、在学証明書",
+                    "line-14": "●ERビザへの更新",
+                    "line-15": "・５５歳以上の場合、収入と収入を得る手段を記した、宣誓書。５５歳未満の場合、大使館の翻訳証明が入った、収入証明書。"
+                },
+                "q7": "Q.ビザ延長のための書類の書き方がわかりません。",
+                "a7": {
+                    "line-1": "当店では、書類の提出を省きたい方のためのサービスを実施しています。",
+                    "line-2": "・求職者ビザ(EG, $15)",
+                    "line-3": "・ビジネスビザ(EB, $40)",
+                    "line-4": "・リタイアメントビザ(ER, $20)",
+                    "line-5": "の追加料金で、サービスをさせていただきます。"
+                },
+                "q8": "Q: ツーリストビザですが、滞在延長できますか？",
+                "a8": "延長できます。ですが、延長は１度だけで。１ヶ月しか延長できません。２ヶ月を超える滞在の可能性がある場合は、あらかじめ大使館等でビジネスビザ（アライバルでは一般ビザと名称が変わる）を取得してください。",
+                "q9": "Q:ビザ更新されるまで、何日かかりますか？",
+                "a9": {
+                    "line-1": "一週間から二週間かかります。移民局の都合、およびカンボジアの休日が挟まることで、待ち時間が長くなることがあります。その間、パスポートは移民局が預かっています。",
+                    "line-2": "もし、パスポートをすぐに持ちたい場合は、特急ビザサービスが使えます。追加料金(+$75)を支払うことで、次の営業日の朝に受け渡しが可能になります。"
+                },
+                "q10": "Q: カンボジアに長期滞在したいので、ツーリストビザ(T)からビジネスビザ(E)に変更したいです。変更できますか？",
+                "a10": "ビザのタイプの変更は、カンボジア国内ではできません。一度国外に出て、ビザを取り直してください。",
+                "q11": "Q: ビザの期限が切れているのですが、受け付けてもらえますか？",
+                "a11": "受付可能です。オーバーステイしている場合は、１日当たり１０ドルの追加料金が必要です。",
+                "q12": "Q: いつまでに手続きをすれば、追加料金がかかりませんか？",
+                "a12": "期限日当日の午前１１時までに来られたら、追加料金はかかりません。"
+            }
         }
     },
     "exchange": {
@@ -273,7 +352,8 @@
             "title": "Features of our currency exchange service",
             "step-1": "Foreign currency exchange ATM (24 hours operation)",
             "step-2": "Over-the-counter exchange",
-            "step-3": "Foreign currency exchange agency business"
+            "step-3": "Foreign currency exchange agency business",
+            "step-4": "国際送金コンサルティング業務"
         },
         "step-1": {
             "title": "Foreign currency exchange ATM (24 hours operation)",
@@ -288,6 +368,10 @@
             "title": "Foreign currency exchange agency business",
             "des-1": "Providing the 'best rate' through the Phnom Penh money changer network",
             "des-2": "Saves information search costs/time for currency exchange operations"
+        },
+        "step-4": {
+            "title": "国際送金コンサルティング業務",
+            "des": "日本⇔カンボジア間の送金でお困りの場合はFacebookのShuu Kuboまで直接メッセージ下さい。"
         },
         "feature": "Feature"
     },
@@ -326,7 +410,43 @@
         }
     },
     "team": {
-        "title": "Staff introduction"
+        "title": "Staff introduction",
+        "member": {
+            "shungo-kubo":{
+                "name": "SHUNGO KUBO　（久保弟）",
+                "des-1": "関西学院大学　法学部卒業",
+                "des-2": "神戸大学大学院　経営学研究科修了",
+                "des-3": "GL Finance Plc (Cambodia)  Director, Underwriting & Collection Manager",
+                "des-4": "Group Lease PCL    Director",
+                "des-5": "両替・国際送金担当。EMCのオーナーで新規事業起ち上げや経営業務の効率化などが得意分野。",
+                "des-6": "飽きっぽいけども意外と人情派の自由人。両替や国際送金のご相談がある方はお気軽にメッセンジャーにて直接メッセージ下さい。"
+            },
+            "hisashi-kubo":{
+                "name": "HISASHI KUBO　（久保兄）",
+                "des-1" : "大阪大学　理学部卒業",
+                "des-2" : "大阪大学大学院　理学部研究科修了",
+                "des-3" : "レンタルバイクおよびビザ・ワークパーミット担当。文書作成、広報が得意分野。物忘れとうっかりミスが多いのが玉にキズですが支えられる愛されるゼネラルマネージャー。ホスピタリティのある接客で日本人のみならず欧米人からも意外と人気。無類の犬好きで愛犬のアミーは相棒。"
+            },
+            "hak-heang": {
+                "name": "Hak Heang",
+                "des-1": "Norton University Civil Engineering専攻",
+                "des-2": "久保兄弟とEMCを起ち上げたクメール人。大学で5年も勉強したのにも関わらず思い切ってEMCに就職し自営業の道を志す。全事業の業務を把握し、EMCクメールチームをまとめるみんなの頼れるサブゼネラルマネージャー。"
+            },
+            "chum-hak": {
+                "name": "Chum Hak",
+                "des-1": "Institute of Finance & Accounting　Accounting専攻",
+                "des-2": "AMS Technology School (Motorbike Mechanic school)",
+                "des-3": "フロントオペレーションマネージャー",
+                "des-4": "チーフメカニック",
+                "des-5": "お客様の事故やバイク盗難、ややこしい案件をササっと解決してしまうEMCのスーパーメカニック。はっきり物申すので欧米人には彼のファンが多く、個人的にバイク修理やバイク売却/購入依頼を請け負うこともします。そんな彼がなぜ大学でアカウンティングを勉強していたのかは謎。声が大きい。"
+            },
+            "ouch-makara":{
+                "name": "Ouch Makara",
+                "des-1": "National University of Management   Business Management専攻",
+                "des-2": "Chief Back Office",
+                "des-3": "いつも冷静沈着で確実な仕事ぶり。責任感が強くよく気がつくタイプでちゃくちゃくと仕事をこなす。いつかは自身でビジネスを始めたいという彼が怒ったところをEMCメンバーは一度も見たことがない。たまに笑う。"
+            }
+        }
     },
     "thank": {
         "title": "Thank You!",
