@@ -37,11 +37,11 @@ export class VisaComponent implements OnInit {
 
 	ngOnInit() {
 
-		// hide show block rental Q&A
-		let toggle = $(".rental-Q");
+		// hide show block centent Q&A
+		let toggle = $(".content-Q");
 		
 		toggle.click(function(){
-			$(this).siblings(".rental-A").toggleClass("d-block");
+			$(this).siblings(".content-A").toggleClass("d-block");
 			$(this).toggleClass("minus");
 		});
 	}
