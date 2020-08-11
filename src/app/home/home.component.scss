@@ -318,6 +318,25 @@ a:hover{
             }
         }
     }
+    .japan-shop{
+        .table-bordered{
+            thead{
+                color: $white;
+                background-color: $dark-yellow;
+                th{
+                    border: 1px solid $dark-yellow;
+                    &:first-child{
+                        border-right: 1px solid $white;
+                    }
+                }
+            }
+            tbody{
+                td{
+                    border: 1px solid $dark-yellow;
+                }
+            }
+        }
+    }
     .business{
         &__link{
             margin: 6vh 0 4vh;

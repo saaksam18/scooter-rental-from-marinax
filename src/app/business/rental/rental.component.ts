@@ -34,14 +34,6 @@ export class RentalComponent implements OnInit {
 		}
 	}
 
-	// sec1QA = [
-	// 	{ q: 'scooter-rental.qa.sec-1.q1',
-	// 	  a: 'scooter-rental.qa.sec-1.a1'
-	//  	},
-	// 	{ q: 'scooter-rental.qa.sec-1.q2',
-	// 	  a: 'scooter-rental.qa.sec-1.a2'
-	// 	}
-	// ];
 	ngOnInit() {
 
 		// hide show block content Q&A

@@ -20,6 +20,7 @@
         "title" : "Menu",
         "top": "Top",
         "emc": "EMC",
+        "japan-shop": "japanese shop/ KUBO BRO & Khmer",
         "bussiness-service": "Business & Services",
         "map-contact": "Map & Contact (TEL)",
         "about-us":"About Us",
@@ -53,6 +54,16 @@
         "sub-title":{
             "our-business": "Business introduction / service list",
             "access": "access"
+        },
+        "japan-shop": {
+            "title": "Join management by real Japanese brothers",
+            "kansai": "Kansai is from Nara prefecture",
+            "store-by-Kubo": "Store by Kubo brothers",
+            "kubo": "Kubo",
+            "visa-work-permit": "Visa renewal/work permit",
+            "kubo-brother": "Kubo brother",
+            "currency-exchange": "Foreign currency exchange, International money transfer consultation",
+            "responsible": "Responsible"
         },
         "business": {
             "visa": "Visa service",
@@ -94,10 +105,10 @@
         "title": "EMC History",
         "founder": {
             "title": "EMC founding story",
-            "des-1": "In late 2013, my brother Kubo, who worked for a motorcycle finance company in Phnom Penh, purchased six used motorcycles imported from Thailand by the recommendation of a colleague of the company, and forced his brother who was smoldering at his parents' house in Nara to Phnom Penh. Is the beginning of EMC.",
-            "des-2": "The younger Khmer college student, Heen, who just moved to Tokyo, is one of the starting members. Aozora office started just by renting a corner of an apartment in Bankenkon where I lived at that time and only placing a desk.",
-            "des-3": "Although it didn't ring for the first two months after the start of business, the good access to the center of BKK and the customer-centered customer service style spread as word-of-mouth among the resident Europeans and Americans, and gradually gained fans.",
-            "des-4": "Six months after the start of business, the office was moved to Street 322 of BKK1, which is the current store location. Later, he and his hometown best friend, Hack, who now works as a senior engineer, and IT system developer Pices, who underpins EMC's operations, will be the main EMC members supporting the current backbone of EMC."
+            "des-1": "In late 2013, my brother Kubo, who worked for a motorcycle finance company in Phnom Penh, purchased six used motorcycles imported from Thailand by the recommendation of a company colleague and forced his brother who was smoldering at his parents' house in Nara to Phnom Penh. Is the beginning of EMC.",
+            "des-2": "Kubo brothers' relatives, a relative of Phinem Pen, and a young Khmer college student, Heen, who just moved to Tokyo, are three starting members. We started a temporary office where we rented a corner of the apartment in Banken Khong where we lived at that time and only had a desk.",
+            "des-3": "The accessibility of the center of Bonkenkon and the customer-centered customer service style spread as word-of-mouth communication among Western residents, and gradually gained fans.",
+            "des-4": "Six months after the start of business, the office was relocated to Street 322 in Bongkenkong 1, which is the current store location. Later, he and his hometown best friend, Hack, who now works as a senior engineer, and IT system developer Pices, who underpins EMC's operations, will be the main EMC members supporting the current backbone of EMC."
         },
         "sec-1": {
             "title": "2013",
@@ -235,8 +246,8 @@
         }
     },
     "visa": {
-        "title": "Visa service and work permit",
-        "sub-title": "Visa Renewal and Work Permit (Work Permit) Proxy Application Service",
+        "title": "Visa Renewal and Work Permit (Work Permit) Proxy Application Service",
+        "sub-title": "Reassuring support from a Japanese visa consultant (Kubo)",
         "des": {
             "line-1": "If you want to make sure your visa is updated without stress, use EMC!",
             "line-2": "In order to extend your stay, you can also select proxy procedures such as necessary documents. The best choice for visa renewal is possible with EMC, without having to worry about extension failures."
@@ -353,7 +364,7 @@
             "step-1": "Foreign currency exchange ATM (24 hours operation)",
             "step-2": "Over-the-counter exchange",
             "step-3": "Foreign currency exchange agency business",
-            "step-4": "国際送金コンサルティング業務"
+            "step-4": "International money transfer consulting business"
         },
         "step-1": {
             "title": "Foreign currency exchange ATM (24 hours operation)",
@@ -370,8 +381,8 @@
             "des-2": "Saves information search costs/time for currency exchange operations"
         },
         "step-4": {
-            "title": "国際送金コンサルティング業務",
-            "des": "日本⇔カンボジア間の送金でお困りの場合はFacebookのShuu Kuboまで直接メッセージ下さい。"
+            "title": "International money transfer consulting business",
+            "des": "If you have any trouble sending money between Japan and Cambodia, please message directly to Shuu Kubo on Facebook."
         },
         "feature": "Feature"
     },
@@ -398,15 +409,15 @@
         "message":"Message",
         "our-location": "OUR LOCATION",
         "address": {
-            "line-1": "#38E0, St.322, BKK1, Chamkarmon,Phnom Penh",
-            "line-2": "Go south on BKK1 Street 63, just around the corner of Eric Kaiser"
+            "line-1": "#38E0, St.322, Bonken Kong 1, Boeung Keng Kang, Phnom Penh",
+            "line-2": "Descend south on Street 63, Bong Keng Khong 1 district, just around the corner of Eric Kaiser"
         },
         "work-hours": "WORKING HOURS",
         "time": "9AM–5:30PM",
         "phone-number": {
             "title": "PHONE NUMBER",
-            "line-1": "+855 (0)69 499 260 (JPN, ENG)",
-            "line-2": "+855 (0)89 518 867 (JPN, ENG)"
+            "line-1": "Rental: +855 (0)89 518 867 (JPN, ENG)",
+            "line-2": "Visa: +855 (0)69 270 040 (JPN, ENG)"
         }
     },
     "team": {
