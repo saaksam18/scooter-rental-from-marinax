@@ -90,7 +90,7 @@
         flex-direction: column;
     }
     li {
-        width: 15%;
+        width: 16%;
         margin-right: 2%;
         @media screen and (max-width: $tablet) {
             width: 100%;
@@ -155,7 +155,7 @@
                 margin-bottom: 20px;
             }
             @media screen and (max-width: $small-device) {
-                font-size: 1.2rem;
+                font-size: 1.1rem;
             }
         }
     }

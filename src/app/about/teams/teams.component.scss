@@ -21,6 +21,11 @@
             width: 250px;
             border-radius: 50%;
             border: 3px solid $dark-yellow;
+            transition: margin-top 1000ms, box-shadow 300ms;
+            &:hover{
+                box-shadow: 0 0 10px $yellow;
+                margin-top: 10px;
+            }
             @media screen and (max-width: $bt-small-device){
                 width: 180px;
             }
@@ -35,18 +40,6 @@
         }
         p{
             margin-bottom: 0;
-        }
-        .button-more{
-            color: $dark-yellow;
-            &::after{
-                content: "More";
-            }
-        }
-        .less{
-            color: $dark-yellow;
-            &::after{
-                content: "Less";
-            }
         }
     }
 }
