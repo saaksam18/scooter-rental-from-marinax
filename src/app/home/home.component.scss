@@ -325,6 +325,7 @@ a:hover{
                 background-color: $dark-yellow;
                 th{
                     border: 1px solid $dark-yellow;
+                    vertical-align: middle;
                     &:first-child{
                         border-right: 1px solid $white;
                     }
@@ -332,6 +333,7 @@ a:hover{
             }
             tbody{
                 td{
+                    vertical-align: middle;
                     border: 1px solid $dark-yellow;
                 }
             }
