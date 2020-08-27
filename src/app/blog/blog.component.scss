@@ -1,5 +1,7 @@
 @import '../../assets/scss/components/variables';
 .blog {
+    position: relative;
+    z-index: 1;
     .title-blog {
         font-family: Roboto;
         font-size: 3.2rem;
@@ -19,7 +21,7 @@
     }
     .blog-text {
         border-top: 1px solid $dark-blue;
-        height: 250px;
+        height: 280px;
         overflow: hidden;
     }
     .b-darkblue {
@@ -84,5 +86,55 @@
     }
     #hisashi {
         margin-bottom: 7vw;
+    }
+}
+$loading-size : 2.7em;
+.loading-content{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .loading{
+        box-sizing: border-box;
+        position: relative;
+        display: inline-block;
+        width: $loading-size;
+        height: $loading-size;
+        background-color: transparent;
+        border-radius: 100%;
+        animation: loading-spin 1s infinite linear;
+        z-index: 9999;
+        &:after{
+          content: '';
+          box-sizing: border-box;
+          display: inline-block;
+          position: absolute;
+          width: 110%;
+          height: 110%;
+          top: -5%;
+          left: -5%;
+          right: 0;
+          bottom: 0;
+          border: 5px solid transparent;
+          border-radius: 100%;
+          box-shadow: $loading-size/25 $loading-size/25 $loading-size/25 $dark-yellow;
+          z-index: 9999;
+        }
+    }
+    .bg-overlay{
+        background: rgb(255 247 247 / 35%);
+    }
+}
+
+@keyframes loading-spin{
+    0% {
+      transform: rotateZ(0deg);
+    }
+    100% {
+      transform: rotateZ(360deg);
     }
 }

@@ -36,9 +36,8 @@ export class ApiserverService {
     }
 
     convertHtmlToPlainText(html: string): string {
-        const content = html;
         const div = document.createElement("div");
-        div.innerHTML = content;
+        div.innerHTML = html;
         return div.innerText.trim();
     }
 }

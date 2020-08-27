@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { environment } from '../../environments/environment';
-import { FormGroup, Validators, FormControl } from '@angular/forms';
+import { FormGroup, Validators, FormControl, AbstractControl } from '@angular/forms';
 import { Router } from '@angular/router';
 import $ from 'jquery';
 
@@ -53,25 +53,37 @@ export class ContactComponent implements OnInit {
 				Validators.pattern('^((\\+91-?)|0)?[0-9]{9}$')
 			])),
 			subject: new FormControl('', Validators.compose([
-				Validators.required,
-				Validators.pattern('^.{5,100}$')
+				this.validateText
 			])),
 			message: new FormControl('', Validators.compose([
-				Validators.required,
-				Validators.minLength(5)
+				this.validateText
 			]))
 		});
 	}
+
+	validateText(control: AbstractControl): { [key: string]: any } | null {
+		let value = control.value.trim() || '';
+        if(value == '') {
+            return { required: true};
+		}
+		
+        if (value && value.length < 5) {
+            return { minlength: true };
+        }
+        return null;
+	}
+
 	submit() {
 		var form = $('#contact_form');
 
 		const urlApi = environment.contactApi;
 		const crossAnyway = 'https://cors-anywhere.herokuapp.com/';
+		
 		$.ajax({
-			type: 'POST',
-			url: crossAnyway + urlApi,
-			datatype: 'json',
-			data: form.serialize()
+			type: 'POST', // define the type of HTTP verb we want to use (POST for our form)
+			url: crossAnyway + urlApi, // the url where we want to POST
+			datatype: 'json', // what type of data do we expect back from the server
+			data: form.serialize() // our data object
 		});
 		this.router.navigate(['/contact/thank']);
 	}

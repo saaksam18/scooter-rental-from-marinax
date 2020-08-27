@@ -90,7 +90,7 @@
         flex-direction: column;
     }
     li {
-        width: 15%;
+        width: 16%;
         margin-right: 2%;
         @media screen and (max-width: $tablet) {
             width: 100%;
@@ -155,7 +155,7 @@
                 margin-bottom: 20px;
             }
             @media screen and (max-width: $small-device) {
-                font-size: 1.2rem;
+                font-size: 1.1rem;
             }
         }
     }
@@ -277,6 +277,71 @@
             .scene-left::after {
                 content: '0#{$i}';
             }
+        }
+    }
+}
+
+// Block Q&A
+.qa-sec-title {
+    color: $dark-blue;
+    font-size: 2.5rem;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    // border-left: 5px solid $dark-yellow;
+}
+.content-QA{
+    margin-bottom: 10px;
+    .content-Q{
+        width: 100%;
+        padding: 20px;
+        background-color: $dark-yellow;
+        cursor: pointer;
+        border-radius: 40px;
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        &::before {
+            color: $white;
+            font-size: 3rem;
+        }
+        h5{
+            font-size: 2rem;
+            color: $white;
+            padding-right: 30px;
+            margin-bottom: 0;
+            line-height: 1.5;
+            @media screen and (max-width: $smart-phone) {
+                font-size: 1.4rem;
+            }
+        }
+    }
+    .plus{
+        &::before{
+            content: "\2b";
+        }
+    }
+    .minus{
+        &::before{
+            content: "\2212";
+            font-size: 2.2rem;
+        }
+    }
+    .content-A{
+        font-size: 1.7rem;
+        padding: 20px;
+        background-color: $white;
+        border-radius: 40px;
+        display: none;
+        margin-top: 10px;
+        line-height: 1.5;
+        @media screen and (max-width: $smart-phone) {
+            font-size: 1.4rem;
+        }
+        span{
+            color: $dark-yellow;
+            font-size: 2rem;
         }
     }
 }

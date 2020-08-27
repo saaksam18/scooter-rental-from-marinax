@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { Router } from '@angular/router';
-
+import $ from 'jquery';
 @Component({
 	selector: 'app-rental',
 	templateUrl: './rental.component.html',
@@ -35,6 +35,14 @@ export class RentalComponent implements OnInit {
 	}
 
 	ngOnInit() {
+
+		// hide show block content Q&A
+		let toggle = $(".content-Q");
+		
+		toggle.click(function(){
+			$(this).siblings(".content-A").toggleClass("d-block");
+			$(this).toggleClass("minus");
+		});
 	}
 
 }

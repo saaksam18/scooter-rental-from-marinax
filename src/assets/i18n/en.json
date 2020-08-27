@@ -20,6 +20,7 @@
         "title" : "Menu",
         "top": "Top",
         "emc": "EMC",
+        "japan-shop": "japanese shop/ KUBO BRO & Khmer",
         "bussiness-service": "Business & Services",
         "map-contact": "Map & Contact (TEL)",
         "about-us":"About Us",
@@ -53,6 +54,16 @@
         "sub-title":{
             "our-business": "Business introduction / service list",
             "access": "access"
+        },
+        "japan-shop": {
+            "title": "Join management by real Japanese brothers",
+            "kansai": "Kansai is from Nara prefecture",
+            "store-by-Kubo": "Store by Kubo brothers",
+            "kubo": "Kubo",
+            "visa-work-permit": "Visa renewal/work permit",
+            "kubo-brother": "Kubo brother",
+            "currency-exchange": "Foreign currency exchange, International money transfer consultation",
+            "responsible": "Responsible"
         },
         "business": {
             "visa": "Visa service",
@@ -94,10 +105,10 @@
         "title": "EMC History",
         "founder": {
             "title": "EMC founding story",
-            "des-1": "In late 2013, my brother Kubo, who worked for a motorcycle finance company in Phnom Penh, purchased six used motorcycles imported from Thailand by the recommendation of a colleague of the company, and forced his brother who was smoldering at his parents' house in Nara to Phnom Penh. Is the beginning of EMC.",
-            "des-2": "The younger Khmer college student, Heen, who just moved to Tokyo, is one of the starting members. Aozora office started just by renting a corner of an apartment in Bankenkon where I lived at that time and only placing a desk.",
-            "des-3": "Although it didn't ring for the first two months after the start of business, the good access to the center of BKK and the customer-centered customer service style spread as word-of-mouth among the resident Europeans and Americans, and gradually gained fans.",
-            "des-4": "Six months after the start of business, the office was moved to Street 322 of BKK1, which is the current store location. Later, he and his hometown best friend, Hack, who now works as a senior engineer, and IT system developer Pices, who underpins EMC's operations, will be the main EMC members supporting the current backbone of EMC."
+            "des-1": "In late 2013, my brother Kubo, who worked for a motorcycle finance company in Phnom Penh, purchased six used motorcycles imported from Thailand by the recommendation of a company colleague and forced his brother who was smoldering at his parents' house in Nara to Phnom Penh. Is the beginning of EMC.",
+            "des-2": "Kubo brothers' relatives, a relative of Phinem Pen, and a young Khmer college student, Heen, who just moved to Tokyo, are three starting members. We started a temporary office where we rented a corner of the apartment in Banken Khong where we lived at that time and only had a desk.",
+            "des-3": "The accessibility of the center of Bonkenkon and the customer-centered customer service style spread as word-of-mouth communication among Western residents, and gradually gained fans.",
+            "des-4": "Six months after the start of business, the office was relocated to Street 322 in Bongkenkong 1, which is the current store location. Later, he and his hometown best friend, Hack, who now works as a senior engineer, and IT system developer Pices, who underpins EMC's operations, will be the main EMC members supporting the current backbone of EMC."
         },
         "sec-1": {
             "title": "2013",
@@ -144,8 +155,8 @@
         "table": {
             "monthly-rental": "For residents of Phnom Penh (monthly rental)",
             "monthly-rental-des": "$60-130",
-            "day-rental": "For business travelers/travelers (day rental)",
-            "day-rental-des": "$4-10"
+            "day-rental": "For business travelers/travelers (week rental)",
+            "day-rental-des": "From $21-50"
         },
         "reliable-des": "Reliable bike maintenance by staff graduated from motorcycle repair college",
         "equip-des": "Complete with crime prevention security goods",
@@ -170,12 +181,77 @@
             "des-1": "Please submit the required documents and pay after selecting the bike.",
             "des-2": "If there is no problem, you can ride a motorcycle and drive in Phnom Penh.",
             "des-3": "We also rent helmets for customers who wish."
+        },
+        "qa": {
+            "title": "Rental Q&A",
+            "sec-1": {
+                "title": "I. Business Days and Hours",
+                "q1": "Q: What time do you open?",
+                "a1": " We do rent a moto for first customers from 9am - 5:30pm, and close shop at 6pm.",
+                "q2": "Q: What day do you close?",
+                "a2": " On Sundays and Cambodian national holidays."
+            },
+            "sec-2": {
+                "title": "II.  Rental Conditions",
+                "q1": "Q: What is necessary for renting motorcycle?",
+                "a1": " As a deposit, you need customer’s passport or deposit fee. The deposit fee ranges from $300 – $900, the deposit fee amount depends on motorcycle type. We can relax deposit conditions if you request long-term rental. We can do small credit inquiry for deposit relax. After the inspection, we can answer how much deposit relax is available for you.",
+                "q2": "Q: I want to rent a motorcycle to go to Cambodian province. Can I rent a moto?",
+                "a2": " Sorry, we ask customers to drive within Phnom Penh area only. We cannot rent a moto if you drive outside of Phnom Penh.",
+                "q3": "Q: I want to do 1 day rent. Is it possible?",
+                "a3": " Sorry, the minimum rental period is 1 week. If you’d like to rent less than 1 week, you need to pay 1 week rental fee."
+            },
+            "sec-3": {
+                "title": "III. Rental Price and Payment Way",
+                "q1": "Q: How much is the rental fee?",
+                "a1": " It depends on motorcycle type. Monthly rental fee is $60 -$130. Weekly rental fee is $21 - $50. The rental fee gets cheaper when you rent longer.",
+                "q2": "Q: Can I extend to use a motorcycle while I rent it?",
+                "a2": " Yes, this is OK. The extension fee is according to the price table in our shop."
+            },
+            "sec-4": {
+                "title": "IV. Rental Motorcycle Type",
+                "q1": "Q: What kind of motors can I rent from you?",
+                "a1": " In our shop, 50cc automatic, 100 – 125cc automatic and manual motorcycles are available for rent.",
+                "q2": "Q: Do you rent big size motorbike?",
+                "a2": " Sorry, at present all of the motorcycles are scooter type. The maximum engine size of motors is 150cc."
+            },
+            "sec-5": {
+                "title": "V. Safeties and Securities Equipment",
+                "q1": "Q: Can we rent helmets?",
+                "a1": " Yes, you can rent 1 helmet for free. You need to pay $5 per helmet if you rent more helmet.",
+                "q2": "Q: What type of equipment is available for motorcycle securities?",
+                "a2": " A front lock is equipped at the front wheel. It blocks wheel turn. And a chain key is available for rent if you like.",
+                "q3": "Q: Does a rental moto have any insurance?",
+                "a3": " Sorry, at present no moto has insurance in our shop. You need to pay repair fee when damaged and pay compensation fee when stolen.",
+                "q4": "Q: When the motorcycle is stolen, what should I do?",
+                "a4": " Please contact to our shop as soon as possible. We need to go to police to make a report. And you need to pay compensation fee written in the contract."
+            },
+            "sec-6": {
+                "title": "VI. About Booking",
+                "q1": "Q: I want to reserve a motorcycle, how can I do it?",
+                "a1": " You can apply for the reservation with the online form on this website, on the phone, and with visit to our shop EMC.We will make a reply after checking up our customer situation and motorcycle condition.",
+                "q2": "Q: When and what time can I make the reservation?",
+                "a2": " We can welcome you about Internet reservation every time. Reservation with phone call is reserved from Monday – Saturday, from 9am – 6pm."
+            },
+            "sec-7": {
+                "title": "VII. The Service We Don’t Do",
+                "q1": "Q: Do you take insurance on each moto?",
+                "a1": " Sorry, we don’t take insurance on motorbikes.",
+                "q2": "Q: Can I rent a motorcycle with a driver?",
+                "a2": " Sorry, we don’t rent a motorcycle with a driver.",
+                "q3": "Q: Do you do delivery service?",
+                "a3": " Sorry, at present we don’t do delivery service.",
+                "q4": "Q: Can I buy a motorcycle from your shop?",
+                "a4": " Sorry, we don’t sell motorcycles to customers."
+            }
         }
-
     },
     "visa": {
-        "title": "Visa service and work permit",
-        "sub-title": "Visa Renewal and Work Permit (Work Permit) Proxy Application Service",
+        "title": "Visa Renewal and Work Permit (Work Permit) Proxy Application Service",
+        "sub-title": "Reassuring support from a Japanese visa consultant (Kubo)",
+        "des": {
+            "line-1": "If you want to make sure your visa is updated without stress, use EMC!",
+            "line-2": "In order to extend your stay, you can also select proxy procedures such as necessary documents. The best choice for visa renewal is possible with EMC, without having to worry about extension failures."
+        },
         "flow": {
             "title": "Flow until VISA update",
             "step-1": "Advance preparation",
@@ -203,6 +279,81 @@
             "title": "Acceptance",
             "des-1": "After sending the update/creation completion from EMC, you will receive it at the store.",
             "des-2": "If you wish, we also offer a service that will be sent after the update is completed."
+        },
+        "qa": {
+            "title": "Visa Q&A",
+            "sec-1": {
+                "title": "I. About visa",
+                "q1": "Q: I'd like to know new information about visa rules.",
+                "a1": {
+                    "line-1": "In our shop,",
+                    "line-2": "Yes, we do. Even if the Cambodia visa renewal deadline comes while you are renting a motorcycle, you can extend your visa during the rental if you apply in advance."
+                },
+                "q2": "Q: How long does it take to get my passport with a renewed visa?",
+                "a2": "It takes one to two weeks. Depending on the season, the number of days required for renewal will change. The Visa Renewal Office is closed on Saturdays, Sundays and national holidays. If the immigration office's holiday falls between the renewal periods, it will take days. It may be delayed due to the reasons of the Immigration Bureau. When extending your visa, please allow enough time for your stay.",
+                "note": "For updates on visa information, please visit Twitter or Facebook. This is the information as of August 2020.",
+                "q3": "Q. What is the FPCS required for visa extension?",
+                "a3": {
+                    "line-1": "A Cambodian system for managing the addresses of foreigners living in Cambodia. Registration is the responsibility of the landlord. If you are not registered, you will not be able to extend your visa, so please register in advance.",
+                    "line-2": "If you want to register from someone other than the landlord, please get permission from the landlord."
+                },
+                "q4": "Q.What are my options for long-stay visas?",
+                "a4": {
+                    "line-1": "For a long stay, first get a Business Visa (E).",
+                    "line-2": "You can stay in Cambodia for one month. During your stay, please apply for an extension at an agency like ours. You can choose to extend your stay from 1 month, 3 months, 6 months or 12 months.",
+                    "line-3": "Here is a diagram showing the options here.",
+                    "line-4": "It can be extended to one of the following four types.",
+                    "line-5": "・If you are looking for a job, Job Seeker Visa (EG)",
+                    "line-6": "・Business visa (EB) if you have a fixed job",
+                    "line-7": "・Student visa (ES) for students",
+                    "line-8": "・Retirement visa (ER) for those who are retired",
+                    "line-9": "Job seeker visas (EG) can be extended for up to 6 months and the other three types can be extended up to 1 year."
+                },
+                "q5": "Q:Please tell me the period and price that can be extended with a visa.",
+                "a5": {
+                    "line-1": "There are four types of period that can be extended: 1 month ($51), 3 months ($81), 6 months ($164), and 12 months ($294). For customers who do not rent a motorcycle, $5 will be added.",
+                    "line-2": "There is no difference in price depending on the type of visa."
+                },
+                "q6": "Q. Please tell me the documents required for extension.",
+                "a6": {
+                    "line-1": "● Required for everyone",
+                    "line-2": "・Print a screen showing that the address has been registered with FPCS by using the app",
+                    "line-3": "● Obtain eVisa for electronic application and enter Japan",
+                    "line-4": "・Print the certificate of the eVisa application (sent as an email attachment)",
+                    "line-5": "Extensions from Business Visas (E) can be listed here.",
+                    "line-6": "● Update to EG visa",
+                    "line-7": "・Oath with the reason for requesting extension",
+                    "line-8": "● Update to EB visa",
+                    "line-9": "・Certificate of employment or patent with the name of the visa applicant (business tax payment certificate)",
+                    "line-10": "● Renewal from EG visa to EB visa or business visa (EB) for one or three months",
+                    "line-11": "・Work Permit added",
+                    "line-12": "● Update to ES visa",
+                    "line-13": "・A certificate of enrollment issued by a school registered with the Ministry of Education",
+                    "line-14": "● Update to ER visa",
+                    "line-15": "・If you are 55 or older, an oath that describes your income and how to earn it. If you are under 55 years old, the income certificate containing the translation certificate of the embassy."
+                },
+                "q7": "Q. I don't know how to write documents for visa extension.",
+                "a7": {
+                    "line-1": "Our shop provides a service for those who want to omit the submission of documents.",
+                    "line-2": "・Job Seeker Visa (EG, $15)",
+                    "line-3": "・Business visa (EB, $40)",
+                    "line-4": "・Retirement visa (ER, $20)",
+                    "line-5": "The service will be provided for an additional fee."
+                },
+                "q8": "Q: I have a tourist visa. Can I extend my stay?",
+                "a8": "You can extend it. However, extension is only once. You can only extend it for one month. If you plan to stay for more than 2 months, please obtain a business visa (changed to a general visa for arrivals) at the embassy in advance.",
+                "q9": "Q:How long does it take to get my visa renewed?",
+                "a9": {
+                    "line-1": "It takes one to two weeks. The waiting time may be longer due to immigration bureau and Cambodia holidays. Meanwhile, the immigration office keeps your passport.",
+                    "line-2": "If you want to bring your passport immediately, you can use the express visa service. By paying an additional fee (+$75), delivery will be possible the next business day morning."
+                },
+                "q10": "Q: I want to stay in Cambodia for a long time, so I want to change from a tourist visa (T) to a business visa (E). Can I change it?",
+                "a10": "Visa types cannot be changed within Cambodia. Please go abroad and get your visa again.",
+                "q11": "Q: My visa has expired. Can you accept it?",
+                "a11": "It is possible to accept. If you are overstaying, there is an additional charge of $10 per day.",
+                "q12": "Q: How long do I have to pay for the additional charges?",
+                "a12": "If you can come by 11am on the deadline, there will be no additional charge."
+            }
         }
     },
     "exchange": {
@@ -212,7 +363,8 @@
             "title": "Features of our currency exchange service",
             "step-1": "Foreign currency exchange ATM (24 hours operation)",
             "step-2": "Over-the-counter exchange",
-            "step-3": "Foreign currency exchange agency business"
+            "step-3": "Foreign currency exchange agency business",
+            "step-4": "International money transfer consulting business"
         },
         "step-1": {
             "title": "Foreign currency exchange ATM (24 hours operation)",
@@ -227,6 +379,10 @@
             "title": "Foreign currency exchange agency business",
             "des-1": "Providing the 'best rate' through the Phnom Penh money changer network",
             "des-2": "Saves information search costs/time for currency exchange operations"
+        },
+        "step-4": {
+            "title": "International money transfer consulting business",
+            "des": "If you have any trouble sending money between Japan and Cambodia, please message directly to Shuu Kubo on Facebook."
         },
         "feature": "Feature"
     },
@@ -253,19 +409,55 @@
         "message":"Message",
         "our-location": "OUR LOCATION",
         "address": {
-            "line-1": "#38E0, St.322, BKK1, Chamkarmon,Phnom Penh",
-            "line-2": "Go south on BKK1 Street 63, just around the corner of Eric Kaiser"
+            "line-1": "#38E0, St.322, Bonken Kong 1, Boeung Keng Kang, Phnom Penh",
+            "line-2": "Descend south on Street 63, Bong Keng Khong 1 district, just around the corner of Eric Kaiser"
         },
         "work-hours": "WORKING HOURS",
         "time": "9AM–5:30PM",
         "phone-number": {
             "title": "PHONE NUMBER",
-            "line-1": "+855 (0)69 499 260 (JPN, ENG)",
-            "line-2": "+855 (0)89 518 867 (JPN, ENG)"
+            "line-1": "Rental: +855 (0)89 518 867 (JPN, ENG)",
+            "line-2": "Visa: +855 (0)69 270 040 (JPN, ENG)"
         }
     },
     "team": {
-        "title": "Staff introduction"
+        "title": "Staff introduction",
+        "member": {
+            "shungo-kubo":{
+                "name": "SHUNGO KUBO　（久保弟）",
+                "des-1": "関西学院大学　法学部卒業",
+                "des-2": "神戸大学大学院　経営学研究科修了",
+                "des-3": "GL Finance Plc (Cambodia)  Director, Underwriting & Collection Manager",
+                "des-4": "Group Lease PCL    Director",
+                "des-5": "両替・国際送金担当。EMCのオーナーで新規事業起ち上げや経営業務の効率化などが得意分野。",
+                "des-6": "飽きっぽいけども意外と人情派の自由人。両替や国際送金のご相談がある方はお気軽にメッセンジャーにて直接メッセージ下さい。"
+            },
+            "hisashi-kubo":{
+                "name": "HISASHI KUBO　（久保兄）",
+                "des-1" : "大阪大学　理学部卒業",
+                "des-2" : "大阪大学大学院　理学部研究科修了",
+                "des-3" : "レンタルバイクおよびビザ・ワークパーミット担当。文書作成、広報が得意分野。物忘れとうっかりミスが多いのが玉にキズですが支えられる愛されるゼネラルマネージャー。ホスピタリティのある接客で日本人のみならず欧米人からも意外と人気。無類の犬好きで愛犬のアミーは相棒。"
+            },
+            "hak-heang": {
+                "name": "Hak Heang",
+                "des-1": "Norton University Civil Engineering専攻",
+                "des-2": "久保兄弟とEMCを起ち上げたクメール人。大学で5年も勉強したのにも関わらず思い切ってEMCに就職し自営業の道を志す。全事業の業務を把握し、EMCクメールチームをまとめるみんなの頼れるサブゼネラルマネージャー。"
+            },
+            "chum-hak": {
+                "name": "Chum Hak",
+                "des-1": "Institute of Finance & Accounting　Accounting専攻",
+                "des-2": "AMS Technology School (Motorbike Mechanic school)",
+                "des-3": "フロントオペレーションマネージャー",
+                "des-4": "チーフメカニック",
+                "des-5": "お客様の事故やバイク盗難、ややこしい案件をササっと解決してしまうEMCのスーパーメカニック。はっきり物申すので欧米人には彼のファンが多く、個人的にバイク修理やバイク売却/購入依頼を請け負うこともします。そんな彼がなぜ大学でアカウンティングを勉強していたのかは謎。声が大きい。"
+            },
+            "ouch-makara":{
+                "name": "Ouch Makara",
+                "des-1": "National University of Management   Business Management専攻",
+                "des-2": "Chief Back Office",
+                "des-3": "いつも冷静沈着で確実な仕事ぶり。責任感が強くよく気がつくタイプでちゃくちゃくと仕事をこなす。いつかは自身でビジネスを始めたいという彼が怒ったところをEMCメンバーは一度も見たことがない。たまに笑う。"
+            }
+        }
     },
     "thank": {
         "title": "Thank You!",

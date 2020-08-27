@@ -256,6 +256,7 @@ img{
         display: flex;
         justify-content: center;
         align-items: center;
+        animation: pulse 2s infinite;
         i{
             font-size: 35px;
         }

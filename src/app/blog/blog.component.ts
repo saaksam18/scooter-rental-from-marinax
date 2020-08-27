@@ -11,6 +11,7 @@ import { ApiserverService } from '../service/apiserver.service';
 export class BlogComponent implements OnInit {
     hisashi_posts: any = [];
     shungo_posts: any = [];
+    isLoad = true;
     title = this.translate.get('page-title.blog').subscribe((res: string) => {
 		this.pageTitle.setTitle(res);
     });
@@ -20,7 +21,7 @@ export class BlogComponent implements OnInit {
 		private pageTitle: Title,
 		private translate: TranslateService,
         private router: Router,
-        private appService: ApiserverService
+        private appService: ApiserverService,
 	) {
 		this.meta.updateTag({ name: 'description', content: '' });
 		this.meta.updateTag({ name: 'keywords', content: '' });
@@ -38,6 +39,13 @@ export class BlogComponent implements OnInit {
 	}
 
     ngOnInit() {
+
+        // Loading icon
+        setTimeout(()=>{
+            this.isLoad = false;
+        },1000);
+        
+        
         this.appService.getPost(true).subscribe( post => {
             this.hisashi_posts.push(post);
         });
