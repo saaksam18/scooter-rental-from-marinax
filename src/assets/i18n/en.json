@@ -113,27 +113,27 @@
         "sec-1": {
             "title": "2013",
             "year-title": "November 2013",
-            "year-des": "Start Scooter Rental at Palm Village aptmnt."
+            "year-des": "Start Scooter Rental at Palm Village apartment."
         },
         "sec-2": {
             "title": "2014",
             "year-title": "April 2014",
-            "year-des": "Open EMC BKK office on St.322"
+            "year-des": "Open EMC BKK office on St.322."
         },
         "sec-3": {
             "title": "2016",
             "year-title": "August 2016",
-            "year-des": "Start Visa extension service"
+            "year-des": "Start Visa extension service."
         },
         "sec-4": {
             "title": "2017",
             "year-title": "October 2017",
-            "year-des": "Start Work Permit service"
+            "year-des": "Start Work Permit service."
         },
         "sec-5": {
             "title": "2018",
             "year-title": "November 2018",
-            "year-des": "Open EMC branch in Toul Tumpoung branch"
+            "year-des": "Open EMC branch in Toul Tumpoung branch."
         },
         "sec-6": {
             "title": "2019",
@@ -146,12 +146,12 @@
         "sec-7": {
             "title": "2020",
             "year-title": "May 2020",
-            "year-des": "Close EMC Toul Tumpoung branch"
+            "year-des": "Close EMC Toul Tumpoung branch."
         }
     },
     "scooter-rental": {
         "title": "Scooter rental service",
-        "sub-title": "Well-maintained scooter, safe aftercare",
+        "sub-title": "Well maintained scooter, safe aftercare",
         "table": {
             "monthly-rental": "For residents of Phnom Penh (monthly rental)",
             "monthly-rental-des": "$60-130",
