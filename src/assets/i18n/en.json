@@ -424,21 +424,23 @@
         "member": {
             "shungo-kubo":{
                 "name": "SHUNGO KUBO",
-                "des-1": "Currency Exchange, International Transfer Consultant",
-                "des-2": "Stay Cambodia since 2012",
-                "des-3": "GL Finance Plc (Cambodia)  Director, Underwriting & Collection Manager",
-                "des-4": "Group Lease PCL Director",
-                "des-5": "",
+                "des-1": "EMC Founder",
+                "des-2": "Currency Exchange, International Transfer Consultant",
+                "des-3": "Stay Cambodia since 2012. ",
+                "des-4": "GL Finance Plc (Cambodia)  Director, Underwriting & Collection Manager",
+                "des-5": "Group Lease PCL Director",
                 "des-6": "",
-                "des-7": ""
+                "des-7": "",
+                "des-8": ""
             },
             "hisashi-kubo":{
                 "name": "HISASHI KUBO",
-                "des-1" : "Chief Visa Consultant",
-                "des-2" : "Stay cambodia since 2015",
-                "des-3" : "",
-                "des-4" : "",
-                "des-5" : ""
+                "des-1" : "EMC Co-Founder",
+                "des-2" : "General Manager",
+                "des-3" : "Chief Visa Consultant",
+                "des-4" : "Stay cambodia since 2015",
+                "des-5" : "",
+                "des-6" : ""
             },
             "heang": {
                 "name": "HEANG",
