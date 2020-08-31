@@ -21,7 +21,7 @@
         "top": "Top",
         "emc": "EMC",
         "japan-shop": "japanese shop/ KUBO BRO & Khmer",
-        "bussiness-service": "Business & Services",
+        "bussiness-service": "Services",
         "map-contact": "Map & Contact (TEL)",
         "about-us":"About Us",
         "mission-philosophy": "Mission / Philosophy",
@@ -32,7 +32,7 @@
         "business-field": "Business Field",
         "scoter-rental": "Scoter Rental",
         "visa-wp": "Visa & WP",
-        "current-exchange": "Current Exchange & ATM Machine",
+        "current-exchange": "Currency Exchange",
         "travel-agency": "Travel Agency",
         "blog": "Blog",
         "contact": "Contact",
@@ -41,35 +41,35 @@
     },
     "home": {
         "header" : {
-            "title": "For foreigners living in Cambodia",
-            "description-1": "EMC supports your Cambodian life",
-            "description-2": "Safe and reliable service by「Japanese people」",
-            "description-3": "Utilizing the experience and network since the establishment in 2013,",
-            "description-4": "Supporting your overseas life"
+            "title": "For EXPAT in Cambodia",
+            "description-1": "EMC works for supporting expat's daily life in Phnom Penh",
+            "description-2": "",
+            "description-3": "EMC has established since 2013 by Japanese brothers",
+            "description-4": ""
         },
         "title": {
             "our-business": "OUR BUSINESS",
             "access": "ACCESS"
         },
         "sub-title":{
-            "our-business": "Business introduction / service list",
-            "access": "access"
+            "our-business": "Services",
+            "access": "MAP: EMC BKK1 shop"
         },
         "japan-shop": {
-            "title": "Join management by real Japanese brothers",
+            "title": "Operate by Japanese KUBO brothers & Khmer young guys (All English speaker)",
             "kansai": "Kansai is from Nara prefecture",
             "store-by-Kubo": "Store by Kubo brothers",
-            "kubo": "Kubo",
-            "visa-work-permit": "Visa renewal/work permit",
-            "kubo-brother": "Kubo brother",
-            "currency-exchange": "Foreign currency exchange, International money transfer consultation",
+            "kubo": "Hisashi Koh KUBO",
+            "visa-work-permit": "Visa/Work Permit Consultant",
+            "kubo-brother": "Shungo KUBO",
+            "currency-exchange": "Currency Exchange",
             "responsible": "Responsible"
         },
         "business": {
-            "visa": "Visa service",
-            "work-permit": "Work permit",
-            "travel-agency": "Travel agency",
-            "domestic": "(Domestic tour)"
+            "visa": "Visa Extension",
+            "work-permit": "/ Work Permit",
+            "travel-agency": "Travel Agent",
+            "domestic": "(Domestic & Overseas)"
         }
     },
     "outline": {
@@ -78,23 +78,23 @@
         "philosophy": {
             "title": "Management philosophy",
             "des": {
-                "line-1": "We make people happy by our service...",
-                "line-2": "Staff who gathered together, foreign residents in Cambodia",
-                "line-3": "We will support you to relax your shoulders and enjoy your days!!!"
+                "line-1": "Supporting secure joyfull life of the people,",
+                "line-2": "EMC staffs, local partners and expats through",
+                "line-3": "EMC services. You can ejoy relaxing life in Phnom Penh."
             }
         },
         "table": {
             "company": "Company",
             "company-des": "EMC Motorbike Rental",
             "location": "Location",
-            "business": "Business content",
-            "business-des": "Rental scooter, visa and work permit proxy application, foreign currency exchange",
-            "establishment": "Establishment",
-            "establishment-des": "November 2013",
+            "business": "Services",
+            "business-des": "Scooter Rental, Visa extension & Work Permit, Curency Exchange, Travel Agency",
+            "establishment": "Establish",
+            "establishment-des": "Nov 2013",
             "capital": "Capital",
-            "capital-des": "8 million yen",
+            "capital-des": "75,000USD",
             "group-company": {
-                "title": "Group company",
+                "title": "EMC Group",
                 "des-line-1": "GREEN ROOT MONEY EXCHANGE CO.,LTD.",
                 "des-line-2": "POPULAR TRAVEL & TOURS"
             }
@@ -104,41 +104,41 @@
     "history": {
         "title": "EMC History",
         "founder": {
-            "title": "EMC founding story",
-            "des-1": "In late 2013, my brother Kubo, who worked for a motorcycle finance company in Phnom Penh, purchased six used motorcycles imported from Thailand by the recommendation of a company colleague and forced his brother who was smoldering at his parents' house in Nara to Phnom Penh. Is the beginning of EMC.",
-            "des-2": "Kubo brothers' relatives, a relative of Phinem Pen, and a young Khmer college student, Heen, who just moved to Tokyo, are three starting members. We started a temporary office where we rented a corner of the apartment in Banken Khong where we lived at that time and only had a desk.",
-            "des-3": "The accessibility of the center of Bonkenkon and the customer-centered customer service style spread as word-of-mouth communication among Western residents, and gradually gained fans.",
-            "des-4": "Six months after the start of business, the office was relocated to Street 322 in Bongkenkong 1, which is the current store location. Later, he and his hometown best friend, Hack, who now works as a senior engineer, and IT system developer Pices, who underpins EMC's operations, will be the main EMC members supporting the current backbone of EMC."
+            "title": "EMC Start up story",
+            "des-1": "Later part of 2013, Kubo Brothers & Mr.Heang start up EMC scooter rental at Palm Village apartment in BKK1 with 6 motors.",
+            "des-2": "customer is increasing mouth by mouth among western Expats, we moved current office location on Street.322 in BKK1.",
+            "des-3": "Start Visa & Work Permit, Currency exchange services, EMC is supported by over 30 countries international expats in Phnom Penh.",
+            "des-4": ""
         },
         "sec-1": {
             "title": "2013",
             "year-title": "November 2013",
-            "year-des": "BKK1, Palm Village Apartment Open in parking lot"
+            "year-des": "Start Scooter Rental at Palm Village apartment."
         },
         "sec-2": {
             "title": "2014",
             "year-title": "April 2014",
-            "year-des": "Moved office to current BKK main store location"
+            "year-des": "Open EMC BKK office on St.322."
         },
         "sec-3": {
             "title": "2016",
             "year-title": "August 2016",
-            "year-des": "Visa renewal agency application business started"
+            "year-des": "Start Visa extension service."
         },
         "sec-4": {
             "title": "2017",
             "year-title": "October 2017",
-            "year-des": "Commencement of work application for work permit"
+            "year-des": "Start Work Permit service."
         },
         "sec-5": {
             "title": "2018",
             "year-title": "November 2018",
-            "year-des": "Established EMC Tuol Tumpung Branch"
+            "year-des": "Open EMC branch in Toul Tumpoung branch."
         },
         "sec-6": {
             "title": "2019",
             "year-title-02": "February 2019",
-            "year-des-02": "Foreign currency exchange ATM business started",
+            "year-des-02": "Start Currency Exchange service by Green Root Money Exchange Co., Ltd.",
             "year-title-11": "November 2019",
             "year-des-11-1": "Acquired foreign currency exchange license from Natiional Bank of Cambodia License No.006/19",
             "year-des-11-2": "GREEN ROOT MONEY EXCHANGE CO.,LTD.Establishment"
@@ -146,20 +146,20 @@
         "sec-7": {
             "title": "2020",
             "year-title": "May 2020",
-            "year-des": "EMC Tuol Tumpung branch changed to a travel agency"
+            "year-des": "Close EMC Toul Tumpoung branch."
         }
     },
     "scooter-rental": {
         "title": "Scooter rental service",
-        "sub-title": "Well-maintained scooter, safe aftercare",
+        "sub-title": "Well maintained scooter, safe aftercare",
         "table": {
             "monthly-rental": "For residents of Phnom Penh (monthly rental)",
             "monthly-rental-des": "$60-130",
             "day-rental": "For business travelers/travelers (week rental)",
             "day-rental-des": "From $21-50"
         },
-        "reliable-des": "Reliable bike maintenance by staff graduated from motorcycle repair college",
-        "equip-des": "Complete with crime prevention security goods",
+        "reliable-des": "Maintenance by professional mechanic staffs",
+        "equip-des": "Offer FREE security tools",
         "flow": {
             "title": "Flow to bike rental",
             "step-1": "Advance preparation",
@@ -246,11 +246,11 @@
         }
     },
     "visa": {
-        "title": "Visa Renewal and Work Permit (Work Permit) Proxy Application Service",
-        "sub-title": "Reassuring support from a Japanese visa consultant (Kubo)",
+        "title": "Visa Extension and Work Permit application service",
+        "sub-title": "Fast & Reliable service by Japanese Visa consultant",
         "des": {
-            "line-1": "If you want to make sure your visa is updated without stress, use EMC!",
-            "line-2": "In order to extend your stay, you can also select proxy procedures such as necessary documents. The best choice for visa renewal is possible with EMC, without having to worry about extension failures."
+            "line-1": "We suggest best VISA type according to customer's request.",
+            "line-2": "All staffs can speak English!! We have EXPRESS Visa service (1 business day)"
         },
         "flow": {
             "title": "Flow until VISA update",
@@ -357,32 +357,31 @@
         }
     },
     "exchange": {
-        "title": "Foreign currency exchange",
-        "sub-title": "New foreign currency exchange service from the customer's perspective",
+        "title": "Currency Exchange",
+        "sub-title": "Fast, Convenient (BKK1) and Reliable Currency Exchange",
         "flow": {
             "title": "Features of our currency exchange service",
-            "step-1": "Foreign currency exchange ATM (24 hours operation)",
-            "step-2": "Over-the-counter exchange",
-            "step-3": "Foreign currency exchange agency business",
+            "step-1": "ATM Currency Exchange (24/7)",
+            "step-2": "Currency Exchange Service",
+            "step-3": "Advisor of International Transfer between Japan & Cambodia ",
             "step-4": "International money transfer consulting business"
         },
         "step-1": {
-            "title": "Foreign currency exchange ATM (24 hours operation)",
+            "title": "ATM Currency Exchange (24/7)",
             "des": "Small currency exchange, speedy and accurate currency exchange service"
         },
         "step-2": {
-            "title": "Over-the-counter exchange",
-            "des-1": "Large and corporate exchanges, prior contact required",
-            "des-2": "+855(0)78-849-977"
+            "title": "Currency Exchange Service",
+            "des-1": "Large amount and corporate exchange *Please contact us in advance before visiting"
         },
         "step-3": {
-            "title": "Foreign currency exchange agency business",
+            "title": "Advisor of International Transfer between Japan & Cambodia",
             "des-1": "Providing the 'best rate' through the Phnom Penh money changer network",
             "des-2": "Saves information search costs/time for currency exchange operations"
         },
         "step-4": {
             "title": "International money transfer consulting business",
-            "des": "If you have any trouble sending money between Japan and Cambodia, please message directly to Shuu Kubo on Facebook."
+            "des": "If you have any problems with remittance between Japan and Cambodia, please consult us (Facebook Profile link)"
         },
         "feature": "Feature"
     },
@@ -409,53 +408,52 @@
         "message":"Message",
         "our-location": "OUR LOCATION",
         "address": {
-            "line-1": "#38E0, St.322, Bonken Kong 1, Boeung Keng Kang, Phnom Penh",
-            "line-2": "Descend south on Street 63, Bong Keng Khong 1 district, just around the corner of Eric Kaiser"
+            "line-1": "#38E0, St.322, Boeung Keng Kang 1, Phnom Penh",
+            "line-2": "In BKK1 area, going down St.63 and turn right on St.322 (Eric Kayser at corner)"
         },
         "work-hours": "WORKING HOURS",
-        "time": "9AM–5:30PM",
+        "time": "Business Hours: 09:00-17:30 Mon-Sat",
         "phone-number": {
             "title": "PHONE NUMBER",
-            "line-1": "Rental: +855 (0)89 518 867 (JPN, ENG)",
+            "line-1": "Scooter Rental: +855(0)89 518 867 (JPN, ENG)",
             "line-2": "Visa: +855 (0)69 270 040 (JPN, ENG)"
         }
     },
     "team": {
-        "title": "Staff introduction",
+        "title": "Owner Profile",
         "member": {
             "shungo-kubo":{
-                "name": "SHUNGO KUBO　（久保弟）",
-                "des-1": "関西学院大学　法学部卒業",
-                "des-2": "神戸大学大学院　経営学研究科修了",
+                "name": "SHUNGO KUBO",
+                "des-1": "Currency Exchange, International Transfer Consultant",
+                "des-2": "Stay Cambodia since 2012",
                 "des-3": "GL Finance Plc (Cambodia)  Director, Underwriting & Collection Manager",
-                "des-4": "Group Lease PCL    Director",
-                "des-5": "両替・国際送金担当。EMCのオーナーで新規事業起ち上げや経営業務の効率化などが得意分野。",
-                "des-6": "飽きっぽいけども意外と人情派の自由人。両替や国際送金のご相談がある方はお気軽にメッセンジャーにて直接メッセージ下さい。"
+                "des-4": "Group Lease PCL Director",
+                "des-5": "",
+                "des-6": "",
+                "des-7": ""
             },
             "hisashi-kubo":{
-                "name": "HISASHI KUBO　（久保兄）",
-                "des-1" : "大阪大学　理学部卒業",
-                "des-2" : "大阪大学大学院　理学部研究科修了",
-                "des-3" : "レンタルバイクおよびビザ・ワークパーミット担当。文書作成、広報が得意分野。物忘れとうっかりミスが多いのが玉にキズですが支えられる愛されるゼネラルマネージャー。ホスピタリティのある接客で日本人のみならず欧米人からも意外と人気。無類の犬好きで愛犬のアミーは相棒。"
+                "name": "HISASHI KUBO",
+                "des-1" : "Chief Visa Consultant",
+                "des-2" : "Stay cambodia since 2015",
+                "des-3" : "",
+                "des-4" : "",
+                "des-5" : ""
             },
-            "hak-heang": {
-                "name": "Hak Heang",
-                "des-1": "Norton University Civil Engineering専攻",
-                "des-2": "久保兄弟とEMCを起ち上げたクメール人。大学で5年も勉強したのにも関わらず思い切ってEMCに就職し自営業の道を志す。全事業の業務を把握し、EMCクメールチームをまとめるみんなの頼れるサブゼネラルマネージャー。"
+            "heang": {
+                "name": "HEANG",
+                "des-1": "EMC Co-Founder  Deputy General Manager",
+                "des-2": "He is Khmer and one of EMC Co-Founder, always neutral observer and can see whole situation from his point of view. He can tell any matter to any people as he feels, so it is precious guy in Khmer."
             },
-            "chum-hak": {
-                "name": "Chum Hak",
-                "des-1": "Institute of Finance & Accounting　Accounting専攻",
-                "des-2": "AMS Technology School (Motorbike Mechanic school)",
-                "des-3": "フロントオペレーションマネージャー",
-                "des-4": "チーフメカニック",
-                "des-5": "お客様の事故やバイク盗難、ややこしい案件をササっと解決してしまうEMCのスーパーメカニック。はっきり物申すので欧米人には彼のファンが多く、個人的にバイク修理やバイク売却/購入依頼を請け負うこともします。そんな彼がなぜ大学でアカウンティングを勉強していたのかは謎。声が大きい。"
+            "hak": {
+                "name": "HAK",
+                "des-1": "Front operation manager, Chief Engineer",
+                "des-2": "Very straightforward and love to take care of others, he loves to learn something new always, even graduated from accounting school, go to Engineer school also and working as Chief engineer in EMC."
             },
-            "ouch-makara":{
-                "name": "Ouch Makara",
-                "des-1": "National University of Management   Business Management専攻",
-                "des-2": "Chief Back Office",
-                "des-3": "いつも冷静沈着で確実な仕事ぶり。責任感が強くよく気がつくタイプでちゃくちゃくと仕事をこなす。いつかは自身でビジネスを始めたいという彼が怒ったところをEMCメンバーは一度も見たことがない。たまに笑う。"
+            "makara": {
+                "name": "MAKARA",
+                "des-1": "Back Office Manager",
+                "des-2": "He is always calm, gentle, tolerant to others and do the all jobs steadily. We never see him angry or irritating in EMC, rarely laugh. Speak quietly and say any opinions obejectively."
             }
         }
     },
