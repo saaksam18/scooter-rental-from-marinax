@@ -1,5 +1,10 @@
 <div class="content">
     <app-about-header></app-about-header>
+
+    <!-- Page content -->
+    <div class="content__pagetitle">
+        <h3 class="main-title">{{'menu.site-map' | translate}}</h3>
+    </div>
     <div class="sitemap bg-lightblue">
         <div class="sitemap__content">
             
@@ -14,7 +19,7 @@
 
             <!-- About Us -->
             <ul class="menu-category">
-                <li><a routerLink="/about">{{ 'menu.about-us' | translate }}</a></li>
+                <li>{{ 'menu.about-us' | translate }}</li>
                 <li><a routerLink="/about/outline">{{ 'menu.corperate-info' | translate }}</a></li>
                 <li><a routerLink="/about/history">{{ 'menu.history' | translate }}</a></li>
                 <li><a routerLink="/about/teams">{{ 'menu.operational-team' | translate }}</a></li>

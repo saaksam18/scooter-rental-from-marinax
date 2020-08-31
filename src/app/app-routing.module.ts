@@ -30,11 +30,11 @@ const routes: Routes = [
 			breadcrumb: 'menu.about-us'
 		},
 		children: [
-			{ 
-				path: '',
-				component: AboutComponent,
-				pathMatch: 'full'
-			},
+			// { 
+			// 	path: '',
+			// 	component: AboutComponent,
+			// 	pathMatch: 'full'
+			// },
 			{ 
 				path: 'history',
 				component: HistoryComponent,
