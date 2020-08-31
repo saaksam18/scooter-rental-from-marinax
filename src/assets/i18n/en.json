@@ -439,6 +439,21 @@
                 "des-3" : "",
                 "des-4" : "",
                 "des-5" : ""
+            },
+            "heang": {
+                "name": "HEANG",
+                "des-1": "EMC Co-Founder  Deputy General Manager",
+                "des-2": "He is Khmer and one of EMC Co-Founder, always neutral observer and can see whole situation from his point of view. He can tell any matter to any people as he feels, so it is precious guy in Khmer."
+            },
+            "hak": {
+                "name": "HAK",
+                "des-1": "Front operation manager, Chief Engineer",
+                "des-2": "Very straightforward and love to take care of others, he loves to learn something new always, even graduated from accounting school, go to Engineer school also and working as Chief engineer in EMC."
+            },
+            "makara": {
+                "name": "MAKARA",
+                "des-1": "Back Office Manager",
+                "des-2": "He is always calm, gentle, tolerant to others and do the all jobs steadily. We never see him angry or irritating in EMC, rarely laugh. Speak quietly and say any opinions obejectively."
             }
         }
     },
