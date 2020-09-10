@@ -39,10 +39,10 @@ export class VisaComponent implements OnInit {
 
 		// hide show block centent Q&A
 		let toggle = $(".content-Q");
-		
+			
 		toggle.click(function(){
-			$(this).siblings(".content-A").toggleClass("d-block");
 			$(this).toggleClass("minus");
+			$(this).siblings(".content-A").slideToggle( "slow" );
 		});
 	}
 
