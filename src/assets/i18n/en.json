@@ -281,76 +281,89 @@
         "qa": {
             "title": "Visa Q&A",
             "sec-1": {
-                "title": "I. About visa",
-                "q1": "Q: I'd like to know new information about visa rules.",
+                "title": "I. Cambodia visa Q&A",
+                "q1": "Q: I want to stay in Cambodia for long time.",
                 "a1": {
-                    "line-1": "In our shop,",
-                    "line-2": "Yes, we do. Even if the Cambodia visa renewal deadline comes while you are renting a motorcycle, you can extend your visa during the rental if you apply in advance."
+                    "line-1": "You can get 2 different types of visa, tourist visa (T) and business visa (E) in the beginning.",
+                    "line-2": "If you stay long term, you need to get business visa (E). You can extend it limitlessly as long as your visa can meet extension requirements.",
+                    "line-3": "On the other hand, tourist visa (T) can be updated for 1 month and 1 time."
                 },
-                "q2": "Q: How long does it take to get my passport with a renewed visa?",
-                "a2": "It takes one to two weeks. Depending on the season, the number of days required for renewal will change. The Visa Renewal Office is closed on Saturdays, Sundays and national holidays. If the immigration office's holiday falls between the renewal periods, it will take days. It may be delayed due to the reasons of the Immigration Bureau. When extending your visa, please allow enough time for your stay.",
-                "note": "For updates on visa information, please visit Twitter or Facebook. This is the information as of August 2020.",
-                "q3": "Q: What is the FPCS required for visa extension?",
-                "a3": {
-                    "line-1": "A Cambodian system for managing the addresses of foreigners living in Cambodia. Registration is the responsibility of the landlord. If you are not registered, you will not be able to extend your visa, so please register in advance.",
-                    "line-2": "If you want to register from someone other than the landlord, please get permission from the landlord."
+                "q2": "Q: How long can be extended with extension? And how much?",
+                "a2": {
+                    "line-1": "Extension of stay (a.k.a. EoS) can be selected from 1, 3, 6, and 12 months from business visa (E). Visa price is different depending on EoS, 1 month ($51), 3-month ($81), 6-month ($164), and 12-month ($294). $5 is added to those who don’t rent a motorcycle in our shop.",
+                    "line-2": "1-month and 3-month visas are single type, while 6-month and 12-month visas are multiple type."
                 },
-                "q4": "Q: What are my options for long-stay visas?",
-                "a4": {
-                    "line-1": "For a long stay, first get a Business Visa (E).",
-                    "line-2": "You can stay in Cambodia for one month. During your stay, please apply for an extension at an agency like ours. You can choose to extend your stay from 1 month, 3 months, 6 months or 12 months.",
-                    "line-3": "Here is a diagram showing the options here.",
-                    "line-4": "It can be extended to one of the following four types.",
-                    "line-5": "・If you are looking for a job, Job Seeker Visa (EG)",
-                    "line-6": "・Business visa (EB) if you have a fixed job",
-                    "line-7": "・Student visa (ES) for students",
-                    "line-8": "・Retirement visa (ER) for those who are retired",
-                    "line-9": "Job seeker visas (EG) can be extended for up to 6 months and the other three types can be extended up to 1 year."
-                },
-                "q5": "Q: Please tell me the period and price that can be extended with a visa.",
+                "note": "Latest Visa information update can be checked with our Facebook. Here we show is the information as of Sep. 2020.",
+                "q3": "Q: How long does it take to get my passport back to your shop?",
+                "a3": "It takes around 8 business days. Saturdays, Sundays, and national holidays are NOT business days of Immigration office.",
+                "q4": "Q: I cannot wait for the 8 business days. I want to hold my passport earlier. ",
+                "a4": "Express visa service is available in our shop. You can get your visa back in the next day for additional $75 payment. ",
+                "q5": "Q: What are requirements for visa extension?",
                 "a5": {
-                    "line-1": "There are four types of period that can be extended: 1 month ($51), 3 months ($81), 6 months ($164), and 12 months ($294). For customers who do not rent a motorcycle, $5 will be added.",
-                    "line-2": "There is no difference in price depending on the type of visa."
+                    "line-1": "There are 3 conditions to succeed in visa extension.",
+                    "line-2": "- Your passport must have 6 months or more validity period from the next visa expiration date.\r\n For example, if you request 12-month extension, your passport termination date must be in 18 months or longer away from your present visa expiration date.",
+                    "line-3": "- A Letter depending on the present and the next visa type.",
+                    "line-4": "- Printout to show that your living address is registered with FPCS (Foreigners Present in Cambodia System). ",
+                    "line-5": "In our shop, it is possible to extend your visa without the letters for visa extension and without FPCS registration for some commission.",
+                    "line-6": "However, if your passport expiration date is not long enough to extend the period of stay your request, you need to choose whether you shorten your extension of stay or you update your passport."
                 },
-                "q6": "Q: Please tell me the documents required for extension.",
+                "q6": "Q: What is FPCS that is required for visa update?",
                 "a6": {
-                    "line-1": "● Required for everyone",
-                    "line-2": "・Print a screen showing that the address has been registered with FPCS by using the app",
-                    "line-3": "● Obtain eVisa for electronic application and enter Japan",
-                    "line-4": "・Print the certificate of the eVisa application (sent as an email attachment)",
-                    "line-5": "Extensions from Business Visas (E) can be listed here.",
-                    "line-6": "● Update to EG visa",
-                    "line-7": "・Oath with the reason for requesting extension",
-                    "line-8": "● Update to EB visa",
-                    "line-9": "・Certificate of employment or patent with the name of the visa applicant (business tax payment certificate)",
-                    "line-10": "● Renewal from EG visa to EB visa or business visa (EB) for one or three months",
-                    "line-11": "・Work Permit added",
-                    "line-12": "● Update to ES visa",
-                    "line-13": "・A certificate of enrollment issued by a school registered with the Ministry of Education",
-                    "line-14": "● Update to ER visa",
-                    "line-15": "・If you are 55 or older, an oath that describes your income and how to earn it. If you are under 55 years old, the income certificate containing the translation certificate of the embassy."
+                    "line-1": "This is abbreviation of Foreigners Present in Cambodia System. It is set up by Immigration to control foreigners in Cambodia. Visa extension is not accepted without registering address with FPCS app. It can be downloaded with a smartphone.",
+                    "line-2": "Responsibility of FPCS registration lies with a house owner. Before you extend your visa, you need to ask your landlord to register your address with FPCS, and then hand you over the data of registration for visa extension.",
+                    "line-3": "It is possible for us to do registration jobs to avoid hassles and troubles."
                 },
-                "q7": "Q: I don't know how to write documents for visa extension.",
+                "q7": "Q: Which type of visa options for staying long term can you offer?",
                 "a7": {
-                    "line-1": "Our shop provides a service for those who want to omit the submission of documents.",
-                    "line-2": "・Job Seeker Visa (EG, $15)",
-                    "line-3": "・Business visa (EB, $40)",
-                    "line-4": "・Retirement visa (ER, $20)",
-                    "line-5": "The service will be provided for an additional fee."
+                    "line-1": "If you stay long time in Cambodia, please obtain business visa (E) (a.k.a. ordinary visa on arrival) in the beginning. You can stay in Cambodia for 1 month with the visa. During the stay in Cambodia, please apply for visa extension at an agency like us.",
+                    "line-2": "There are 4 visa options available to choose, EG (Job seeker’s visa),  EB (Business visa),  ES (Student visa), and ER (Retirement visa).\r\n Here we show the table to show  what kind of characteristics they have and what are requirements to obtain them. ",
+                    "line-3": "** EG (Job seeker’s visa)",
+                    "line-4": "- Visa for job seekers.",
+                    "line-5": "- The maximum extension of stay (EoS) is 6 months. In contrast, 1-year EoS is available for the other 3 visas (EB, ES, and ER).",
+                    "line-6": "- When extending visa again from EG, Work permit copy is required.",
+                    "line-7": "* Requirements to EG",
+                    "line-8": "- Declaration letter",
+                    "line-9": "- Printout of FPCS registration screenshot",
+                    "line-10": "** EB (Business visa)",
+                    "line-11": "- Visa for workers, their spouse, and children",
+                    "line-12": "* Requirements to EB",
+                    "line-13": "- Employment letter (Owners need Patent Tax copy instead)",
+                    "line-14": "- For 1-month and 3-month extension, Work permit is required. But NOT required for 6-month and 12-month extension.",
+                    "line-15": "- Printout of FPCS registration screenshot",
+                    "line-16": "** ES (Student visa)",
+                    "line-17": "- Visa for students",
+                    "line-18": "- The school you belong to needs to be registered in Ministry of Education.",
+                    "line-19": "- ES visa holders cannot be accompanied with their parents and their siblings.",
+                    "line-20": "* Requirements to ES",
+                    "line-21": "- Student enrollment letter",
+                    "line-22": "- Printout of FPCS registration screenshot",
+                    "line-23": "** ER (Retirement visa)",
+                    "line-24": "- Visa for retired persons",
+                    "line-25": "- ER visa holders cannot be accompanied with their spouses. They need to obtain business visas or others instead.",
+                    "line-26": "* Requirements to ER for 55 years or older",
+                    "line-27": "- Declaration letter that describes how you get your income and how much you earn.",
+                    "line-28": "- Printout of FPCS registration screenshot",
+                    "line-29": "* Requirements to ER for less than 55 years",
+                    "line-30": "- Income certificate written in English with an embassy stamp",
+                    "line-31": "- Printout of FPCS registration screenshot"
                 },
-                "q8": "Q: I have a tourist visa. Can I extend my stay?",
-                "a8": "You can extend it. However, extension is only once. You can only extend it for one month. If you plan to stay for more than 2 months, please obtain a business visa (changed to a general visa for arrivals) at the embassy in advance.",
-                "q9": "Q: How long does it take to get my visa renewed?",
-                "a9": {
-                    "line-1": "It takes one to two weeks. The waiting time may be longer due to immigration bureau and Cambodia holidays. Meanwhile, the immigration office keeps your passport.",
-                    "line-2": "If you want to bring your passport immediately, you can use the express visa service. By paying an additional fee (+$75), delivery will be possible the next business day morning."
+                "q8": "Q: I don’t afford to get ready for a letter for visa extension. How can I stay longer?",
+                "a8": {
+                    "line-1": "In our shop, we offer service to skip letters. The price is as follows:",
+                    "line-2": "- Job seeker’s visa (EG, $15)",
+                    "line-3": "- Business visa (EB, $40)",
+                    "line-4": "- Retirement visa (ER, $20",
+                    "line-5": ""
                 },
-                "q10": "Q: I want to stay in Cambodia for a long time, so I want to change from a tourist visa (T) to a business visa (E). Can I change it?",
-                "a10": "Visa types cannot be changed within Cambodia. Please go abroad and get your visa again.",
-                "q11": "Q: My visa has expired. Can you accept it?",
-                "a11": "It is possible to accept. If you are overstaying, there is an additional charge of $10 per day.",
-                "q12": "Q: How long do I have to pay for the additional charges?",
-                "a12": "If you can come by 11am on the deadline, there will be no additional charge."
+                "q9": "Q: I hold tourist visa (T), but I want to stay in Cambodia longer. Can I convert from tourist visa (T) to business visa (E) in your shop?",
+                "a9": "No. Cannot. You need to leave from Cambodia and enter Cambodia again.",
+                "q10": "Q: My visa is already expired and I overstay. Can you accept my visa update?",
+                "a10": {
+                    "line-1": "Yes, possible. Overstay penalty fee is $10/(overstay day).",
+                    "line-2": "But we cannot warranty whether your update is succeeded if you overstay more than 100 days."
+                },
+                "q11": "Q: When is the deadline of application for Cambodia visa extension?",
+                "a11": "If you visit our shop by the morning time of visa expiration date, you don’t have to pay penalty fee. If Immigration accept your visa extension within your expiration date, you don’t have to pay penalty fee."
             }
         }
     },
