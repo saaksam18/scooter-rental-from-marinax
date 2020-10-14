@@ -21,7 +21,7 @@
                             <td class="text-center"><span>{{ 'scooter-rental.table.monthly-rental' | translate }}</span></td>
                             <td class="pl-5"><span>{{ 'scooter-rental.table.monthly-rental-des' | translate }}</span></td>
                         </tr>
-                        <tr>
+                        <tr *ngIf="('scooter-rental.table.day-rental' | translate) !=''">
                             <td class="text-center"><span>{{ 'scooter-rental.table.day-rental' | translate }}</span></td>
                             <td class="pl-5"><span>{{ 'scooter-rental.table.day-rental-des' | translate }}</span></td>
                         </tr>

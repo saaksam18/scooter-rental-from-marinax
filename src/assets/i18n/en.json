@@ -149,12 +149,12 @@
     },
     "scooter-rental": {
         "title": "Scooter rental service",
-        "sub-title": "Well maintained scooter, safe aftercare",
+        "sub-title": "Well maintained scooter with relaible aftercare services",
         "table": {
             "monthly-rental": "For residents of Phnom Penh (monthly rental)",
             "monthly-rental-des": "$60-130",
-            "day-rental": "For business travelers/travelers (week rental)",
-            "day-rental-des": "From $21-50"
+            "day-rental": "",
+            "day-rental-des": ""
         },
         "reliable-des": "Maintenance by professional mechanic staffs",
         "equip-des": "Offer FREE security tools",
@@ -388,7 +388,8 @@
         "step-3": {
             "title": "Advisor of International Transfer between Japan & Cambodia",
             "des-1": "Providing the 'best rate' through the Phnom Penh money changer network",
-            "des-2": "Saves information search costs/time for currency exchange operations"
+            "des-2": "",
+            "des-3": "Saves information search costs/time for currency exchange operations"
         },
         "step-4": {
             "title": "International money transfer consulting business",
@@ -418,15 +419,19 @@
         "subject":"Subject",
         "message":"Message",
         "our-location": "OUR LOCATION",
-        "address": {
-            "line-1": "#38E0, St.322, Boeung Keng Kang 1, Phnom Penh",
-            "line-2": "In BKK1 area, going down St.63 and turn right on St.322 (Eric Kayser at corner)"
+        "address": "EMC is located in the center of Phnom Penh, BKK1.Going down St.63 and turn right on St.322 (Eric Kayser at corner)",
+        "google-review": {
+            "line-1": "Google Review (78) Scooter Rental",
+            "line-2": "Google Review (40) Visa Extension",
+            "line-3": "Google Review (19) Currency Exchange"
         },
         "work-hours": "WORKING HOURS",
         "time": "Business Hours: 09:00-17:30 Mon-Sat",
+        "holiday": "Holiday: Sunday & National holiday",
         "phone-number": {
             "title": "PHONE NUMBER",
-            "line-1": "Scooter Rental: +855(0)89 518 867 (JPN, ENG)",
+            "head": "Scooter Rental:",
+            "text": "+855(0)89 518 867 (JPN, ENG)",
             "line-2": "Visa: +855 (0)69 270 040 (JPN, ENG)"
         }
     },
