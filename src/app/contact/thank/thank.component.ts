@@ -19,6 +19,7 @@ export class ThankComponent implements OnInit {
 		private translate: TranslateService,
 		private router: Router
 	) {
+		this.meta.addTag({ name: 'robots', content: 'noindex, nofollow' });
 		this.meta.updateTag({ property: 'og:title', content: 'EMC Thank You' });
 		this.meta.updateTag({ property: 'og:description', content: "" });
 		this.meta.updateTag({ property: 'og:image', content: "" });
