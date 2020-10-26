@@ -151,13 +151,14 @@
         "title": "Scooter rental service",
         "sub-title": "Well maintained scooter with relaible aftercare services",
         "table": {
-            "monthly-rental": "For residents of Phnom Penh (monthly rental)",
-            "monthly-rental-des": "$60-130",
+            "monthly-rental": "For Expat in Phnom Penh",
+            "monthly-rental-des": "Monthly  60-130USD",
             "day-rental": "",
             "day-rental-des": ""
         },
         "reliable-des": "Maintenance by professional mechanic staffs",
         "equip-des": "Offer FREE security tools",
+        "attension": "Attension: Sorry not rent motor to Tourist",
         "flow": {
             "title": "Flow to bike rental",
             "step-1": "Advance preparation",
