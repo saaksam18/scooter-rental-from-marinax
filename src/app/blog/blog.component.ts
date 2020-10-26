@@ -23,6 +23,7 @@ export class BlogComponent implements OnInit {
         private router: Router,
         private appService: ApiserverService,
 	) {
+        this.meta.addTag({ name: 'robots', content: 'noindex, nofollow' });
 		this.meta.updateTag({ name: 'description', content: '' });
 		this.meta.updateTag({ name: 'keywords', content: '' });
         this.meta.updateTag({ property: 'og:title', content: 'Emc Blogs' });

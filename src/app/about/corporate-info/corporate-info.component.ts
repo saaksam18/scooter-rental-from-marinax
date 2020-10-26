@@ -19,6 +19,7 @@ export class CorporateInfoComponent implements OnInit {
 		private translate: TranslateService,
 		private router: Router
 	) {
+		this.meta.addTag({ name: 'robots', content: 'noindex, nofollow' });
 		this.meta.updateTag({ name: 'description', content: '' });
 		this.meta.updateTag({ name: 'keywords', content: '' });
 		this.meta.updateTag({ property: 'og:title', content: 'Emc Corporate Information' });
