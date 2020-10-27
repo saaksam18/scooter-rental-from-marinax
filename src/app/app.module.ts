@@ -31,6 +31,7 @@ import { TeamsComponent } from './about/teams/teams.component';
 import { TravelAgencyComponent } from './business/travel-agency/travel-agency.component';
 import { SlimLoadingBarModule } from 'ng2-slim-loading-bar';
 import { NgxLoadingModule } from 'ngx-loading';
+import { RemittanceComponent } from './business/remittance/remittance.component';
 @NgModule({
 	declarations: [
 		AppComponent,
@@ -53,7 +54,8 @@ import { NgxLoadingModule } from 'ngx-loading';
 		ContactComponent,
 		ThankComponent,
 		TeamsComponent,
-		TravelAgencyComponent
+		TravelAgencyComponent,
+		RemittanceComponent
 	],
 	imports: [
 		BrowserModule,

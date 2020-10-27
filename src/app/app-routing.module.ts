@@ -15,6 +15,7 @@ import { Error404Component } from './error404/error404.component';
 import { BlogComponent } from './blog/blog.component';
 import { TeamsComponent } from './about/teams/teams.component';
 import { TravelAgencyComponent } from './business/travel-agency/travel-agency.component';
+import { RemittanceComponent } from './business/remittance/remittance.component';
 
 const routes: Routes = [
 	{
@@ -102,6 +103,14 @@ const routes: Routes = [
 				pathMatch: 'full',
 				data: {
 					breadcrumb: 'menu.travel-agency'
+				},
+			},
+			{
+				path: 'remittance',
+				component: RemittanceComponent,
+				pathMatch: "full",
+				data: {
+					breadcrumb: 'menu.remittance'
 				},
 			}
 		]
