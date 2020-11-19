@@ -9,6 +9,7 @@
         "visa": "EMC | Visa-Work Permit",
         "exchange": "EMC | Exchange",
         "travel-agency": "EMC | Travel Agency",
+        "remittance": "EMC | International Remittance",
         "blog": "EMC | Blog",
         "contact": "EMC | Contact Us",
         "site-map": "EMC | Site Map",
@@ -34,6 +35,7 @@
         "visa-wp": "Visa & WP",
         "current-exchange": "Currency Exchange",
         "travel-agency": "Travel Agency",
+        "remittance": "International Remittance",
         "blog": "Blog",
         "contact": "Contact",
         "privacy": "Privacy Policy",
@@ -70,6 +72,16 @@
             "work-permit": "/ Work Permit",
             "travel-agency": "Travel Agent",
             "domestic": "(Domestic & Overseas)"
+        }
+    },
+    "sidebar": {
+        "address": {
+            "title" : "Address",
+            "text" : "38E0 St 322, Phnom Penh"
+        },
+        "holiday": {
+            "title" : "Regular holiday",
+            "text" : "Sundays, public holidays"
         }
     },
     "outline": {
@@ -374,9 +386,7 @@
         "flow": {
             "title": "Features of our currency exchange service",
             "step-1": "ATM Currency Exchange (24/7)",
-            "step-2": "Currency Exchange Service",
-            "step-3": "Advisor of International Transfer between Japan & Cambodia ",
-            "step-4": "International money transfer consulting business"
+            "step-2": "Currency Exchange Service"
         },
         "step-1": {
             "title": "ATM Currency Exchange (24/7)",
@@ -386,17 +396,26 @@
             "title": "Currency Exchange Service",
             "des-1": "Large amount and corporate exchange *Please contact us in advance before visiting"
         },
-        "step-3": {
+        "step": "STEP"
+    },
+    "remittance": {
+        "title": "International Remittance",
+        "sub-title": "New international money transfer service from the customer's perspective",
+        "flow": {
+            "title": "Features of international money transfer service",
+            "step-1": "Advisor of International Transfer between Japan & Cambodia ",
+            "step-2": "International money transfer consulting business"
+        },
+        "step-1": {
             "title": "Advisor of International Transfer between Japan & Cambodia",
             "des-1": "Providing the 'best rate' through the Phnom Penh money changer network",
             "des-2": "",
             "des-3": "Saves information search costs/time for currency exchange operations"
         },
-        "step-4": {
+        "step-2": {
             "title": "International money transfer consulting business",
             "des": "If you have any problems with remittance between Japan and Cambodia, please consult us (Facebook Profile link)"
-        },
-        "feature": "Feature"
+        }
     },
     "blog": {
         "hisashi": "Hisashi",
@@ -427,8 +446,9 @@
             "line-3": "Google Review (19) Currency Exchange"
         },
         "work-hours": "WORKING HOURS",
-        "time": "Business Hours: 09:00-17:30 Mon-Sat",
-        "holiday": "Holiday: Sunday & National holiday",
+        "time": "Business Hours: 09:00-17:30",
+        "workday": "Business days: Monday to Saturday",
+        "holiday": "Regular holidays: Sundays, public holidays",
         "phone-number": {
             "title": "PHONE NUMBER",
             "head": "Scooter Rental:",

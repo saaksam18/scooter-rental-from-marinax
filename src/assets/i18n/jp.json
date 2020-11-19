@@ -9,6 +9,7 @@
         "visa": "EMC | Visa-Work Permit",
         "exchange": "EMC | Exchange",
         "travel-agency": "EMC | Travel Agency",
+        "remittance": "EMC | International Remittance",
         "blog": "EMC | Blog",
         "contact": "EMC | Contact Us",
         "site-map": "EMC | Site Map",
@@ -34,6 +35,7 @@
         "visa-wp" : "ビザサービス・労働許可証",
         "current-exchange" : "外貨両替",
         "travel-agency" : "旅行代理店（国内ツアー）",
+        "remittance" : "国際送金",
         "blog": "ブログ",
         "contact": "お問い合わせ",
         "privacy": "プライバシーポリシー",
@@ -70,6 +72,16 @@
             "work-permit": "労働許可証",
             "travel-agency": "旅行代理店",
             "domestic": "（国内ツアー）"
+        }
+    },
+    "sidebar": {
+        "address": {
+            "title" : "住所",
+            "text" : "38E0 St 322, Phnom Penh"
+        },
+        "holiday": {
+            "title" : "定休日",
+            "text" : "日、祝日"
         }
     },
     "outline": {
@@ -374,9 +386,7 @@
         "flow": {
             "title": "弊社両替サービスの特徴",
             "step-1": "外貨両替ATM（24/7）",
-            "step-2": "店頭両替",
-            "step-3": "外貨両替代理業務",
-            "step-4": "国際送金コンサルティング業務"
+            "step-2": "店頭両替"
         },
         "step-1": {
             "title": "外貨両替ATM（24/7）",
@@ -386,17 +396,26 @@
             "title": "店頭両替",
             "des-1": "大口および法人両替　＊ご来店の前に事前連絡頂けますようお願いします"
         },
-        "step-3": {
+        "step": "特徴"
+    },
+    "remittance": {
+        "title": "国際送金",
+        "sub-title": "顧客視点による新しい国際送金サービス",
+        "flow": {
+            "title": "国際送金サービスの特徴",
+            "step-1": "外貨両替代理業務",
+            "step-2": "国際送金コンサルティング業務"
+        },
+        "step-1": {
             "title": "外貨両替代理業務",
             "des-1": "プノンペン両替商ネットワークを通じた",
             "des-2": "”ベストレート”の提供",
             "des-3": "両替業務にかかる情報探索コスト/時間を節約"
         },
-        "step-4": {
+        "step-2": {
             "title": "国際送金コンサルティング業務",
             "des": "日本⇔カンボジア間の送金でお困りなら相談乗ります（Facebook Profileのリンク）"
-        },
-        "feature": "特徴"
+        }
     },
     "blog": {
         "hisashi": "Hisashi",
@@ -428,7 +447,8 @@
         },
         "work-hours": "労働時間",
         "time": "営業時間：０９～１７時半",
-        "holiday": "営業日：月曜～土曜営業　日祝日定休",
+        "workday": "営業日：月曜～土曜営業",
+        "holiday": "定休日: 日,祝日",
         "phone-number": {
             "title": "電話番号",
             "head": "スクーターレンタル：",
