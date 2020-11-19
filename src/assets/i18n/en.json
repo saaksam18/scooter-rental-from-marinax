@@ -179,13 +179,17 @@
         },
         "step-1": {
             "title": "Please have the following required documents at hand.",
-            "des-1": "・Passport",
-            "des-2": "・If there are other required documents"
+            "des-1": "",
+            "des-2": "",
+            "des-3": "",
+            "des-4": "",
+            "des-5": ""
         },
         "step-2": {
             "title": "EMC shop",
-            "des-1": "Please visit EMC and select the bike you want to contact.",
-            "des-2": "If you have a desired car model in advance, please contact us."
+            "des-1": "",
+            "des-2": "If you have a desired car model in advance, please contact us.",
+            "des-3": ""
         },
         "step-3": {
             "title": "Rental as it is",
@@ -383,6 +387,10 @@
     "exchange": {
         "title": "Currency Exchange",
         "sub-title": "Fast, Convenient (BKK1) and Reliable Currency Exchange",
+        "sub-title02": {
+            "line-1": "",
+            "line-2": ""
+        },
         "flow": {
             "title": "Features of our currency exchange service",
             "step-1": "ATM Currency Exchange (24/7)",
@@ -390,17 +398,29 @@
         },
         "step-1": {
             "title": "ATM Currency Exchange (24/7)",
-            "des": "Small currency exchange, speedy and accurate currency exchange service"
+            "desc-1": "Small currency exchange, speedy and accurate currency exchange service",
+            "desc-2": "",
+            "desc-3": ""
         },
         "step-2": {
             "title": "Currency Exchange Service",
-            "des-1": "Large amount and corporate exchange *Please contact us in advance before visiting"
+            "desc-1": "Large amount and corporate exchange *Please contact us in advance before visiting",
+            "desc-2": "",
+            "desc-3": "",
+            "desc-4": "",
+            "desc-5": "",
+            "desc-6": ""
         },
-        "step": "STEP"
+        "step": "STEP",
+        "desc": {
+            "line-1": "",
+            "line-2": ""
+        }
     },
     "remittance": {
         "title": "International Remittance",
         "sub-title": "New international money transfer service from the customer's perspective",
+        "sub-title02": "",
         "flow": {
             "title": "Features of international money transfer service",
             "step-1": "Advisor of International Transfer between Japan & Cambodia ",
@@ -414,7 +434,30 @@
         },
         "step-2": {
             "title": "International money transfer consulting business",
-            "des": "If you have any problems with remittance between Japan and Cambodia, please consult us (Facebook Profile link)"
+            "desc": {
+                "line-1": "If you have any problems with remittance between Japan and Cambodia, please consult us (Facebook Profile link)",
+                "line-2": "",
+                "line-3": "",
+                "line-4": "",
+                "line-5": "",
+                "line-6": "",
+                "line-7": "",
+                "line-8": "",
+                "line-9": "",
+                "line-10": "",
+                "line-11": "",
+                "line-12": "",
+                "line-13": ""
+            }
+        },
+        "desc": {
+            "line-1": "",
+            "line-2": "",
+            "line-3": "",
+            "line-4": "",
+            "line-5": "",
+            "line-6": "",
+            "line-7": ""
         }
     },
     "blog": {

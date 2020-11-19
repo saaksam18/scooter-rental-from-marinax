@@ -10,7 +10,10 @@
                 <h3 class="title-border">{{ 'scooter-rental.title' | translate }}</h3>
             </div>
             <div class="col-12">
-                <div class="sub-title"> 
+                <p class="font-weight-bold sub-title mb-5">
+                    4.7 <span>★★★★☆</span>{{ 'contact.google-review.line-1' | translate }}
+                </p>
+                <div class="sub-title">
                     <span>{{ 'scooter-rental.sub-title' | translate }}</span>
                 </div>
             </div>
@@ -70,8 +73,9 @@
                         <dd>
                             <p>{{ 'scooter-rental.step-1.des-1' | translate }}</p>
                             <p>{{ 'scooter-rental.step-1.des-2' | translate }}</p>
-                            <p>{{ 'scooter-rental.step-1.des-2' | translate }}</p>
-                            <p>{{ 'scooter-rental.step-1.des-2' | translate }}</p>
+                            <p>{{ 'scooter-rental.step-1.des-3' | translate }}</p>
+                            <p>{{ 'scooter-rental.step-1.des-4' | translate }}</p>
+                            <p>{{ 'scooter-rental.step-1.des-5' | translate }}</p>
                         </dd>
                     </dl>
                 </div>
@@ -85,8 +89,9 @@
                             {{ 'scooter-rental.step-2.title' | translate }}
                         </dt>
                         <dd>
-                            <p>{{ 'scooter-rental.step-2.des-1' | translate }}</p>
+                            <p *ngIf="('scooter-rental.step-2.des-1' | translate) !=''">EMCにご来店いただき、<a href="https://drive.google.com/file/d/1JUPbJe0S-E8SlMpScEF8clhj3rHS6c5F/view">レンタルしたいバイク</a>を選んでいただきます。</p>
                             <p>{{ 'scooter-rental.step-2.des-2' | translate }}</p>
+                            <p>{{ 'scooter-rental.step-2.des-3' | translate }}</p>
                         </dd>
                     </dl>
                 </div>

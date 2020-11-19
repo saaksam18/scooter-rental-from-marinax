@@ -24,9 +24,7 @@
         font-weight: 700;
         margin-bottom: 30px;
         line-height: 1.8;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        text-align: center;
         @media screen and (max-width: $smart-phone) {
             font-size: 2rem;
             display: inline-block;
@@ -38,16 +36,47 @@
     }
 }
 .remittance {
-    .scene-block {
-        &:nth-of-type(1) {
-            .scene-right {
-                background: url("../../../assets/images/business/foreign-currency-exchange.jpg") no-repeat center center;
-            }
+    .scene-block01 {
+        .scene-right {
+            background: url("../../../assets/images/business/foreign-currency-exchange.jpg") no-repeat center center;
         }
-        &:nth-of-type(2) {
-            .scene-right {
-                background: url("../../../assets/images/business/money-transfer.jpg") no-repeat center center;
-            }
+        .scene-left::after {
+            content: '01';
         }
+    }
+    .scene-block02 {
+        height: 500px;
+        .scene-right {
+            background: url("../../../assets/images/business/money-transfer.jpg") no-repeat center center;
+        }
+        .scene-left::after {
+            content: '02';
+        }
+        @media screen and (max-width: $desktop){
+            height: auto;
+        }
+    }
+    &-desc {
+        font-size: 14px;
+        @media screen and (max-width: $smart-phone) {
+            margin-bottom: 70px;
+        }
+        p {
+            margin-bottom: 0px;
+        }
+    }
+    .pr-70 {
+        padding-right: 70px;
+        @media screen and (max-width: $small-device) {
+            padding-right: 10px;
+        }
+    }
+    .f-30 {
+        font-size: 30px;
+    }
+    .arrow-point {
+        display: flex;
+        align-items: center;
+        line-height: 0;
     }
 }
