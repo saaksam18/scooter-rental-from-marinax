@@ -24,17 +24,18 @@
         font-weight: 700;
         margin-bottom: 30px;
         line-height: 1.8;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        text-align: center;
         @media screen and (max-width: $smart-phone) {
             font-size: 2rem;
             display: inline-block;
             text-align: left;
         }
-        @media screen and (max-width: $small-device) {
-            font-size: 1.7rem;
+        @media screen and (max-width: $small-device){
+            font-size: 16px;
         }
+    }
+    .google-review {
+        font-size: 20px;;
     }
     .header-desc {
         span {
@@ -83,6 +84,11 @@
         &:nth-of-type(3) {
             .scene-right {
                 background: url("../../../assets/images/business/rentels.jpg") no-repeat center center;
+            }
+        }
+        .img-price-list{
+            img {
+                width: 180px;
             }
         }
     }

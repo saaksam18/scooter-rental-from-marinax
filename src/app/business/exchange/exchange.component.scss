@@ -24,16 +24,14 @@
         font-weight: 700;
         margin-bottom: 30px;
         line-height: 1.8;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        text-align: center;
         @media screen and (max-width: $smart-phone) {
             font-size: 2rem;
             display: inline-block;
             text-align: left;
         }
         @media screen and (max-width: $small-device){
-            font-size: 1.7rem;
+            font-size: 16px;
         }
     }
 }
