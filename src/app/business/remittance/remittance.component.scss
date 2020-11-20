@@ -31,7 +31,7 @@
             text-align: left;
         }
         @media screen and (max-width: $small-device){
-            font-size: 1.7rem;
+            font-size: 1.6rem;
         }
     }
 }
@@ -58,7 +58,7 @@
     }
     &-desc {
         font-size: 14px;
-        @media screen and (max-width: $smart-phone) {
+        @media screen and (max-width: $desktop) {
             margin-bottom: 70px;
         }
         p {
