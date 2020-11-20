@@ -43,7 +43,7 @@ export class VisaComponent implements OnInit {
 			
 		toggle.click(function(){
 			$(this).toggleClass("minus");
-			$(this).siblings(".content-A").slideToggle( "slow" );
+			$(this).siblings(".content-A").stop().slideToggle( "slow" );
 		});
 	}
 

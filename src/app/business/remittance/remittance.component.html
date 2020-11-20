@@ -10,9 +10,10 @@
                 <h3 class="title-border">{{ 'remittance.title' | translate }}</h3>
             </div>
             <div class="col-12">
-                <div class="sub-title"> 
-                    <span>{{ 'remittance.sub-title' | translate }}</span>
-                </div>
+                <p class="font-weight-bold sub-title mb-5">
+                    5.0 <span>★★★★★</span>{{ 'contact.google-review.line-3' | translate }}
+                </p>
+                <p class="sub-title font-weight-bold mb-5">{{ 'remittance.sub-title02' | translate }}</p>
             </div>
         </div>
     </div>
@@ -36,8 +37,17 @@
                     <div class="scene-text">{{ 'remittance.flow.step-2' | translate }}</div>
                 </li>
             </ul>
+            <div class="remittance-desc">
+                <p>{{ 'remittance.desc.line-1' | translate }}</p>
+                <p class="mb-5">{{ 'remittance.desc.line-2' | translate }}</p>
+                <p class="pl-5">{{ 'remittance.desc.line-3' | translate }}</p>
+                <p class="pl-5">{{ 'remittance.desc.line-4' | translate }}</p>
+                <p class="pl-5">{{ 'remittance.desc.line-5' | translate }}</p>
+                <p class="pl-5 mb-5">{{ 'remittance.desc.line-6' | translate }}</p>
+                <p class="mb-5">{{ 'remittance.desc.line-7' | translate }}</p>
+            </div>
             <!-- Section 01 -->
-            <div class="scene-block">
+            <div class="scene-block scene-block01">
                 <div class="scene-left">
                     <dl>
                         <dt>
@@ -47,20 +57,41 @@
                             <p>{{ 'remittance.step-1.des-1' | translate }}</p>
                             <p>{{ 'remittance.step-1.des-2' | translate }}</p>
                             <p>{{ 'remittance.step-1.des-3' | translate }}</p>
+                            <p>{{ 'remittance.step-1.des-4' | translate }}</p>
+                            <p>{{ 'remittance.step-1.des-5' | translate }}</p>
+                            <p>{{ 'remittance.step-1.des-6' | translate }}</p>
+                            <p>{{ 'remittance.step-1.des-7' | translate }}</p>
                         </dd>
                     </dl>
                 </div>
                 <div class="scene-right"></div>
             </div>
             <!-- Section 02 -->
-            <div class="scene-block">
+            <div class="scene-block scene-block02">
                 <div class="scene-left">
                     <dl>
                         <dt>
                             {{ 'remittance.step-2.title' | translate }}
                         </dt>
                         <dd>
-                            <p>{{ 'remittance.step-2.des' | translate }}</p>
+                            <p>{{ 'remittance.step-2.desc.line-1' | translate }}</p>
+                            <p class="mb-5">{{ 'remittance.step-2.desc.line-2' | translate }}</p>
+                            <div class="row">
+                                <div class="col">
+                                    <p>{{ 'remittance.step-2.desc.line-3' | translate }}</p>
+                                    <p>{{ 'remittance.step-2.desc.line-4' | translate }}</p>
+                                    <p class="arrow-point"><span class="pr-70">{{ 'remittance.step-2.desc.line-5' | translate }}</span><span *ngIf="('remittance.step-2.desc.line-5' | translate) !=''" class="font-weight-bold f-30">→</span></p></div>
+                                <div class="col">
+                                    <p>{{ 'remittance.step-2.desc.line-6' | translate }}</p>
+                                    <p class="mb-0">{{ 'remittance.step-2.desc.line-7' | translate }}</p>
+                                    <p class="mb-0">{{ 'remittance.step-2.desc.line-8' | translate }}</p>
+                                    <p class="mb-0">{{ 'remittance.step-2.desc.line-9' | translate }}</p>
+                                    <p>{{ 'remittance.step-2.desc.line-10' | translate }}</p>
+                                </div>
+                            </div>
+                            <p>{{ 'remittance.step-2.desc.line-11' | translate }}</p>
+                            <p>{{ 'remittance.step-2.desc.line-12' | translate }}</p>
+                            <p>{{ 'remittance.step-2.desc.line-13' | translate }}</p>
                         </dd>
                     </dl>
                 </div>
