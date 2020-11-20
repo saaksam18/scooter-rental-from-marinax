@@ -38,16 +38,26 @@
     }
 }
 .exchange {
-    .scene-block {
-        &:nth-of-type(1) {
-            .scene-right {
-                background: url("../../../assets/images/business/atm.jpg") no-repeat center center;
-            }
+    .scene-block01 {
+        .scene-right {
+            background: url("../../../assets/images/business/atm.jpeg") no-repeat center center;
         }
-        &:nth-of-type(2) {
-            .scene-right {
-                background: url("../../../assets/images/business/exchange1.jpg") no-repeat center center;
-            }
+        .scene-left::after {
+            content: '01';
+        }
+    }
+    .scene-block02 {
+        .scene-right {
+            background: url("../../../assets/images/business/exchange1.jpg") no-repeat center center;
+        }
+        .scene-left::after {
+            content: '02';
+        }
+    }
+    &-desc {
+        font-size: 14px;
+        @media screen and (max-width: $smart-phone) {
+            margin-bottom: 70px;
         }
     }
 }
