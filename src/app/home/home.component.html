@@ -112,26 +112,34 @@
     <!-- Japanese Shop/KUBO BRO & khmer section -->
     <div id="japan" class="w-100 bg-white section-padding japan-shop" data-aos="fade-up" data-aos-delay="50">
         <h3 class="mb-5 access__title yellow-title">{{ 'home.japan-shop.title' | translate }}</h3>
-        <table class="table table-bordered bg-white mt-5">
-            <thead>
-                <tr>
-                    <th class="p-2 p-md-4" scope="col">{{ 'home.japan-shop.kansai' | translate }}</th>
-                    <th class="p-2 p-md-4" scope="col" colspan="2">{{ 'home.japan-shop.store-by-Kubo' | translate }}</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="p-2 p-md-4">{{ 'home.japan-shop.kubo' | translate }}</td>
-                    <td class="p-2 p-md-4">{{ 'home.japan-shop.visa-work-permit' | translate }}</td>
-                    <td class="p-2 p-md-4 text-center unbreak-text">{{ 'home.japan-shop.responsible' | translate }}</td>
-                </tr>
-                <tr>
-                    <td class="p-2 p-md-4">{{ 'home.japan-shop.kubo-brother' | translate }}</td>
-                    <td class="p-2 p-md-4">{{ 'home.japan-shop.currency-exchange' | translate }}</td>
-                    <td class="p-2 p-md-4 text-center unbreak-text">{{ 'home.japan-shop.responsible' | translate }}</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="row mt-5">
+            <div class="col-12 col-xl-4 japan-shop-thumb">
+                <img src="../../assets/images/business/emc-shop.jpg" alt="左:久保俊吾（弟）右:久保久志（兄）">
+                <div class="img-desc mt-3">{{ 'home.japan-shop.img-desc' | translate }}</div>
+            </div>
+            <div class="col-12 col-xl-8">
+                <table class="table table-bordered bg-white">
+                    <thead>
+                        <tr>
+                            <th class="px-3 py-4 left-header" scope="col">{{ 'home.japan-shop.kansai' | translate }}</th>
+                            <th class="px-3 py-4" scope="col" colspan="2">{{ 'home.japan-shop.store-by-Kubo' | translate }}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="px-3 py-5">{{ 'home.japan-shop.kubo' | translate }}</td>
+                            <td class="px-3 py-5">{{ 'home.japan-shop.visa-work-permit.line-1' | translate }}<br>{{ 'home.japan-shop.visa-work-permit.line-2' | translate }}</td>
+                            <td class="px-3 py-5 text-center unbreak-text">{{ 'home.japan-shop.responsible' | translate }}</td>
+                        </tr>
+                        <tr>
+                            <td class="px-3 py-5">{{ 'home.japan-shop.kubo-brother' | translate }}</td>
+                            <td class="px-3 py-5">{{ 'home.japan-shop.currency-exchange' | translate }}</td>
+                            <td class="px-3 py-5 text-center unbreak-text">{{ 'home.japan-shop.responsible' | translate }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
 
     <!-- business section -->
@@ -139,21 +147,29 @@
         <h3 class="yellow-title">{{ 'home.title.our-business' | translate }}<span>{{ 'home.sub-title.our-business' | translate }}</span></h3>
         <div class="business__link">
             <div class="row no-gutters">
-                <div class="col-lg-3 col-6">
+                <div class="col-lg-3 col-md-6 col-12">
                     <a routerLink="/business/scooter-rental">
                         <p class="w-100 position-absolute text-center">{{ 'menu.scoter-rental' | translate }}</p>
                         <img class="position-relative" src="../../assets/images/business/scooter-rental.jpg" alt="Scooter rental">
                         <div class="bg-overlay"></div>
                     </a>
+                    <p class="font-weight-bold google-review mt-5">
+                        <!-- 4.7 <span>★★★★☆</span><br>{{ 'contact.google-review.line-1' | translate }} -->
+                        4.7 <span>★★★★☆</span><br>Googleクチコミ（78） <br>スクーターレンタル
+                    </p>
                 </div>
-                <div class="col-lg-3 col-6">
+                <div class="col-lg-3 col-md-6 col-12">
                     <a routerLink="/business/visa">
                         <p class="w-100 position-absolute text-center">{{ 'home.business.visa' | translate }}<br>{{ 'home.business.work-permit' | translate }}</p>
                         <img class="position-relative" src="../../assets/images/business/visa.jpg" alt="Visa and work permit">
                         <div class="bg-overlay"></div>
                     </a>
+                    <p class="font-weight-bold google-review mt-5">
+                        <!-- 4.6 <span>★★★★☆</span>{{ 'contact.google-review.line-2' | translate }} -->
+                        4.6 <span>★★★★☆</span><br>Googleクチコミ（40） <br>VISAサービス
+                    </p>
                 </div>
-                <div class="col-lg-3 col-6">
+                <div class="col-lg-3 col-md-6 col-12">
                     <a routerLink="/business/remittance">
                         <p class="w-100 position-absolute text-center">
                             <span class="d-block">{{ 'menu.remittance' | translate }}</span>
@@ -161,13 +177,21 @@
                         <img class="position-relative" src="../../assets/images/travel.jpg" alt="Travel agency">
                         <div class="bg-overlay"></div>
                     </a>
+                    <p class="font-weight-bold google-review mt-5">
+                        <!-- 5.0 <span>★★★★★</span>{{ 'contact.google-review.line-3' | translate }} -->
+                        5.0 <span>★★★★★</span><br>Googleクチコミ（19） <br>外貨両替サービス
+                    </p>
                 </div>
-                <div class="col-lg-3 col-6">
+                <div class="col-lg-3 col-md-6 col-12">
                     <a routerLink="/business/exchange">
                         <p class="w-100 position-absolute text-center">{{ 'menu.current-exchange' | translate }}</p>
                         <img class="position-relative" src="../../assets/images/business/currency-exchange.jpg" alt="Currency exchange">
                         <div class="bg-overlay"></div>
                     </a>
+                    <p class="font-weight-bold google-review mt-5">
+                        <!-- 5.0 <span>★★★★★</span>{{ 'contact.google-review.line-3' | translate }} -->
+                        5.0 <span>★★★★★</span><br>Googleクチコミ（19） <br>外貨両替サービス
+                    </p>
                 </div>
             </div>
         </div>

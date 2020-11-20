@@ -75,7 +75,6 @@
                             <p>{{ 'scooter-rental.step-1.des-2' | translate }}</p>
                             <p>{{ 'scooter-rental.step-1.des-3' | translate }}</p>
                             <p>{{ 'scooter-rental.step-1.des-4' | translate }}</p>
-                            <p>{{ 'scooter-rental.step-1.des-5' | translate }}</p>
                         </dd>
                     </dl>
                 </div>
@@ -89,9 +88,14 @@
                             {{ 'scooter-rental.step-2.title' | translate }}
                         </dt>
                         <dd>
-                            <p *ngIf="('scooter-rental.step-2.des-1' | translate) !=''">EMCにご来店いただき、<a href="https://drive.google.com/file/d/1JUPbJe0S-E8SlMpScEF8clhj3rHS6c5F/view">レンタルしたいバイク</a>を選んでいただきます。</p>
+                            <p *ngIf="('scooter-rental.step-2.des-1' | translate) !=''">{{ 'scooter-rental.step-2.des-1' | translate }}</p>
                             <p>{{ 'scooter-rental.step-2.des-2' | translate }}</p>
                             <p>{{ 'scooter-rental.step-2.des-3' | translate }}</p>
+                            <div class="img-price-list">
+                                <a href="../../../assets/pdf/price-list.pdf" target="blank">
+                                    <img src="../../../assets/images/business/price-list.png" alt="">
+                                </a>
+                            </div>
                         </dd>
                     </dl>
                 </div>

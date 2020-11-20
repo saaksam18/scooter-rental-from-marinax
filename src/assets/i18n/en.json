@@ -62,10 +62,14 @@
             "kansai": "Kansai is from Nara prefecture",
             "store-by-Kubo": "Store by Kubo brothers",
             "kubo": "Hisashi Koh KUBO",
-            "visa-work-permit": "Visa/Work Permit Consultant",
+            "visa-work-permit": {
+                "line-1": "Visa/Work Permit Consultant",
+                "line-2": ""
+            },
             "kubo-brother": "Shungo KUBO",
             "currency-exchange": "Currency Exchange",
-            "responsible": "Responsible"
+            "responsible": "Responsible",
+            "img-desc": ""
         },
         "business": {
             "visa": "Visa Extension",
@@ -182,8 +186,7 @@
             "des-1": "",
             "des-2": "",
             "des-3": "",
-            "des-4": "",
-            "des-5": ""
+            "des-4": ""
         },
         "step-2": {
             "title": "EMC shop",
@@ -430,7 +433,11 @@
             "title": "Advisor of International Transfer between Japan & Cambodia",
             "des-1": "Providing the 'best rate' through the Phnom Penh money changer network",
             "des-2": "",
-            "des-3": "Saves information search costs/time for currency exchange operations"
+            "des-3": "Saves information search costs/time for currency exchange operations",
+            "des-4": "",
+            "des-5": "",
+            "des-6": "",
+            "des-7": ""
         },
         "step-2": {
             "title": "International money transfer consulting business",
