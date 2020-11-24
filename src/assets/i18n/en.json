@@ -204,61 +204,61 @@
             "title": "Rental Q&A",
             "sec-1": {
                 "title": "I. Business Days and Hours",
-                "q1": "Q: What time do you open?",
+                "q1": "What time do you open?",
                 "a1": "We do rent a moto for first customers from 9am - 5:30pm, and close shop at 6pm.",
-                "q2": "Q: What day do you close?",
+                "q2": "What day do you close?",
                 "a2": "On Sundays and Cambodian national holidays."
             },
             "sec-2": {
                 "title": "II.  Rental Conditions",
-                "q1": "Q: What is necessary for renting motorcycle?",
+                "q1": "What is necessary for renting motorcycle?",
                 "a1": "As a deposit, you need customer’s passport or deposit fee. The deposit fee ranges from $300 – $900, the deposit fee amount depends on motorcycle type. We can relax deposit conditions if you request long-term rental. We can do small credit inquiry for deposit relax. After the inspection, we can answer how much deposit relax is available for you.",
-                "q2": "Q: I want to rent a motorcycle to go to Cambodian province. Can I rent a moto?",
+                "q2": "I want to rent a motorcycle to go to Cambodian province. Can I rent a moto?",
                 "a2": "Sorry, we ask customers to drive within Phnom Penh area only. We cannot rent a moto if you drive outside of Phnom Penh.",
-                "q3": "Q: I want to do 1 day rent. Is it possible?",
+                "q3": "I want to do 1 day rent. Is it possible?",
                 "a3": "Sorry, the minimum rental period is 1 week. If you’d like to rent less than 1 week, you need to pay 1 week rental fee."
             },
             "sec-3": {
                 "title": "III. Rental Price and Payment Way",
-                "q1": "Q: How much is the rental fee?",
+                "q1": "How much is the rental fee?",
                 "a1": "It depends on motorcycle type. Monthly rental fee is $60 -$130. Weekly rental fee is $21 - $50. The rental fee gets cheaper when you rent longer.",
-                "q2": "Q: Can I extend to use a motorcycle while I rent it?",
+                "q2": "Can I extend to use a motorcycle while I rent it?",
                 "a2": "Yes, this is OK. The extension fee is according to the price table in our shop."
             },
             "sec-4": {
                 "title": "IV. Rental Motorcycle Type",
-                "q1": "Q: What kind of motors can I rent from you?",
+                "q1": "What kind of motors can I rent from you?",
                 "a1": "In our shop, 50cc automatic, 100 – 125cc automatic and manual motorcycles are available for rent.",
-                "q2": "Q: Do you rent big size motorbike?",
+                "q2": "Do you rent big size motorbike?",
                 "a2": "Sorry, at present all of the motorcycles are scooter type. The maximum engine size of motors is 150cc."
             },
             "sec-5": {
                 "title": "V. Safeties and Securities Equipment",
-                "q1": "Q: Can we rent helmets?",
+                "q1": "Can we rent helmets?",
                 "a1": "Yes, you can rent 1 helmet for free. You need to pay $5 per helmet if you rent more helmet.",
-                "q2": "Q: What type of equipment is available for motorcycle securities?",
+                "q2": "What type of equipment is available for motorcycle securities?",
                 "a2": "A front lock is equipped at the front wheel. It blocks wheel turn. And a chain key is available for rent if you like.",
-                "q3": "Q: Does a rental moto have any insurance?",
+                "q3": "Does a rental moto have any insurance?",
                 "a3": "Sorry, at present no moto has insurance in our shop. You need to pay repair fee when damaged and pay compensation fee when stolen.",
-                "q4": "Q: When the motorcycle is stolen, what should I do?",
+                "q4": "When the motorcycle is stolen, what should I do?",
                 "a4": "Please contact to our shop as soon as possible. We need to go to police to make a report. And you need to pay compensation fee written in the contract."
             },
             "sec-6": {
                 "title": "VI. About Booking",
-                "q1": "Q: I want to reserve a motorcycle, how can I do it?",
+                "q1": "I want to reserve a motorcycle, how can I do it?",
                 "a1": "You can apply for the reservation with the online form on this website, on the phone, and with visit to our shop EMC.We will make a reply after checking up our customer situation and motorcycle condition.",
-                "q2": "Q: When and what time can I make the reservation?",
+                "q2": "When and what time can I make the reservation?",
                 "a2": "We can welcome you about Internet reservation every time. Reservation with phone call is reserved from Monday – Saturday, from 9am – 6pm."
             },
             "sec-7": {
                 "title": "VII. The Service We Don’t Do",
-                "q1": "Q: Do you take insurance on each moto?",
+                "q1": "Do you take insurance on each moto?",
                 "a1": "Sorry, we don’t take insurance on motorbikes.",
-                "q2": "Q: Can I rent a motorcycle with a driver?",
+                "q2": "Can I rent a motorcycle with a driver?",
                 "a2": "Sorry, we don’t rent a motorcycle with a driver.",
-                "q3": "Q: Do you do delivery service?",
+                "q3": "Do you do delivery service?",
                 "a3": "Sorry, at present we don’t do delivery service.",
-                "q4": "Q: Can I buy a motorcycle from your shop?",
+                "q4": "Can I buy a motorcycle from your shop?",
                 "a4": "Sorry, we don’t sell motorcycles to customers."
             }
         }
@@ -302,23 +302,23 @@
             "title": "Visa Q&A",
             "sec-1": {
                 "title": "I. Cambodia visa Q&A",
-                "q1": "Q: I want to stay in Cambodia for long time.",
+                "q1": "I want to stay in Cambodia for long time.",
                 "a1": {
                     "line-1": "You can get 2 different types of visa, tourist visa (T) and business visa (E) in the beginning.",
                     "line-2": "If you stay long term, you need to get business visa (E). You can extend it limitlessly as long as your visa can meet extension requirements.",
                     "line-3": "On the other hand, tourist visa (T) can be updated for 1 month and 1 time."
                 },
-                "q2": "Q: How long can be extended with extension? And how much?",
+                "q2": "How long can be extended with extension? And how much?",
                 "a2": {
                     "line-1": "Extension of stay (a.k.a. EoS) can be selected from 1, 3, 6, and 12 months from business visa (E). Visa price is different depending on EoS, 1 month ($51), 3-month ($81), 6-month ($164), and 12-month ($294). $5 is added to those who don’t rent a motorcycle in our shop.",
                     "line-2": "1-month and 3-month visas are single type, while 6-month and 12-month visas are multiple type."
                 },
                 "note": "Latest Visa information update can be checked with our Facebook. Here we show is the information as of Sep. 2020.",
-                "q3": "Q: How long does it take to get my passport back to your shop?",
+                "q3": "How long does it take to get my passport back to your shop?",
                 "a3": "It takes around 8 business days. Saturdays, Sundays, and national holidays are NOT business days of Immigration office.",
-                "q4": "Q: I cannot wait for the 8 business days. I want to hold my passport earlier. ",
+                "q4": "I cannot wait for the 8 business days. I want to hold my passport earlier. ",
                 "a4": "Express visa service is available in our shop. You can get your visa back in the next day for additional $75 payment. ",
-                "q5": "Q: What are requirements for visa extension?",
+                "q5": "What are requirements for visa extension?",
                 "a5": {
                     "line-1": "There are 3 conditions to succeed in visa extension.",
                     "line-2": "- Your passport must have 6 months or more validity period from the next visa expiration date.\r\n For example, if you request 12-month extension, your passport termination date must be in 18 months or longer away from your present visa expiration date.",
@@ -327,13 +327,13 @@
                     "line-5": "In our shop, it is possible to extend your visa without the letters for visa extension and without FPCS registration for some commission.",
                     "line-6": "However, if your passport expiration date is not long enough to extend the period of stay your request, you need to choose whether you shorten your extension of stay or you update your passport."
                 },
-                "q6": "Q: What is FPCS that is required for visa update?",
+                "q6": "What is FPCS that is required for visa update?",
                 "a6": {
                     "line-1": "This is abbreviation of Foreigners Present in Cambodia System. It is set up by Immigration to control foreigners in Cambodia. Visa extension is not accepted without registering address with FPCS app. It can be downloaded with a smartphone.",
                     "line-2": "Responsibility of FPCS registration lies with a house owner. Before you extend your visa, you need to ask your landlord to register your address with FPCS, and then hand you over the data of registration for visa extension.",
                     "line-3": "It is possible for us to do registration jobs to avoid hassles and troubles."
                 },
-                "q7": "Q: Which type of visa options for staying long term can you offer?",
+                "q7": "Which type of visa options for staying long term can you offer?",
                 "a7": {
                     "line-1": "If you stay long time in Cambodia, please obtain business visa (E) (a.k.a. ordinary visa on arrival) in the beginning. You can stay in Cambodia for 1 month with the visa. During the stay in Cambodia, please apply for visa extension at an agency like us.",
                     "line-2": "There are 4 visa options available to choose, EG (Job seeker’s visa),  EB (Business visa),  ES (Student visa), and ER (Retirement visa).\r\n Here we show the table to show  what kind of characteristics they have and what are requirements to obtain them. ",
@@ -367,7 +367,7 @@
                     "line-30": "- Income certificate written in English with an embassy stamp",
                     "line-31": "- Printout of FPCS registration screenshot"
                 },
-                "q8": "Q: I don’t afford to get ready for a letter for visa extension. How can I stay longer?",
+                "q8": "I don’t afford to get ready for a letter for visa extension. How can I stay longer?",
                 "a8": {
                     "line-1": "In our shop, we offer service to skip letters. The price is as follows:",
                     "line-2": "- Job seeker’s visa (EG, $15)",
@@ -375,14 +375,14 @@
                     "line-4": "- Retirement visa (ER, $20",
                     "line-5": ""
                 },
-                "q9": "Q: I hold tourist visa (T), but I want to stay in Cambodia longer. Can I convert from tourist visa (T) to business visa (E) in your shop?",
+                "q9": "I hold tourist visa (T), but I want to stay in Cambodia longer. Can I convert from tourist visa (T) to business visa (E) in your shop?",
                 "a9": "No. Cannot. You need to leave from Cambodia and enter Cambodia again.",
-                "q10": "Q: My visa is already expired and I overstay. Can you accept my visa update?",
+                "q10": "My visa is already expired and I overstay. Can you accept my visa update?",
                 "a10": {
                     "line-1": "Yes, possible. Overstay penalty fee is $10/(overstay day).",
                     "line-2": "But we cannot warranty whether your update is succeeded if you overstay more than 100 days."
                 },
-                "q11": "Q: When is the deadline of application for Cambodia visa extension?",
+                "q11": "When is the deadline of application for Cambodia visa extension?",
                 "a11": "If you visit our shop by the morning time of visa expiration date, you don’t have to pay penalty fee. If Immigration accept your visa extension within your expiration date, you don’t have to pay penalty fee."
             }
         }
