@@ -90,7 +90,7 @@
         flex-direction: column;
     }
     li {
-        width: 16%;
+        width: 17%;
         margin-right: 2%;
         @media screen and (max-width: $tablet) {
             width: 100%;
@@ -144,7 +144,7 @@
         }
         .scene-text {
             color: $dark-blue;
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             line-height: 1.5;
             width: 100%;
             text-align: center;
