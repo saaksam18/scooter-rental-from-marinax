@@ -165,15 +165,16 @@
     },
     "scooter-rental": {
         "title": "Scooter rental service",
-        "sub-title": "Well maintained scooter with relaible aftercare services",
+        "sub-title": "Well-maitained Scooter, Reliable aftercare",
         "table": {
-            "monthly-rental": "For Expat in Phnom Penh",
+            "monthly-rental": "Expat in Phnom Penh (Monthly)",
             "monthly-rental-des": "Monthly  60-130USD",
-            "day-rental": "",
-            "day-rental-des": ""
+            "day-rental": "Business Trip・Traveler (Weekly)",
+            "day-rental-des": "Weekly 21-50USD"
         },
-        "reliable-des": "Maintenance by professional mechanic staffs",
-        "equip-des": "Offer FREE security tools",
+        "reliable-des": "No need any driver`s license to drive motorbike under 125cc in Cambodia",
+        "equip-des": "Reliable motor maintenance by staff (Mr.Hak) who graduated professional motor mechanic school",
+        "desc-3": "Supply security goods with free",
         "attension": "Attension: Sorry not rent motor to Tourist",
         "flow": {
             "title": "Flow to bike rental",
@@ -182,23 +183,27 @@
             "step-3": "Rental as it is"
         },
         "step-1": {
-            "title": "Please have the following required documents at hand.",
-            "des-1": "",
-            "des-2": "",
-            "des-3": "",
-            "des-4": ""
+            "title": "Please prepare deposit to rental motorbike, you can choose",
+            "des-1": "Passport or Deposit cash ($300-900)",
+            "des-2": "(To rental motorbike, deposit passport is general practice in South-East Asia)",
+            "des-3": "You can drive EMC motor within Phnom Penh city. In case, you drive outside of Phnom Penh city, we would request penalty & stop rental motorbike",
+            "des-4": "Supply helmet with free (Second helmet is not free)",
+            "des-5": "",
+            "des-6": ""
         },
         "step-2": {
-            "title": "EMC shop",
-            "des-1": "",
-            "des-2": "If you have a desired car model in advance, please contact us.",
-            "des-3": ""
+            "title": "Please come to EMC shop",
+            "title-2": "",
+            "des-1": "1. Choose your rental motorbike (Test driving is available)",
+            "des-2": "2. Get explanation of EMC rental contract & regulations, then submit deposit (Passport or Cash) and pay rental fee",
+            "des-3": "3. Get explanation of basic motor operations & how to use security goods, then you can drive rental motor!!",
+            "des-4": "If you have any request, you can contact us freely. Any motor is available for test-driving"
         },
         "step-3": {
-            "title": "Rental as it is",
-            "des-1": "Please submit the required documents and pay after selecting the bike.",
-            "des-2": "If there is no problem, you can ride a motorcycle and drive in Phnom Penh.",
-            "des-3": "We also rent helmets for customers who wish."
+            "title": "Please come to EMC shop before expiry date of rental contract.",
+            "des-1": "We request customers to visit EMC once a month for motorbike maintenance, security is everything.",
+            "des-2": "1. Inform stop or extend rental contract",
+            "des-3": "2. If you want to extend, renew rental contract and pay rental fee"
         },
         "qa": {
             "title": "Rental Q&A",
@@ -264,39 +269,37 @@
         }
     },
     "visa": {
-        "title": "Visa Extension and Work Permit application service",
-        "sub-title": "Fast & Reliable service by Japanese Visa consultant",
+        "title": "Visa extension & Work Permit",
+        "sub-title": "Reliabe service by senior Japanese consultant",
         "des": {
-            "line-1": "We suggest best VISA type according to customer's request.",
-            "line-2": "All staffs can speak English!! We have EXPRESS Visa service (1 business day)"
+            "line-1": "Hi, I am senior Visa consultant at EMC, Kubo Koh Hisashi.",
+            "line-2": "If you want to renew your visa safely & securely without stress, please use EMC Visa extension service!",
+            "line-3": "We would propose the most suitable visa according to the customer’s request. Even if it cannot be extended at another Visa agent, we may be able to manage it.",
+            "line-4": "For those in a hurry, there is also a express visa service (1 business day). Please feel free to contact us."
         },
         "flow": {
-            "title": "Flow until VISA update",
-            "step-1": "Advance preparation",
-            "step-2": "EMC shop",
-            "step-3": "VISA/work permit",
-            "step-4": "Acceptance"
+            "title": "Visa extension Chart",
+            "step-1": "Before coming to EMC",
+            "step-2": "Visa Extension at EMC shop",
+            "step-3": "Passport delivery"
         },
         "step-1": {
-            "title": "Please have the following required documents at hand.",
-            "des-1": "・Passport",
-            "des-2": "・If there are other required documents"
+            "title": "Before coming to EMC",
+            "des-1": "You can extend your visa just bring Passport at EMC.",
+            "des-2": "・Passport",
+            "des-3": "・Visa (Can extend 30days before of Visa expiry date)",
+            "des-4": "Please see below if you want to check/prepare required documents by Visa type. ",
+            "des-5": "We offer documentation service, FPCS registration of address."
         },
         "step-2": {
-            "title": "EMC shop",
-            "des-1": "Please visit EMC and select the bike you want to contact.",
-            "des-2": "If you have a desired car model in advance, please contact us."
+            "title": "Visa Extension at EMC shop",
+            "des-1": "Please come to EMC shop and submit passport and required document if any. Normally it takes 8-10 business days for Visa extension. ",
+            "des-2": "If you are in a hurry, express Visa service is available (1 Business day)."
         },
         "step-3": {
-            "title": "VISA/work permit renewal/creation",
-            "des-1": "Once the update is complete, we will contact you via SMS, phone, etc.",
-            "des-2": "Please wait until the update is completed.",
-            "des-3": "If you are in a hurry, we also offer express services."
-        },
-        "step-4": {
-            "title": "Acceptance",
-            "des-1": "After sending the update/creation completion from EMC, you will receive it at the store.",
-            "des-2": "If you wish, we also offer a service that will be sent after the update is completed."
+            "title": "Passport delivery",
+            "des-1": "We will contact you after completing visa extension, then please come & pick up your passport at EMC shop. ",
+            "des-2": "If you want to save time or any difficulty, we offer Passport delivery service."
         },
         "qa": {
             "title": "Visa Q&A",
