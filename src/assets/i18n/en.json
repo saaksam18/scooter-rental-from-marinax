@@ -75,8 +75,11 @@
             "visa": "Visa Extension",
             "work-permit": "/ Work Permit",
             "travel-agency": "Travel Agent",
-            "domestic": "(Domestic & Overseas)"
-        }
+            "domestic": "(Domestic & Overseas)",
+            "visa-service": "VISA service",
+            "exchange-service": "Currency exchange service"
+        },
+        "google-review": "Google Reviews"
     },
     "sidebar": {
         "address": {

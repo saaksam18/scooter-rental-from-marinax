@@ -75,8 +75,11 @@
             "visa": "ビザサービス",
             "work-permit": "労働許可証",
             "travel-agency": "旅行代理店",
-            "domestic": "（国内ツアー）"
-        }
+            "domestic": "（国内ツアー）",
+            "visa-service": "VISAサービス",
+            "exchange-service": "外貨両替サービス"
+        },
+        "google-review": "Googleクチコミ"
     },
     "sidebar": {
         "address": {
