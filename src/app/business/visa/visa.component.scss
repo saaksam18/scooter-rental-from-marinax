@@ -39,25 +39,38 @@
     }
 }
 .visa {
+    .scene-block01 {
+        height: 520px;
+        @media screen and (max-width: $desktop) {
+            height: auto;
+        }
+        .scene-right {
+            background: url("../../../assets/images/business/document.jpg") no-repeat center center;
+        }
+        .scene-left::after {
+            content: '01';
+        }
+    }
+    .scene-block02 {
+        .scene-right {
+            background: url("../../../assets/images/business/visa-step2.jpg") no-repeat center center;
+        }
+        .scene-left::after {
+            content: '02';
+        }
+    }
+    .scene-block03 {
+        .scene-right {
+            background: url("../../../assets/images/business/visa.jpg") no-repeat center center;
+        }
+        .scene-left::after {
+            content: '03';
+        }
+    }
     .scene-block {
-        &:nth-of-type(1) {
-            .scene-right {
-                background: url("../../../assets/images/business/document.jpg") no-repeat center center;
-            }
-        }
-        &:nth-of-type(2) {
-            .scene-right {
-                background: url("../../../assets/images/business/visa-step2.jpg") no-repeat center center;
-            }
-        }
-        &:nth-of-type(3) {
-            .scene-right {
-                background: url("../../../assets/images/business/visa.jpg") no-repeat center center;
-            }
-        }
-        &:nth-of-type(4) {
-            .scene-right {
-                background: url("../../../assets/images/business/acception.jpg") no-repeat center center;
+        .visa-img {
+            img {
+                width: 180px;
             }
         }
     }
