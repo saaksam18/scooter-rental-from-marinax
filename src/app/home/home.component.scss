@@ -371,7 +371,9 @@ a:hover{
         }
         &-thumb {
             text-align: center;
+            padding: 0px;
             @media screen and (max-width: $large-desktop){
+                padding: 0px 15px;
                 margin-bottom: 30px;
             }
             img {
@@ -381,7 +383,14 @@ a:hover{
                 }
             }
             .img-desc {
-                font-size: 16px;
+                font-size: 1.6rem;
+            }
+            .ceo-name {
+                font-size: 1.4rem;
+                padding-left: 5%;
+                @media screen and (max-width: $large-desktop){
+                    padding-left: 0;
+                }
             }
         }
     }
