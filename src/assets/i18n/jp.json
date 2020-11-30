@@ -69,7 +69,11 @@
             "kubo-brother": "久保　俊吾",
             "currency-exchange": "外貨両替、国際送金相談担当",
             "responsible": "担当",
-            "img-desc": "左:久保俊吾（弟）右:久保久志（兄）"
+            "img-desc": "左:久保俊吾（弟）右:久保久志（兄）",
+            "CEO": {
+                "name-1": "",
+                "name-2": ""
+            }
         },
         "business": {
             "visa": "ビザサービス",

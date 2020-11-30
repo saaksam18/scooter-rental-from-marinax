@@ -69,7 +69,11 @@
             "kubo-brother": "Kubo Shuu Shungo (Younger)",
             "currency-exchange": "Currency Exchange",
             "responsible": "Responsible",
-            "img-desc": ""
+            "img-desc": "",
+            "CEO": {
+                "name-1": "Left: Kubo Shuu Shungo (Younger)",
+                "name-2": "Right: Kubo Koh Hisashi (Elder)"
+            }
         },
         "business": {
             "visa": "Visa Extension",
@@ -88,7 +92,7 @@
         },
         "holiday": {
             "title" : "Regular holiday",
-            "text" : "Sundays, public holidays"
+            "text" : "Sat, Sun, public holidays"
         }
     },
     "outline": {
@@ -504,7 +508,7 @@
         "work-hours": "WORKING HOURS",
         "time": "Business Hours: 09:00-17:30",
         "workday": "Business days: Monday to Saturday",
-        "holiday": "Regular holidays: Sundays, public holidays",
+        "holiday": "Regular holidays: Sat, Sun, public holidays",
         "phone-number": {
             "title": "PHONE NUMBER",
             "head": "Scooter Rental:",
