@@ -70,30 +70,30 @@
     }
 }
 .rental {
+    .scene-block01 {
+        height: 450px;
+        @media screen and (max-width: $desktop) {
+            height: auto;
+        }
+        .scene-right {
+            background: url("../../../assets/images/business/document.jpg") no-repeat center center;
+        }
+    }
+    .scene-block02 {
+        height: 600px;
+        @media screen and (max-width: $desktop) {
+            height: auto;
+        }
+        .scene-right {
+            background: url("../../../assets/images/business/emc-shop.jpg") no-repeat center center;
+        }
+    }
+    .scene-block03 {
+        .scene-right {
+            background: url("../../../assets/images/business/rentels.jpg") no-repeat center center;
+        }
+    }
     .scene-block {
-        &:nth-of-type(1) {
-            height: 380px;
-            @media screen and (max-width: $desktop) {
-                height: auto;
-            }
-            .scene-right {
-                background: url("../../../assets/images/business/document.jpg") no-repeat center center;
-            }
-        }
-        &:nth-of-type(2) {
-            height: 460px;
-            @media screen and (max-width: $desktop) {
-                height: auto;
-            }
-            .scene-right {
-                background: url("../../../assets/images/business/emc-shop.jpg") no-repeat center center;
-            }
-        }
-        &:nth-of-type(3) {
-            .scene-right {
-                background: url("../../../assets/images/business/rentels.jpg") no-repeat center center;
-            }
-        }
         .img-price-list{
             img {
                 width: 180px;

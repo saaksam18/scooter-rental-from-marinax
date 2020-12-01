@@ -199,18 +199,19 @@
             "des-6": ""
         },
         "step-2": {
-            "title": "Please come to EMC shop",
-            "title-2": "",
+            "title": "Rental motorbike at EMC shop",
+            "title-2": "Please come to EMC shop",
             "des-1": "1. Choose your rental motorbike (Test driving is available)",
             "des-2": "2. Get explanation of EMC rental contract & regulations, then submit deposit (Passport or Cash) and pay rental fee",
             "des-3": "3. Get explanation of basic motor operations & how to use security goods, then you can drive rental motor!!",
             "des-4": "If you have any request, you can contact us freely. Any motor is available for test-driving"
         },
         "step-3": {
-            "title": "Please come to EMC shop before expiry date of rental contract.",
-            "des-1": "We request customers to visit EMC once a month for motorbike maintenance, security is everything.",
-            "des-2": "1. Inform stop or extend rental contract",
-            "des-3": "2. If you want to extend, renew rental contract and pay rental fee"
+            "title": "Stop & Extension of Rental motorbike",
+            "des-1": "Please come to EMC shop before expiry date of rental contract.",
+            "des-2": "We request customers to visit EMC once a month for motorbike maintenance, security is everything.",
+            "des-3": "1. Inform stop or extend rental contract",
+            "des-4": "2. If you want to extend, renew rental contract and pay rental fee"
         },
         "qa": {
             "title": "Rental Q&A",
