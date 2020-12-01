@@ -432,50 +432,50 @@
         }
     },
     "remittance": {
-        "title": "International Remittance",
-        "sub-title": "New international money transfer service from the customer's perspective",
-        "sub-title02": "",
+        "title": "国際送金相談・アドバイザリー",
+        "sub-title": "顧客視点による新しい国際送金サービス",
+        "sub-title02": "お客様視点で満足のいく送金方法をご提案！！",
         "flow": {
-            "title": "Features of international money transfer service",
-            "step-1": "Advisor of International Transfer between Japan & Cambodia ",
-            "step-2": "International money transfer consulting business"
+            "title": "国際送金サービスの特徴",
+            "step-1": "ヒアリング",
+            "step-2": "送金方法の提案"
         },
         "step-1": {
-            "title": "Advisor of International Transfer between Japan & Cambodia",
-            "des-1": "Providing the 'best rate' through the Phnom Penh money changer network",
-            "des-2": "",
-            "des-3": "Saves information search costs/time for currency exchange operations",
-            "des-4": "",
-            "des-5": "",
-            "des-6": "",
-            "des-7": ""
+            "title": "ヒアリング",
+            "des-1": "下記項目を中心にお客様の抱えている悩み、要望をヒアリング",
+            "des-2": "・送金額",
+            "des-3": "・送金先",
+            "des-4": "・スケジュール",
+            "des-5": "・送金手数料",
+            "des-6": "・送金に必要となる物理的な手間と時間",
+            "des-7": "・送金に必要となる提出書類"
         },
         "step-2": {
-            "title": "International money transfer consulting business",
+            "title": "送金方法の提案",
             "desc": {
-                "line-1": "If you have any problems with remittance between Japan and Cambodia, please consult us (Facebook Profile link)",
-                "line-2": "",
-                "line-3": "",
-                "line-4": "",
-                "line-5": "",
-                "line-6": "",
-                "line-7": "",
-                "line-8": "",
-                "line-9": "",
-                "line-10": "",
-                "line-11": "",
-                "line-12": "",
-                "line-13": ""
+                "line-1": "ヒアリング内容をもとにお客様に最適な送金方法をいくつか提案いたします",
+                "line-2": "＜送金相談対象国＞",
+                "line-3": "●送金元",
+                "line-4": "日本",
+                "line-5": "カンボジア",
+                "line-6": "●送金先",
+                "line-7": "日本",
+                "line-8": "カンボジア",
+                "line-9": "タイ",
+                "line-10": "ベトナム",
+                "line-11": "●連絡先",
+                "line-12": "+855(0)78849977　 (日本語)",
+                "line-13": "久保俊吾 SHUU KUBO (Facebook)で友達申請、もしくはメッセージください"
             }
         },
         "desc": {
-            "line-1": "",
-            "line-2": "",
-            "line-3": "",
-            "line-4": "",
-            "line-5": "",
-            "line-6": "",
-            "line-7": ""
+            "line-1": "初めまして、両替商オーナーの久保俊吾（久保弟）です。",
+            "line-2": "日本国では100万円を超える国際送金は銀行のみにしか認められておらず、Transferwiseなどの比較的便利で安価な送金サービスも100万円という上限が設けられており、年々、国際送金に関わる規制は厳しくなって来ています。両替商を始めてから、これまでたくさんのお客様から国際送金に関わる悩み・相談を受けて来ました。",
+            "line-3": "もっと「多く」資金を送るには？",
+            "line-4": "もっと「速く」資金を送るには？",
+            "line-5": "もっと「手数料を安く」資金を送るには？",
+            "line-6": "もっと「お手軽に」資金を送るには？",
+            "line-7": "これらお客様の要望に少しでも応えられる提案をすることが私の仕事です。外国に住み/働く全ての在住外国人に関わるテーマであり、お客様に笑顔になって頂けるよう頑張ります。"
         }
     },
     "blog": {
