@@ -1,5 +1,11 @@
 @import 'variables';
 @import 'keyframes';
+
+/* ==== Text ==== */
+.text-pre-line {
+    white-space: pre-line !important;
+}
+
 /* ==== background ==== */
 .bg-darkyellow {
     background-color: $dark-yellow;

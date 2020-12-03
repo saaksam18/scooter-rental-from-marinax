@@ -37,6 +37,10 @@
 }
 .remittance {
     .scene-block01 {
+        height: 450px;
+        @media screen and (max-width: $desktop){
+            height: auto;
+        }
         .scene-right {
             background: url("../../../assets/images/business/foreign-currency-exchange.jpg") no-repeat center center;
         }
@@ -45,15 +49,15 @@
         }
     }
     .scene-block02 {
-        height: 500px;
+        height: 600px;
+        @media screen and (max-width: $desktop){
+            height: auto;
+        }
         .scene-right {
             background: url("../../../assets/images/business/money-transfer.jpg") no-repeat center center;
         }
         .scene-left::after {
             content: '02';
-        }
-        @media screen and (max-width: $desktop){
-            height: auto;
         }
     }
     &-desc {

@@ -76,9 +76,9 @@
             }
         },
         "business": {
-            "visa": "ビザサービス",
-            "work-permit": "労働許可証",
+            "visa": "ビザサービス\r\n労働許可証",
             "travel-agency": "旅行代理店",
+            "remittance": "国際送金相談・\r\nアドバイザリー",
             "domestic": "（国内ツアー）",
             "visa-service": "VISAサービス",
             "exchange-service": "外貨両替サービス"

@@ -45,6 +45,10 @@
         }
     }
     .scene-block02 {
+        height: 430px;
+        @media screen and (max-width: $desktop) {
+            height: auto;
+        }
         .scene-right {
             background: url("../../../assets/images/business/exchange1.jpg") no-repeat center center;
         }
