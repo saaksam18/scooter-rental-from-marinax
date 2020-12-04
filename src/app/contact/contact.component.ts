@@ -60,6 +60,7 @@ export class ContactComponent implements OnInit {
 				this.validateText
 			]))
 		});
+		
 	}
 
 	validateText(control: AbstractControl): { [key: string]: any } | null {
@@ -76,7 +77,10 @@ export class ContactComponent implements OnInit {
 
 	submit() {
 		var form = $('#contact_form');
-
+		$('<input />').attr('type', 'hidden')
+			.attr('name', 'lang')
+			.attr('value', $('html').attr('lang'))
+			.appendTo('#contact_form');
 		const urlApi = environment.contactApi;
 		const crossAnyway = 'https://cors-anywhere.herokuapp.com/';
 		
