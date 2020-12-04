@@ -76,9 +76,9 @@
             }
         },
         "business": {
-            "visa": "Visa Extension",
-            "work-permit": "/ Work Permit",
+            "visa": "Visa Extension\r\n/ Work Permit",
             "travel-agency": "Travel Agent",
+            "remittance": "International\r\nRemittance",
             "domestic": "(Domestic & Overseas)",
             "visa-service": "VISA service",
             "exchange-service": "Currency exchange service"
