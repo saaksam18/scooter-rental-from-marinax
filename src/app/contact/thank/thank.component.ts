@@ -36,9 +36,9 @@ export class ThankComponent implements OnInit {
 	ngOnInit() {
 		$(document).ready(function () {
 			// block direct access to thank you page
-			if (document.referrer == ''){
-				window.location.href='/';
-			}
+			// if (document.referrer == ''){
+			// 	window.location.href='/';
+			// }
 		});
 	}
 
