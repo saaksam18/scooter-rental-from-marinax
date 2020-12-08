@@ -5,6 +5,7 @@ import { environment } from '../../environments/environment';
 import { FormGroup, Validators, FormControl, AbstractControl } from '@angular/forms';
 import { Router } from '@angular/router';
 import $ from 'jquery';
+import { from } from 'rxjs';
 
 @Component({
 	selector: 'app-contact',
@@ -15,6 +16,11 @@ export class ContactComponent implements OnInit {
 	title = this.translate.get('page-title.contact').subscribe((res: string) => {
 		this.pageTitle.setTitle(res);
 	});
+	selected : string = '+81';
+	codes: any = [
+		{country: 'Japan', code: '+81', lang: 'ja'},
+		{country: 'Khmer', code: '+855', lang: 'en'},
+	];
 	contactForm: FormGroup;
 	constructor(
 		private meta: Meta,
@@ -49,9 +55,10 @@ export class ContactComponent implements OnInit {
 				Validators.required,
 				Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$')
 			])),
-			phone: new FormControl('', Validators.compose([
+			code: new FormControl,
+			fphone: new FormControl('', Validators.compose([
 				Validators.required,
-				Validators.pattern('^((\\+91-?)|0)?[0-9]{9}$')
+				Validators.pattern('[0-9]{2}-[0-9]{3,4}-[0-9]{3,4}')
 			])),
 			subject: new FormControl('', Validators.compose([
 				this.validateText
@@ -60,7 +67,10 @@ export class ContactComponent implements OnInit {
 				this.validateText
 			]))
 		});
-		
+	}
+
+	selectChange(event: any) {
+		this.selected = event.target.value;
 	}
 
 	validateText(control: AbstractControl): { [key: string]: any } | null {
@@ -81,6 +91,15 @@ export class ContactComponent implements OnInit {
 			.attr('name', 'lang')
 			.attr('value', $('html').attr('lang'))
 			.appendTo('#contact_form');
+
+		$('<input />').attr('type', 'hidden')
+			.attr('name', 'phone')
+			.attr('value', $("#ccode").val()+" "+ $('#fphone').val())
+			.appendTo('#contact_form');
+			$("#ccode").remove();$("#fphone").remove();$("#code").remove();
+		//$("#phone").val(function() {
+		//	return this.value = $("#ccode").val()+" "+ this.value;
+		//});
 		const urlApi = environment.contactApi;
 		const crossAnyway = 'https://cors-anywhere.herokuapp.com/';
 		
