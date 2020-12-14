@@ -490,7 +490,7 @@
         "email-required": "Emailの入力は必須です",
         "email-pattern": "有効なEmail形式で入力してください",
         "phone-required": "電話番号は必須です",
-        "phone-pattern": "電話番号の形式が誤っています",
+        "phone-pattern": "'-' を入力してください。",
         "subject-reuired": "件名の入力は必須です",
         "subject-pattern": "５文字以上で入力してください",
         "message-reuired": "問い合わせ内容は必須です",
