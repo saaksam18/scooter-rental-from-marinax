@@ -490,7 +490,7 @@
         "email-required":"Email is required",
         "email-pattern":"Email must be a valid email address",
         "phone-required":"Phone is required",
-        "phone-pattern":"Your number phone not correct",
+        "phone-pattern":"Please enter '-'",
         "subject-reuired":"Subject is required",
         "subject-pattern":"Enter must be at least 5 characters",
         "message-reuired":"Message is required",
