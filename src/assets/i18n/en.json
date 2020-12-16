@@ -61,18 +61,18 @@
             "title": "Established by Japanese KUBO brothers",
             "kansai": "Kansai is from Nara prefecture",
             "store-by-Kubo": "Store by Kubo brothers",
-            "kubo": "Kubo Koh Hisashi (Elder)",
+            "kubo": "Hisashi Koh Kubo (Elder)",
             "visa-work-permit": {
                 "line-1": "Visa & Work Permit",
                 "line-2": ""
             },
-            "kubo-brother": "Kubo Shuu Shungo (Younger)",
+            "kubo-brother": "Shuu Kubo (Younger)",
             "currency-exchange": "Currency Exchange",
             "responsible": "Responsible",
             "img-desc": "",
             "CEO": {
-                "name-1": "Left: Kubo Shuu Shungo (Younger)",
-                "name-2": "Right: Kubo Koh Hisashi (Elder)"
+                "name-1": "Left: Hisashi Koh Kubo (Younger)",
+                "name-2": "Right: Shuu Kubo (Elder)"
             }
         },
         "business": {
@@ -426,6 +426,7 @@
             "desc-5": "",
             "desc-6": ""
         },
+        "service":"Service",
         "step": "STEP",
         "desc": {
             "line-1": "Hi I am EMC owner, Shuu KUBO.",
@@ -437,7 +438,7 @@
         "sub-title": "顧客視点による新しい国際送金サービス",
         "sub-title02": "お客様視点で満足のいく送金方法をご提案！！",
         "flow": {
-            "title": "国際送金サービスの特徴",
+            "title": "国際送金/仮想通貨 相談サービスの特徴",
             "step-1": "ヒアリング",
             "step-2": "送金方法の提案"
         },
