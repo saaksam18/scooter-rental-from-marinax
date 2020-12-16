@@ -38,7 +38,7 @@
 .exchange {
     .scene-block01 {
         .scene-right {
-            background: url("../../../assets/images/business/atm.jpeg") no-repeat center center;
+            background: url("../../../assets/images/business/atm.jpg") no-repeat center center;
         }
         .scene-left::after {
             content: '01';
@@ -61,5 +61,8 @@
         @media screen and (max-width: $smart-phone) {
             margin-bottom: 70px;
         }
+    }
+    .scene-block .scene-left::before {
+        content: 'Service';
     }
 }
