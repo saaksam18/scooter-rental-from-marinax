@@ -62,11 +62,13 @@
             "kansai": "関西は奈良県出身",
             "store-by-Kubo": "久保兄弟によるお店",
             "kubo": "久保　恒",
+            "kubo-name": "Hisashi Koh Kubo",
             "visa-work-permit": {
                 "line-1": "ビザ更新/ワークパーミット担当",
                 "line-2": "(ビザ更新取扱数5,000件以上の実績)"
             },
             "kubo-brother": "久保　俊吾",
+            "kubo-brother-name": "Shuu Kubo",
             "currency-exchange": "外貨両替、国際送金/仮想通貨相談担当",
             "responsible": "担当",
             "img-desc": "左:久保俊吾（弟）右:久保恒（兄）",
@@ -78,7 +80,7 @@
         "business": {
             "visa": "ビザサービス\r\n労働許可証",
             "travel-agency": "旅行代理店",
-            "remittance": "国際送金相談・\r\nアドバイザリー",
+            "remittance": "国際送金/仮想通貨\r\n相談・アドバイザリー",
             "domestic": "（国内ツアー）",
             "visa-service": "VISAサービス",
             "exchange-service": "外貨両替サービス"
