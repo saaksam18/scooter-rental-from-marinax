@@ -83,4 +83,12 @@
         align-items: center;
         line-height: 0;
     }
+    .step-title {
+        @media screen and (max-width: $small-device){
+            font-size: 1.4rem;
+        }
+        @media screen and (max-width: 320px){
+            font-size: 1.2rem;
+        }
+    }
 }
