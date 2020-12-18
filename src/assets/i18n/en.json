@@ -62,11 +62,13 @@
             "kansai": "Kansai is from Nara prefecture",
             "store-by-Kubo": "Store by Kubo brothers",
             "kubo": "Hisashi Koh Kubo (Elder)",
+            "kubo-name": "",
             "visa-work-permit": {
                 "line-1": "Visa & Work Permit",
                 "line-2": ""
             },
             "kubo-brother": "Shuu Kubo (Younger)",
+            "kubo-brother-name": "",
             "currency-exchange": "Currency Exchange",
             "responsible": "Responsible",
             "img-desc": "",

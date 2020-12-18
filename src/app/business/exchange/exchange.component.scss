@@ -39,6 +39,8 @@
     .scene-block01 {
         .scene-right {
             background: url("../../../assets/images/business/atm.jpg") no-repeat center center;
+            background-size: 100% !important;
+            background-color: #fff;
         }
         .scene-left::after {
             content: '01';
