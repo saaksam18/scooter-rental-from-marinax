@@ -82,7 +82,7 @@
                             <label for="phone"><span class="text-danger">*</span>{{ 'contact.phone' | translate }}</label>
                             <div class="d-flex sub-field">
                                 <select id="code" formControlName="code" name="code" class="form-control" (change)="selectChange($event)" [(ngModel)]="selected">
-                                    <option *ngFor="let code of codes" value="{{code.code}}">{{code.code}}</option>
+                                    <option *ngFor="let code of codes" value="{{code.code}}">{{code.country}} {{code.code}}</option>
                                 </select>
                                 <input id="ccode" type="hidden" value="{{selected}}" name="ccode">
                                 <input id="fphone" type="tel" maxlength="12" formControlName="fphone" name="fphone" class="px-3" placeholder="00-000-000" autocomplete="off">
