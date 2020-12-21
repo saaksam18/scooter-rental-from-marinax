@@ -1,0 +1,149 @@
+@import '../../../assets/scss/components/variables';
+
+.history{
+    .founder-des{
+        padding: 40px 90px;
+        border: 1px solid $dark-yellow;
+        @media screen and (max-width: $desktop){
+            padding: 50px;
+        }
+        @media screen and (max-width: $small-device){
+            padding: 15px;
+        }
+        h3{
+            font-size: 32px;
+            color: $dark-yellow;
+            font-weight: 400;
+            @media screen and (max-width: $small-device){
+                font-size: 22px;
+            }
+        }
+        p{
+            font-size: 1.8rem;
+            font-weight: 400;
+            text-align: center;
+            @media screen and (max-width: $small-device){
+                font-size: 13px;
+            }
+            @media screen and (max-width: $bt-small-device){
+                text-align: left;
+            }
+        }
+    }
+    &__section{
+        position: relative;
+        z-index: 0;
+        &::before{
+            content: '';
+            width: 100%;
+            height: calc(100% - 5rem);
+            border-top: 2px solid $dark-yellow;
+            border-left: 2px solid $dark-yellow;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+        }
+    }
+    &__title{
+        color: $dark-yellow;
+        font-weight: 700;
+        position: relative;
+        h4{
+            font-size: 7rem;
+            background-color: $light-blue;
+            display: inline;
+            padding: 0 10px 0 0;
+            line-height: normal;
+        }
+    }
+    &__img{
+        padding: 0 80px;
+        margin: 30px auto;
+        @media screen and (max-width: $smart-phone){
+            padding: 0 0 0 30px;
+            margin: 30px auto 0;
+        }
+        li{
+            margin-bottom: 30px;
+        }
+        p{
+            font-size: 1.2rem;
+            font-weight: 700;
+            line-height: 1.5em;
+            margin-top: 10px;
+        }
+    }
+    &__list{
+        padding: 0 80px 30px;
+        @media screen and (max-width: $smart-phone){
+            padding: 0 0 30px 30px;
+        }
+        dl{
+            display: flex;
+            margin-bottom: 20px;
+            &:last-child{
+                margin-bottom: 0px;
+            }
+            @media screen and (max-width: $bt-small-device){
+                flex-direction: column;
+            }
+        }
+        dt{
+            width: 200px;
+            color: $dark-yellow;
+            font-weight: 700;
+            text-align: center;
+            background-color: $white;
+            padding: 5px 10px;
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @media screen and (max-width: $smart-phone){
+                width: 130px;
+                margin-right: 10px;
+                padding: 5px;
+            }
+            @media screen and (max-width: $bt-small-device){
+                width: 100%;
+            }
+        }
+        dd{
+            width: calc(100% - 120px);
+            margin-bottom: 0;
+            @media screen and (max-width: $smart-phone){
+                width: calc(100% - 90px);
+            }
+            @media screen and (max-width: $bt-small-device){
+                width: 100%;
+            }
+            p{
+                margin-bottom: 15px;
+                position: relative;
+                padding-left: 15px;
+                &:first-child{
+                    margin-top: 15px;
+                }
+                &::before{
+                    content: '';
+                    width: .5rem;
+                    height: .5rem;
+                    background: $dark-yellow;
+                    position: absolute;
+                    left: 0;
+                    top: 1.4rem;
+                    @media screen and (max-width: $smart-phone){
+                        top: .7em;
+                    }
+                }
+                &.point{
+                    color: $dark-yellow;
+                    font-weight: 700;
+                    font-size: 2rem;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}

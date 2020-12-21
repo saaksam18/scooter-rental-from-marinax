@@ -1,0 +1,204 @@
+@import '../../assets/scss/components/variables';
+
+.contact{
+    .content__wrap {
+        @media screen and (max-width: $desktop){
+            padding: 0px;
+        }
+    }
+    .yellow-title{
+        margin-bottom: 100px;
+    }
+    ul{
+        margin-top: 50px;
+        li{
+            display: flex;
+            @media screen and (max-width: $large-desktop){
+                margin-bottom: 80px;
+            }
+            a{
+                color: $black;
+            }
+            h2{
+                color: $dark-yellow;
+            }
+            h3{
+                font-size: 16px;
+                margin-bottom: 15px;
+            }
+            p{
+                font-size: 14px;
+                margin-bottom: 0;
+            }
+            .icon{
+                width: 90px;
+                height: 90px;
+                position: absolute;
+                top: 0;
+                background-color: $yellow;
+                border-radius: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 0 3px 5px rgba(85,85,85,.25);
+                @media screen and (max-width: $small-device){
+                    width: 60px;
+                    height: 60px;
+                }
+                &::before{
+                    color: $white;
+                    font-family: "Font Awesome 5 Free";
+                    font-size: 35px;
+                    font-weight:900;
+                    @media screen and (max-width: $small-device){
+                        font-size: 25px;
+                    }
+                }
+            }
+            .location{
+                &::before{
+                    content: "\f3c5";
+                }
+            }
+            .time{
+                &::before{
+                    content: "\f017";
+                }
+            }
+            .phone{
+                &::before{
+                    content: "\f3cd";
+                }
+            }
+            .inner{
+                width: 100%;
+                background: $light-blue;
+                box-shadow: 0 3px 5px rgba(85,85,85,.25);
+                transition: all .3s ease-in-out 0s;
+                padding: 30px;
+                @media screen and (max-width: $small-device){
+                    padding: 30px 10px;
+                }
+                &:hover{
+                    transform: scale(1.05);
+                }
+                p{
+                    span{
+                        color: $dark-yellow;
+                    }
+                }
+                i{
+                    color: $yellow;
+                    font-size: 20px;
+                    padding-right: 7px;
+                }
+            }
+        }
+    }
+    form{
+        margin-top: 50px;
+        .form-group{
+            width: 70%;
+            margin-bottom: 30px;
+            @media screen and (max-width: $smart-phone){
+                width: 88%;
+            }
+            @media screen and (max-width: $bt-small-device){
+                width: 100%;
+                margin-bottom: 50px;
+                &:last-child{
+                    flex-direction: column;
+                }
+            }
+        }
+        label{
+            width: 30%;
+            @media screen and (max-width: $bt-small-device){
+                width: 100%;
+            }
+        }
+        input{
+            width: 70%;
+            border-style: none;
+            border-bottom: 1px solid $yellow;
+            padding-bottom: 10px;
+            outline: none;
+            border-radius: 0;
+            &:-internal-autofill-selected{
+                background-color: $white !important; 
+            }
+            @media screen and (max-width: $bt-small-device){
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+        textarea{
+            width: 70%;
+            border-style: none;
+            border-bottom: 1px solid $yellow;
+            outline: none;
+            padding-bottom: 10px;
+            border-radius: 0;
+            @media screen and (max-width: $bt-small-device){
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+        .msg-error{
+            @media screen and (max-width: $bt-small-device){
+                width: 100% !important;
+            }
+        }
+        button{
+            width: 150px;
+            border-style: none;
+            border-radius: 22px;
+            color: $white;
+            background-color: $dark-yellow;
+            padding: 6px;
+            margin: 50px 0;
+        }
+        .phone-field {
+            display: flex;
+            align-items: center;
+            @media screen and (max-width: $bt-small-device){
+               flex-direction: column;
+            }
+            .sub-field {
+                width: 70%;
+                @media screen and (max-width: $bt-small-device){
+                    width: 100%;
+                    flex-direction: column;
+                }
+            }
+            label{
+                @media screen and (max-width: $bt-small-device){
+                    width: 100%;
+                }
+            }
+            select {
+                font-size: 1.6rem;
+                width: 200px;
+                margin-right: 2%;
+                border-top: 0;
+                border-left: 0;
+                border-right: 0;
+                border-bottom: 1px solid $yellow;
+                height: 43px;
+                @media screen and (max-width: $bt-small-device){
+                    font-size: 1.4rem;
+                    width: 100%;
+                    margin-top: 20px;
+                }
+            }
+            input {
+                width: 68%;
+                @media screen and (max-width: $bt-small-device){
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

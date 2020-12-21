@@ -1,0 +1,98 @@
+<div class="sidebar">
+
+    <!-- Sidebar Header -->
+    <div class="sidebar__logo">
+        <a routerLink="/" class="p-md-4 p-3">
+            <div class="logo">
+                <span>{{ 'menu.emc' | translate }}</span>
+                <img src="../../assets/images/moto.gif" alt="Expat Motorbikes Cambodia">
+            </div>
+            <span class="text-md-center text-left">{{ 'page-title.expat-moto' | translate }}</span>
+        </a>
+    </div>
+    <div class="menu-trigger">
+        <label class="menu-icon" for="menu-btn">
+            <span class="navicon"></span>
+        </label>
+    </div>
+    <div id="content-menu">
+        
+        <!-- Menu List -->
+        <div class="sidebar__menu">
+            <ul class="mb-0 parent-menu">
+                <li>
+                    <span class="on-menu"><a routerLink="" class="pointer-even">{{ 'menu.top' | translate }}</a></span>
+                    <div class="sub-menu">
+                        <span class="title-hover">{{ 'menu.top' | translate }}</span>
+                        <ul>
+                            <li><a routerLink fragment="emc">{{ 'menu.emc' | translate }}</a></li>
+                            <li><a routerLink fragment="japan">{{ 'menu.japan-shop' | translate }}</a></li>
+                            <li><a routerLink fragment="business">{{ 'menu.bussiness-service' | translate }}</a></li>
+                            <li><a routerLink fragment="access">{{ 'menu.map-contact' | translate }}</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <span class="on-menu"><a routerLink="/about" class="pc-pointer-none">{{ 'menu.about-us' | translate }}</a></span>
+                    <div class="sub-menu">
+                        <span class="title-hover">{{ 'menu.about-us' | translate }}</span>
+                        <ul>
+                            <li><a routerLink="/about/outline">{{ 'menu.corperate-info' | translate }}</a></li>
+                            <li><a routerLink="/about/history">{{ 'menu.history' | translate }}</a></li>
+                            <li><a routerLink="/about/teams">{{ 'menu.operational-team' | translate }}</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <span class="on-menu"><a routerLink="/business" class="pointer-even">{{ 'menu.business-field' | translate }}</a></span>
+                    <div class="sub-menu">
+                        <span class="title-hover">{{ 'menu.business-field' | translate }}</span>
+                        <ul>
+                            <li><a routerLink="/business/scooter-rental">{{ 'menu.scoter-rental' | translate }}</a></li>
+                            <li><a routerLink="/business/visa">{{ 'menu.visa-wp' | translate }}</a></li>
+                            <li><a routerLink="/business/exchange">{{ 'menu.current-exchange' | translate }}</a></li>
+                            <li><a routerLink="/business/remittance">{{ 'menu.remittance' | translate }}</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <span class="on-menu"><a routerLink="/blog" class="pointer-even">{{ 'menu.blog' | translate }}</a></span>
+                    <div class="sub-menu">
+                        <span class="title-hover">{{ 'menu.blog' | translate }}</span>
+                        <ul>
+                            <li><a routerLink="/blog" fragment="hisashi">{{ 'blog.hisashi' | translate }}</a></li>
+                            <li><a routerLink="/blog" fragment="shugo">{{ 'blog.shungo' | translate }}</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a routerLink="/contact">{{ 'menu.contact' | translate }}</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Sidebar Footer -->
+        <div class="sidebar__footer">
+            <div class="address">
+                <p class="title font-weight-bold mb-0">{{ 'sidebar.address.title' | translate }}</p>
+                <p class="mb-0">{{ 'sidebar.address.text' | translate }}</p>
+                <p class="title font-weight-bold mb-0">{{ 'sidebar.holiday.title' | translate }}</p>
+                <p class="mb-0">{{ 'sidebar.holiday.text' | translate }}</p>
+            </div>
+            <ul class="text-size">
+                <li class="active text-size__s" data-font="62.5">A</li>
+                <li class="text-size__m" data-font="72">A</li>
+            </ul>
+            <ul class="text-translate">
+                <li class="active" (click)="useLanguage('jp')">JP</li>
+                <li (click)="useLanguage('en')">EN</li>
+                <!-- <li (click)="useLanguage('km')">KH</li> -->
+            </ul>
+            <!-- <div class="mt-5 form-search">
+                <div class="gcse-search"></div>
+            </div> -->
+            <div class="mt-3 contact">
+                <a id="btn-contact" routerLink="/contact">{{ 'menu.contact' | translate }}</a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,140 @@
+@import '../../assets/scss/components/variables';
+.blog {
+    position: relative;
+    z-index: 1;
+    .title-blog {
+        font-family: Roboto;
+        font-size: 3.2rem;
+        text-align: center;
+        color: $yellow;
+        padding: 10px 0;
+        letter-spacing: 0.8vw;
+        border: 2px solid $dark-yellow;
+    }
+    .blog-img {
+        width: 100%;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    .blog-text {
+        border-top: 1px solid $dark-blue;
+        height: 280px;
+        overflow: hidden;
+    }
+    .b-darkblue {
+        border: 1px solid $dark-blue;
+        position: relative;
+        transition: all 0.3s ease-in-out 0s;
+        &::before,
+        &::after {
+            border: 0 solid transparent;
+            box-sizing: border-box;
+            content: '';
+            pointer-events: none;
+            position: absolute;
+            width: 0;
+            height: 0;
+            bottom: 0;
+            right: 0;
+        }
+        &::before {
+            border-bottom-width: 1px;
+            border-left-width: 1px;
+        }
+        &::after {
+            border-top-width: 1px;
+            border-right-width: 1px;
+        }
+        &:hover {
+            border: 0;
+            &::before,
+            &::after {
+                border-color: $dark-yellow;
+                -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
+                transition: border-color 1s, width 0.25s, height 0.25s;
+                width: 100%;
+                height: 100%;
+            }
+            &::before {
+                -webkit-transition-delay: 0s, 0s, 0.25s;
+                transition-delay: 0s, 0s, 0.25s;
+            }
+            &::after {
+                -webkit-transition-delay: 0s, 0.25s, 0s;
+                transition-delay: 0s, 0.25s, 0s;
+            }
+            .blog-text {
+                border-top: 1px solid $dark-yellow;
+            }
+        }
+    }
+    a {
+        width: 100%;
+        padding: 5px;
+        color: $dark-blue;
+        display: block;
+        text-align: center;
+        border: 1px solid $dark-blue;
+        transition: all 0.3s ease-in-out 0s;
+        &:hover {
+            color: $dark-yellow;
+            border: 1px solid $dark-yellow;
+        }
+    }
+    #hisashi {
+        margin-bottom: 7vw;
+    }
+}
+$loading-size : 2.7em;
+.loading-content{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .loading{
+        box-sizing: border-box;
+        position: relative;
+        display: inline-block;
+        width: $loading-size;
+        height: $loading-size;
+        background-color: transparent;
+        border-radius: 100%;
+        animation: loading-spin 1s infinite linear;
+        z-index: 9999;
+        &:after{
+          content: '';
+          box-sizing: border-box;
+          display: inline-block;
+          position: absolute;
+          width: 110%;
+          height: 110%;
+          top: -5%;
+          left: -5%;
+          right: 0;
+          bottom: 0;
+          border: 5px solid transparent;
+          border-radius: 100%;
+          box-shadow: $loading-size/25 $loading-size/25 $loading-size/25 $dark-yellow;
+          z-index: 9999;
+        }
+    }
+    .bg-overlay{
+        background: rgb(255 247 247 / 35%);
+    }
+}
+
+@keyframes loading-spin{
+    0% {
+      transform: rotateZ(0deg);
+    }
+    100% {
+      transform: rotateZ(360deg);
+    }
+}

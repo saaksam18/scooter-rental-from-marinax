@@ -1,0 +1,84 @@
+<div class="content">
+    
+    <!-- About Header -->
+    <app-about-header></app-about-header>
+    <div class="blog bg-lightblue">
+        <div class="content__wrap">
+
+            <!-- Hisashi Blog -->
+            <div id="hisashi" class="section-content">
+                <h3 class="mb-5 title-blog">{{ 'blog.hisashi' | translate }}</h3>
+                <div class="row">
+                    <div class="col-xl-4 col-md-6 col-12 my-4" *ngFor="let post of hisashi_posts">
+                        <a class="border-0" href="{{ post.link }}" target="_blank">
+                            <div class="d-flex flex-column h-100 b-darkblue">
+                                <div class="my-xl-auto blog-img">
+                                    <ng-container *ngIf="post.img ; else notImg">
+                                        <img src="{{ post.img }}" alt="{{ post.title }}" class="w-100">
+                                    </ng-container>
+                                    <ng-template #notImg>
+                                        <img src="assets/images/imgAvailable.png" alt="no image available" class="w-100"> 
+                                    </ng-template>
+                                </div>
+                                <div class="bg-white blog-text">
+                                    <div class="p-5">
+                                        <div class="text-center">
+                                            <h3 class="yellow-title">{{ post.title }}</h3>
+                                        </div>
+                                        <div class="text-left blog-des" *ngIf="post.content">{{ post.content | slice:0:80 }}<span>...</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-8 col-12 mx-auto my-5">
+                        <a href="" target="_blank">{{ 'button.more' | translate }}</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Shugo Blog -->
+            <div id="shugo" class="section-content">
+                <h3 class="mb-5 title-blog">{{ 'blog.shungo' | translate }}</h3>
+                <div class="row">
+                    <div class="col-xl-4 col-md-6 col-12 my-4" *ngFor="let post of shungo_posts">
+                        <a class="border-0" href="{{ post.link }}" target="_blank">
+                            <div class="d-flex flex-column h-100 b-darkblue">
+                                <div class="my-xl-auto blog-img">
+                                    <ng-container *ngIf="post.img ; else notImg">
+                                        <img src="{{ post.img }}" alt="{{ post.title }}" class="w-100">
+                                    </ng-container>
+                                    <ng-template #notImg>
+                                        <img src="assets/images/imgAvailable.png" alt="no image available" class="w-100"> 
+                                    </ng-template>
+                                </div>
+                                <div class="bg-white blog-text">
+                                    <div class="p-5">
+                                        <div class="text-center">
+                                            <h3 class="yellow-title">{{ post.title }}</h3>
+                                        </div>
+                                        <div class="text-left blog-des" *ngIf="post.content">{{ post.content | slice:0:80 }}<span>...</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-8 col-12 mx-auto my-5">
+                        <a href="" target="_blank">{{ 'button.more' | translate }}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Loading Icon -->
+<div *ngIf="isLoad">
+    <div class="loading-content">
+        <div class="loading"></div>
+        <div class="bg-overlay"></div>
+    </div>
+</div>

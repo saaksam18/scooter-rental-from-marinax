@@ -1,0 +1,119 @@
+<div class="content">
+    <div class="contact" data-aos="fade-up" data-aos-delay="50">
+
+        <!-- Emc Map -->
+        <div class="w-100 mb-5">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15636.07335760034!2d104.923545!3d11.550542!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x57d8373682216c7b!2sEMC+Motorbike+Rental!5e0!3m2!1sen!2skh!4v1507966475470" height="500" frameborder="0" style="width:100%;border:0" allowfullscreen=""></iframe>
+        </div>
+        <div class="px-5 pt-5">
+            
+            <!-- Contact us -->
+            <div class="content-section" data-aos="fade-up" data-aos-delay="50">
+                <h3 class="yellow-title">{{ 'menu.contact' | translate }}</h3>
+
+                <ul class="row">
+                    <li class="col-xl-4 col-12">
+                        <div class="inner">
+                            <h2 class="mt-5 text-center">
+                                {{ 'contact.our-location' | translate }}
+                            </h2>
+                            <p>{{ 'contact.address' | translate }}</p>
+                            <p>
+                                4.7 <span>★★★★☆</span>{{ 'contact.google-review.line-1' | translate }}
+                            </p>
+                            <p>
+                                4.6 <span>★★★★☆</span>{{ 'contact.google-review.line-2' | translate }}
+                            </p>
+                            <p>
+                                5.0 <span>★★★★★</span>{{ 'contact.google-review.line-3' | translate }}
+                            </p>
+                            <div class="icon location"></div>
+                        </div>
+                    </li>
+                    <li class="col-xl-4 col-12">
+                        <div class="inner">
+                            <h2 class="mt-5 text-center">
+                                {{ 'contact.work-hours' | translate }}
+                            </h2>
+                            <p> {{ 'contact.time' | translate }}</p>
+                            <p> {{ 'contact.workday' | translate }}</p>
+                            <p> {{ 'contact.holiday' | translate }}</p>
+                            <div class="icon time"></div>
+                        </div>
+                    </li>
+                    <li class="col-xl-4 col-12">
+                        <div class="inner">
+                            <h2 class="mt-5 text-center">
+                                {{ 'contact.phone-number.title' | translate }}
+                            </h2>
+                            <p>{{ 'contact.phone-number.head' | translate }}</p>
+                            <a href="tel:069 499 260"><p>{{ 'contact.phone-number.text' | translate }}</p></a>
+                            <a href="tel:089 518 867"><p>{{ 'contact.phone-number.line-2' | translate }}</p></a>
+                            <div class="icon phone"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        <div class="content__wrap pb-5">
+
+            <!-- Contact Form -->
+            <div class="content-section" data-aos="fade-up" data-aos-delay="50">
+                <h3 class="yellow-title">{{ 'contact.contact-form' | translate }}</h3>
+                <form id="contact_form" class="d-flex align-items-center flex-column"
+                [formGroup]="contactForm" novalidate (ngSubmit)= "submit()">
+                    <div class="form-group">
+                        <label for="name"><span class="text-danger">*</span>{{ 'contact.name' | translate }}</label>
+                        <input name="name" formControlName="name" class="px-3" placeholder="{{ 'contact.name' | translate }}" autocomplete="off">
+                        <div *ngIf="contactForm.controls['name'].invalid && contactForm.controls['name'].touched" class="px-3 text-danger text-right">
+                            <p *ngIf="contactForm.controls['name'].errors.required">{{ 'contact.name-required' | translate }}</p>
+                            <p *ngIf="contactForm.get('name').hasError('pattern')">{{ 'contact.name-pattern' | translate }}</p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email"><span class="text-danger">*</span>{{ 'contact.email' | translate }}</label>
+                        <input type="email" name="email" formControlName="email" class="px-3" placeholder="{{ 'contact.email' | translate }}" autocomplete="off">
+                        <div *ngIf="contactForm.controls['email'].invalid && contactForm.controls['email'].touched" class="px-3 text-danger text-right">
+                            <p *ngIf="contactForm.controls['email'].errors.required">{{ 'contact.email-required' | translate }}</p>
+                            <p *ngIf="contactForm.get('email').hasError('pattern')" class="text-danger">{{ 'contact.email-pattern' | translate }}</p> 
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="phone-field">
+                            <label for="phone"><span class="text-danger">*</span>{{ 'contact.phone' | translate }}</label>
+                            <div class="d-flex sub-field">
+                                <select id="code" formControlName="code" name="code" class="form-control" (change)="selectChange($event)" [(ngModel)]="selected">
+                                    <option *ngFor="let code of codes" value="{{code.code}}">{{code.country}} {{code.code}}</option>
+                                </select>
+                                <input id="ccode" type="hidden" value="{{selected}}" name="ccode">
+                                <input id="fphone" type="tel" maxlength="12" formControlName="fphone" name="fphone" class="px-3" placeholder="00-000-000" autocomplete="off">
+                            </div>
+                        </div>
+                        <div *ngIf="contactForm.controls['fphone'].invalid && contactForm.controls['fphone'].touched" class="px-3 text-danger text-right">
+                            <p *ngIf="contactForm.controls['fphone'].errors.required">{{ 'contact.phone-required' | translate }}</p>
+                            <ng-template [ngIf]="contactForm.controls['fphone'].hasError('minlength') || contactForm.get('fphone').hasError('pattern')">
+                                <p>{{ 'contact.phone-pattern' | translate }}</p>
+                            </ng-template>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject"><span class="text-danger">*</span>{{ 'contact.subject' | translate }}</label>
+                        <input name="subject" formControlName="subject" class="px-3" id="subject" placeholder="{{ 'contact.subject' | translate }}" autocomplete="off">
+                        <div *ngIf="contactForm.controls['subject'].invalid && contactForm.controls['subject'].touched" class="px-3 text-danger text-right">
+                            <span *ngIf="contactForm.controls['subject'].errors.required">{{ 'contact.subject-reuired' | translate }}</span>
+                            <span *ngIf="contactForm.get('subject').errors.minlength">{{ 'contact.subject-pattern' | translate }}</span>
+                        </div>
+                    </div>
+                    <div class="form-group d-flex flex-md-row flex-column">
+                        <label for="message"><span class="text-danger">*</span>{{ 'contact.message' | translate }}</label>
+                        <textarea name="message" formControlName="message" class="px-3" id="message" rows="3" placeholder="{{ 'contact.message' | translate }}"></textarea>
+                    </div>
+                    <div *ngIf="contactForm.controls['message'].invalid && contactForm.controls['message'].touched" class="w-75 px-5 text-danger text-right msg-error">
+                        <span *ngIf="contactForm.controls['message'].errors.required">{{ 'contact.message-reuired' | translate }}</span>
+                        <span *ngIf="contactForm.get('message').errors.minlength">{{ 'contact.message-pattern' | translate }}</span>
+                    </div>
+                    <button id="btn-submit" [ngClass]="{'disabled': contactForm.invalid}" type="submit" [disabled]="contactForm.invalid">{{ 'button.submit' | translate }}</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

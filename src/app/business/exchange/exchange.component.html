@@ -1,0 +1,84 @@
+<div class="content">
+
+    <!-- Business Header -->
+    <app-business-header></app-business-header>
+
+    <!-- Exchange Header -->
+    <div class="exchange-header bg-darkyellow">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="title-border">{{ 'exchange.title' | translate }}</h3>
+            </div>
+            <div class="col-12">
+                <p class="font-weight-bold sub-title mb-5">
+                    5.0 <span>★★★★★</span>{{ 'contact.google-review.line-3' | translate }}
+                </p>
+                <div class="sub-title">
+                    <span>{{ 'exchange.sub-title' | translate }}</span>
+                </div>
+                <p *ngIf="('exchange.sub-title02.line-1' | translate) !=''" class=" font-weight-bold sub-title mb-5">{{ 'exchange.sub-title02.line-1' | translate }}<i class="fas fa-arrows-alt-h"></i>{{ 'exchange.sub-title02.line-2' | translate }}</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Exchange Content -->
+    <div class="exchange content__wrap bg-lightblue">
+        <div class="content-section">
+            <h3 class="step-title">{{ 'exchange.flow.title' | translate }}</h3>
+            <!-- Exchange Step -->
+            <ul class="scene">
+                <li>
+                    <div class="scene-circle">
+                        <span>{{ 'exchange.service' | translate }}</span>01
+                    </div>
+                    <div class="scene-text">{{ 'exchange.flow.step-1' | translate }}</div>
+                </li>
+                <li>
+                    <div class="scene-circle">
+                        <span>{{ 'exchange.service' | translate }}</span>02
+                    </div>
+                    <div class="scene-text">{{ 'exchange.flow.step-2' | translate }}</div>
+                </li>
+            </ul>
+            <div class="exchange-desc">
+                <p>{{ 'exchange.desc.line-1' | translate }}</p>
+                <p class="mb-5">{{ 'exchange.desc.line-2' | translate }}</p>
+            </div>
+            <!-- Section 01 -->
+            <div class="scene-block scene-block01">
+                <div class="scene-left">
+                    <dl>
+                        <dt>
+                            {{ 'exchange.step-1.title' | translate }}
+                        </dt>
+                        <dd>
+                            <p>{{ 'exchange.step-1.desc-1' | translate }}</p>
+                            <p>{{ 'exchange.step-1.desc-2' | translate }}</p>
+                            <p>{{ 'exchange.step-1.desc-3' | translate }}</p>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="scene-right"></div>
+            </div>
+            <!-- Section 02 -->
+            <div class="scene-block scene-block02">
+                <div class="scene-left">
+                    <dl>
+                        <dt>
+                            {{ 'exchange.step-2.title' | translate }}
+                        </dt>
+                        <dd>
+                            <p>{{ 'exchange.step-2.desc-1' | translate }}</p>
+                            <p>{{ 'exchange.step-2.desc-2' | translate }}</p>
+                            <p>{{ 'exchange.step-2.desc-3' | translate }}</p>
+                            <p>{{ 'exchange.step-2.desc-4' | translate }}</p>
+                            <p>{{ 'exchange.step-2.desc-5' | translate }}</p>
+                            <p>{{ 'exchange.step-2.desc-6' | translate }}</p>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="scene-right"></div>
+            </div>
+        </div>
+    </div>
+</div>

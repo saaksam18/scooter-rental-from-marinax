@@ -1,0 +1,31 @@
+@import '../../assets/scss/components/variables';
+.error404 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media screen and (max-width: $smart-phone) {
+        height: 100%;
+        padding: 90px 20px;
+    }
+    h2 {
+        font-size: 5em;
+        color: $dark-yellow;
+        position: relative;
+        letter-spacing: 10px;
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            left: 0;
+            right: 0;
+            width: 30%;
+            margin: 0 auto;
+            border-bottom: 2px solid $dark-yellow;
+        }
+    }
+    span {
+        font-size: 1.5em;
+        color: $dark-yellow;
+    }
+}

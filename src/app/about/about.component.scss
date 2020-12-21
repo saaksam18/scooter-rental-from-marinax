@@ -1,0 +1,222 @@
+@import '../../assets/scss/components/variables';
+.story{
+    li{
+        &:nth-child(odd){
+            background-color: $dark-yellow;
+        }
+        &:nth-child(even){
+            background-color: $dark-blue;
+        }
+        a{
+            height: 360px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: $white;
+            font-size: 2rem;
+            @media screen and (max-width: $large-desktop){
+                font-size: 1.6rem;
+                width: 100%;
+                height: 250px;
+            }
+            @media screen and (max-width: $smart-phone){
+                height: 100px;
+                padding-top: 0;
+                padding-bottom: 20px;
+            }
+            &::after{
+                content: '';
+                width: 15px;
+                height: 15px;
+                margin-left: 10px;
+                border-top: 2px solid $white;
+                border-right: 2px solid $white;
+                -webkit-transform: rotate(135deg);
+                transform: rotate(135deg);
+                position: absolute;
+                bottom: 20px;
+                right: 20px;
+                @media screen and (max-width: $smart-phone){
+                    font-size: 1.6rem;
+                    width: 10px;
+                    height: 10px;
+                    -webkit-transform: rotate(135deg) translateX(-50%);
+                    transform: rotate(135deg) translateX(-50%);
+                    bottom: 10px;
+                    right: 50%;
+                }
+            }
+            p{
+                font-size: 3vw;
+                margin-bottom: 30px;
+                @media screen and (max-width: $smart-phone){
+                    font-size: 2rem;
+                    margin-bottom: 0;
+                }
+                span{
+                    display: block;
+                    font-size: 1.4rem;
+                    margin-bottom: 10px;
+                    @media screen and (max-width: $smart-phone){
+                        display: inline;
+                        font-size: 1.2rem;
+                        margin-bottom: 0;
+                        margin-right: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    &__content{
+        padding-top: 60vmin;
+        padding-bottom: 50px;
+        position: relative;
+        z-index: 1;
+        &::before{
+            content: '';
+            width: 100%;
+            height: 70vmin;
+            background: $white;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: -1;
+            @media screen and (max-width: $smart-phone){
+                height: 50vh;
+            }
+        }
+        &::after{
+            content: '';
+            width: 100%;
+            height: 70vmin;
+            background-color: $white;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: -1;
+            transition: 1s all ease .2s;
+            @media screen and (max-width: $smart-phone){
+                height: 50vh;
+            }
+        }
+    }
+    &__inner{
+        width: 1000px;
+        margin: 0 auto 50px;
+        @media screen and (max-width: $desktop){
+            width: 90%;
+        }
+        .link{
+            display: flex;
+            justify-content: center;
+            margin: 50px auto 0;
+            a{
+                color: $dark-yellow;
+                border-top: 2px solid $dark-yellow;
+                border-bottom: 2px solid $dark-yellow;
+                padding: 20px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: flex-end;
+                &::after{
+                    content: '';
+                    width: 10px;
+                    height: 10px;
+                    margin-left: 30px;
+                    border-top: 2px solid $dark-yellow;
+                    border-right: 2px solid $dark-yellow;
+                    -webkit-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+    &__title{
+        display: flex;
+        flex-direction: column;
+        margin-top: -30vmin;
+        margin-bottom: 50px;
+        .id{
+            width: auto;
+            color: $white;
+            background-color: $dark-yellow;
+            margin-bottom: 30px;
+            font-size: 1.6rem;
+            font-weight: 400;
+        }
+        p{
+            display: none;
+            color: $dark-yellow;
+            background: $white;
+            font-size: 2.6rem;
+            padding: 0 5px;
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+            margin-right: auto;
+            font-weight: 700;
+            transition: .1s all ease .9s;
+        }
+    }
+    .is-show{
+        &::after{
+            opacity: 0;
+        }
+        .story__title{
+            p{
+                display: table;
+                animation: leftnavi_slide_in .7s ease-out backwards;
+                @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+                    padding-top: 8px;
+                    &:nth-child(1){
+                        padding-top: 0px;
+                    }
+                }
+                &:nth-child(1){
+                    animation-delay: 0.5s;
+                }
+                &:nth-child(2){
+                    animation-delay: 0.8s;
+                }
+                &:nth-child(3){
+                    animation-delay: 1.1s;
+                }
+                &:nth-child(4){
+                    animation-delay: 1.4s;
+                }
+            }
+        }
+    }
+    #story01::before{
+        background: url('../../assets/images/about/about-img01.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    #story02::before{
+        background: url('../../assets/images/about/about-img02.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    #story03::before{
+        background: url('../../assets/images/about/about-img03.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    #story04::before{
+        background: url('../../assets/images/about/about-img04.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    &__text{
+        color: $black;
+        background: $white;
+        padding: 45px 6%;
+        line-height: 2.5em;
+        transition: .6s all ease .8s;
+        @media screen and (max-width: $smart-phone){
+            padding: 20px;
+            text-align: justify;
+            line-height: 2em;
+        }
+    }
+}

@@ -1,0 +1,50 @@
+<div class="content">
+    <app-about-header></app-about-header>
+
+    <!-- Page content -->
+    <div class="content__pagetitle">
+        <h3 class="main-title">{{'menu.site-map' | translate}}</h3>
+    </div>
+    <div class="sitemap bg-lightblue">
+        <div class="sitemap__content">
+            
+            <!-- Top -->
+            <ul class="menu-category">
+                <li><a routerLink="/">{{ 'menu.top' | translate }}</a></li>
+                <li><a routerLink fragment="emc">{{ 'menu.emc' | translate }}</a></li>
+                <li><a routerLink fragment="japan">{{ 'menu.japan-shop' | translate }}</a></li>
+                <li><a routerLink fragment="business">{{ 'menu.bussiness-service' | translate }}</a></li>
+                <li><a routerLink fragment="access">{{ 'menu.map-contact' | translate }}</a></li>
+            </ul>
+
+            <!-- About Us -->
+            <ul class="menu-category">
+                <li>{{ 'menu.about-us' | translate }}</li>
+                <li><a routerLink="/about/outline">{{ 'menu.corperate-info' | translate }}</a></li>
+                <li><a routerLink="/about/history">{{ 'menu.history' | translate }}</a></li>
+                <li><a routerLink="/about/teams">{{ 'menu.operational-team' | translate }}</a></li>
+            </ul>
+
+            <!-- Business Field -->
+            <ul class="menu-category">
+                <li><a routerLink="/business">{{ 'menu.business-field' | translate }}</a></li>
+                <li><a routerLink="/business/scooter-rental">{{ 'menu.scoter-rental' | translate }}</a></li>
+                <li><a routerLink="/business/visa">{{ 'menu.visa-wp' | translate }}</a></li>
+                <li><a routerLink="/business/exchange">{{ 'menu.current-exchange' | translate }}</a></li>
+                <li><a routerLink="/business/remittance">{{ 'menu.remittance' | translate }}</a></li>
+            </ul>
+
+            <!-- Blog -->
+            <ul class="menu-category">
+                <li><a routerLink="/blog">{{ 'menu.blog' | translate }}</a></li>
+                <li><a routerLink="">Hisashi</a></li>
+                <li><a routerLink="">Shngo</a></li>
+            </ul>
+
+            <!-- Contact -->
+            <ul class="menu-category">
+                <li><a routerLink="/contact">{{ 'menu.contact' | translate }}</a></li>
+            </ul>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,72 @@
+<!-- Outline page -->
+<div class="content">
+    <app-about-header></app-about-header>
+    <div class="content__pagetitle">
+        <h3 class="main-title">{{ 'outline.title' | translate }}</h3>
+    </div>
+    <div class="outline content__wrap bg-lightblue">
+        <!-- Phylosophy -->
+        <div class="content-section">
+            <div class="text-center outline__philosophy">
+                <h3 class="yellow-title">{{ 'outline.philosophy.title' | translate }}</h3>
+                <div class="w-100 outline__map--access">
+                    <p class="font-weight-bold">{{ 'outline.philosophy.des.line-1' | translate }}</p>
+                    <p>{{ 'outline.philosophy.des.line-2' | translate }}<br class="d-none d-sm-block">
+                    {{ 'outline.philosophy.des.line-3' | translate }}</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Outline Table -->
+        <div class="content-section">
+            <div class="outline__list">
+                <table class="table table-darkyellow">
+                    <tr>
+                        <th>{{ 'outline.table.company' | translate }}</th>
+                        <td>{{ 'outline.table.company-des' | translate }}</td>
+                    </tr>
+                    <tr>
+                        <th>{{ 'outline.table.location' | translate }}</th>
+                        <td>{{ 'contact.address' | translate }}</td>
+                    </tr>
+                    <tr>
+                        <th>{{ 'outline.table.business' | translate }}</th>
+                        <td>{{ 'outline.table.business-des' | translate }}</td>
+                    </tr>
+                    <tr>
+                        <th>{{ 'outline.table.establishment' | translate }}</th>
+                        <td>{{ 'outline.table.establishment-des' | translate }}</td>
+                    </tr>
+                    <tr>
+                        <th>{{ 'outline.table.capital' | translate }}</th>
+                        <td>{{ 'outline.table.capital-des' | translate }}</td>
+                    </tr>
+                    <tr>
+                        <th>{{ 'outline.table.group-company.title' | translate }}</th>
+                        <td>
+                            <p class="mb-0">{{ 'outline.table.group-company.des-line-1' | translate }}</p>
+                            <p class="mb-0">{{ 'outline.table.group-company.des-line-2' | translate }}</p>  
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Access Map -->
+        <div class="content-section">
+            <div class="outline__map">
+                <div class="title-borderleft">
+                    <h3>{{ 'outline.access' | translate }}</h3>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15636.07335760034!2d104.923545!3d11.550542!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x57d8373682216c7b!2sEMC+Motorbike+Rental!5e0!3m2!1sen!2skh!4v1507966475470" height="500" frameborder="0" style="width:100%;border:0" allowfullscreen=""></iframe>
+                <div class="outline__map--btn">
+                    <a href="https://www.google.com/maps/place/EMC+MOTORBIKE+RENTAL+BKK1/@11.550542,104.9213563,17z/data=!3m1!4b1!4m5!3m4!1s0x310951244505894b:0x57d8373682216c7b!8m2!3d11.550542!4d104.923545" target="_blank">{{ 'button.google-map' | translate }}</a>
+                </div>
+                <div class="outline__map--access">
+                    <span class="title">{{ 'outline.transportation-info' | translate }}</span>
+                    <p>{{ 'contact.address' | translate }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

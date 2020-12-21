@@ -1,0 +1,397 @@
+<div class="content">
+
+    <!-- Business Header -->
+    <app-business-header></app-business-header>
+
+    <!-- Scooter Rental Header -->
+    <div class="rental-header bg-darkyellow">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="title-border">{{ 'scooter-rental.title' | translate }}</h3>
+            </div>
+            <div class="col-12">
+                <p class="font-weight-bold sub-title mb-5">
+                    4.7 <span>★★★★☆</span>{{ 'contact.google-review.line-1' | translate }}
+                </p>
+                <div class="sub-title">
+                    <span>{{ 'scooter-rental.sub-title' | translate }}</span>
+                </div>
+            </div>
+            <div class="col-lg-10 col-12 mx-auto mb-5">
+                <div class="header-desc">
+                    <table class="table table-bordered bg-white mt-5">
+                        <tr>
+                            <td class="text-center"><span>{{ 'scooter-rental.table.monthly-rental' | translate }}</span></td>
+                            <td class="pl-5"><span>{{ 'scooter-rental.table.monthly-rental-des' | translate }}</span></td>
+                        </tr>
+                        <tr *ngIf="('scooter-rental.table.day-rental' | translate) !=''">
+                            <td class="text-center"><span>{{ 'scooter-rental.table.day-rental' | translate }}</span></td>
+                            <td class="pl-5"><span>{{ 'scooter-rental.table.day-rental-des' | translate }}</span></td>
+                        </tr>
+                    </table>
+                    <p class="mt-3">{{ 'scooter-rental.reliable-des' | translate }}</p>
+                    <p>{{ 'scooter-rental.equip-des' | translate }}</p>
+                    <p>{{ 'scooter-rental.desc-3' | translate }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scooter Rental Content -->
+    <div class="rental content__wrap bg-lightblue">
+        <div class="content-section">
+            <h3 class="step-title">{{ 'scooter-rental.flow.title' | translate }}</h3>
+
+            <!-- Section Step -->
+            <ul class="scene">
+                <li>
+                    <div class="scene-circle">
+                        <span>{{ 'exchange.step' | translate }}</span>01
+                    </div>
+                    <div class="scene-text">{{ 'scooter-rental.flow.step-1' | translate }}</div>
+                </li>
+                <li>
+                    <div class="scene-circle">
+                        <span>{{ 'exchange.step' | translate }}</span>02
+                    </div>
+                    <div class="scene-text">{{ 'scooter-rental.flow.step-2' | translate }}</div>
+                </li>
+                <li>
+                    <div class="scene-circle">
+                        <span>{{ 'exchange.step' | translate }}</span>03
+                    </div>
+                    <div class="scene-text">{{ 'scooter-rental.flow.step-3' | translate }}</div>
+                </li>
+            </ul>
+            <!-- Section 01 -->
+            <div class="scene-block scene-block01">
+                <div class="scene-left">
+                    <dl>
+                        <dt>
+                            {{ 'scooter-rental.step-1.title' | translate }}
+                        </dt>
+                        <dd>
+                            <p>{{ 'scooter-rental.step-1.des-1' | translate }}</p>
+                            <p>{{ 'scooter-rental.step-1.des-2' | translate }}</p>
+                            <p>{{ 'scooter-rental.step-1.des-3' | translate }}</p>
+                            <p>{{ 'scooter-rental.step-1.des-4' | translate }}</p>
+                            <p>{{ 'scooter-rental.step-1.des-5' | translate }}</p>
+                            <p>{{ 'scooter-rental.step-1.des-6' | translate }}</p>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="scene-right"></div>
+            </div>
+            <!-- Section 02 -->
+            <div class="scene-block scene-block02">
+                <div class="scene-left">
+                    <dl>
+                        <dt>
+                            {{ 'scooter-rental.step-2.title' | translate }}<br>
+                            {{ 'scooter-rental.step-2.title-2' | translate }}
+                        </dt>
+                        <dd>
+                            <p *ngIf="('scooter-rental.step-2.des-1' | translate) !=''" class="mb-0">{{ 'scooter-rental.step-2.des-1' | translate }}</p>
+                            <p class="mb-0">{{ 'scooter-rental.step-2.des-2' | translate }}</p>
+                            <p class="mb-0">{{ 'scooter-rental.step-2.des-3' | translate }}</p>
+                            <p>{{ 'scooter-rental.step-2.des-4' | translate }}</p>
+                            <div class="img-price-list">
+                                <a href="../../../assets/pdf/price-list.pdf" target="_blank">
+                                    <img src="../../../assets/images/business/price-list.png" alt="">
+                                </a>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="scene-right"></div>
+            </div>
+            <!-- Section 03 -->
+            <div class="scene-block scene-block03">
+                <div class="scene-left">
+                    <dl>
+                        <dt>
+                            {{ 'scooter-rental.step-3.title' | translate }}
+                        </dt>
+                        <dd>
+                            <p>{{ 'scooter-rental.step-3.des-1' | translate }}</p>
+                            <p>{{ 'scooter-rental.step-3.des-2' | translate }}</p>
+                            <p>{{ 'scooter-rental.step-3.des-3' | translate }}</p>
+                            <p>{{ 'scooter-rental.step-3.des-4' | translate }}</p>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="scene-right"></div>
+            </div>
+        </div>
+        <div class="content-section">
+            <h3 class="step-title">{{ 'scooter-rental.qa.title' | translate }}</h3>
+            <!-- QA section 1 -->
+            <h3 class="qa-sec-title">{{ 'scooter-rental.qa.sec-1.title' | translate }}</h3>
+            <div class="content-QA">
+                <div class="content-Q plus">
+                    <h5><span>Q:</span>{{ 'scooter-rental.qa.sec-1.q1' | translate }}</h5>
+                </div>
+                <div class="content-A">
+                    <div class="d-flex">
+                        <span>A:</span>
+                        <div class="content-A-text">
+                            <p class="mb-0">{{ 'scooter-rental.qa.sec-1.a1' | translate }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-QA">
+                <div class="content-Q plus">
+                    <h5><span>Q:</span>{{ 'scooter-rental.qa.sec-1.q2' | translate }}</h5>
+                </div>
+                <div class="content-A">
+                    <div class="d-flex">
+                        <span>A:</span>
+                        <div class="content-A-text">
+                            <p class="mb-0">{{ 'scooter-rental.qa.sec-1.a2' | translate }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- QA section 2 -->
+            <h3 class="qa-sec-title">{{ 'scooter-rental.qa.sec-2.title' | translate }}</h3>
+            <div class="content-QA">
+                <div class="content-Q plus">
+                    <h5><span>Q:</span>{{ 'scooter-rental.qa.sec-2.q1' | translate }}</h5>
+                </div>
+                <div class="content-A">
+                    <div class="d-flex">
+                        <span>A:</span>
+                        <div class="content-A-text">
+                            <p class="mb-0">{{ 'scooter-rental.qa.sec-2.a1' | translate }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-QA">
+                <div class="content-Q plus">
+                    <h5><span>Q:</span>{{ 'scooter-rental.qa.sec-2.q2' | translate }}</h5>
+                </div>
+                <div class="content-A">
+                    <div class="d-flex">
+                        <span>A:</span>
+                        <div class="content-A-text">
+                            <p class="mb-0">{{ 'scooter-rental.qa.sec-2.a2' | translate }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-QA">
+                <div class="content-Q plus">
+                    <h5><span>Q:</span>{{ 'scooter-rental.qa.sec-2.q3' | translate }}</h5>
+                </div>
+                <div class="content-A">
+                    <div class="d-flex">
+                        <span>A:</span>
+                        <div class="content-A-text">
+                            <p class="mb-0">{{ 'scooter-rental.qa.sec-2.a3' | translate }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- QA section 3 -->
+            <h3 class="qa-sec-title">{{ 'scooter-rental.qa.sec-3.title' | translate }}</h3>
+            <div class="content-QA">
+                <div class="content-Q plus">
+                    <h5><span>Q:</span>{{ 'scooter-rental.qa.sec-3.q1' | translate }}</h5>
+                </div>
+                <div class="content-A">
+                    <div class="d-flex">
+                        <span>A:</span>
+                        <div class="content-A-text">
+                            <p class="mb-0">{{ 'scooter-rental.qa.sec-3.a1' | translate }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-QA">
+                <div class="content-Q plus">
+                    <h5><span>Q:</span>{{ 'scooter-rental.qa.sec-3.q2' | translate }}</h5>
+                </div>
+                <div class="content-A">
+                    <div class="d-flex">
+                        <span>A:</span>
+                        <div class="content-A-text">
+                            <p class="mb-0">{{ 'scooter-rental.qa.sec-3.a2' | translate }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- QA section 4 -->
+            <h3 class="qa-sec-title">{{ 'scooter-rental.qa.sec-4.title' | translate }}</h3>
+            <div class="content-QA">
+                <div class="content-Q plus">
+                    <h5><span>Q:</span>{{ 'scooter-rental.qa.sec-4.q1' | translate }}</h5>
+                </div>
+                <div class="content-A">
+                    <div class="d-flex">
+                        <span>A:</span>
+                        <div class="content-A-text">
+                            <p class="mb-0">{{ 'scooter-rental.qa.sec-4.a1' | translate }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-QA">
+                <div class="content-Q plus">
+                    <h5><span>Q:</span>{{ 'scooter-rental.qa.sec-4.q2' | translate }}</h5>
+                </div>
+                <div class="content-A">
+                    <div class="d-flex">
+                        <span>A:</span>
+                        <div class="content-A-text">
+                            <p class="mb-0">{{ 'scooter-rental.qa.sec-4.a2' | translate }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- QA section 5 -->
+            <h3 class="qa-sec-title">{{ 'scooter-rental.qa.sec-5.title' | translate }}</h3>
+            <div class="content-QA">
+                <div class="content-Q plus">
+                    <h5><span>Q:</span>{{ 'scooter-rental.qa.sec-5.q1' | translate }}</h5>
+                </div>
+                <div class="content-A">
+                    <div class="d-flex">
+                        <span>A:</span>
+                        <div class="content-A-text">
+                            <p class="mb-0">{{ 'scooter-rental.qa.sec-5.a1' | translate }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-QA">
+                <div class="content-Q plus">
+                    <h5><span>Q:</span>{{ 'scooter-rental.qa.sec-5.q2' | translate }}</h5>
+                </div>
+                <div class="content-A">
+                    <div class="d-flex">
+                        <span>A:</span>
+                        <div class="content-A-text">
+                            <p class="mb-0">{{ 'scooter-rental.qa.sec-5.a2' | translate }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-QA">
+                <div class="content-Q plus">
+                    <h5><span>Q:</span>{{ 'scooter-rental.qa.sec-5.q3' | translate }}</h5>
+                </div>
+                <div class="content-A">
+                    <div class="d-flex">
+                        <span>A:</span>
+                        <div class="content-A-text">
+                            <p class="mb-0">{{ 'scooter-rental.qa.sec-5.a3' | translate }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-QA">
+                <div class="content-Q plus">
+                    <h5><span>Q:</span>{{ 'scooter-rental.qa.sec-5.q4' | translate }}</h5>
+                </div>
+                <div class="content-A">
+                    <div class="d-flex">
+                        <span>A:</span>
+                        <div class="content-A-text">
+                            <p class="mb-0">{{ 'scooter-rental.qa.sec-5.a4' | translate }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- QA section 6 -->
+            <h3 class="qa-sec-title">{{ 'scooter-rental.qa.sec-6.title' | translate }}</h3>
+            <div class="content-QA">
+                <div class="content-Q plus">
+                    <h5><span>Q:</span>{{ 'scooter-rental.qa.sec-6.q1' | translate }}</h5>
+                </div>
+                <div class="content-A">
+                    <div class="d-flex">
+                        <span>A:</span>
+                        <div class="content-A-text">
+                            <p class="mb-0">{{ 'scooter-rental.qa.sec-6.a1' | translate }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-QA">
+                <div class="content-Q plus">
+                    <h5><span>Q:</span>{{ 'scooter-rental.qa.sec-6.q2' | translate }}</h5>
+                </div>
+                <div class="content-A">
+                    <div class="d-flex">
+                        <span>A:</span>
+                        <div class="content-A-text">
+                            <p class="mb-0">{{ 'scooter-rental.qa.sec-6.a2' | translate }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- QA section 7 -->
+            <h3 class="qa-sec-title">{{ 'scooter-rental.qa.sec-7.title' | translate }}</h3>
+            <div class="content-QA">
+                <div class="content-Q plus">
+                    <h5><span>Q:</span>{{ 'scooter-rental.qa.sec-7.q1' | translate }}</h5>
+                </div>
+                <div class="content-A">
+                    <div class="d-flex">
+                        <span>A:</span>
+                        <div class="content-A-text">
+                            <p class="mb-0">{{ 'scooter-rental.qa.sec-7.a1' | translate }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-QA">
+                <div class="content-Q plus">
+                    <h5><span>Q:</span>{{ 'scooter-rental.qa.sec-7.q2' | translate }}</h5>
+                </div>
+                <div class="content-A">
+                    <div class="d-flex">
+                        <span>A:</span>
+                        <div class="content-A-text">
+                            <p class="mb-0">{{ 'scooter-rental.qa.sec-7.a2' | translate }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-QA">
+                <div class="content-Q plus">
+                    <h5><span>Q:</span>{{ 'scooter-rental.qa.sec-7.q3' | translate }}</h5>
+                </div>
+                <div class="content-A">
+                    <div class="d-flex">
+                        <span>A:</span>
+                        <div class="content-A-text">
+                            <p class="mb-0">{{ 'scooter-rental.qa.sec-7.a3' | translate }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-QA">
+                <div class="content-Q plus">
+                    <h5><span>Q:</span>{{ 'scooter-rental.qa.sec-7.q4' | translate }}</h5>
+                </div>
+                <div class="content-A">
+                    <div class="d-flex">
+                        <span>A:</span>
+                        <div class="content-A-text">
+                            <p class="mb-0">{{ 'scooter-rental.qa.sec-7.a4' | translate }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

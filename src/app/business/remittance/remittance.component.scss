@@ -1,0 +1,94 @@
+@import '../../../assets/scss/components/variables';
+.remittance-header {
+    color: $white;
+    padding: 50px 50px 0 50px;
+    @media screen and (max-width: $smart-phone) {
+        padding: 50px 30px 0 30px;
+    }
+    .title-border {
+        font-size: 3rem;
+        border: 1px solid $white;
+        padding: 20px;
+        margin-bottom: 40px;
+        text-align: center;
+        @media screen and (max-width: $smart-phone) {
+            font-size: 2.2rem;
+            padding: 20px 10px;
+        }
+        @media screen and (max-width: $small-device){
+            font-size: 1.7rem;
+        }
+    }
+    .sub-title {
+        font-size: 2.4rem;
+        font-weight: 700;
+        margin-bottom: 30px;
+        line-height: 1.8;
+        text-align: center;
+        @media screen and (max-width: $smart-phone) {
+            font-size: 2rem;
+            display: inline-block;
+            text-align: left;
+        }
+        @media screen and (max-width: $small-device){
+            font-size: 1.6rem;
+        }
+    }
+}
+.remittance {
+    .scene-block01 {
+        height: 450px;
+        @media screen and (max-width: $desktop){
+            height: auto;
+        }
+        .scene-right {
+            background: url("../../../assets/images/business/foreign-currency-exchange.jpg") no-repeat center center;
+        }
+        .scene-left::after {
+            content: '01';
+        }
+    }
+    .scene-block02 {
+        height: 600px;
+        @media screen and (max-width: $desktop){
+            height: auto;
+        }
+        .scene-right {
+            background: url("../../../assets/images/business/money-transfer.jpg") no-repeat center center;
+        }
+        .scene-left::after {
+            content: '02';
+        }
+    }
+    &-desc {
+        font-size: 14px;
+        @media screen and (max-width: $desktop) {
+            margin-bottom: 70px;
+        }
+        p {
+            margin-bottom: 0px;
+        }
+    }
+    .pr-70 {
+        padding-right: 70px;
+        @media screen and (max-width: $small-device) {
+            padding-right: 10px;
+        }
+    }
+    .f-30 {
+        font-size: 30px;
+    }
+    .arrow-point {
+        display: flex;
+        align-items: center;
+        line-height: 0;
+    }
+    .step-title {
+        @media screen and (max-width: $small-device){
+            font-size: 1.4rem;
+        }
+        @media screen and (max-width: 320px){
+            font-size: 1.2rem;
+        }
+    }
+}
