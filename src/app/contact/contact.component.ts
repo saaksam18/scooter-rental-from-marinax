@@ -64,7 +64,10 @@ export class ContactComponent implements OnInit {
 			message: new FormControl('', Validators.compose([
 				this.validateText
 			]))
-		});
+        });
+        $(() => {
+            $('#code').val('+81');
+        })
 	}
 
 	selectChange(event: any) {
