@@ -1,44 +1,95 @@
 <!-- footer section -->
 <div class="content footer">
-    <div class="category">
-        <div class="row">
+  <div class="category">
+    <div class="row">
+      <!-- Menu Category -->
+      <div class="col-xl-6 col-12">
+        <ul class="category__list">
+          <li class="category__title">
+            <a href="/">{{ "menu.title" | translate }}</a>
+          </li>
+          <li>
+            <a routerLink="/">{{ "menu.top" | translate }}</a>
+          </li>
+          <li>
+            <a routerLink="/about/outline">{{
+              "menu.corperate-info" | translate
+            }}</a>
+          </li>
+          <li>
+            <a routerLink="/about/history">{{ "menu.history" | translate }}</a>
+          </li>
+          <li>
+            <a routerLink="/about/teams">{{
+              "menu.operational-team" | translate
+            }}</a>
+          </li>
+          <li>
+            <a routerLink="/business">{{
+              "menu.business-field" | translate
+            }}</a>
+          </li>
+          <li>
+            <a routerLink="/business/scooter-rental">{{
+              "menu.scoter-rental" | translate
+            }}</a>
+          </li>
+          <li>
+            <a routerLink="/business/visa">{{ "menu.visa-wp" | translate }}</a>
+          </li>
+          <li>
+            <a routerLink="/business/exchange">{{
+              "menu.current-exchange" | translate
+            }}</a>
+          </li>
+          <!-- <li><a routerLink="/business/remittance">{{ 'menu.remittance' | translate }}</a></li> -->
+          <li>
+            <a routerLink="/blog">{{ "menu.blog" | translate }}</a>
+          </li>
+          <li>
+            <a routerLink="/contact">{{ "menu.contact" | translate }}</a>
+          </li>
+        </ul>
+      </div>
 
-            <!-- Menu Category -->
-            <div class="col-xl-6 col-12">
-                <ul class="category__list">
-                    <li class="category__title"><a href="/">{{ 'menu.title' | translate }}</a></li>
-                    <li><a routerLink="/">{{ 'menu.top' | translate }}</a></li>
-                    <li><a routerLink="/about/outline">{{ 'menu.corperate-info' | translate }}</a></li>
-                    <li><a routerLink="/about/history">{{ 'menu.history' | translate }}</a></li>
-                    <li><a routerLink="/about/teams">{{ 'menu.operational-team' | translate }}</a></li>
-                    <li><a routerLink="/business">{{ 'menu.business-field' | translate }}</a></li>
-                    <li><a routerLink="/business/scooter-rental">{{ 'menu.scoter-rental' | translate }}</a></li>
-                    <li><a routerLink="/business/visa">{{ 'menu.visa-wp' | translate }}</a></li>
-                    <li><a routerLink="/business/exchange">{{ 'menu.current-exchange' | translate }}</a></li>
-                    <li><a routerLink="/business/remittance">{{ 'menu.remittance' | translate }}</a></li>
-                    <li><a routerLink="/blog">{{ 'menu.blog' | translate }}</a></li>
-                    <li><a routerLink="/contact">{{ 'menu.contact' | translate }}</a></li>
-                </ul>
-            </div>
-
-            <!-- facebook page -->
-            <div class="col-xl-6 col-12 text-center">
-                <!-- <div *ngIf = "isFbPc"> -->
-                <div [ngClass]="{'d-none': !isFbPc}">
-                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fservice4expat&tabs=timeline&width=400&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="400" height="600" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-                </div>
-                <!-- <div *ngIf = "!isFbPc"> -->
-                <div [ngClass]="{'d-none': isFbPc}">
-                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fservice4expat&tabs=timeline&width=280&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="280" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-                </div>
-            </div>
+      <!-- facebook page -->
+      <div class="col-xl-6 col-12 text-center">
+        <!-- <div *ngIf = "isFbPc"> -->
+        <div [ngClass]="{ 'd-none': !isFbPc }">
+          <iframe
+            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fservice4expat&tabs=timeline&width=400&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+            width="400"
+            height="600"
+            style="border: none; overflow: hidden"
+            scrolling="no"
+            frameborder="0"
+            allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          ></iframe>
         </div>
+        <!-- <div *ngIf = "!isFbPc"> -->
+        <div [ngClass]="{ 'd-none': isFbPc }">
+          <iframe
+            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fservice4expat&tabs=timeline&width=280&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+            width="280"
+            height="500"
+            style="border: none; overflow: hidden"
+            scrolling="no"
+            frameborder="0"
+            allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          ></iframe>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <!-- Menu footer -->
-    <div class="d-flex justify-content-center footer__menu">
-        <a routerLink="/contact">{{ 'menu.contact' | translate }}</a>
-        <a routerLink="/sitemap">{{ 'menu.site-map' | translate }}</a>
-    </div>
-    <div class="text-center footer__copyright">{{ 'footer.copy-right' | translate }}</div>
+  <!-- Menu footer -->
+  <div class="d-flex justify-content-center footer__menu">
+    <a routerLink="/contact">{{ "menu.contact" | translate }}</a>
+    <a routerLink="/sitemap">{{ "menu.site-map" | translate }}</a>
+  </div>
+  <div class="text-center footer__copyright">
+    {{ "footer.copy-right" | translate }}
+  </div>
 </div>

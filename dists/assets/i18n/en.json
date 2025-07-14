@@ -1,0 +1,582 @@
+{
+  "page-title": {
+    "top": "EMC-Expat Motobike Cambodia",
+    "outline": "EMC | Outline",
+    "history": "EMC | History",
+    "team": "EMC | Teams",
+    "business": "EMC | Business",
+    "scooter-rental": "EMC | Scooter Rental",
+    "visa": "EMC | Visa-Work Permit",
+    "exchange": "EMC | Exchange",
+    "travel-agency": "EMC | Travel Agency",
+    "remittance": "EMC | International Remittance",
+    "blog": "EMC | Blog",
+    "contact": "EMC | Contact Us",
+    "site-map": "EMC | Site Map",
+    "expat-moto": "EXPAT MOTORBIKE CAMBODIA.",
+    "thank": "EMC | Thanks You",
+    "page-404": "404 Page Not Found"
+  },
+  "menu": {
+    "title": "Menu",
+    "top": "Top",
+    "emc": "EMC",
+    "japan-shop": "japanese shop/ KUBO BRO & Khmer",
+    "bussiness-service": "Services",
+    "map-contact": "Map & Contact (TEL)",
+    "about-us": "About Us",
+    "mission-philosophy": "Mission / Philosophy",
+    "founder-story": "Fonuder Story",
+    "corperate-info": "Corperate Information & Branch",
+    "history": "History",
+    "operational-team": "Operational Team",
+    "business-field": "Business Field",
+    "scoter-rental": "Scoter Rental",
+    "visa-wp": "Visa & WP",
+    "current-exchange": "Currency Exchange",
+    "travel-agency": "Travel Agency",
+    "remittance": "International Remittance",
+    "blog": "Blog",
+    "contact": "Contact",
+    "privacy": "Privacy Policy",
+    "site-map": "Site Map"
+  },
+  "home": {
+    "header": {
+      "title": "For expats in Cambodia,",
+      "description-1": "Since 2013, EMC has served expats with local network & experiences.",
+      "description-2": "",
+      "description-3": "Our mission is to  support expats to have joyful daily life in Cambodia",
+      "description-4": ""
+    },
+    "title": {
+      "our-business": "OUR BUSINESS",
+      "access": "ACCESS"
+    },
+    "sub-title": {
+      "our-business": "Services",
+      "access": "MAP: EMC BKK1 shop"
+    },
+    "japan-shop": {
+      "title": "Established by Japanese KUBO brothers",
+      "kansai": "Kansai is from Nara prefecture",
+      "store-by-Kubo": "Store by Kubo brothers",
+      "kubo": "Hisashi Koh Kubo (Elder)",
+      "kubo-name": "",
+      "visa-work-permit": {
+        "line-1": "Visa & Work Permit",
+        "line-2": ""
+      },
+      "kubo-brother": "Shuu Kubo (Younger)",
+      "kubo-brother-name": "",
+      "currency-exchange": "Currency Exchange",
+      "responsible": "Responsible",
+      "img-desc": "",
+      "CEO": {
+        "name-1": "Left: Hisashi Koh Kubo (Younger)",
+        "name-2": "Right: Shuu Kubo (Elder)"
+      }
+    },
+    "business": {
+      "visa": "Visa Extension\r\n/ Work Permit",
+      "travel-agency": "Travel Agent",
+      "remittance": "International\r\nRemittance",
+      "domestic": "(Domestic & Overseas)",
+      "visa-service": "VISA service",
+      "exchange-service": "Currency exchange service"
+    },
+    "google-review": "Google Reviews"
+  },
+  "sidebar": {
+    "address": {
+      "title": "Address",
+      "text": "38E0 St 322, Phnom Penh"
+    },
+    "holiday": {
+      "title": "Regular holiday",
+      "text": "Sat, Sun, public holidays"
+    }
+  },
+  "outline": {
+    "title": "Company information",
+    "access": "ACCESS",
+    "philosophy": {
+      "title": "Our Mission",
+      "des": {
+        "line-1": "We’d like to make people around us, customers, ",
+        "line-2": "Khmer staffs and business partners, happy through our business activities.",
+        "line-3": "We hope EMC services enable expats to have relaxing & joyful life in Phnom Penh"
+      }
+    },
+    "table": {
+      "company": "Company",
+      "company-des": "EMC Motorbike Rental",
+      "location": "Location",
+      "business": "Services",
+      "business-des": "Scooter Rental, Visa extension & Work Permit, Curency Exchange, Travel Agency",
+      "establishment": "Establish",
+      "establishment-des": "Nov 2013",
+      "capital": "Capital",
+      "capital-des": "75,000USD",
+      "group-company": {
+        "title": "EMC Group",
+        "des-line-1": "GREEN ROOT MONEY EXCHANGE CO.,LTD.",
+        "des-line-2": "POPULAR TRAVEL & TOURS"
+      }
+    },
+    "transportation-info": "Transportation information"
+  },
+  "history": {
+    "title": "EMC History",
+    "founder": {
+      "title": "EMC Start up story",
+      "des-1": "EMC is established by KUBO brothers & Khmer young guy, Heang in 2013. We rental a part of parking space under the service apartment (Palm Village in BKK1),  start  rental motorbike business with just 6 motorbikes. There is a rental motorbike service by Japanese in BKK1…..our business is gradually known among Westerners by word-of-mouth, and we gained customers……then we opened the office on street.322, at current location, that was 6 months after we started operation.",
+      "des-2": "At present, we have Visa & Work permit and currency exchange services, EMC is supported by expats over 30 nationalities who live in P.P.."
+    },
+    "sec-1": {
+      "title": "2013",
+      "year-title": "2013 11",
+      "year-des": "Start rental motorbike operation at Palm Village apartment in BKK1"
+    },
+    "sec-2": {
+      "title": "2014",
+      "year-title": "2014 04",
+      "year-des": "Open EMC office on street 322 in BKK1"
+    },
+    "sec-3": {
+      "title": "2016",
+      "year-title": "2016 08",
+      "year-des": "Start Visa extension service"
+    },
+    "sec-4": {
+      "title": "2017",
+      "year-title": "2017 10",
+      "year-des": "Start Work Permit service"
+    },
+    "sec-5": {
+      "title": "2018",
+      "year-title": "2018 11",
+      "year-des": "Open EMC Toul Tompoung branch on street 418"
+    },
+    "sec-6": {
+      "title": "2019",
+      "year-title-02": "2019 02",
+      "year-des-02": "Start Currency Exchange service ",
+      "year-title-11": "2019 11",
+      "year-des-11-1": "Obtain currency exchange license from National bank of Cambodia (No.006/19)",
+      "year-des-11-2": "Establish Green Root Money Exchange Co.,Ltd"
+    },
+    "sec-7": {
+      "title": "2020",
+      "year-title": "2020 05",
+      "year-des": "Close EMC Toul Tompoung branch"
+    }
+  },
+  "scooter-rental": {
+    "title": "Scooter rental service",
+    "sub-title": "Well-maitained Scooter, Reliable aftercare",
+    "table": {
+      "monthly-rental": "Expat in Phnom Penh (Monthly)",
+      "monthly-rental-des": "Monthly  60-130USD",
+      "day-rental": "Business Trip・Traveler (Weekly)",
+      "day-rental-des": "Weekly 21-50USD"
+    },
+    "reliable-des": "No need any driver`s license to drive motorbike under 125cc in Cambodia",
+    "equip-des": "Reliable motor maintenance by staff (Mr.Hak) who graduated professional motor mechanic school",
+    "desc-3": "Supply security goods with free",
+    "attension": "Attension: Sorry not rent motor to Tourist",
+    "flow": {
+      "title": "Flow to bike rental",
+      "step-1": "Advance preparation",
+      "step-2": "EMC shop",
+      "step-3": "Rental as it is"
+    },
+    "step-1": {
+      "title": "Please prepare deposit to rental motorbike, you can choose",
+      "des-1": "Passport or Deposit cash ($300-900)",
+      "des-2": "(To rental motorbike, deposit passport is general practice in South-East Asia)",
+      "des-3": "You can drive EMC motor within Phnom Penh city. In case, you drive outside of Phnom Penh city, we would request penalty & stop rental motorbike",
+      "des-4": "Supply helmet with free (Second helmet is not free)",
+      "des-5": "",
+      "des-6": ""
+    },
+    "step-2": {
+      "title": "Rental motorbike at EMC shop",
+      "title-2": "Please come to EMC shop",
+      "des-1": "1. Choose your rental motorbike (Test driving is available)",
+      "des-2": "2. Get explanation of EMC rental contract & regulations, then submit deposit (Passport or Cash) and pay rental fee",
+      "des-3": "3. Get explanation of basic motor operations & how to use security goods, then you can drive rental motor!!",
+      "des-4": "If you have any request, you can contact us freely. Any motor is available for test-driving"
+    },
+    "step-3": {
+      "title": "Stop & Extension of Rental motorbike",
+      "des-1": "Please come to EMC shop before expiry date of rental contract.",
+      "des-2": "We request customers to visit EMC once a month for motorbike maintenance, security is everything.",
+      "des-3": "1. Inform stop or extend rental contract",
+      "des-4": "2. If you want to extend, renew rental contract and pay rental fee"
+    },
+    "qa": {
+      "title": "Rental Q&A",
+      "sec-1": {
+        "title": "I. Business Days and Hours",
+        "q1": "What time do you open?",
+        "a1": "We do rent a moto for first customers from 9am - 5:30pm, and close shop at 6pm.",
+        "q2": "What day do you close?",
+        "a2": "On Sundays and Cambodian national holidays."
+      },
+      "sec-2": {
+        "title": "II.  Rental Conditions",
+        "q1": "What is necessary for renting motorcycle?",
+        "a1": "As a deposit, you need customer’s passport or deposit fee. The deposit fee ranges from $300 – $900, the deposit fee amount depends on motorcycle type. We can relax deposit conditions if you request long-term rental. We can do small credit inquiry for deposit relax. After the inspection, we can answer how much deposit relax is available for you.",
+        "q2": "I want to rent a motorcycle to go to Cambodian province. Can I rent a moto?",
+        "a2": "Sorry, we ask customers to drive within Phnom Penh area only. We cannot rent a moto if you drive outside of Phnom Penh.",
+        "q3": "I want to do 1 day rent. Is it possible?",
+        "a3": "Sorry, the minimum rental period is 1 week. If you’d like to rent less than 1 week, you need to pay 1 week rental fee."
+      },
+      "sec-3": {
+        "title": "III. Rental Price and Payment Way",
+        "q1": "How much is the rental fee?",
+        "a1": "It depends on motorcycle type. Monthly rental fee is $60 -$130. Weekly rental fee is $21 - $50. The rental fee gets cheaper when you rent longer.",
+        "q2": "Can I extend to use a motorcycle while I rent it?",
+        "a2": "Yes, this is OK. The extension fee is according to the price table in our shop."
+      },
+      "sec-4": {
+        "title": "IV. Rental Motorcycle Type",
+        "q1": "What kind of motors can I rent from you?",
+        "a1": "In our shop, 50cc automatic, 100 – 125cc automatic and manual motorcycles are available for rent.",
+        "q2": "Do you rent big size motorbike?",
+        "a2": "Sorry, at present all of the motorcycles are scooter type. The maximum engine size of motors is 150cc."
+      },
+      "sec-5": {
+        "title": "V. Safeties and Securities Equipment",
+        "q1": "Can we rent helmets?",
+        "a1": "Yes, you can rent 1 helmet for free. You need to pay $5 per helmet if you rent more helmet.",
+        "q2": "What type of equipment is available for motorcycle securities?",
+        "a2": "A front lock is equipped at the front wheel. It blocks wheel turn. And a chain key is available for rent if you like.",
+        "q3": "Does a rental moto have any insurance?",
+        "a3": "Sorry, at present no moto has insurance in our shop. You need to pay repair fee when damaged and pay compensation fee when stolen.",
+        "q4": "When the motorcycle is stolen, what should I do?",
+        "a4": "Please contact to our shop as soon as possible. We need to go to police to make a report. And you need to pay compensation fee written in the contract."
+      },
+      "sec-6": {
+        "title": "VI. About Booking",
+        "q1": "I want to reserve a motorcycle, how can I do it?",
+        "a1": "You can apply for the reservation with the online form on this website, on the phone, and with visit to our shop EMC.We will make a reply after checking up our customer situation and motorcycle condition.",
+        "q2": "When and what time can I make the reservation?",
+        "a2": "We can welcome you about Internet reservation every time. Reservation with phone call is reserved from Monday – Saturday, from 9am – 6pm."
+      },
+      "sec-7": {
+        "title": "VII. The Service We Don’t Do",
+        "q1": "Do you take insurance on each moto?",
+        "a1": "Sorry, we don’t take insurance on motorbikes.",
+        "q2": "Can I rent a motorcycle with a driver?",
+        "a2": "Sorry, we don’t rent a motorcycle with a driver.",
+        "q3": "Do you do delivery service?",
+        "a3": "Sorry, at present we don’t do delivery service.",
+        "q4": "Can I buy a motorcycle from your shop?",
+        "a4": "Sorry, we don’t sell motorcycles to customers."
+      }
+    }
+  },
+  "visa": {
+    "title": "Visa extension & Work Permit",
+    "sub-title": "Reliabe service by senior Japanese consultant",
+    "des": {
+      "line-1": "Hi, I am senior Visa consultant at EMC, Kubo Koh Hisashi.",
+      "line-2": "If you want to renew your visa safely & securely without stress, please use EMC Visa extension service!",
+      "line-3": "We would propose the most suitable visa according to the customer’s request. Even if it cannot be extended at another Visa agent, we may be able to manage it.",
+      "line-4": "For those in a hurry, there is also a express visa service (1 business day). Please feel free to contact us."
+    },
+    "flow": {
+      "title": "Visa extension Chart",
+      "step-1": "Before coming to EMC",
+      "step-2": "Visa Extension at EMC shop",
+      "step-3": "Passport delivery"
+    },
+    "step-1": {
+      "title": "Before coming to EMC",
+      "des-1": "You can extend your visa just bring Passport at EMC.",
+      "des-2": "・Passport",
+      "des-3": "・Visa (Can extend 30days before of Visa expiry date)",
+      "des-4": "Please see below if you want to check/prepare required documents by Visa type. ",
+      "des-5": "We offer documentation service, FPCS registration of address.",
+      "link": "https://twitter.com/RentVisa_EMC_EN/status/1316038997752201221"
+    },
+    "step-2": {
+      "title": "Visa Extension at EMC shop",
+      "des-1": "Please come to EMC shop and submit passport and required document if any. Normally it takes 8-10 business days for Visa extension. ",
+      "des-2": "If you are in a hurry, express Visa service is available (1 Business day)."
+    },
+    "step-3": {
+      "title": "Passport delivery",
+      "des-1": "We will contact you after completing visa extension, then please come & pick up your passport at EMC shop. ",
+      "des-2": "If you want to save time or any difficulty, we offer Passport delivery service."
+    },
+    "qa": {
+      "title": "Visa Q&A",
+      "sec-1": {
+        "title": "I. Cambodia visa Q&A",
+        "q1": "I want to stay in Cambodia for long time.",
+        "a1": {
+          "line-1": "You can get 2 different types of visa, tourist visa (T) and business visa (E) in the beginning.",
+          "line-2": "If you stay long term, you need to get business visa (E). You can extend it limitlessly as long as your visa can meet extension requirements.",
+          "line-3": "On the other hand, tourist visa (T) can be updated for 1 month and 1 time."
+        },
+        "q2": "How long can be extended with extension? And how much?",
+        "a2": {
+          "line-1": "Extension of stay (a.k.a. EoS) can be selected from 1, 3, 6, and 12 months from business visa (E). Visa price is different depending on EoS, 1 month ($51), 3-month ($81), 6-month ($164), and 12-month ($294). $5 is added to those who don’t rent a motorcycle in our shop.",
+          "line-2": "1-month and 3-month visas are single type, while 6-month and 12-month visas are multiple type."
+        },
+        "note": "Latest Visa information update can be checked with our Facebook. Here we show is the information as of Sep. 2020.",
+        "q3": "How long does it take to get my passport back to your shop?",
+        "a3": "It takes around 8 business days. Saturdays, Sundays, and national holidays are NOT business days of Immigration office.",
+        "q4": "I cannot wait for the 8 business days. I want to hold my passport earlier. ",
+        "a4": "Express visa service is available in our shop. You can get your visa back in the next day for additional $75 payment. ",
+        "q5": "What are requirements for visa extension?",
+        "a5": {
+          "line-1": "There are 3 conditions to succeed in visa extension.",
+          "line-2": "- Your passport must have 6 months or more validity period from the next visa expiration date.\r\n For example, if you request 12-month extension, your passport termination date must be in 18 months or longer away from your present visa expiration date.",
+          "line-3": "- A Letter depending on the present and the next visa type.",
+          "line-4": "- Printout to show that your living address is registered with FPCS (Foreigners Present in Cambodia System). ",
+          "line-5": "In our shop, it is possible to extend your visa without the letters for visa extension and without FPCS registration for some commission.",
+          "line-6": "However, if your passport expiration date is not long enough to extend the period of stay your request, you need to choose whether you shorten your extension of stay or you update your passport."
+        },
+        "q6": "What is FPCS that is required for visa update?",
+        "a6": {
+          "line-1": "This is abbreviation of Foreigners Present in Cambodia System. It is set up by Immigration to control foreigners in Cambodia. Visa extension is not accepted without registering address with FPCS app. It can be downloaded with a smartphone.",
+          "line-2": "Responsibility of FPCS registration lies with a house owner. Before you extend your visa, you need to ask your landlord to register your address with FPCS, and then hand you over the data of registration for visa extension.",
+          "line-3": "It is possible for us to do registration jobs to avoid hassles and troubles."
+        },
+        "q7": "Which type of visa options for staying long term can you offer?",
+        "a7": {
+          "line-1": "If you stay long time in Cambodia, please obtain business visa (E) (a.k.a. ordinary visa on arrival) in the beginning. You can stay in Cambodia for 1 month with the visa. During the stay in Cambodia, please apply for visa extension at an agency like us.",
+          "line-2": "There are 4 visa options available to choose, EG (Job seeker’s visa),  EB (Business visa),  ES (Student visa), and ER (Retirement visa).\r\n Here we show the table to show  what kind of characteristics they have and what are requirements to obtain them. ",
+          "line-3": "** EG (Job seeker’s visa)",
+          "line-4": "- Visa for job seekers.",
+          "line-5": "- The maximum extension of stay (EoS) is 6 months. In contrast, 1-year EoS is available for the other 3 visas (EB, ES, and ER).",
+          "line-6": "- When extending visa again from EG, Work permit copy is required.",
+          "line-7": "* Requirements to EG",
+          "line-8": "- Declaration letter",
+          "line-9": "- Printout of FPCS registration screenshot",
+          "line-10": "** EB (Business visa)",
+          "line-11": "- Visa for workers, their spouse, and children",
+          "line-12": "* Requirements to EB",
+          "line-13": "- Employment letter (Owners need Patent Tax copy instead)",
+          "line-14": "- For 1-month and 3-month extension, Work permit is required. But NOT required for 6-month and 12-month extension.",
+          "line-15": "- Printout of FPCS registration screenshot",
+          "line-16": "** ES (Student visa)",
+          "line-17": "- Visa for students",
+          "line-18": "- The school you belong to needs to be registered in Ministry of Education.",
+          "line-19": "- ES visa holders cannot be accompanied with their parents and their siblings.",
+          "line-20": "* Requirements to ES",
+          "line-21": "- Student enrollment letter",
+          "line-22": "- Printout of FPCS registration screenshot",
+          "line-23": "** ER (Retirement visa)",
+          "line-24": "- Visa for retired persons",
+          "line-25": "- ER visa holders cannot be accompanied with their spouses. They need to obtain business visas or others instead.",
+          "line-26": "* Requirements to ER for 55 years or older",
+          "line-27": "- Declaration letter that describes how you get your income and how much you earn.",
+          "line-28": "- Printout of FPCS registration screenshot",
+          "line-29": "* Requirements to ER for less than 55 years",
+          "line-30": "- Income certificate written in English with an embassy stamp",
+          "line-31": "- Printout of FPCS registration screenshot"
+        },
+        "q8": "I don’t afford to get ready for a letter for visa extension. How can I stay longer?",
+        "a8": {
+          "line-1": "In our shop, we offer service to skip letters. The price is as follows:",
+          "line-2": "- Job seeker’s visa (EG, $15)",
+          "line-3": "- Business visa (EB, $40)",
+          "line-4": "- Retirement visa (ER, $20",
+          "line-5": ""
+        },
+        "q9": "I hold tourist visa (T), but I want to stay in Cambodia longer. Can I convert from tourist visa (T) to business visa (E) in your shop?",
+        "a9": "No. Cannot. You need to leave from Cambodia and enter Cambodia again.",
+        "q10": "My visa is already expired and I overstay. Can you accept my visa update?",
+        "a10": {
+          "line-1": "Yes, possible. Overstay penalty fee is $10/(overstay day).",
+          "line-2": "But we cannot warranty whether your update is succeeded if you overstay more than 100 days."
+        },
+        "q11": "When is the deadline of application for Cambodia visa extension?",
+        "a11": "If you visit our shop by the morning time of visa expiration date, you don’t have to pay penalty fee. If Immigration accept your visa extension within your expiration date, you don’t have to pay penalty fee."
+      }
+    }
+  },
+  "exchange": {
+    "title": "Currency Exchange",
+    "sub-title": "Fast, Convenient (BKK1) and Reliable Currency Exchange",
+    "sub-title02": {
+      "line-1": "",
+      "line-2": ""
+    },
+    "flow": {
+      "title": "Features of our currency exchange service",
+      "step-1": "Currency Exchange ATM",
+      "step-2": "Counter exchange & Delivery"
+    },
+    "step-1": {
+      "title": "Currency Exchange ATM",
+      "desc-1": "Please use exchange ATM machine in EMC shop if amount is less than 1,000usd",
+      "desc-2": "・12 Currencies into USD",
+      "desc-3": "・Easy & Speedy"
+    },
+    "step-2": {
+      "title": "Counter exchange & Delivery",
+      "desc-1": "Please kindly let us have your contact in advance if exchange more than 5,000usd",
+      "desc-2": "・Exchange more than 1,000usd",
+      "desc-3": "・Available delivery service  (exchange more than 20,000usd)",
+      "desc-4": "",
+      "desc-5": "",
+      "desc-6": ""
+    },
+    "service": "Service",
+    "step": "STEP",
+    "desc": {
+      "line-1": "Hi I am EMC owner, Shuu KUBO.",
+      "line-2": "I saw currency exchange business on Taniya street in Bangkok when I was 30 years old, that was my first business career in overseas. I never thought that I would start currency exchange business 10 years later in Cambodia. I can have lots of precious connections through this business, now I like it. Please freely contact me if you have any concern or problems with currency exchange."
+    }
+  },
+  "remittance": {
+    "title": "国際送金相談・アドバイザリー",
+    "sub-title": "顧客視点による新しい国際送金サービス",
+    "sub-title02": "お客様視点で満足のいく送金方法をご提案！！",
+    "flow": {
+      "title": "国際送金/仮想通貨 相談サービスの特徴",
+      "step-1": "ヒアリング",
+      "step-2": "送金方法の提案"
+    },
+    "step-1": {
+      "title": "ヒアリング",
+      "des-1": "下記項目を中心にお客様の抱えている悩み、要望をヒアリング",
+      "des-2": "・送金額",
+      "des-3": "・送金先",
+      "des-4": "・スケジュール",
+      "des-5": "・送金手数料",
+      "des-6": "・送金に必要となる物理的な手間と時間",
+      "des-7": "・送金に必要となる提出書類"
+    },
+    "step-2": {
+      "title": "送金方法の提案",
+      "desc": {
+        "line-1": "ヒアリング内容をもとにお客様に最適な送金方法をいくつか提案いたします",
+        "line-2": "＜送金相談対象国＞",
+        "line-3": "●送金元",
+        "line-4": "日本",
+        "line-5": "カンボジア",
+        "line-6": "●送金先",
+        "line-7": "日本",
+        "line-8": "カンボジア",
+        "line-9": "タイ",
+        "line-10": "ベトナム",
+        "line-11": "●連絡先",
+        "line-12": "+855(0)78849977　 (日本語)",
+        "line-13": "久保俊吾 SHUU KUBO (Facebook)で友達申請、もしくはメッセージください"
+      }
+    },
+    "desc": {
+      "line-1": "初めまして、両替商オーナーの久保俊吾（久保弟）です。",
+      "line-2": "日本国では100万円を超える国際送金は銀行のみにしか認められておらず、Transferwiseなどの比較的便利で安価な送金サービスも100万円という上限が設けられており、年々、国際送金に関わる規制は厳しくなって来ています。両替商を始めてから、これまでたくさんのお客様から国際送金に関わる悩み・相談を受けて来ました。",
+      "line-3": "もっと「多く」資金を送るには？",
+      "line-4": "もっと「速く」資金を送るには？",
+      "line-5": "もっと「手数料を安く」資金を送るには？",
+      "line-6": "もっと「お手軽に」資金を送るには？",
+      "line-7": "これらお客様の要望に少しでも応えられる提案をすることが私の仕事です。外国に住み/働く全ての在住外国人に関わるテーマであり、お客様に笑顔になって頂けるよう頑張ります。"
+    }
+  },
+  "blog": {
+    "hisashi": "Hisashi",
+    "shungo": "Shungo"
+  },
+  "contact": {
+    "contact-form": "Contact Form",
+    "name-required": "Name is required",
+    "name-pattern": "Your name must be at least 2 characters",
+    "email-required": "Email is required",
+    "email-pattern": "Email must be a valid email address",
+    "phone-required": "Phone is required",
+    "phone-pattern": "Please enter '-'",
+    "subject-reuired": "Subject is required",
+    "subject-pattern": "Enter must be at least 5 characters",
+    "message-reuired": "Message is required",
+    "message-pattern": "Enter must be at least 5 characters",
+    "name": "Name",
+    "email": "E-mail",
+    "phone": "Phone",
+    "subject": "Subject",
+    "message": "Message",
+    "our-location": "OUR LOCATION",
+    "address": "EMC is located in the center of Phnom Penh, BKK1.Going down St.63 and turn right on St.322 (Eric Kayser at corner)",
+    "google-review": {
+      "line-1": "Google Review (78) Scooter Rental",
+      "line-2": "Google Review (40) Visa Extension",
+      "line-3": "Google Review (19) Currency Exchange"
+    },
+    "work-hours": "WORKING HOURS",
+    "time": "Business Hours: 09:00-17:30",
+    "workday": "Business days: Monday to Saturday",
+    "holiday": "Regular holidays: Sat, Sun, public holidays",
+    "phone-number": {
+      "title": "PHONE NUMBER",
+      "head": "Scooter Rental:",
+      "text": "+855(0)89 518 867 (JPN, ENG)",
+      "line-2": "Visa: +855 (0)69 270 040 (JPN, ENG)"
+    }
+  },
+  "team": {
+    "title": "Owner Profile",
+    "member": {
+      "shungo-kubo": {
+        "name": "SHUNGO KUBO",
+        "des-1": "EMC Founder",
+        "des-2": "Currency Exchange",
+        "des-3": "Stay Cambodia since 2012. ",
+        "des-4": "GL Finance Plc (Cambodia)  Director, Underwriting & Collection Manager",
+        "des-5": "Group Lease PCL Director",
+        "des-6": "",
+        "des-7": "",
+        "des-8": ""
+      },
+      "hisashi-kubo": {
+        "name": "HISASHI KUBO",
+        "des-1": "EMC Co-Founder",
+        "des-2": "General Manager",
+        "des-3": "Chief Visa Consultant",
+        "des-4": "Stay cambodia since 2015",
+        "des-5": "",
+        "des-6": ""
+      },
+      "heang": {
+        "name": "HEANG",
+        "des-1": "EMC Co-Founder  Deputy General Manager",
+        "des-2": "He is Khmer and one of EMC Co-Founder, always neutral observer and can see whole situation from his point of view. He can tell any matter to any people as he feels, so it is precious guy in Khmer."
+      },
+      "hak": {
+        "name": "HAK",
+        "des-1": "Front operation manager, Chief Engineer",
+        "des-2": "Very straightforward and love to take care of others, he loves to learn something new always, even graduated from accounting school, go to Engineer school also and working as Chief engineer in EMC."
+      },
+      "makara": {
+        "name": "MAKARA",
+        "des-1": "Back Office Manager",
+        "des-2": "He is always calm, gentle, tolerant to others and do the all jobs steadily. We never see him angry or irritating in EMC, rarely laugh. Speak quietly and say any opinions obejectively."
+      }
+    }
+  },
+  "thank": {
+    "title": "Thank You!",
+    "des": "Your submission is received and we will contact you soon."
+  },
+  "page-404": {
+    "title": "404",
+    "sub-title": "Page Not Found",
+    "des": "The page you requested was not found."
+  },
+  "footer": {
+    "copy-right": "Copyright © 2018 - EMC Motorbike Rental Co., Ltd. All rights reserved."
+  },
+  "button": {
+    "submit": "SUBMIT",
+    "google-map": "View on Google Map",
+    "back-to-top": "Back To Top",
+    "more": "More"
+  }
+}
