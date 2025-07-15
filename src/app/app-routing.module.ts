@@ -143,13 +143,13 @@ const routes: Routes = [
       breadcrumb: "menu.site-map",
     },
   },
-  {
+  /* {
     path: "blog",
     component: BlogComponent,
     data: {
       breadcrumb: "menu.blog",
     },
-  },
+  }, */
   {
     path: "404",
     component: Error404Component,
