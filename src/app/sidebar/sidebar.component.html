@@ -154,8 +154,12 @@
         <li class="text-size__m" data-font="72">A</li>
       </ul>
       <ul class="text-translate">
-        <li class="active" (click)="useLanguage('jp')">JP</li>
-        <li (click)="useLanguage('en')">EN</li>
+        <li [class.active]="currentLang === 'jp'" (click)="useLanguage('jp')">
+          JP
+        </li>
+        <li [class.active]="currentLang === 'en'" (click)="useLanguage('en')">
+          EN
+        </li>
         <!-- <li (click)="useLanguage('km')">KH</li> -->
       </ul>
       <!-- <div class="mt-5 form-search">
