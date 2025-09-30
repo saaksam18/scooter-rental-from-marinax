@@ -30,10 +30,10 @@ export class AppComponent implements OnInit, OnDestroy {
   isShow: boolean;
   topPosToStartShowing = 100;
 
-  onLangChange: Subscription = undefined;
-  private routerSubscription: Subscription; // Added a private property for router subscription
+  skipAnimation: boolean = false;
 
-  // Define a key for sessionStorage
+  onLangChange: Subscription = undefined;
+  private routerSubscription: Subscription;
   private readonly SESSION_LOADED_KEY = "app_initial_load_done";
 
   constructor(
@@ -87,17 +87,16 @@ export class AppComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
-    // Check if the app has been loaded before in this session
     const hasLoadedBefore = sessionStorage.getItem(this.SESSION_LOADED_KEY);
 
     if (hasLoadedBefore) {
-      // If loaded before, skip the loading screen
+      // Path for refresh/session load
+      this.skipAnimation = true;
       this.isLoading = false;
     } else {
-      // If it's the initial load, show the loading screen and set a timer
+      // Initial load path
       setTimeout(() => {
         this.isLoading = false;
-        // Once loading is complete, save a flag to sessionStorage
         sessionStorage.setItem(this.SESSION_LOADED_KEY, "true");
       }, 4500);
     }
