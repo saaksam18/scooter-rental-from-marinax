@@ -1,0 +1,22 @@
+/* app.component.scss - Add this section at the end of the file */
+
+/* * This class is added to the #wrapper element when skipping the initial load.
+* It ensures no transition or animation is applied, preventing the visible flash.
+*/
+.wrapper.no-transition,
+.wrapper.no-transition * {
+  transition: none !important;
+  animation: none !important;
+  // Also ensuring no visual rendering hacks interfere
+  will-change: auto !important;
+}
+
+/* * Reviewing your content animation:
+* .page-load {
+* animation: fadein 1s;
+* ...
+* }
+* If this class is applied to your main content, it will cause a fade-in.
+* The 'no-transition' class should override it, but it's safer to 
+* conditionally apply 'page-load' as well.
+*/
